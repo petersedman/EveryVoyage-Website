@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "5FR78MP3XX.com.everyvoyage.app",
+        "paths": ["/follow/*", "/trip/*", "/moment/*"]
+      }
+    ]
+  }
+}
