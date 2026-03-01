@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "5FR78MP3XX.com.everyvoyage.app",
+        "appID": "5388GKK45K.com.everyvoyage.app",
         "paths": ["/follow/*", "/trip/*", "/moment/*"]
       }
     ]
