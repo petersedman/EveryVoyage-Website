@@ -813,6 +813,60 @@
       .footer-brand{ max-width:none; }
       .footer-bottom{ flex-direction:column; text-align:center; }
     }
+
+    .video-preview{
+      position:relative;
+      cursor:pointer;
+    }
+
+    .play-button{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      background:rgba(0,0,0,0.6);
+      color:white;
+      font-size:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      backdrop-filter:blur(6px);
+    }
+
+    .video-preview:hover .play-button{
+      transform:translate(-50%,-50%) scale(1.1);
+    }
+
+    .video-modal{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.85);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:9999;
+    }
+
+    .video-modal video{
+      max-height:80vh;
+      border-radius:16px;
+    }
+
+    .video-modal-content{
+      position:relative;
+    }
+
+    .video-close{
+      position:absolute;
+      top:-40px;
+      right:0;
+      font-size:30px;
+      color:white;
+      cursor:pointer;
+    }
   </style>
 </head>
 
@@ -873,10 +927,28 @@
       <a href="#"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png" alt="Disponible en Google Play" class="store-badge-google"></a>
     </div>
 
-    <div class="hero-preview">
-      <img src="../assets/img/AppPreview.webp" alt="Vista previa de la app EveryVoyage" class="app-preview" loading="lazy">
+    <div class="hero-preview video-preview" onclick="openVideo()">
+
+      <img src="assets/img/AppPreview.webp"
+           alt="Vista previa de la app EveryVoyage"
+           class="app-preview">
+    
+      <div class="play-button">
+        ▶
+      </div>
+    
     </div>
   </section>
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-content">
+      <span class="video-close" onclick="closeVideo()">✕</span>
+  
+      <video controls autoplay muted playsinline preload="metadata">
+        <source src="assets/video/AppPreview886x1920_FINAL.mp4" type="video/mp4">
+      </video>
+  
+    </div>
+  </div>
 
   <!-- Features -->
   <section class="features" id="features">
@@ -1339,6 +1411,28 @@
 
     initFounderUI();
     setInterval(initFounderUI, 60000);
+  </script>
+  <script>
+    function openVideo(){
+      const modal = document.getElementById("videoModal");
+      modal.style.display = "flex";
+    }
+
+    function closeVideo(){
+      const modal = document.getElementById("videoModal");
+      const video = modal.querySelector("video");
+
+      modal.style.display = "none";
+      video.pause();
+    }
+    document.getElementById("videoModal").addEventListener("click", function(e) {
+
+      // only close if clicking the dark background
+      if (e.target === this) {
+        closeVideo();
+      }
+
+    });
   </script>
 </body>
 </html>
