@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Root pages -->
+  <url><loc>https://everyvoyage.com/</loc></url>
+  <url><loc>https://everyvoyage.com/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/faq.html</loc></url>
+  <url><loc>https://everyvoyage.com/app.html</loc></url>
+
+  <!-- Legal (root only) -->
+  <url><loc>https://everyvoyage.com/privacy-policy.html</loc></url>
+  <url><loc>https://everyvoyage.com/terms.html</loc></url>
+  <url><loc>https://everyvoyage.com/cookie-policy.html</loc></url>
+
+  <!-- Danish -->
+  <url><loc>https://everyvoyage.com/da/</loc></url>
+  <url><loc>https://everyvoyage.com/da/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/da/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/da/faq.html</loc></url>
+
+  <!-- German -->
+  <url><loc>https://everyvoyage.com/de/</loc></url>
+  <url><loc>https://everyvoyage.com/de/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/de/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/de/faq.html</loc></url>
+
+  <!-- English US -->
+  <url><loc>https://everyvoyage.com/en-us/</loc></url>
+  <url><loc>https://everyvoyage.com/en-us/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/en-us/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/en-us/faq.html</loc></url>
+
+  <!-- Spanish -->
+  <url><loc>https://everyvoyage.com/es/</loc></url>
+  <url><loc>https://everyvoyage.com/es/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/es/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/es/faq.html</loc></url>
+
+  <!-- French -->
+  <url><loc>https://everyvoyage.com/fr/</loc></url>
+  <url><loc>https://everyvoyage.com/fr/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/fr/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/fr/faq.html</loc></url>
+
+  <!-- Italian -->
+  <url><loc>https://everyvoyage.com/it/</loc></url>
+  <url><loc>https://everyvoyage.com/it/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/it/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/it/faq.html</loc></url>
+
+  <!-- Dutch -->
+  <url><loc>https://everyvoyage.com/nl/</loc></url>
+  <url><loc>https://everyvoyage.com/nl/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/nl/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/nl/faq.html</loc></url>
+
+  <!-- Norwegian -->
+  <url><loc>https://everyvoyage.com/no/</loc></url>
+  <url><loc>https://everyvoyage.com/no/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/no/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/no/faq.html</loc></url>
+
+  <!-- Swedish -->
+  <url><loc>https://everyvoyage.com/sv/</loc></url>
+  <url><loc>https://everyvoyage.com/sv/about.html</loc></url>
+  <url><loc>https://everyvoyage.com/sv/contact.html</loc></url>
+  <url><loc>https://everyvoyage.com/sv/faq.html</loc></url>
+
+</urlset>
