@@ -234,6 +234,19 @@
       flex:0 0 auto;
     }
 
+    .hero-brand{
+      margin-bottom:1.25rem;
+      opacity:0;
+      animation:fadeInUp 0.8s var(--ease-smooth) 0.3s forwards;
+    }
+
+    .hero-brand-logo{
+      height:80px;
+      width:auto;
+      display:block;
+      margin:0 auto;
+    }
+
     .hero h1{
       font-family:var(--font-display);
       font-size:clamp(2rem,5vw,4rem);
@@ -904,9 +917,14 @@
       </a>
     </div>
 
-    <h1>Halte <em>jede</em> Reise fest.<br>Teile das Abenteuer.</h1>
+    <div class="hero-brand">
+      <img src="https://everyvoyage.com/assets/brand/Logo.png" alt="EveryVoyage" class="hero-brand-logo">
+    </div>
+    
+    <h1>Verfolgen. Planen. Teilen.</h1>
+    
     <p class="hero-subtitle">
-      Dein Wohnmobil-Reisebegleiter. Zeichne automatisch deine Fahrten auf, halte Erinnerungen fest und teile Abenteuer mit anderen Reisenden.
+      Halte jede Route, jede Erinnerung und jeden Moment unterwegs fest.
     </p>
 
     <div class="hero-actions">

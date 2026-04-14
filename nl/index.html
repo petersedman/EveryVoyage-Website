@@ -234,6 +234,19 @@
       flex:0 0 auto;
     }
 
+    .hero-brand{
+      margin-bottom:1.25rem;
+      opacity:0;
+      animation:fadeInUp 0.8s var(--ease-smooth) 0.3s forwards;
+    }
+
+    .hero-brand-logo{
+      height:80px;
+      width:auto;
+      display:block;
+      margin:0 auto;
+    }
+
     .hero h1{
       font-family:var(--font-display);
       font-size:clamp(2rem,5vw,4rem);
@@ -903,9 +916,14 @@
       </a>
     </div>
 
-    <h1>Leg <em>elke</em> reis vast.<br>Deel het avontuur.</h1>
+    <div class="hero-brand">
+      <img src="https://everyvoyage.com/assets/brand/Logo.png" alt="EveryVoyage" class="hero-brand-logo">
+    </div>
+    
+    <h1>Leg vast. Ontdek. Deel.</h1>
+    
     <p class="hero-subtitle">
-      De reisgenoot voor camperaars. Leg automatisch je ritten vast, bewaar herinneringen en deel avonturen met medereizigers.
+      Bewaar elke route, herinnering en moment onderweg.
     </p>
 
     <div class="hero-actions">

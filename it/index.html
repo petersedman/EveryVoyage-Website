@@ -235,6 +235,19 @@
       flex:0 0 auto;
     }
 
+    .hero-brand{
+      margin-bottom:1.25rem;
+      opacity:0;
+      animation:fadeInUp 0.8s var(--ease-smooth) 0.3s forwards;
+    }
+
+    .hero-brand-logo{
+      height:80px;
+      width:auto;
+      display:block;
+      margin:0 auto;
+    }
+
     .hero h1{
       font-family:var(--font-display);
       font-size:clamp(2rem,5vw,4rem);
@@ -905,9 +918,14 @@
       </a>
     </div>
 
-    <h1>Registra <em>ogni</em> viaggio.<br>Condividi l'avventura.</h1>
+    <div class="hero-brand">
+      <img src="https://everyvoyage.com/assets/brand/Logo.png" alt="EveryVoyage" class="hero-brand-logo">
+    </div>
+    
+    <h1>Registra. Esplora. Condividi.</h1>
+    
     <p class="hero-subtitle">
-      Il compagno di viaggio per camperisti. Registra automaticamente i tuoi percorsi, cattura i ricordi e condividi le avventure con altri viaggiatori.
+      Conserva ogni percorso, ricordo e momento del viaggio.
     </p>
 
     <div class="hero-actions">

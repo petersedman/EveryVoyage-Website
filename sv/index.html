@@ -235,6 +235,19 @@
       flex:0 0 auto;
     }
 
+    .hero-brand{
+      margin-bottom:1.25rem;
+      opacity:0;
+      animation:fadeInUp 0.8s var(--ease-smooth) 0.3s forwards;
+    }
+
+    .hero-brand-logo{
+      height:80px;
+      width:auto;
+      display:block;
+      margin:0 auto;
+    }
+
     .hero h1{
       font-family:var(--font-display);
       font-size:clamp(2rem,5vw,4rem);
@@ -904,9 +917,14 @@
       </a>
     </div>
 
-    <h1>Spela in <em>varje</em> resa.<br>Dela äventyret.</h1>
+    <div class="hero-brand">
+      <img src="https://everyvoyage.com/assets/brand/Logo.png" alt="EveryVoyage" class="hero-brand-logo">
+    </div>
+    
+    <h1>Registrera. Utforska. Dela.</h1>
+    
     <p class="hero-subtitle">
-      Reskamraten för husbilsägare. Spåra automatiskt dina resor, fånga minnen och dela äventyr med andra resenärer.
+      Spara varje rutt, minne och ögonblick på vägen.
     </p>
 
     <div class="hero-actions">

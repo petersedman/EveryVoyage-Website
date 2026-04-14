@@ -235,6 +235,19 @@
       flex:0 0 auto;
     }
 
+    .hero-brand{
+      margin-bottom:1.25rem;
+      opacity:0;
+      animation:fadeInUp 0.8s var(--ease-smooth) 0.3s forwards;
+    }
+
+    .hero-brand-logo{
+      height:80px;
+      width:auto;
+      display:block;
+      margin:0 auto;
+    }
+
     .hero h1{
       font-family:var(--font-display);
       font-size:clamp(2rem,5vw,4rem);
@@ -906,9 +919,14 @@
       </a>
     </div>
 
-    <h1>Enregistrez <em>chaque</em> voyage.<br>Partagez l'aventure.</h1>
+    <div class="hero-brand">
+      <img src="https://everyvoyage.com/assets/brand/Logo.png" alt="EveryVoyage" class="hero-brand-logo">
+    </div>
+    
+    <h1>Enregistre. Explore. Partage.</h1>
+    
     <p class="hero-subtitle">
-      Le compagnon de voyage en camping-car. Enregistrez automatiquement vos trajets, capturez vos souvenirs et partagez vos aventures avec d'autres voyageurs.
+      Garde chaque trajet, souvenir et moment sur la route.
     </p>
 
     <div class="hero-actions">
