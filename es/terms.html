@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Términos de servicio • EveryVoyage</title>
+  <meta name="description" content="Términos de servicio de EveryVoyage">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+
+  <!-- Fonts: Optimized for performance -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Critical fonts: 400 weights for immediate render -->
+
+  <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400&display=optional"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400&display=optional">
+  </noscript>
+
+  <!-- Additional weights: Load asynchronously -->
+
+  <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,800&family=DM+Sans:opsz,wght@9..40,500;9..40,600&display=optional"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,800&family=DM+Sans:opsz,wght@9..40,500;9..40,600&display=optional">
+  </noscript>
+
+  <style>
+    :root{
+      --color-cream:#F7F4ED;
+      --color-warm-white:#FEFDFB;
+      --color-peach:#fac189;
+      --color-orange-light:#f15614;
+      --color-orange:#f54a00;
+      --color-charcoal:#2A2A28;
+      --color-slate:#5A5A58;
+      --color-mist:#E8E5DE;
+
+      --font-display:'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body:'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+      --ease-smooth:cubic-bezier(0.4,0,0.2,1);
+      --ease-bounce:cubic-bezier(0.34,1.56,0.64,1);
+    }
+
+    *,*::before,*::after{ margin:0; padding:0; box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+
+    body{
+      font-family:var(--font-body);
+      background:var(--color-cream);
+      color:var(--color-charcoal);
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:'';
+      position:fixed;
+      inset:0;
+      opacity:0.03;
+      pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      z-index:0;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      padding:1.5rem 2rem;
+      background:rgba(247,244,237,0.92);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--color-mist);
+    }
+    .topbar-inner{
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+    }
+    .logo{
+      display:inline-flex;
+      align-items:center;
+      text-decoration:none;
+    }
+    .logo-img{ height:50px; width:auto; display:block; }
+
+    .page{
+      position:relative;
+      z-index:1;
+      max-width:900px;
+      margin:2.5rem auto 5rem;
+      padding:0 1.5rem;
+    }
+
+    .card{
+      background:rgba(254,253,251,0.92);
+      border:1px solid rgba(232,229,222,0.95);
+      border-radius:24px;
+      padding:2.25rem;
+      box-shadow:0 18px 50px rgba(0,0,0,0.08);
+    }
+
+    h1{
+      font-family:var(--font-display);
+      font-weight:500;
+      font-size:clamp(2rem, 4vw, 2.75rem);
+      line-height:1.15;
+      margin-bottom:0.5rem;
+    }
+
+    .meta{
+      color:var(--color-slate);
+      font-size:0.95rem;
+      margin-bottom:1.75rem;
+    }
+
+    h2{
+      font-family:var(--font-display);
+      font-weight:500;
+      font-size:1.35rem;
+      margin:1.75rem 0 0.6rem;
+    }
+
+    p{ color:var(--color-slate); margin:0.65rem 0; }
+
+    ul{
+      margin:0.5rem 0 0.75rem 1.1rem;
+      color:var(--color-slate);
+    }
+    li{ margin:0.35rem 0; }
+
+    .backlink{
+      display:inline-flex;
+      margin-top:1.75rem;
+      text-decoration:none;
+      color:var(--color-orange);
+      font-weight:600;
+    }
+    .backlink:hover{ text-decoration:underline; }
+  </style>
+
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="logo" href="index.html" aria-label="Volver a la página de inicio de EveryVoyage">
+        <img src="../assets/brand/Logo.png" alt="EveryVoyage" class="logo-img">
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="card">
+      <h1>Términos de servicio</h1>
+      <div class="meta">
+        Última actualización: <strong>6 de enero de 2026</strong><br>
+        Fecha de entrada en vigor: <strong>6 de enero de 2026</strong>
+      </div>
+
+  <p>
+    Estos Términos de servicio (“Términos”) regulan tu acceso y uso de la aplicación móvil EveryVoyage
+    y de las funciones relacionadas del sitio web, incluida la sección Explorar en
+    <strong>everyvoyage.com</strong> (en conjunto, el “Servicio”).
+  </p>
+
+  <p>
+    El Servicio es operado por <strong>SIMPLR LABS LTD</strong>, una empresa constituida en Inglaterra y Gales
+    con número de empresa 16945371 y domicilio social en 71–75 Shelton Street, Covent Garden, Londres,
+    WC2H 9JQ, Reino Unido (“EveryVoyage”, “nosotros”, “nos” o “nuestro”).
+  </p>
+
+  <p>
+    Al acceder al Servicio o utilizarlo, aceptas quedar vinculado por estos Términos.
+    Si no estás de acuerdo, no debes utilizar el Servicio.
+  </p>
+
+  <h2>1. Cuentas y requisitos</h2>
+  <ul>
+    <li>Debes tener capacidad legal para celebrar un acuerdo vinculante.</li>
+    <li>Se requiere una cuenta para acceder a las funciones principales del Servicio.</li>
+    <li>Eres responsable de mantener seguros tus datos de inicio de sesión y de toda la actividad que se realice en tu cuenta.</li>
+  </ul>
+
+  <h2>2. El Servicio</h2>
+  <p>
+    EveryVoyage permite a los usuarios registrar viajes mediante GPS, crear Trayectos y Viajes, subir fotos,
+    compartir ubicaciones, dejar reseñas y comentarios, enviar mensajes a otros usuarios y mantener perfiles públicos.
+    La sección Explorar permite buscar y descubrir ubicaciones, como campings y otros puntos de interés relacionados.
+  </p>
+
+  <p>
+    Podemos actualizar, modificar, suspender o interrumpir cualquier parte del Servicio en cualquier momento.
+  </p>
+
+  <h2>3. Datos GPS y seguridad</h2>
+  <ul>
+    <li>Algunas funciones requieren acceso a los servicios de ubicación de tu dispositivo, incluidos datos GPS precisos.</li>
+    <li>Tú controlas los permisos de ubicación desde los ajustes de tu dispositivo.</li>
+    <li>Eres el único responsable de tu seguridad cuando viajas o registras viajes.</li>
+    <li>No utilices el Servicio de una forma que te distraiga mientras conduces o manejas un vehículo.</li>
+    <li>No garantizamos la exactitud, legalidad, disponibilidad o seguridad de rutas, ubicaciones o contenido enviado por usuarios.</li>
+  </ul>
+
+  <h2>4. Contenido generado por usuarios</h2>
+  <p>
+    Puedes enviar contenido como rutas, ubicaciones, fotos, texto, reseñas, comentarios, mensajes e información de perfil
+    (“Contenido del usuario”). Sigues siendo el propietario de tu Contenido del usuario.
+  </p>
+
+  <p>
+    No debes subir ni compartir Contenido del usuario que sea ilegal, abusivo, engañoso o que infrinja los derechos de otras personas.
+    No se permite contenido pornográfico o sexualmente explícito de ningún tipo. Cualquier contenido sexualizado que implique a menores
+    está estrictamente prohibido.
+  </p>
+
+  <h2>5. Visibilidad pública y moderación</h2>
+  <ul>
+    <li>Parte del Contenido del usuario y de la información de perfil puede ser visible públicamente.</li>
+    <li>Podemos eliminar contenido, restringir su visibilidad, suspender o cancelar cuentas cuando sea necesario por motivos de seguridad,
+        cumplimiento o aplicación de estos Términos.</li>
+  </ul>
+
+  <h2>6. Propiedad intelectual y licencia</h2>
+  <p>
+    Somos propietarios del Servicio y de todos los derechos de propiedad intelectual relacionados, excepto el Contenido del usuario.
+    Al utilizar el Servicio, nos otorgas una licencia mundial, no exclusiva y libre de regalías para alojar, mostrar y distribuir
+    tu Contenido del usuario según sea necesario para operar y promocionar el Servicio.
+  </p>
+
+  <h2>7. Servicios de terceros</h2>
+  <p>
+    El Servicio integra servicios de terceros, incluidos Firebase y Sentry.
+    No somos responsables del contenido ni de las prácticas de los servicios de terceros.
+  </p>
+
+  <h2>8. Futuras funciones de pago</h2>
+  <p>
+    Actualmente, el Servicio es gratuito. En el futuro podemos introducir funciones de pago, incluidas suscripciones,
+    publicidad o funciones de marketplace. Cualquier función de pago estará sujeta a términos adicionales que se mostrarán
+    en el momento de la compra. Los reembolsos solo se ofrecerán cuando lo exija la ley.
+  </p>
+
+  <h2>9. Exenciones de responsabilidad y responsabilidad legal</h2>
+  <p>
+    El Servicio se proporciona “tal cual” y “según disponibilidad”. En la medida permitida por la ley,
+    excluimos todas las garantías y limitamos nuestra responsabilidad al mayor de estos importes: 100 £
+    o la cantidad que nos hayas pagado en los 12 meses anteriores a una reclamación.
+  </p>
+
+  <h2>10. Legislación aplicable</h2>
+  <p>
+    Estos Términos se rigen por las leyes de Inglaterra y Gales.
+    Los tribunales de Inglaterra y Gales tendrán jurisdicción exclusiva.
+  </p>
+
+  <h2>11. Contacto</h2>
+  <p>
+    Si tienes alguna pregunta sobre estos Términos, contacta con nosotros en
+    <strong>contact@everyvoyage.com</strong>.
+  </p>
+
+  <a class="backlink" href="index.html">← Volver a la página de inicio</a>
+</section>
+
+  </main>
+</body>
+</html>

@@ -100,6 +100,16 @@ class SiteNav extends HTMLElement {
     return this.page === 'index' ? 'index.html' : `${this.page}.html`;
   }
 
+  getPageHref(page) {
+    const file = page === 'index' ? 'index.html' : `${page}.html`;
+
+    if (this.lang === 'en') {
+      return `/${file}`;
+    }
+
+    const langConfig = this.getLangConfig();
+    return `/${langConfig.path}${file}`;
+  }
   render() {
     const labels = this.getLabels();
     const langConfig = this.getLangConfig();
@@ -109,7 +119,7 @@ class SiteNav extends HTMLElement {
       <style>${this.getStyles()}</style>
 
       <nav id="navbar">
-        <a href="${this.getHref('index.html')}" class="logo">
+        <a href="${this.getPageHref('index')}" class="logo">
           <img src="${this.basePath}assets/brand/Logo.png" alt="EveryVoyage" class="logo-img">
         </a>
 
@@ -120,9 +130,9 @@ class SiteNav extends HTMLElement {
         <ul class="nav-links">
           <li><a href="${this.getHref('#features')}">${labels.features}</a></li>
           <li><a href="${this.getHref('#how-it-works')}">${labels.howItWorks}</a></li>
-          <li><a href="about.html"${this.page === 'about' ? ' class="active"' : ''}>${labels.about}</a></li>
-          <li><a href="faq.html"${this.page === 'faq' ? ' class="active"' : ''}>${labels.faq}</a></li>
-          <li><a href="contact.html"${this.page === 'contact' ? ' class="active"' : ''}>${labels.contact}</a></li>
+          <li><a href="${this.getPageHref('about')}"${this.page === 'about' ? ' class="active"' : ''}>${labels.about}</a></li>
+          <li><a href="${this.getPageHref('faq')}"${this.page === 'faq' ? ' class="active"' : ''}>${labels.faq}</a></li>
+          <li><a href="${this.getPageHref('contact')}"${this.page === 'contact' ? ' class="active"' : ''}>${labels.contact}</a></li>
           <li><a href="${this.getHref('#download')}" class="nav-cta">${labels.download}</a></li>
           <li>
             <div class="lang-switcher" id="langSwitcher">
@@ -144,9 +154,9 @@ class SiteNav extends HTMLElement {
         <div class="mobile-menu-inner">
           <a href="${this.getHref('#features')}">${labels.features}</a>
           <a href="${this.getHref('#how-it-works')}">${labels.howItWorks}</a>
-          <a href="about.html"${this.page === 'about' ? ' class="active"' : ''}>${labels.about}</a>
-          <a href="faq.html"${this.page === 'faq' ? ' class="active"' : ''}>${labels.faq}</a>
-          <a href="contact.html"${this.page === 'contact' ? ' class="active"' : ''}>${labels.contact}</a>
+          <a href="${this.getPageHref('about')}"${this.page === 'about' ? ' class="active"' : ''}>${labels.about}</a>
+          <a href="${this.getPageHref('faq')}"${this.page === 'faq' ? ' class="active"' : ''}>${labels.faq}</a>
+          <a href="${this.getPageHref('contact')}"${this.page === 'contact' ? ' class="active"' : ''}>${labels.contact}</a>
           <hr class="mobile-divider">
           <a href="${this.getHref('#download')}" class="mobile-cta">${labels.download}</a>
           <hr class="mobile-divider">
