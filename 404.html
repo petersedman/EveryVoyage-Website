@@ -51,32 +51,28 @@
     (function () {
       // Share links (https://everyvoyage.com/follow|trip|moment/{id}) are universal/
       // app links: when the app is installed, iOS/Android open it directly and this
-      // page never loads. We only get here when the app is NOT installed (or the link
-      // was pasted into the address bar, which bypasses universal links), so send the
-      // visitor to the right store. We deliberately do NOT bounce through the
-      // everyvoyage:// custom scheme — on a device without the app that leaves the
-      // browser on a blank/error page.
+      // page never loads. We only land here when the app is NOT installed, so we show
+      // a branded "get the app" page and let the visitor TAP a store badge.
+      //
+      // We deliberately do NOT auto-redirect to the store: a script-initiated redirect
+      // makes iOS interpose an "Open this link in the App Store?" system prompt, while
+      // a user tap on a store badge hands off to the store cleanly. (The custom
+      // everyvoyage:// scheme is also avoided — without the app it blanks the page.)
       var path = window.location.pathname || '';
       var deepLinkRoutes = ['/follow/', '/trip/', '/moment/'];
       var isShareLink = deepLinkRoutes.some(function (route) {
         return path.indexOf(route) === 0;
       });
 
-      if (isShareLink) {
-        var ua = navigator.userAgent || navigator.vendor || window.opera || '';
-        var IOS_URL = 'https://apps.apple.com/app/id6755696102';
-        var ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.everyvoyage.app';
-
-        var isAndroid = /android/i.test(ua);
-        var isIOS = /iPad|iPhone|iPod/.test(ua)
-          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-
-        if (isAndroid) {
-          window.location.replace(ANDROID_URL);
-        } else if (isIOS) {
-          window.location.replace(IOS_URL);
-        }
-        // Desktop / unknown: fall through and show the store badges below.
+      if (!isShareLink) {
+        // Genuine 404 (not a share link): keep the store badges, but swap in
+        // page-not-found copy instead of "open this link".
+        document.addEventListener('DOMContentLoaded', function () {
+          var title = document.getElementById('title');
+          var subtitle = document.getElementById('subtitle');
+          if (title) title.textContent = 'Page not found';
+          if (subtitle) subtitle.textContent = 'The page you’re looking for doesn’t exist.';
+        });
       }
     })();
   </script>
@@ -84,8 +80,8 @@
 <body>
   <div class="container">
     <img src="/assets/icons/favicon.png" alt="EveryVoyage" class="logo">
-    <h1>Get EveryVoyage</h1>
-    <p>Download the app to open this link.</p>
+    <h1 id="title">Get EveryVoyage</h1>
+    <p id="subtitle">Download the app to open this link.</p>
     <div class="stores">
       <a href="https://apps.apple.com/app/id6755696102" target="_blank">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
