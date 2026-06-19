@@ -49,24 +49,34 @@
   </style>
   <script>
     (function () {
-      var path = window.location.pathname;
+      // Share links (https://everyvoyage.com/follow|trip|moment/{id}) are universal/
+      // app links: when the app is installed, iOS/Android open it directly and this
+      // page never loads. We only get here when the app is NOT installed (or the link
+      // was pasted into the address bar, which bypasses universal links), so send the
+      // visitor to the right store. We deliberately do NOT bounce through the
+      // everyvoyage:// custom scheme — on a device without the app that leaves the
+      // browser on a blank/error page.
+      var path = window.location.pathname || '';
       var deepLinkRoutes = ['/follow/', '/trip/', '/moment/'];
-      var matched = deepLinkRoutes.find(function (route) {
-        return path.startsWith(route);
+      var isShareLink = deepLinkRoutes.some(function (route) {
+        return path.indexOf(route) === 0;
       });
 
-      if (matched) {
-        var id = path.replace(matched, '').replace(/\/$/, '');
-        if (id) {
-          var type = matched.replace(/\//g, '');
-          var customSchemeUrl = 'everyvoyage://' + type + '/' + id;
+      if (isShareLink) {
+        var ua = navigator.userAgent || navigator.vendor || window.opera || '';
+        var IOS_URL = 'https://apps.apple.com/app/id6755696102';
+        var ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.everyvoyage.app';
 
-          // Try to open the app via custom scheme
-          window.location.href = customSchemeUrl;
+        var isAndroid = /android/i.test(ua);
+        var isIOS = /iPad|iPhone|iPod/.test(ua)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 
-          // If still here after a delay, the app isn't installed — stay on this page
-          // which shows store links
+        if (isAndroid) {
+          window.location.replace(ANDROID_URL);
+        } else if (isIOS) {
+          window.location.replace(IOS_URL);
         }
+        // Desktop / unknown: fall through and show the store badges below.
       }
     })();
   </script>
@@ -74,8 +84,8 @@
 <body>
   <div class="container">
     <img src="/assets/icons/favicon.png" alt="EveryVoyage" class="logo">
-    <h1>Opening EveryVoyage...</h1>
-    <p>If the app doesn't open, download it below.</p>
+    <h1>Get EveryVoyage</h1>
+    <p>Download the app to open this link.</p>
     <div class="stores">
       <a href="https://apps.apple.com/app/id6755696102" target="_blank">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
