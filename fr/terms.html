@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions d’utilisation • EveryVoyage</title>
+  <meta name="description" content="Conditions d’utilisation d’EveryVoyage">
+  <link rel="icon" type="image/png" href="https://everyvoyage.com/assets/icons/favicon.png">
+
+  <!-- Fonts: Optimized for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Critical fonts: 400 weights for immediate render -->
+  <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400&display=optional"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400&display=optional">
+  </noscript>
+
+  <!-- Additional weights: Load asynchronously -->
+  <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,800&family=DM+Sans:opsz,wght@9..40,500;9..40,600&display=optional"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,800&family=DM+Sans:opsz,wght@9..40,500;9..40,600&display=optional">
+  </noscript>
+
+  <style>
+    :root{
+      --color-cream:#F7F4ED;
+      --color-warm-white:#FEFDFB;
+      --color-peach:#fac189;
+      --color-orange-light:#f15614;
+      --color-orange:#f54a00;
+      --color-charcoal:#2A2A28;
+      --color-slate:#5A5A58;
+      --color-mist:#E8E5DE;
+
+      --font-display:'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body:'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+      --ease-smooth:cubic-bezier(0.4,0,0.2,1);
+      --ease-bounce:cubic-bezier(0.34,1.56,0.64,1);
+    }
+
+    *,*::before,*::after{ margin:0; padding:0; box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+
+    body{
+      font-family:var(--font-body);
+      background:var(--color-cream);
+      color:var(--color-charcoal);
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:'';
+      position:fixed;
+      inset:0;
+      opacity:0.03;
+      pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      z-index:0;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      padding:1.5rem 2rem;
+      background:rgba(247,244,237,0.92);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--color-mist);
+    }
+    .topbar-inner{
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+    }
+    .logo{
+      display:inline-flex;
+      align-items:center;
+      text-decoration:none;
+    }
+    .logo-img{ height:50px; width:auto; display:block; }
+
+    .page{
+      position:relative;
+      z-index:1;
+      max-width:900px;
+      margin:2.5rem auto 5rem;
+      padding:0 1.5rem;
+    }
+
+    .card{
+      background:rgba(254,253,251,0.92);
+      border:1px solid rgba(232,229,222,0.95);
+      border-radius:24px;
+      padding:2.25rem;
+      box-shadow:0 18px 50px rgba(0,0,0,0.08);
+    }
+
+    h1{
+      font-family:var(--font-display);
+      font-weight:500;
+      font-size:clamp(1.45rem, 5.5vw, 2.4rem);
+      line-height:1.15;
+      margin-bottom:0.5rem;
+    }
+
+    .meta{
+      color:var(--color-slate);
+      font-size:0.95rem;
+      margin-bottom:1.75rem;
+    }
+
+    h2{
+      font-family:var(--font-display);
+      font-weight:500;
+      font-size:1.35rem;
+      margin:1.75rem 0 0.6rem;
+    }
+
+    p{ color:var(--color-slate); margin:0.65rem 0; }
+
+    ul{
+      margin:0.5rem 0 0.75rem 1.1rem;
+      color:var(--color-slate);
+    }
+    li{ margin:0.35rem 0; }
+
+    .backlink{
+      display:inline-flex;
+      margin-top:1.75rem;
+      text-decoration:none;
+      color:var(--color-orange);
+      font-weight:600;
+    }
+    .backlink:hover{ text-decoration:underline; }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="logo" href="index.html" aria-label="Retour à la page d’accueil d’EveryVoyage">
+        <img src="https://everyvoyage.com/assets/brand/Logo.png" alt="EveryVoyage" class="logo-img">
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="card">
+      <h1>Conditions d’utilisation</h1>
+      <div class="meta">
+        Dernière mise à jour : <strong>6 janvier 2026</strong><br>
+        Date d’entrée en vigueur : <strong>6 janvier 2026</strong>
+      </div>
+
+      <p>
+        Les présentes Conditions d’utilisation (« Conditions ») régissent votre accès à l’application mobile EveryVoyage
+        et votre utilisation des fonctionnalités associées du site web. Cela inclut également la section Explorer sur
+        <strong>everyvoyage.com</strong> (ensemble, le « Service »).
+      </p>
+
+      <p>
+        Le Service est exploité par <strong>SIMPLR LABS LTD</strong>, une société enregistrée en Angleterre et au pays de Galles
+        sous le numéro 16945371, dont le siège social est situé au 71–75 Shelton Street, Covent Garden, Londres,
+        WC2H 9JQ, Royaume-Uni (« EveryVoyage », « nous », « notre », « nos »).
+      </p>
+
+      <p>
+        En accédant au Service ou en l’utilisant, vous acceptez les présentes Conditions.
+        Si vous ne les acceptez pas, vous ne devez pas utiliser le Service.
+      </p>
+
+      <h2>1. Comptes et conditions requises</h2>
+      <ul>
+        <li>Vous devez être juridiquement capable de conclure un accord contraignant.</li>
+        <li>Un compte est nécessaire pour accéder aux principales fonctionnalités du Service.</li>
+        <li>Vous êtes responsable de la sécurité de vos identifiants de connexion et de toute activité effectuée depuis votre compte.</li>
+      </ul>
+
+      <h2>2. Le Service</h2>
+      <p>
+        Avec EveryVoyage, les utilisateurs peuvent enregistrer leurs voyages par GPS, créer des Trips et des Voyages,
+        ajouter des photos, partager des lieux, laisser des avis et des commentaires, envoyer des messages à d’autres
+        utilisateurs et gérer des profils publics. La section Explorer permet de rechercher et de découvrir des lieux,
+        par exemple des campings et d’autres points d’intérêt similaires.
+      </p>
+
+      <p>
+        Nous pouvons mettre à jour, modifier, suspendre ou arrêter le Service, ou certaines parties de celui-ci, à tout moment.
+      </p>
+
+      <h2>3. Données GPS et sécurité</h2>
+      <ul>
+        <li>Certaines fonctionnalités nécessitent l’accès aux services de localisation de votre appareil, y compris aux données GPS précises.</li>
+        <li>Vous contrôlez les autorisations de localisation depuis les paramètres de votre appareil.</li>
+        <li>Vous êtes seul responsable de votre sécurité lorsque vous voyagez ou enregistrez des voyages.</li>
+        <li>N’utilisez pas le Service d’une manière qui pourrait vous distraire pendant que vous conduisez ou utilisez un véhicule.</li>
+        <li>Nous ne garantissons pas l’exactitude, la légalité, la disponibilité ou la sécurité des itinéraires, lieux ou contenus soumis par les utilisateurs.</li>
+      </ul>
+
+      <h2>4. Contenu créé par les utilisateurs</h2>
+      <p>
+        Vous pouvez soumettre du contenu, par exemple des itinéraires, des lieux, des photos, du texte, des avis,
+        des commentaires, des messages et des informations de profil (« Contenu utilisateur »).
+        Vous restez propriétaire de votre Contenu utilisateur.
+      </p>
+
+      <p>
+        Vous ne devez pas importer ni partager de Contenu utilisateur illégal, abusif, trompeur ou portant atteinte
+        aux droits d’autrui. Les contenus pornographiques ou sexuellement explicites de quelque nature que ce soit
+        ne sont pas autorisés. Tout contenu sexualisé impliquant des mineurs est strictement interdit.
+      </p>
+
+      <h2>5. Visibilité publique et modération</h2>
+      <ul>
+        <li>Certains Contenus utilisateur et certaines informations de profil peuvent être visibles publiquement.</li>
+        <li>Nous pouvons supprimer du contenu, en restreindre la visibilité, suspendre des comptes ou les résilier lorsque cela est nécessaire pour la sécurité, le respect des règles ou l’application des présentes Conditions.</li>
+      </ul>
+
+      <h2>6. Propriété intellectuelle et licence</h2>
+      <p>
+        Le Service et tous les droits de propriété intellectuelle associés nous appartiennent, à l’exception de votre Contenu utilisateur.
+        En utilisant le Service, vous nous accordez une licence mondiale, non exclusive et gratuite nous permettant
+        d’héberger, d’afficher et de diffuser votre Contenu utilisateur dans la mesure nécessaire au fonctionnement
+        et à la promotion du Service.
+      </p>
+
+      <h2>7. Services tiers</h2>
+      <p>
+        Le Service intègre des services tiers, notamment Firebase et Sentry.
+        Nous ne sommes pas responsables du contenu ni des pratiques des services tiers.
+      </p>
+
+      <h2>8. Futures fonctionnalités payantes</h2>
+      <p>
+        Le Service est actuellement gratuit. Nous pouvons introduire à l’avenir des fonctionnalités payantes,
+        notamment des abonnements, de la publicité ou des fonctionnalités de place de marché. Des conditions
+        supplémentaires pourront s’appliquer aux fonctionnalités payantes et vous seront présentées au moment de l’achat.
+        Les remboursements ne seront accordés que lorsque la loi l’exige.
+      </p>
+
+      <h2>9. Exclusions de garantie et responsabilité</h2>
+      <p>
+        Le Service est fourni « tel quel » et « selon disponibilité ». Dans la mesure permise par la loi,
+        nous excluons toutes les garanties et limitons notre responsabilité au montant le plus élevé entre 100 £
+        et le montant que vous nous avez payé au cours des 12 mois précédant une réclamation.
+      </p>
+
+      <h2>10. Droit applicable</h2>
+      <p>
+        Les présentes Conditions sont régies par le droit d’Angleterre et du pays de Galles.
+        Les tribunaux d’Angleterre et du pays de Galles sont exclusivement compétents.
+      </p>
+
+      <h2>11. Contact</h2>
+      <p>
+        Si vous avez des questions concernant les présentes Conditions, veuillez nous contacter à l’adresse suivante :
+        <strong>contact@everyvoyage.com</strong>.
+      </p>
+
+      <a class="backlink" href="index.html">← Retour à la page d’accueil</a>
+    </section>
+  </main>
+</body>
+</html>
