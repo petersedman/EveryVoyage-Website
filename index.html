@@ -1505,6 +1505,66 @@
       .ev-video-preview{max-width:min(360px, 92vw);}
     }
 
+
+    /* ===== Hero v7 override: sunset background + white copy ===== */
+    .ev-hero.hero {
+      background-image:
+        linear-gradient(90deg, rgba(0,0,0,0.54) 0%, rgba(0,0,0,0.38) 38%, rgba(0,0,0,0.14) 66%, rgba(0,0,0,0.04) 100%),
+        linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.04) 58%, rgba(247,244,237,0.98) 100%),
+        url('assets/img/SunsetBackground.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .ev-hero h1,
+    .ev-hero h1 em {
+      color: #fff;
+      text-shadow: 0 10px 34px rgba(0,0,0,0.34);
+    }
+
+    .ev-hero-subtitle {
+      color: rgba(255,255,255,0.90);
+      text-shadow: 0 8px 26px rgba(0,0,0,0.28);
+    }
+
+    .ev-audience-line {
+      color: rgba(255,255,255,0.76);
+      text-shadow: 0 6px 20px rgba(0,0,0,0.22);
+    }
+
+    .ev-hero-actions .btn-secondary {
+      color: #fff;
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,255,255,0.32);
+      backdrop-filter: blur(10px);
+    }
+
+    .ev-hero-actions .btn-secondary:hover {
+      background: rgba(255,255,255,0.18);
+      border-color: rgba(255,255,255,0.52);
+    }
+
+    .ev-store-badges img {
+      filter: drop-shadow(0 12px 28px rgba(0,0,0,0.22));
+    }
+
+    .ev-hero-logo img {
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,0.22));
+    }
+
+    .ev-phone-art {
+      filter: drop-shadow(0 38px 58px rgba(0,0,0,0.38));
+    }
+
+    @media (max-width: 720px) {
+      .ev-hero.hero {
+        background-image:
+          linear-gradient(180deg, rgba(0,0,0,0.56) 0%, rgba(0,0,0,0.38) 42%, rgba(0,0,0,0.18) 70%, rgba(247,244,237,0.98) 100%),
+          url('assets/img/SunsetBackground.webp');
+      }
+    }
+
   </style>
 </head>
 
@@ -1546,7 +1606,7 @@
     <div class="ev-hero-inner">
       <div class="ev-hero-copy">
         <a class="ev-hero-logo" href="/" aria-label="EveryVoyage home">
-          <img src="assets/brand/Logo.png" alt="EveryVoyage">
+          <img src="assets/brand/LogoWhite.png" alt="EveryVoyage">
         </a>
 
         <h1>Track your road trip <em>like a pro.</em></h1>
