@@ -887,6 +887,701 @@
       border-radius:28px;
       box-shadow:0 24px 60px rgba(0,0,0,0.22);
     }
+
+
+    /* ===== EveryVoyage hero concept v3 - sunset + supplied phone image ===== */
+    .ev-hero.hero {
+      min-height: 100vh;
+      margin-top: 0;
+      padding: clamp(5rem, 8vw, 7rem) clamp(1.25rem, 4vw, 4rem) clamp(3rem, 6vw, 5rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      overflow: hidden;
+      background-image:
+        linear-gradient(90deg, rgba(247,244,237,0.96) 0%, rgba(247,244,237,0.84) 30%, rgba(247,244,237,0.50) 58%, rgba(247,244,237,0.18) 100%),
+        linear-gradient(180deg, rgba(247,244,237,0.12) 0%, rgba(247,244,237,0.05) 55%, rgba(247,244,237,0.98) 100%),
+        url('../assets/img/SunsetBackground.webp');
+      background-size: cover;
+      background-position: center;
+      isolation: isolate;
+    }
+    .ev-hero.hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 47% 45%, rgba(245,74,0,0.18) 0%, rgba(245,74,0,0.00) 22%),
+        radial-gradient(circle at 84% 18%, rgba(255,255,255,0.38) 0%, rgba(255,255,255,0.00) 32%);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .ev-hero.hero::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 190px;
+      background: linear-gradient(180deg, rgba(247,244,237,0) 0%, var(--color-cream) 88%);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .ev-hero .hero-bg { display:none; }
+    .ev-hero-inner {
+      width: min(1440px, 100%);
+      display: grid;
+      grid-template-columns: minmax(420px, 0.92fr) minmax(520px, 1.08fr);
+      align-items: center;
+      gap: clamp(2rem, 6vw, 7rem);
+      position: relative;
+      z-index: 2;
+    }
+    .ev-hero-copy {
+      max-width: 720px;
+      position: relative;
+      z-index: 6;
+    }
+    .ev-hero-logo {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: clamp(1.5rem, 3vw, 2.4rem);
+      opacity: 0;
+      animation: fadeInUp 0.8s var(--ease-smooth) 0.1s forwards;
+    }
+    .ev-hero-logo img { height: 70px; width: auto; display: block; }
+    .ev-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      padding: .58rem .9rem;
+      border-radius: 999px;
+      background: rgba(254,253,251,0.78);
+      border: 1px solid rgba(255,255,255,0.56);
+      box-shadow: 0 14px 36px rgba(42,42,40,0.06);
+      color: rgba(42,42,40,0.72);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      backdrop-filter: blur(12px);
+      margin-bottom: 1.25rem;
+      opacity: 0;
+      animation: fadeInUp 0.8s var(--ease-smooth) 0.18s forwards;
+    }
+    .ev-eyebrow-dot {
+      width: .48rem;
+      height: .48rem;
+      border-radius: 50%;
+      background: var(--color-orange);
+      box-shadow: 0 0 0 6px rgba(245,74,0,0.12);
+      flex: 0 0 auto;
+    }
+    .ev-hero h1 {
+      font-size: clamp(3.1rem, 6.6vw, 5.9rem);
+      line-height: .96;
+      letter-spacing: -0.055em;
+      max-width: 820px;
+      margin-bottom: 1.45rem;
+      color: var(--color-charcoal);
+      text-wrap: balance;
+      animation-delay: .26s;
+    }
+    .ev-hero h1 em {
+      color: var(--color-orange);
+      font-style: italic;
+      letter-spacing: -0.045em;
+      white-space: nowrap;
+    }
+    .ev-hero-subtitle {
+      max-width: 680px;
+      color: rgba(42,42,40,0.74);
+      font-size: clamp(1.12rem, 1.65vw, 1.42rem);
+      line-height: 1.58;
+      margin: 0 0 2.25rem;
+      opacity: 0;
+      animation: fadeInUp 0.8s var(--ease-smooth) 0.42s forwards;
+    }
+    .ev-hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeInUp 0.8s var(--ease-smooth) 0.56s forwards;
+    }
+    .ev-hero-actions .btn-primary {
+      box-shadow: 0 20px 46px rgba(245,74,0,0.28);
+    }
+    .ev-hero-actions .btn-secondary {
+      background: rgba(254,253,251,0.52);
+      border-color: rgba(42,42,40,0.10);
+      backdrop-filter: blur(10px);
+    }
+    .ev-store-badges {
+      display:flex;
+      gap:.85rem;
+      align-items:center;
+      flex-wrap:wrap;
+      margin-top:2.1rem;
+      opacity:0;
+      animation:fadeInUp 0.8s var(--ease-smooth) 0.7s forwards;
+    }
+    .ev-store-badges img { height: 43px; width:auto; display:block; filter: drop-shadow(0 10px 24px rgba(0,0,0,0.10)); }
+    .ev-audience-line {
+      margin-top: 1.25rem;
+      color: rgba(42,42,40,0.58);
+      font-size: .93rem;
+      opacity: 0;
+      animation: fadeInUp 0.8s var(--ease-smooth) .82s forwards;
+    }
+    .ev-hero-visual {
+      min-height: 720px;
+      position: relative;
+      perspective: 1300px;
+      opacity:0;
+      animation: fadeInUp 1s var(--ease-smooth) 0.38s forwards;
+    }
+    .ev-map-panel {
+      position:absolute;
+      width: min(680px, 80vw);
+      height: 410px;
+      left: 0;
+      top: 185px;
+      border-radius: 34px;
+      overflow: hidden;
+      background: rgba(254,253,251,0.76);
+      border: 1px solid rgba(255,255,255,0.76);
+      box-shadow: 0 35px 100px rgba(42,42,40,0.20);
+      transform: rotateX(58deg) rotateZ(-7deg) translate3d(-24px, 18px, -80px);
+      transform-origin: 50% 50%;
+      z-index: 1;
+    }
+    .ev-map-panel img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transform: scale(1.06);
+      filter: saturate(1.04) contrast(1.02);
+    }
+    .ev-map-panel::before {
+      content:'';
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(254,253,251,0.88) 0%, rgba(254,253,251,0.20) 32%, rgba(254,253,251,0.00) 100%),
+        repeating-linear-gradient(0deg, rgba(42,42,40,0.05) 0, rgba(42,42,40,0.05) 1px, transparent 1px, transparent 34px),
+        repeating-linear-gradient(90deg, rgba(42,42,40,0.04) 0, rgba(42,42,40,0.04) 1px, transparent 1px, transparent 34px);
+      pointer-events:none;
+      z-index:2;
+    }
+    .ev-map-title {
+      position:absolute;
+      left: 32px;
+      top: 24px;
+      z-index:3;
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      padding:.55rem .9rem;
+      border-radius:999px;
+      background:rgba(254,253,251,0.86);
+      color:var(--color-charcoal);
+      font-size:.78rem;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      box-shadow: 0 12px 26px rgba(0,0,0,.08);
+    }
+    .ev-phone-art {
+      position:absolute;
+      right: clamp(-38px, -2.7vw, 6px);
+      top: 34px;
+      width: min(540px, 56vw);
+      z-index:4;
+      filter: drop-shadow(0 38px 54px rgba(0,0,0,0.36));
+      animation: evPhoneFloat 7s ease-in-out infinite;
+      transform-origin: 50% 55%;
+    }
+    @keyframes evPhoneFloat {
+      0%,100% { transform: translate3d(0, 0, 0) rotate(-1.5deg); }
+      50% { transform: translate3d(0, -16px, 0) rotate(.6deg); }
+    }
+    .ev-floating-card {
+      position:absolute;
+      z-index:6;
+      border-radius: 22px;
+      background: rgba(254,253,251,0.86);
+      border: 1px solid rgba(255,255,255,0.70);
+      box-shadow: 0 24px 60px rgba(42,42,40,0.18);
+      backdrop-filter: blur(18px);
+    }
+    .ev-small-card {
+      padding: .95rem 1.05rem;
+      min-width: 185px;
+    }
+    .ev-card-kicker {
+      display:block;
+      color: var(--color-orange);
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: .36rem;
+    }
+    .ev-card-title {
+      color: var(--color-charcoal);
+      font-weight: 900;
+      font-size: 1rem;
+      line-height: 1.18;
+      display:block;
+    }
+    .ev-route-card {
+      left: 18px;
+      top: 380px;
+      transform: rotate(-2deg);
+    }
+    .ev-voyage-card {
+      right: 18px;
+      bottom: 74px;
+      transform: rotate(3deg);
+    }
+    .ev-moment-preview {
+      left: 78px;
+      bottom: 42px;
+      width: 285px;
+      overflow:hidden;
+      transform: rotate(-4deg);
+    }
+    .ev-moment-preview img {
+      display:block;
+      width:100%;
+      height: 190px;
+      object-fit: cover;
+    }
+    .ev-moment-preview-copy {
+      padding:.85rem 1rem 1rem;
+    }
+    .ev-metrics-card {
+      right: 82px;
+      top: 430px;
+      width: 320px;
+      padding: 1rem;
+      z-index:7;
+    }
+    .ev-metrics-header {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      margin-bottom:.85rem;
+    }
+    .ev-metrics-header strong {
+      font-size: .98rem;
+      color:var(--color-charcoal);
+    }
+    .ev-live-pill {
+      color: var(--color-orange);
+      background: rgba(245,74,0,0.10);
+      border-radius:999px;
+      padding:.32rem .58rem;
+      font-weight:900;
+      font-size:.68rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .ev-metrics-grid {
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:.6rem;
+    }
+    .ev-metric {
+      background: rgba(247,244,237,0.72);
+      border:1px solid rgba(232,229,222,0.72);
+      border-radius:16px;
+      padding:.72rem .78rem;
+    }
+    .ev-metric-value {
+      display:block;
+      color:var(--color-charcoal);
+      font-weight:900;
+      font-size:1.08rem;
+      line-height:1.05;
+      letter-spacing:-.02em;
+    }
+    .ev-metric-label {
+      display:block;
+      margin-top:.28rem;
+      color:rgba(42,42,40,0.56);
+      font-size:.72rem;
+      font-weight:700;
+    }
+    @media (max-width: 1100px) {
+      .ev-hero.hero { padding-top: 5rem; }
+      .ev-hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .ev-hero-copy { text-align: center; margin: 0 auto; }
+      .ev-hero-actions, .ev-store-badges { justify-content: center; }
+      .ev-hero-visual { min-height: 650px; width:min(720px,100%); margin:0 auto; }
+      .ev-map-panel { left:50%; transform: translateX(-50%) rotateX(58deg) rotateZ(-7deg) translate3d(-20px,20px,-80px); }
+      .ev-phone-art { right:50%; transform: translateX(48%) rotate(-1.5deg); animation:none; width:min(500px,68vw); }
+      .ev-metrics-card { right: 12%; }
+    }
+    @media (max-width: 720px) {
+      .ev-hero.hero {
+        min-height: auto;
+        padding: 4rem 1.15rem 2.5rem;
+        background-image:
+          linear-gradient(180deg, rgba(247,244,237,0.96) 0%, rgba(247,244,237,0.70) 52%, rgba(247,244,237,0.98) 100%),
+          url('../assets/img/SunsetBackground.webp');
+      }
+      .ev-hero-logo img { height: 56px; }
+      .ev-hero h1 { font-size: clamp(2.7rem, 12vw, 4.25rem); letter-spacing: -.052em; }
+      .ev-hero-subtitle { font-size: 1.05rem; }
+      .ev-hero-visual { min-height: 560px; margin-top: 1.2rem; }
+      .ev-map-panel { width: 118%; height: 285px; top: 150px; }
+      .ev-phone-art { width: min(430px, 94vw); top: 18px; right: -24px; }
+      .ev-route-card { left: 4px; top: 340px; }
+      .ev-moment-preview { width: 215px; left: 2px; bottom: 10px; }
+      .ev-moment-preview img { height: 135px; }
+      .ev-voyage-card { display:none; }
+      .ev-metrics-card {
+        width: min(92vw, 300px);
+        right: 0;
+        top: auto;
+        bottom: 90px;
+      }
+    }
+
+  
+
+    /* ===== Simplified hero v5 ===== */
+    .ev-hero.hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:left;
+      padding:5.5rem 2rem 4rem;
+      background-image:
+        linear-gradient(90deg, rgba(247,244,237,0.97) 0%, rgba(247,244,237,0.90) 32%, rgba(247,244,237,0.48) 58%, rgba(247,244,237,0.20) 100%),
+        url('../assets/img/SunsetBackground.webp');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+    .ev-hero .hero-bg{ display:none; }
+    .ev-hero .hero-founder-wrap,
+    .ev-hero .hero-badge{
+      align-self:flex-start;
+      width:min(100%, 1180px);
+      margin:0 auto 1.5rem;
+    }
+    .ev-hero-inner{
+      width:min(1180px, 100%);
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:minmax(0, 1.03fr) minmax(380px, 0.97fr);
+      align-items:center;
+      gap:3rem;
+    }
+    .ev-hero-copy{max-width:640px;}
+    .ev-hero-logo{display:inline-block; margin-bottom:1.1rem;}
+    .ev-hero-logo img{height:38px; width:auto; display:block;}
+    .ev-hero h1{
+      font-family:var(--font-display);
+      font-size:clamp(3.8rem, 8vw, 6.2rem);
+      line-height:0.94;
+      letter-spacing:-0.06em;
+      font-weight:400;
+      max-width:680px;
+      margin:0 0 1.45rem;
+      opacity:1;
+      animation:none;
+    }
+    .ev-hero h1 em{font-style:italic; color:var(--color-orange);}
+    .ev-hero-subtitle{
+      font-size:clamp(1.1rem, 1.7vw, 1.45rem);
+      line-height:1.52;
+      color:#5c5b58;
+      max-width:620px;
+      margin:0 0 1.6rem;
+      opacity:1;
+      animation:none;
+    }
+    .ev-hero-actions{
+      display:flex;
+      gap:1rem;
+      flex-wrap:wrap;
+      justify-content:flex-start;
+      margin-bottom:1.35rem;
+      opacity:1;
+      animation:none;
+    }
+    .ev-store-badges{
+      display:flex;
+      gap:1rem;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:0;
+      opacity:1;
+      animation:none;
+    }
+    .ev-store-badges img{height:52px; width:auto; display:block;}
+    .ev-audience-line{
+      margin-top:1.1rem;
+      color:rgba(42,42,40,0.68);
+      font-size:0.98rem;
+      line-height:1.5;
+      max-width:560px;
+    }
+    .ev-hero-visual{
+      position:relative;
+      min-height:700px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .ev-phone-art{
+      display:block;
+      width:min(560px, 100%);
+      height:auto;
+      filter:drop-shadow(0 36px 55px rgba(0,0,0,0.22));
+      transform:translateX(16px) rotate(-1.25deg);
+      animation:none;
+    }
+    @media (max-width: 1100px){
+      .ev-hero.hero{padding-top:4.5rem; min-height:auto;}
+      .ev-hero-inner{grid-template-columns:1fr; gap:2rem;}
+      .ev-hero-copy{max-width:760px; margin:0 auto; text-align:center;}
+      .ev-hero-actions,.ev-store-badges{justify-content:center;}
+      .ev-audience-line{margin-left:auto; margin-right:auto;}
+      .ev-hero-visual{min-height:auto;}
+      .ev-phone-art{width:min(520px, 86vw); transform:none;}
+    }
+    @media (max-width: 720px){
+      .ev-hero.hero{
+        padding:3.7rem 1.1rem 2.2rem;
+        background-image:
+          linear-gradient(180deg, rgba(247,244,237,0.96) 0%, rgba(247,244,237,0.88) 48%, rgba(247,244,237,0.70) 68%, rgba(247,244,237,0.96) 100%),
+          url('../assets/img/SunsetBackground.webp');
+      }
+      .ev-hero .hero-founder-wrap,
+      .ev-hero .hero-badge{margin-bottom:1.1rem;}
+      .ev-hero-logo img{height:30px;}
+      .ev-hero h1{font-size:clamp(3.0rem, 15vw, 5rem);}
+      .ev-hero-subtitle{font-size:1.02rem;}
+      .ev-store-badges img{height:46px;}
+      .ev-hero-visual{margin-top:.6rem;}
+      .ev-phone-art{width:min(390px, 96vw);}
+    }
+
+  
+
+    /* ===== Hero v6: clear copy + phone only ===== */
+    .ev-hero.hero {
+      padding: clamp(5rem, 8vw, 7rem) clamp(1.25rem, 4vw, 4.25rem) clamp(3rem, 6vw, 5rem);
+      background-image:
+        linear-gradient(90deg, rgba(247,244,237,0.97) 0%, rgba(247,244,237,0.88) 34%, rgba(247,244,237,0.54) 62%, rgba(247,244,237,0.18) 100%),
+        linear-gradient(180deg, rgba(247,244,237,0.08) 0%, rgba(247,244,237,0.08) 58%, rgba(247,244,237,0.98) 100%),
+        url('../assets/img/SunsetBackground.webp');
+    }
+
+    .ev-hero-inner {
+      grid-template-columns: minmax(520px, 1.05fr) minmax(460px, .95fr);
+      gap: clamp(2rem, 5vw, 6rem);
+    }
+
+    .ev-hero-copy {
+      max-width: 840px;
+    }
+
+    .ev-hero-logo {
+      margin-bottom: clamp(1.2rem, 2.5vw, 2rem);
+    }
+
+    .ev-hero-logo img {
+      height: 68px;
+    }
+
+    .ev-hero h1 {
+      max-width: 850px;
+      font-size: clamp(4rem, 7.4vw, 7.2rem);
+      line-height: .93;
+      letter-spacing: -0.06em;
+      margin-bottom: 1.35rem;
+      text-wrap: balance;
+    }
+
+    .ev-hero h1 em {
+      color: var(--color-orange);
+      font-style: italic;
+      white-space: nowrap;
+    }
+
+    .ev-hero-subtitle {
+      max-width: 760px;
+      font-size: clamp(1.12rem, 1.55vw, 1.36rem);
+      line-height: 1.55;
+      margin-bottom: 2.15rem;
+      color: rgba(42,42,40,0.76);
+    }
+
+    .ev-audience-line {
+      max-width: 680px;
+    }
+
+    .ev-hero-visual {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+    }
+
+    .ev-phone-art {
+      position: relative;
+      right: auto;
+      top: auto;
+      width: min(560px, 45vw);
+      max-height: 78vh;
+      object-fit: contain;
+      z-index: 4;
+      filter: drop-shadow(0 38px 58px rgba(0,0,0,0.34));
+      transform-origin: 50% 55%;
+    }
+
+    .ev-map-panel,
+    .ev-floating-card,
+    .ev-moment-preview,
+    .ev-metrics-card,
+    .ev-eyebrow {
+      display: none !important;
+    }
+
+    @media (max-width: 1100px) {
+      .ev-hero-inner { grid-template-columns: 1fr; }
+      .ev-hero-copy { max-width: 850px; text-align: center; }
+      .ev-hero h1 { max-width: 850px; margin-left:auto; margin-right:auto; font-size: clamp(3.5rem, 10vw, 6.2rem); }
+      .ev-hero-subtitle { margin-left:auto; margin-right:auto; }
+      .ev-audience-line { margin-left:auto; margin-right:auto; }
+      .ev-hero-visual { min-height: 520px; }
+      .ev-phone-art { width: min(440px, 72vw); max-height: none; }
+    }
+
+    @media (max-width: 640px) {
+      .ev-hero.hero { padding: 4.5rem 1.15rem 2.6rem; }
+      .ev-hero-logo img { height: 50px; }
+      .ev-hero h1 { font-size: clamp(3.05rem, 15vw, 4.55rem); line-height: .95; letter-spacing:-.055em; }
+      .ev-hero-subtitle { font-size: 1.05rem; line-height: 1.55; }
+      .ev-hero-actions { gap: .75rem; }
+      .ev-hero-actions .btn { width: 100%; justify-content: center; }
+      .ev-store-badges { justify-content: center; }
+      .ev-store-badges img { height: 39px; }
+      .ev-hero-visual { min-height: 420px; }
+      .ev-phone-art { width: min(360px, 88vw); }
+    }
+
+
+    /* App preview video section */
+    .video-section{
+      padding:5rem 2rem 7rem;
+      background:var(--color-cream);
+    }
+    .video-section .section-header{
+      margin-bottom:2.5rem;
+    }
+    .ev-video-preview{
+      max-width:460px;
+      margin:0 auto;
+      border-radius:32px;
+    }
+    .ev-video-preview .app-preview{
+      border-radius:32px;
+    }
+    .ev-video-preview:focus{
+      outline:3px solid rgba(245,74,0,0.35);
+      outline-offset:6px;
+    }
+    @media (max-width:768px){
+      .video-section{padding:3.5rem 1.25rem 5rem;}
+      .ev-video-preview{max-width:min(360px, 92vw);}
+    }
+
+
+    /* ===== Hero v7 override: sunset background + white copy ===== */
+    .ev-hero.hero {
+      background-image:
+        linear-gradient(90deg, rgba(0,0,0,0.54) 0%, rgba(0,0,0,0.38) 38%, rgba(0,0,0,0.14) 66%, rgba(0,0,0,0.04) 100%),
+        linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.04) 58%, rgba(247,244,237,0.98) 100%),
+        url('../assets/img/SunsetBackground.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .ev-hero h1,
+    .ev-hero h1 em {
+      color: #fff;
+      text-shadow: 0 10px 34px rgba(0,0,0,0.34);
+    }
+
+    .ev-hero-subtitle {
+      color: rgba(255,255,255,0.90);
+      text-shadow: 0 8px 26px rgba(0,0,0,0.28);
+    }
+
+    .ev-audience-line {
+      color: rgba(255,255,255,0.76);
+      text-shadow: 0 6px 20px rgba(0,0,0,0.22);
+    }
+
+    .ev-hero-actions .btn-secondary {
+      color: #fff;
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,255,255,0.32);
+      backdrop-filter: blur(10px);
+    }
+
+    .ev-hero-actions .btn-secondary:hover {
+      background: rgba(255,255,255,0.18);
+      border-color: rgba(255,255,255,0.52);
+    }
+
+    .ev-store-badges img {
+      filter: drop-shadow(0 12px 28px rgba(0,0,0,0.22));
+    }
+
+    .ev-hero-logo img {
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,0.22));
+    }
+
+    .ev-phone-art {
+      filter: drop-shadow(0 38px 58px rgba(0,0,0,0.38));
+    }
+
+    @media (max-width: 720px) {
+      .ev-hero.hero {
+        background-image:
+          linear-gradient(180deg, rgba(0,0,0,0.56) 0%, rgba(0,0,0,0.38) 42%, rgba(0,0,0,0.18) 70%, rgba(247,244,237,0.98) 100%),
+          url('../assets/img/SunsetBackground.webp');
+      }
+    }
+
+
+
+    /* US badge sizing: keep the existing App Store / Google Play SVG proportions */
+    .ev-store-badges img.store-badge{
+      height:48px;
+      width:auto;
+      display:block;
+    }
+    @media (max-width:640px){
+      .ev-store-badges img.store-badge{ height:48px; }
+    }
+
   </style>
 </head>
 
@@ -895,7 +1590,7 @@
   <site-nav lang="en-us" page="index" base-path="../"></site-nav>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero ev-hero">
     <div class="hero-bg"></div>
 
     <!-- Shown when founders are NOT available -->
@@ -903,7 +1598,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
       </svg>
-        Trusted by 10,000+ RV adventurers
+      Trusted by road trip adventurers
     </div>
 
     <!-- Shown when founders ARE available -->
@@ -913,63 +1608,60 @@
           <span class="founder-status-kicker">Founding Member</span>
           <span class="founder-status-badge" id="heroFounderBadge">Limited</span>
         </div>
-
         <div class="founder-status-title">
           Free access for life • <span id="heroRemainingText">500 spots available</span>
         </div>
         <div class="founder-status-sub">Tap to learn about Founder perks & claim a spot.</div>
-
         <div class="founder-status-meter" aria-hidden="true">
           <div class="founder-status-meter-fill" id="heroMeterFill" style="width:0%"></div>
         </div>
       </a>
     </div>
 
-    <div class="hero-brand">
-      <img src="https://everyvoyage.com/assets/brand/Logo.png" alt="EveryVoyage" class="hero-brand-logo">
-    </div>
-    
-    <h1>Track. Map. Share.</h1>
-    
-    <p class="hero-subtitle">
-      Capture every route, memory, and moment on the road.
-    </p>
 
-    <div class="hero-actions">
-      <a href="#download" class="btn btn-primary">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-          <polyline points="7 10 12 15 17 10"/>
-          <line x1="12" y1="15" x2="12" y2="3"/>
-        </svg>
-        Download Free
-      </a>
-      <a href="#features" class="btn btn-secondary">See Features</a>
-    </div>
+    <div class="ev-hero-inner">
+      <div class="ev-hero-copy">
+        <a class="ev-hero-logo" href="/en-us/" aria-label="EveryVoyage US home">
+          <img src="../assets/brand/LogoWhite.png" alt="EveryVoyage">
+        </a>
 
-    <div class="store-badges">
-      <a href="https://apps.apple.com/app/id6755696102" target="_blank"><img src="../assets/stores/download-on-the-app-store.svg" alt="Download on the App Store" class="store-badge"></a>
-      <a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" target="_blank"><img src="../assets/stores/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="store-badge"></a>
-    </div>
+        <h1>Track your road trip <em>like a pro.</em></h1>
+        <p class="ev-hero-subtitle">
+          EveryVoyage records your route with GPS, lets you add photos and moments, and turns the whole journey into a beautiful map you can look back on - Free to use!
+        </p>
+        <div class="ev-store-badges">
+          <a href="https://apps.apple.com/app/id6755696102" target="_blank" rel="noopener"><img src="../assets/stores/download-on-the-app-store.svg" alt="Download on the App Store" class="store-badge"></a>
+          <a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" target="_blank" rel="noopener"><img src="../assets/stores/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="store-badge"></a>
+        </div>
 
-    <div class="hero-preview video-preview" onclick="openVideo()">
-
-      <img src="https://everyvoyage.com/assets/img/AppPreview.webp"
-           alt="Watch EveryVoyage demo"
-           class="app-preview">
-    
-      <div class="play-button">
-        ▶
+        <p class="ev-audience-line">Made for road trips, RVs, campervans and the journeys you do not want to forget.</p>
       </div>
-    
+
+      <div class="ev-hero-visual" aria-label="EveryVoyage app preview">
+        <img class="ev-phone-art" src="../assets/img/AppPhoneHero.svg" alt="EveryVoyage app preview showing a road trip on the map">
+      </div>
     </div>
   </section>
+
+  <!-- App preview video -->
+  <section class="video-section" id="app-preview-video">
+    <div class="section-header">
+      <p class="section-label">App preview</p>
+      <h2 class="section-title">See EveryVoyage in action</h2>
+    </div>
+
+    <div class="hero-preview video-preview ev-video-preview" onclick="openVideo()" role="button" tabindex="0" aria-label="Play EveryVoyage app preview video">
+      <img src="../assets/img/AppPreview.webp" alt="EveryVoyage app preview" class="app-preview">
+      <div class="play-button" aria-hidden="true">▶</div>
+    </div>
+  </section>
+
   <div id="videoModal" class="video-modal">
     <div class="video-modal-content">
       <span class="video-close" onclick="closeVideo()">✕</span>
   
       <video controls autoplay muted playsinline preload="metadata">
-        <source src="https://everyvoyage.com/assets/video/AppPreview886x1920_FINAL.mp4" type="video/mp4">
+        <source src="../assets/video/AppPreview886x1920_FINAL.mp4" type="video/mp4">
       </video>
   
     </div>
@@ -1290,17 +1982,17 @@
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/en-us/about.html">About</a></li>
+          <li><a href="/en-us/faq.html">FAQ</a></li>
+          <li><a href="/en-us/contact.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>Information</h4>
         <ul>
-          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="../terms.html">Terms of Service</a></li>
+          <li><a href="/en-us/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/en-us/terms.html">Terms of Service</a></li>
           <!-- <li><a href="../cookie-policy.html">Cookie Policy</a></li> -->
         </ul>
       </div>
