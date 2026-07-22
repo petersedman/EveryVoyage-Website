@@ -41,8 +41,7 @@
     .download-nav{padding:12px 19px;border-radius:999px;background:var(--orange);color:#fff!important;box-shadow:0 8px 22px rgba(245,74,0,.24)}
 
     /* Hero */
-    .hero{position:relative;min-height:860px;display:grid;align-items:center;overflow:hidden;color:#fff;background-image:linear-gradient(90deg,rgba(10,21,22,.64),rgba(10,21,22,.24) 57%,rgba(10,21,22,.08)),url('assets/img/SunsetBackground.webp'),url('assets-demo/hero-bg.jpg');background-size:cover;background-position:center}
-    .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:130px;background:linear-gradient(180deg,transparent,var(--cream))}
+    .hero{position:relative;min-height:860px;display:grid;align-items:center;overflow:hidden;color:#fff;background-image:linear-gradient(90deg,rgba(10,21,22,.64),rgba(10,21,22,.24) 57%,rgba(10,21,22,.08)),url('assets/img/HeroRoadTrip.svg'),url('assets-demo/hero-bg.jpg');background-size:cover;background-position:center}
     .hero-inner{position:relative;z-index:3;width:min(1180px,calc(100% - 40px));margin:90px auto 0;display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center}
     .eyebrow{display:inline-flex;padding:8px 13px;margin-bottom:20px;border:1px solid rgba(255,255,255,.34);border-radius:999px;background:rgba(255,255,255,.11);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(8px)}
     .hero h1{margin:0;max-width:690px;font-family:var(--display);font-size:clamp(58px,6vw,88px);font-weight:500;line-height:.98;letter-spacing:-.055em;text-shadow:0 14px 42px rgba(0,0,0,.25)}
@@ -143,7 +142,7 @@
     .founder-button{padding:15px 24px;border-radius:999px;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;white-space:nowrap;box-shadow:0 10px 24px rgba(245,74,0,.22)}
 
     /* CTA */
-    .final-cta{position:relative;min-height:330px;display:grid;place-items:center;text-align:center;color:#fff;background-image:linear-gradient(rgba(7,20,22,.34),rgba(7,20,22,.52)),url('assets/img/SunsetBackground.webp'),url('assets-demo/cta-bg.jpg');background-size:cover;background-position:center}
+    .final-cta{position:relative;min-height:330px;display:grid;place-items:center;text-align:center;color:#fff;background-image:linear-gradient(rgba(7,20,22,.34),rgba(7,20,22,.52)),url('assets/img/Sunset.svg'),url('assets-demo/cta-bg.jpg');background-size:cover;background-position:center}
     .final-content{position:relative;z-index:2;padding:58px 20px}
     .final-content h2{margin:0 0 10px;font-family:var(--display);font-size:clamp(43px,4.5vw,66px);font-weight:500;line-height:1}
     .final-content p{margin:0 0 24px;font-size:18px;color:rgba(255,255,255,.88)}
@@ -360,7 +359,7 @@
       place-items:center;
       padding:90px 0;
       color:#fff;
-      background-image:linear-gradient(90deg,rgba(5,25,25,.78),rgba(5,25,25,.36)),url('assets/img/SunsetBackground.webp');
+      background-image:linear-gradient(90deg,rgba(5,25,25,.78),rgba(5,25,25,.36)),url('assets/img/RoadTrip.svg');
       background-size:cover;
       background-position:center 58%;
     }
@@ -1640,9 +1639,9 @@
               <div class="phone-screen">
                 <div class="screen-track">
                   <!-- Replace these with real PNG/WebP/JPG screenshots. No SVG animation is used. -->
-                  <div class="screen-panel"><img src="assets/img/StoryTrack.webp" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage tracking screen"></div>
-                  <div class="screen-panel"><img src="assets/img/StoryJournal.webp" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage journal screen"></div>
-                  <div class="screen-panel"><img src="assets/img/StoryVoyage.webp" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage Voyage screen"></div>
+                  <div class="screen-panel"><img src="assets/img/StoryTrack.svg" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage tracking screen"></div>
+                  <div class="screen-panel"><img src="assets/img/StoryJournal.svg" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage journal screen"></div>
+                  <div class="screen-panel"><img src="assets/img/StoryVoyage.svg" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage Voyage screen"></div>
                 </div>
               </div>
             </div>
@@ -1670,7 +1669,7 @@
 
         <div class="feature-mosaic feature-mosaic-v8">
           <a class="mosaic-card offline-card" href="#" aria-label="Learn about offline mode">
-            <img src="assets/img/OfflineMode.webp" onerror="this.onerror=null;this.src='assets/img/SunsetBackground.webp'" alt="A remote road trip location">
+            <img src="assets/img/OfflineMode.webp" onerror="this.onerror=null;this.src='assets/img/OfflineMode.webp'" alt="A remote road trip location">
             <div class="signal-chip signal-chip-offline">
               <span class="no-signal-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
               <span>No signal</span>
@@ -1984,7 +1983,7 @@
     if(!reduceMotion)setInterval(rotatePrivacy,2900);
 
     function openVideo(){
-      const videoPath='assets/video/AppPreview886x1920_FINAL.mp4';
+      const videoPath='assets/video/AppPreview.mp4';
       const modal=document.createElement('div');
       modal.style.cssText='position:fixed;z-index:9999;inset:0;display:grid;place-items:center;padding:25px;background:rgba(0,0,0,.88)';
       modal.innerHTML=`<div style="position:relative;max-width:min(430px,90vw);max-height:88vh"><button aria-label="Close" style="position:absolute;right:0;top:-45px;border:0;background:none;color:white;font-size:30px;cursor:pointer">×</button><video controls autoplay muted playsinline style="display:block;max-width:100%;max-height:86vh;border-radius:22px;background:#111"><source src="${videoPath}" type="video/mp4"></video></div>`;
