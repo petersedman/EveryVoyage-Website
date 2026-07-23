@@ -2278,6 +2278,502 @@
       }
     }
 
+
+    /* ===== v20 iPad / intermediate-screen fixes only ===== */
+    @media (min-width:721px) and (max-width:1099px){
+
+      /*
+       * iPad Safari can let transformed screenshots escape a rounded
+       * overflow container. Force the screen into its own clipping layer
+       * and redraw the phone rim above the screenshots.
+       */
+      .phone-shell{
+        position:relative;
+        isolation:isolate;
+      }
+      .phone-screen{
+        position:relative;
+        z-index:1;
+        overflow:hidden;
+        border-radius:38px;
+        clip-path:inset(0 round 38px);
+        -webkit-mask-image:-webkit-radial-gradient(white,black);
+        transform:translateZ(0);
+      }
+      .screen-track,
+      .screen-panel{
+        overflow:hidden;
+        transform:translateZ(0);
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;
+      }
+      .screen-panel img{
+        position:absolute;
+        inset:0;
+        width:100%;
+        height:100%;
+        max-width:none;
+        object-fit:cover;
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;
+      }
+      .phone-shell::after{
+        content:"";
+        position:absolute;
+        z-index:25;
+        inset:0;
+        border-radius:47px;
+        box-shadow:
+          inset 0 0 0 10px rgba(8,9,10,.98),
+          inset 0 0 0 12px rgba(255,255,255,.12);
+        pointer-events:none;
+      }
+
+      /*
+       * Intermediate feature layout:
+       * left: Offline, then Costs + Share
+       * right: Voyage video spanning both left-hand rows
+       * bottom: Privacy across the full width
+       */
+      .feature-mosaic-v8{
+        grid-template-columns:repeat(8,minmax(0,1fr));
+        grid-auto-rows:84px;
+        gap:16px;
+      }
+      .feature-mosaic-v8 .offline-card{
+        grid-column:1/5;
+        grid-row:1/4;
+      }
+      .feature-mosaic-v8 .expense-card{
+        grid-column:1/3;
+        grid-row:4/6;
+        min-height:0;
+        padding:18px;
+      }
+      .feature-mosaic-v8 .share-card{
+        grid-column:3/5;
+        grid-row:4/6;
+        min-height:0;
+        padding:18px;
+      }
+      .feature-mosaic-v8 .voyage-card{
+        grid-column:5/9;
+        grid-row:1/6;
+        min-height:0;
+      }
+      .feature-mosaic-v8 .privacy-card{
+        grid-column:1/9;
+        grid-row:6/10;
+        min-height:0;
+      }
+
+      /* Make the Share card feel equal to Trip costs rather than a small strip. */
+      .feature-mosaic-v8 .share-card-compact{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:space-between;
+        gap:14px;
+      }
+      .feature-mosaic-v8 .share-card-compact .mosaic-kicker{
+        display:block;
+        margin-bottom:6px;
+        font-size:9px;
+      }
+      .feature-mosaic-v8 .share-card-compact h3{
+        max-width:150px;
+        font-size:21px;
+        line-height:1.05;
+        white-space:normal;
+      }
+      .feature-mosaic-v8 .share-compact-icon{
+        align-self:flex-end;
+        width:42px;
+        height:42px;
+        flex-basis:42px;
+        font-size:19px;
+      }
+
+      /* Full-width privacy card with enough room for the complete animation. */
+      .feature-mosaic-v8 .privacy-copy{
+        left:28px;
+        top:52px;
+        max-width:38%;
+      }
+      .feature-mosaic-v8 .privacy-copy h3{
+        font-size:30px;
+      }
+      .feature-mosaic-v8 .privacy-copy p{
+        max-width:390px;
+        font-size:13px;
+      }
+      .feature-mosaic-v8 .privacy-mode{
+        top:24px;
+        right:24px;
+        left:auto;
+        bottom:auto;
+        min-width:174px;
+        padding:10px 14px 10px 10px;
+      }
+      .feature-mosaic-v8 .privacy-network{
+        top:0;
+        right:10px;
+        bottom:0;
+        width:62%;
+        height:auto;
+        overflow:visible;
+      }
+      .feature-mosaic-v8 .privacy-person,
+      .feature-mosaic-v8 .privacy-network::before,
+      .feature-mosaic-v8 .privacy-network-path{
+        top:56%;
+      }
+      .feature-mosaic-v8 .privacy-person-you{
+        --size:88px;
+      }
+      .feature-mosaic-v8 .privacy-network-path.path-one{
+        width:280px;
+        height:175px;
+      }
+      .feature-mosaic-v8 .privacy-network-path.path-two{
+        width:390px;
+        height:255px;
+      }
+    }
+
+
+    /* ===== v21 final iPad story + feature refinements ===== */
+    @media (min-width:721px) and (max-width:1099px){
+
+      /*
+       * Keep the story copy in its own column. The large one-line heading
+       * was extending underneath the phone on iPad-sized screens.
+       */
+      .story-inner{
+        grid-template-columns:minmax(0,.92fr) minmax(320px,1.08fr);
+        gap:20px 34px;
+      }
+      .story-copy{
+        position:relative;
+        z-index:30;
+        min-width:0;
+        padding-right:8px;
+      }
+      .story-step{
+        z-index:30;
+        max-width:100%;
+      }
+      .story-step h2{
+        max-width:100%;
+        white-space:normal;
+        font-size:clamp(50px,6.5vw,70px);
+      }
+      .device-stage{
+        position:relative;
+        z-index:1;
+        min-width:0;
+      }
+
+      /*
+       * Preserve the original phone ratio and image crops.
+       * Do not override the animated vertical transform on .screen-track.
+       */
+      .phone-shell{
+        width:min(255px,31vw);
+        aspect-ratio:9/19.5;
+        overflow:hidden;
+        isolation:isolate;
+      }
+      .phone-shell::after{
+        content:none;
+      }
+      .phone-screen{
+        position:relative;
+        z-index:1;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        border-radius:38px;
+        clip-path:inset(0 round 38px);
+        -webkit-mask-image:-webkit-radial-gradient(white,black);
+        contain:paint;
+        transform:translateZ(0);
+      }
+      .screen-track{
+        overflow:visible;
+        transform:translate3d(
+          0,
+          calc(var(--screen-step) * -33.333333%),
+          0
+        );
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;
+      }
+      .screen-panel{
+        position:relative;
+        overflow:hidden;
+        transform:translateZ(0);
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;
+      }
+      .screen-panel img{
+        position:static;
+        inset:auto;
+        width:100%;
+        height:100%;
+        max-width:100%;
+        object-fit:cover;
+      }
+
+      /*
+       * Explicit intermediate grid rows:
+       * five rows for Offline / Costs / Share / Voyage,
+       * then one slightly shorter full-width Privacy row.
+       */
+      .feature-mosaic-v8{
+        grid-template-rows:repeat(5,84px) 320px;
+        grid-auto-rows:84px;
+      }
+      .feature-mosaic-v8 .privacy-card{
+        grid-column:1/9;
+        grid-row:6/7;
+        min-height:320px;
+      }
+      .feature-mosaic-v8 .privacy-copy{
+        top:48px;
+      }
+      .feature-mosaic-v8 .privacy-network{
+        right:18px;
+        width:60%;
+      }
+    }
+
+    /* Give the phone privacy animation a little more vertical room. */
+    @media (max-width:720px){
+      .feature-mosaic-v8 .privacy-card{
+        min-height:510px;
+      }
+      .privacy-network{
+        top:224px;
+        bottom:8px;
+      }
+    }
+
+
+    /* ===== v22 iPad story navigation spacing ===== */
+    @media (min-width:721px) and (max-width:1099px){
+      /*
+       * Give the animated story copy more room before the Track / Journal /
+       * Relive controls, so the Explore link cannot pass over them.
+       */
+      .story-copy{
+        min-height:445px;
+      }
+      .story-nav{
+        margin-top:22px;
+        padding-top:16px;
+        transform:translateY(16px);
+      }
+      .story-sticky{
+        padding-bottom:48px;
+      }
+    }
+
+
+    /* ===== v23 iPad phone frame + story spacing polish ===== */
+    @media (min-width:721px) and (max-width:1099px){
+
+      /*
+       * Match the proven desktop/mobile phone construction:
+       * the shell supplies the visible frame, while only the screen is clipped.
+       */
+      .phone-shell{
+        width:min(255px,31vw);
+        aspect-ratio:9/19.5;
+        padding:10px;
+        overflow:visible;
+        border-radius:47px;
+        background:linear-gradient(145deg,#1f2224,#050506 60%,#262829);
+        box-shadow:
+          0 34px 72px rgba(30,38,36,.25),
+          inset 0 0 0 2px rgba(255,255,255,.14);
+        isolation:isolate;
+      }
+      .phone-shell::after{
+        content:"";
+        position:absolute;
+        z-index:24;
+        inset:0;
+        border:2px solid rgba(255,255,255,.10);
+        border-radius:47px;
+        pointer-events:none;
+      }
+      .phone-screen{
+        position:relative;
+        z-index:1;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        border-radius:38px;
+        background:#eef2ec;
+        clip-path:inset(0 round 38px);
+        -webkit-mask-image:-webkit-radial-gradient(white,black);
+        contain:paint;
+        transform:translateZ(0);
+      }
+      .screen-track{
+        height:300%;
+        transform:translate3d(
+          0,
+          calc(var(--screen-step) * -33.333333%),
+          0
+        );
+      }
+      .screen-panel{
+        height:33.333333%;
+        position:relative;
+        overflow:hidden;
+      }
+      .screen-panel img{
+        position:static;
+        width:100%;
+        height:100%;
+        max-width:100%;
+        object-fit:cover;
+      }
+
+      /*
+       * Move the story copy upward and create a much larger protected gap
+       * above the Track / Journal / Relive navigation.
+       */
+      .story-sticky{
+        padding-top:78px;
+        padding-bottom:70px;
+      }
+      .story-copy{
+        min-height:510px;
+        transform:translateY(-34px);
+      }
+      .story-kicker{
+        margin-bottom:12px;
+      }
+      .story-step{
+        inset:48px 0 auto;
+      }
+      .story-nav{
+        margin-top:54px;
+        padding-top:20px;
+        transform:translateY(28px);
+      }
+    }
+
+
+    /* ===== v24 iPad correction: restore story position, move nav only ===== */
+    @media (min-width:721px) and (max-width:1099px){
+
+      /*
+       * Restore the original story positioning.
+       * Only the Track / Journal / Relive controls are moved lower.
+       */
+      .story-sticky{
+        padding:96px 0 66px;
+      }
+      .story-copy{
+        min-height:430px;
+        padding-right:8px;
+        transform:none;
+      }
+      .story-kicker{
+        margin-bottom:18px;
+      }
+      .story-step{
+        inset:56px 0 auto;
+      }
+      .story-nav{
+        margin-top:2px;
+        padding-top:10px;
+        transform:translateY(44px);
+      }
+
+      /*
+       * Match the successful desktop phone exactly.
+       * The only iPad-specific addition is a Safari clipping layer on the
+       * inner screen, so transformed screenshots cannot cover the shell.
+       */
+      .phone-shell{
+        position:relative;
+        width:min(255px,31vw);
+        aspect-ratio:9/19.5;
+        padding:10px;
+        overflow:visible;
+        border-radius:47px;
+        background:linear-gradient(145deg,#1f2224,#050506 60%,#262829);
+        box-shadow:
+          0 34px 72px rgba(30,38,36,.25),
+          inset 0 0 0 2px rgba(255,255,255,.14);
+        isolation:isolate;
+      }
+      .phone-shell::after{
+        content:none;
+      }
+      .phone-screen{
+        position:relative;
+        z-index:1;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        border-radius:38px;
+        background:#eef2ec;
+        clip-path:none;
+        contain:none;
+        -webkit-mask-image:-webkit-radial-gradient(white,black);
+        transform:translateZ(0);
+      }
+      .screen-track{
+        position:absolute;
+        inset:0;
+        width:100%;
+        height:300%;
+        overflow:visible;
+        will-change:transform;
+        transform:translate3d(
+          0,
+          calc(var(--screen-step) * -33.333333%),
+          0
+        );
+        transition:transform .58s cubic-bezier(.22,1,.36,1);
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;
+      }
+      .screen-panel{
+        position:relative;
+        width:100%;
+        height:33.333333%;
+        overflow:hidden;
+        transform:none;
+      }
+      .screen-panel img{
+        position:static;
+        inset:auto;
+        width:100%;
+        height:100%;
+        max-width:100%;
+        object-fit:cover;
+      }
+      .screen-panel:nth-child(1) img{
+        object-position:50% 42%;
+        transform:scale(1.04);
+      }
+      .screen-panel:nth-child(2) img{
+        object-position:50% 55%;
+        transform:scale(1.1);
+      }
+      .screen-panel:nth-child(3) img{
+        object-position:50% 70%;
+        transform:scale(1.06);
+      }
+    }
+
 </style>
 </head>
 <body>
@@ -2688,7 +3184,7 @@
           </article>
 
           <a class="mosaic-card voyage-card" href="#" aria-label="Learn how Trips become Voyages">
-            <video autoplay muted loop playsinline poster="assets/img/AppPhoneHero.svg">
+            <video autoplay muted loop playsinline preload="auto" poster="assets/img/AppPreview.webp">
               <source src="assets/video/VoyagesFeature.mp4" type="video/mp4">
               <source src="assets/video/mapfunction.mp4" type="video/mp4">
             </video>

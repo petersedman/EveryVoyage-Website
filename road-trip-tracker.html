@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Road Trip Tracker App for Motorhomes &amp; Campervans | EveryVoyage</title>
+  <meta name="description" content="Automatically record your route with GPS, keep tracking offline, attach photos and moments, and relive the full road trip on one map.">
+  <meta name="author" content="SIMPLR LABS LTD">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#f54a00">
+
+  <link rel="canonical" href="https://everyvoyage.com/road-trip-tracker/">
+  <link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker/">
+  <link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker/">
+
+  <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/icons/favicon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://everyvoyage.com/road-trip-tracker/">
+  <meta property="og:site_name" content="EveryVoyage">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Road Trip Tracker App for Motorhomes &amp; Campervans | EveryVoyage">
+  <meta property="og:description" content="Automatically record your route with GPS, keep tracking offline, attach photos and moments, and relive the full road trip on one map.">
+  <meta property="og:image" content="https://everyvoyage.com/assets/img/AppPreview.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="EveryVoyage showing a road trip route, photos and memories inside the app.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Road Trip Tracker App for Motorhomes &amp; Campervans | EveryVoyage">
+  <meta name="twitter:description" content="Automatically record your route with GPS, keep tracking offline, attach photos and moments, and relive the full road trip on one map.">
+  <meta name="twitter:image" content="https://everyvoyage.com/assets/img/AppPreview.webp">
+  <meta name="twitter:image:alt" content="EveryVoyage showing a road trip route, photos and memories inside the app.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "@id":"https://everyvoyage.com/road-trip-tracker/#webpage",
+        "url":"https://everyvoyage.com/road-trip-tracker/",
+        "name":"Road Trip Tracker App for Motorhomes & Campervans | EveryVoyage",
+        "description":"Automatically record your route with GPS, keep tracking offline, attach photos and moments, and relive the full road trip on one map.",
+        "inLanguage":"en-GB",
+        "isPartOf":{"@id":"https://everyvoyage.com/#website"},
+        "about":{"@id":"https://everyvoyage.com/#app"}
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://everyvoyage.com/#website",
+        "url":"https://everyvoyage.com/",
+        "name":"EveryVoyage",
+        "inLanguage":"en-GB"
+      },
+      {
+        "@type":"MobileApplication",
+        "@id":"https://everyvoyage.com/#app",
+        "name":"EveryVoyage",
+        "applicationCategory":"TravelApplication",
+        "operatingSystem":"iOS, Android",
+        "url":"https://everyvoyage.com/",
+        "description":"A GPS road trip tracker and travel journal for motorhome, campervan and driving adventures.",
+        "offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},
+        "publisher":{"@type":"Organization","name":"SIMPLR LABS LTD","url":"https://simplrlabs.com"}
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --cream:#f7f4ed;
+      --paper:#fffdf9;
+      --ink:#262725;
+      --muted:#686a66;
+      --orange:#f54a00;
+      --orange-dark:#d94100;
+      --orange-soft:#fff0e8;
+      --forest:#173d3c;
+      --forest-deep:#0f2928;
+      --teal-soft:#dfe8e7;
+      --blue-grey:#e8eef2;
+      --line:rgba(38,39,37,.11);
+      --display:'Fraunces',Georgia,'Times New Roman',serif;
+      --body:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      --ease:cubic-bezier(.22,1,.36,1);
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      overflow-x:hidden;
+      background:var(--cream);
+      color:var(--ink);
+      font-family:var(--body);
+      line-height:1.55;
+    }
+    body.menu-open{overflow:hidden}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    button{font:inherit}
+    .wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+    .section-kicker{
+      display:block;
+      margin-bottom:14px;
+      color:var(--orange);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+
+    .site-header{
+      position:fixed;
+      z-index:100;
+      top:14px;
+      left:50%;
+      width:min(1180px,calc(100% - 24px));
+      height:64px;
+      padding:0 14px 0 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:999px;
+      background:rgba(255,253,249,.9);
+      box-shadow:0 12px 34px rgba(0,0,0,.09);
+      backdrop-filter:blur(18px);
+      transform:translateX(-50%);
+    }
+    .brand-logo{display:block;width:184px;text-decoration:none}
+    .brand-logo img{width:100%;height:auto}
+    .nav{display:flex;align-items:center;gap:27px}
+    .nav>a,.language-switcher summary{
+      color:var(--ink);
+      font-size:14px;
+      font-weight:700;
+      text-decoration:none;
+    }
+    .nav>a:hover{color:var(--orange-dark)}
+    .download-nav{
+      padding:12px 19px;
+      border-radius:999px;
+      background:var(--orange);
+      color:#fff!important;
+      box-shadow:0 8px 22px rgba(245,74,0,.24);
+    }
+    .language-switcher{position:relative}
+    .language-switcher summary{
+      display:flex;
+      align-items:center;
+      gap:5px;
+      padding:8px 2px;
+      list-style:none;
+      cursor:pointer;
+    }
+    .language-switcher summary::-webkit-details-marker{display:none}
+    .language-menu{
+      position:absolute;
+      top:calc(100% + 13px);
+      right:-14px;
+      width:205px;
+      display:grid;
+      gap:2px;
+      padding:10px;
+      border:1px solid rgba(38,39,37,.1);
+      border-radius:18px;
+      background:rgba(255,253,249,.98);
+      box-shadow:0 20px 48px rgba(0,0,0,.13);
+      backdrop-filter:blur(18px);
+    }
+    .language-menu a{
+      padding:9px 10px;
+      border-radius:10px;
+      font-size:13px;
+      font-weight:700;
+      text-decoration:none;
+    }
+    .language-menu a:hover{background:var(--orange-soft);color:var(--orange-dark)}
+    .menu-toggle{
+      display:none;
+      width:42px;
+      height:42px;
+      padding:0;
+      place-items:center;
+      align-content:center;
+      gap:5px;
+      border:0;
+      border-radius:50%;
+      background:var(--orange);
+      cursor:pointer;
+      box-shadow:0 8px 22px rgba(245,74,0,.24);
+    }
+    .menu-toggle span{
+      display:block;
+      width:18px;
+      height:2px;
+      border-radius:99px;
+      background:#fff;
+      transition:transform .25s var(--ease),opacity .2s ease;
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+    .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .mobile-menu{
+      position:fixed;
+      z-index:120;
+      top:82px;
+      left:12px;
+      right:12px;
+      max-height:calc(100svh - 94px);
+      overflow:auto;
+      padding:16px;
+      border:1px solid rgba(38,39,37,.1);
+      border-radius:24px;
+      background:rgba(255,253,249,.98);
+      box-shadow:0 24px 60px rgba(0,0,0,.18);
+      backdrop-filter:blur(20px);
+    }
+    .mobile-menu nav{display:grid;gap:4px}
+    .mobile-menu nav a{
+      padding:12px 13px;
+      border-radius:12px;
+      color:var(--ink);
+      font-size:16px;
+      font-weight:750;
+      text-decoration:none;
+    }
+    .mobile-menu nav a:hover{background:var(--orange-soft)}
+    .mobile-menu .mobile-download{
+      margin-top:7px;
+      color:#fff;
+      background:var(--orange);
+      text-align:center;
+    }
+    .mobile-language{
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+    }
+    .mobile-language summary{
+      padding:8px 4px;
+      color:var(--muted);
+      font-size:13px;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .mobile-language-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:6px;
+      padding-top:8px;
+    }
+    .mobile-language-grid a{
+      padding:9px 10px;
+      border-radius:10px;
+      background:var(--cream);
+      color:var(--ink);
+      font-size:13px;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    .tracker-hero{
+      position:relative;
+      min-height:840px;
+      display:grid;
+      align-items:center;
+      overflow:hidden;
+      color:#fff;
+      background:
+        linear-gradient(90deg,rgba(8,21,22,.72),rgba(8,21,22,.32) 56%,rgba(8,21,22,.14)),
+        url('../assets/img/HeroRoadTrip.svg'),
+        linear-gradient(135deg,#173d3c,#658b82);
+      background-size:cover;
+      background-position:center;
+    }
+    .tracker-hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 76% 41%,rgba(245,74,0,.21),transparent 26%),
+        linear-gradient(180deg,transparent 72%,rgba(5,15,16,.18));
+      pointer-events:none;
+    }
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:min(1180px,calc(100% - 40px));
+      margin:96px auto 0;
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:52px;
+      align-items:center;
+    }
+    .breadcrumbs{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      margin-bottom:24px;
+      color:rgba(255,255,255,.66);
+      font-size:12px;
+      font-weight:700;
+    }
+    .breadcrumbs a{text-decoration:none}
+    .hero-eyebrow{
+      display:inline-flex;
+      padding:8px 13px;
+      margin-bottom:20px;
+      border:1px solid rgba(255,255,255,.34);
+      border-radius:999px;
+      background:rgba(255,255,255,.11);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      backdrop-filter:blur(8px);
+    }
+    .hero-copy h1{
+      max-width:690px;
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(58px,6vw,86px);
+      font-weight:500;
+      line-height:.95;
+      letter-spacing:-.055em;
+      text-shadow:0 14px 42px rgba(0,0,0,.25);
+    }
+    .hero-copy h1 em{
+      display:block;
+      color:#ff7130;
+      font-style:italic;
+    }
+    .hero-copy>p{
+      max-width:620px;
+      margin:26px 0;
+      color:rgba(255,255,255,.88);
+      font-size:clamp(17px,1.45vw,21px);
+    }
+    .hero-proof{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom:25px;
+    }
+    .hero-proof span{
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      padding:8px 11px;
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:999px;
+      background:rgba(9,25,26,.34);
+      color:rgba(255,255,255,.88);
+      font-size:12px;
+      font-weight:750;
+      backdrop-filter:blur(8px);
+    }
+    .store-row{display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+    .store-stack{display:grid;justify-items:center;gap:7px}
+    .store-stack>a{
+      position:relative;
+      display:block;
+      overflow:hidden;
+      border-radius:8px;
+    }
+    .store-stack>a img{
+      height:52px;
+      width:auto;
+      filter:drop-shadow(0 10px 20px rgba(0,0,0,.18));
+      transition:transform .25s var(--ease);
+    }
+    .store-stack>a:hover img{transform:translateY(-2px)}
+    .store-stack>a::after{
+      content:"";
+      position:absolute;
+      top:-40%;
+      bottom:-40%;
+      left:-65%;
+      width:42%;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,.44),transparent);
+      transform:skewX(-18deg);
+      pointer-events:none;
+      animation:badgeSheen 1.05s ease 1.05s 1 forwards;
+    }
+    .store-stack:nth-child(2)>a::after{animation-delay:1.27s}
+    .store-rating{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      color:#fff;
+      font-size:12px;
+      text-shadow:0 4px 14px rgba(0,0,0,.35);
+    }
+    .stars{color:#ff7130;letter-spacing:.5px}
+    @keyframes badgeSheen{from{left:-65%}to{left:125%}}
+
+    .hero-visual{
+      position:relative;
+      min-height:640px;
+    }
+    .hero-phone{
+      position:absolute;
+      z-index:3;
+      right:12%;
+      top:8px;
+      width:min(390px,31vw);
+      filter:drop-shadow(0 36px 54px rgba(0,0,0,.4));
+      animation:phoneIn 1s var(--ease) .2s both,phoneFloat 7s ease-in-out 1.25s infinite;
+    }
+    .hero-modal{
+      position:absolute;
+      z-index:5;
+      left:2%;
+      top:49%;
+      width:255px;
+      padding:16px 16px 14px;
+      border:1px solid rgba(255,255,255,.62);
+      border-radius:22px;
+      background:rgba(255,253,249,.95);
+      color:var(--ink);
+      box-shadow:0 18px 44px rgba(0,0,0,.16);
+      backdrop-filter:blur(14px);
+      transform:translateY(-50%);
+      animation:statusIn .8s var(--ease) .72s both;
+    }
+    .hero-modal-top{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:14px;
+    }
+    .hero-modal-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      background:var(--orange-soft);
+      color:var(--orange);
+      font-size:12px;
+      font-weight:800;
+    }
+    .hero-modal-badge i{
+      width:10px;height:10px;border-radius:50%;background:var(--orange);
+      box-shadow:0 0 0 0 rgba(245,74,0,.35);
+      animation:recordPulse 2s ease-out infinite;
+    }
+    .hero-modal strong{display:block;font-size:13px}
+    .hero-modal small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+    .hero-metrics{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:8px;
+      margin-top:12px;
+    }
+    .hero-metric{
+      padding:9px 8px;
+      border-radius:14px;
+      background:#fff;
+      border:1px solid rgba(38,39,37,.08);
+    }
+    .hero-metric b{display:block;font-size:15px;line-height:1}
+    .hero-metric span{display:block;margin-top:4px;color:var(--muted);font-size:10px;font-weight:700}
+    @keyframes phoneIn{from{opacity:0;transform:translate3d(50px,70px,0) rotate(10deg) scale(.88)}to{opacity:1;transform:translate3d(0,0,0) rotate(2deg) scale(1)}}
+    @keyframes phoneFloat{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(-15px) rotate(.8deg)}}
+    @keyframes statusIn{from{opacity:0;transform:translateY(-40%) scale(.94)}to{opacity:1;transform:translateY(-50%) scale(1)}}
+    @keyframes recordPulse{0%{box-shadow:0 0 0 0 rgba(245,74,0,.35)}75%,100%{box-shadow:0 0 0 12px rgba(245,74,0,0)}}
+
+    .tracker-proof{
+      padding:88px 0 100px;
+      background:#172b2a;
+      color:#fff;
+    }
+    .proof-grid{
+      display:grid;
+      grid-template-columns:.86fr 1.14fr;
+      gap:62px;
+      align-items:center;
+    }
+    .proof-copy h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(48px,5vw,74px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.05em;
+    }
+    .proof-copy h2 em{color:#ff8a55;font-style:italic}
+    .proof-copy>p{
+      margin:21px 0 25px;
+      color:rgba(255,255,255,.72);
+      font-size:18px;
+    }
+    .proof-list{display:grid;gap:13px}
+    .proof-item{
+      display:flex;
+      gap:11px;
+      align-items:flex-start;
+      color:rgba(255,255,255,.88);
+      font-weight:700;
+    }
+    .proof-item span{
+      flex:0 0 29px;
+      width:29px;
+      height:29px;
+      display:grid;
+      place-items:center;
+      border-radius:10px;
+      background:rgba(255,138,85,.14);
+      color:#ff8a55;
+    }
+    .video-card{
+      position:relative;
+      min-height:560px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:34px;
+      background:#dfe3e5;
+      box-shadow:0 25px 70px rgba(0,0,0,.26);
+      cursor:pointer;
+      isolation:isolate;
+    }
+    .video-card>img{
+      position:absolute;
+      inset:0;
+      z-index:-2;
+      width:100%;
+      height:100%;
+      max-width:none;
+      object-fit:cover;
+      transition:transform 1.2s var(--ease);
+    }
+    .video-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-1;
+      background:linear-gradient(180deg,rgba(4,15,16,.12),rgba(4,15,16,.58));
+    }
+    .video-card:hover>img{transform:scale(1.045)}
+    .video-overlay{
+      position:absolute;
+      inset:0;
+      display:grid;
+      place-items:center;
+      padding:30px;
+      text-align:center;
+    }
+    .video-overlay strong{
+      max-width:460px;
+      font-family:var(--display);
+      font-size:clamp(34px,4vw,56px);
+      font-weight:500;
+      line-height:1;
+      text-shadow:0 7px 25px rgba(0,0,0,.38);
+    }
+    .play-button{
+      position:relative;
+      width:78px;
+      height:78px;
+      margin-top:25px;
+      display:grid;
+      place-items:center;
+      border:1px solid rgba(255,255,255,.64);
+      border-radius:50%;
+      background:rgba(245,74,0,.9);
+      color:#fff;
+      font-size:24px;
+      box-shadow:0 18px 42px rgba(0,0,0,.28);
+      transition:transform .28s var(--ease);
+    }
+    .play-button::before,.play-button::after{
+      content:"";
+      position:absolute;
+      inset:-12px;
+      border:2px solid rgba(255,255,255,.55);
+      border-radius:50%;
+      animation:playRipple 2.2s ease-out infinite;
+    }
+    .play-button::after{animation-delay:1.1s}
+    .video-card:hover .play-button{transform:scale(1.08)}
+    @keyframes playRipple{0%{opacity:.7;transform:scale(.8)}75%,100%{opacity:0;transform:scale(1.45)}}
+
+    .problem-section{
+      padding:100px 0;
+      background:var(--paper);
+    }
+    .problem-grid{
+      display:grid;
+      grid-template-columns:.92fr 1.08fr;
+      gap:74px;
+      align-items:center;
+    }
+    .problem-copy h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(48px,5vw,72px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.05em;
+    }
+    .problem-copy h2 em{color:var(--orange);font-style:italic}
+    .problem-copy p{
+      margin:22px 0 0;
+      color:var(--muted);
+      font-size:19px;
+    }
+    .problem-points{
+      display:grid;
+      gap:12px;
+      margin-top:28px;
+    }
+    .problem-point{
+      display:flex;
+      align-items:flex-start;
+      gap:11px;
+      font-size:15px;
+      font-weight:700;
+    }
+    .problem-point span{
+      flex:0 0 27px;
+      width:27px;
+      height:27px;
+      display:grid;
+      place-items:center;
+      border-radius:9px;
+      background:var(--orange-soft);
+      color:var(--orange);
+      font-size:13px;
+    }
+    .route-memory{
+      position:relative;
+      min-height:545px;
+      border-radius:34px;
+      background:linear-gradient(145deg,#e9edf0,#dce7e5);
+      overflow:hidden;
+      box-shadow:0 24px 65px rgba(23,61,60,.12);
+    }
+    .route-memory::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 78% 17%,rgba(245,74,0,.16),transparent 25%),
+        linear-gradient(135deg,transparent 55%,rgba(255,255,255,.48));
+    }
+    .route-memory-main{
+      position:absolute;
+      right:5%;
+      bottom:5%;
+      width:58%;
+      overflow:hidden;
+      border:8px solid #151718;
+      border-radius:34px;
+      background:#eef2ec;
+      box-shadow:0 25px 54px rgba(0,0,0,.2);
+      transform:rotate(3deg);
+    }
+    .route-memory-main img{
+      width:100%;
+      aspect-ratio:9/14;
+      object-fit:cover;
+      object-position:center top;
+    }
+    .memory-chip{
+      position:absolute;
+      display:flex;
+      align-items:center;
+      gap:9px;
+      min-width:220px;
+      padding:11px 12px;
+      border:1px solid rgba(38,39,37,.08);
+      border-radius:18px;
+      background:rgba(255,255,255,.94);
+      box-shadow:0 14px 32px rgba(0,0,0,.1);
+      backdrop-filter:blur(14px);
+    }
+    .memory-chip img{
+      width:48px;
+      height:48px;
+      object-fit:cover;
+      border-radius:12px;
+    }
+    .memory-chip strong{display:block;font-size:13px;line-height:1.2}
+    .memory-chip small{display:block;margin-top:4px;color:var(--muted);font-size:11px}
+    .memory-chip.one{left:6%;top:10%;transform:rotate(-5deg)}
+    .memory-chip.two{left:10%;top:43%;transform:rotate(4deg)}
+    .record-chip{
+      position:absolute;
+      left:30%;
+      top:31%;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:var(--orange);
+      color:#fff;
+      font-size:12px;
+      font-weight:800;
+      box-shadow:0 12px 28px rgba(245,74,0,.28);
+    }
+    .record-chip i{
+      width:9px;height:9px;border-radius:50%;background:#fff;
+      box-shadow:0 0 0 0 rgba(255,255,255,.4);
+      animation:recordPulseWhite 2s ease-out infinite;
+    }
+    @keyframes recordPulseWhite{0%{box-shadow:0 0 0 0 rgba(255,255,255,.45)}75%,100%{box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+
+    .how-section{
+      padding:105px 0 115px;
+      background:linear-gradient(180deg,var(--cream),#f3eee5);
+    }
+    .section-heading{
+      max-width:820px;
+      margin:0 auto 55px;
+      text-align:center;
+    }
+    .section-heading h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(50px,5.3vw,78px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.052em;
+    }
+    .section-heading p{
+      max-width:680px;
+      margin:18px auto 0;
+      color:var(--muted);
+      font-size:18px;
+    }
+    .step-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .tracking-step{
+      position:relative;
+      min-height:590px;
+      padding:26px 24px 0;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:30px;
+      background:#f8f4ec;
+      box-shadow:0 16px 44px rgba(22,28,26,.05);
+      opacity:0;
+      transform:translateY(28px);
+      transition:opacity .65s ease,transform .85s var(--ease),box-shadow .28s ease;
+    }
+    .tracking-step.in-view{opacity:1;transform:none}
+    .tracking-step:nth-child(2){background:var(--forest);color:#fff}
+    .tracking-step:nth-child(3){background:var(--blue-grey)}
+    .tracking-step:hover{
+      transform:translateY(-8px) scale(1.02);
+      box-shadow:0 26px 58px rgba(22,28,26,.14);
+      z-index:2;
+    }
+    .step-number{
+      color:var(--orange);
+      font-size:13px;
+      font-weight:900;
+      letter-spacing:.1em;
+    }
+    .tracking-step:nth-child(2) .step-number{color:#ff8a55}
+    .tracking-step h3{
+      margin:13px 0 10px;
+      font-family:var(--display);
+      font-size:38px;
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.04em;
+    }
+    .tracking-step p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .tracking-step:nth-child(2) p{color:rgba(255,255,255,.7)}
+    .step-device{
+      position:absolute;
+      left:50%;
+      bottom:-66px;
+      width:210px;
+      aspect-ratio:9/17;
+      padding:9px;
+      border-radius:42px;
+      background:linear-gradient(145deg,#1f2224,#050506 60%,#262829);
+      box-shadow:0 26px 58px rgba(20,28,27,.24),inset 0 0 0 2px rgba(255,255,255,.14);
+      transform:translateX(-50%);
+    }
+    .tracking-step:nth-child(3) .step-device{aspect-ratio:9/19;bottom:-100px}
+    .step-device::before{
+      content:"";
+      position:absolute;
+      z-index:3;
+      top:15px;
+      left:50%;
+      width:34%;
+      height:21px;
+      border-radius:999px;
+      background:#050505;
+      transform:translateX(-50%);
+    }
+    .step-screen{
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      border-radius:34px;
+      background:#eef2ec;
+    }
+    .step-screen img{
+      width:100%;
+      height:100%;
+      max-width:none;
+      object-fit:cover;
+      object-position:center top;
+    }
+    .tracking-step:nth-child(1) .step-screen img{transform:scale(1.10) translateY(-2.2%);transform-origin:center top}
+    .tracking-step:nth-child(2) .step-screen img{transform:scale(1.11) translateY(-1.8%);transform-origin:center top}
+    .tracking-step:nth-child(3) .step-screen img{object-position:center}
+
+    .benefits-section{
+      padding:110px 0;
+      background:#f4f5f6;
+    }
+    .benefit-mosaic{
+      display:grid;
+      grid-template-columns:repeat(12,minmax(0,1fr));
+      grid-auto-rows:112px;
+      gap:18px;
+    }
+    .benefit-card{
+      position:relative;
+      overflow:hidden;
+      padding:26px;
+      border:1px solid rgba(38,39,37,.08);
+      border-radius:30px;
+      background:#fff;
+      box-shadow:0 16px 44px rgba(22,28,26,.06);
+      opacity:0;
+      transform:translateY(28px);
+      transition:opacity .65s ease,transform .85s var(--ease),box-shadow .3s ease;
+    }
+    .benefit-card.in-view{opacity:1;transform:none}
+    .benefit-card:hover{box-shadow:0 24px 58px rgba(22,28,26,.11)}
+    .benefit-card h3{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(30px,3vw,42px);
+      font-weight:500;
+      line-height:1.02;
+      letter-spacing:-.04em;
+    }
+    .benefit-card p{margin:11px 0 0;color:var(--muted)}
+    .benefit-icon{
+      width:43px;
+      height:43px;
+      margin-bottom:18px;
+      display:grid;
+      place-items:center;
+      border-radius:14px;
+      background:var(--orange-soft);
+      color:var(--orange);
+      font-size:21px;
+    }
+
+    .offline-benefit{
+      grid-column:1/5;
+      grid-row:1/4;
+      color:#fff;
+      background:#173d3c;
+    }
+    .offline-benefit p{max-width:340px;color:rgba(255,255,255,.7)}
+    .offline-benefit .benefit-icon{background:rgba(255,138,85,.14);color:#ff8a55}
+    .offline-scene{
+      position:absolute;
+      left:0;right:0;bottom:0;
+      height:48%;
+      background:
+        linear-gradient(180deg,transparent,rgba(0,0,0,.16)),
+        url('../assets/img/OfflineMode.webp'),
+        linear-gradient(135deg,#284a49,#7b9187);
+      background-size:cover;
+      background-position:center;
+      opacity:.9;
+      mask-image:linear-gradient(180deg,transparent 0,rgba(0,0,0,.9) 28%);
+      -webkit-mask-image:linear-gradient(180deg,transparent 0,rgba(0,0,0,.9) 28%);
+    }
+    .no-signal-pill{
+      position:absolute;
+      right:22px;
+      bottom:24px;
+      padding:8px 12px;
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:999px;
+      background:rgba(11,25,24,.56);
+      color:#fff;
+      font-size:11px;
+      font-weight:800;
+      backdrop-filter:blur(10px);
+    }
+
+    .past-benefit{
+      grid-column:5/8;
+      grid-row:1/3;
+      background:linear-gradient(145deg,#fff,#fff1e8);
+    }
+    .past-benefit p{max-width:280px}
+    .route-replay{
+      position:absolute;
+      right:20px;
+      bottom:18px;
+      width:118px;height:118px;
+      border-radius:50%;
+      border:2px dashed rgba(245,74,0,.22);
+    }
+    .route-replay::before{
+      content:"↺";
+      position:absolute;
+      left:50%;top:50%;
+      color:var(--orange);
+      font-size:36px;
+      font-weight:700;
+      transform:translate(-50%,-50%);
+    }
+
+    .privacy-benefit{
+      grid-column:8/11;
+      grid-row:1/4;
+      background:linear-gradient(145deg,#eaf4f6,#dce9ef);
+      padding:24px 24px 0;
+    }
+    .privacy-benefit p{display:none}
+    .privacy-title{
+      position:relative;
+      z-index:3;
+      max-width:190px;
+    }
+    .privacy-stage{
+      position:absolute;
+      inset:auto 0 0 0;
+      height:70%;
+      overflow:hidden;
+    }
+    .privacy-you,.privacy-friend,.privacy-other{
+      position:absolute;
+      border-radius:50%;
+      background-size:cover;
+      background-position:center;
+      box-shadow:0 12px 26px rgba(15,41,40,.18);
+      opacity:0;
+      animation:privacyPulse 9s ease-in-out infinite;
+    }
+    .privacy-you{
+      left:50%;top:52%;
+      width:88px;height:88px;
+      background-image:url('../assets/img/PrivacyYou.webp');
+      transform:translate(-50%,-50%);
+      opacity:1;
+      z-index:3;
+    }
+    .privacy-ring{
+      position:absolute;
+      left:50%;top:52%;
+      width:140px;height:140px;
+      border-radius:50%;
+      border:1px solid rgba(23,61,60,.12);
+      transform:translate(-50%,-50%);
+      z-index:1;
+      animation:ringGrow 9s ease-in-out infinite;
+    }
+    .privacy-friend{
+      width:56px;height:56px;
+      z-index:2;
+      animation-delay:2.2s;
+    }
+    .privacy-f1{left:20%;top:32%;background-image:url('../assets/img/PrivacyFriend1.webp')}
+    .privacy-f2{right:16%;top:34%;background-image:url('../assets/img/PrivacyFriend2.webp')}
+    .privacy-f3{left:26%;bottom:20%;background-image:url('../assets/img/PrivacyFriend3.webp')}
+    .privacy-f4{right:21%;bottom:18%;background-image:url('../assets/img/PrivacyFriend4.webp')}
+    .privacy-other{
+      width:30px;height:30px;
+      animation-delay:5.1s;
+      box-shadow:0 8px 18px rgba(15,41,40,.14);
+    }
+    .privacy-o1{left:10%;top:14%;background-image:url('../assets/img/PrivacyOther1.webp')}
+    .privacy-o2{right:11%;top:16%;background-image:url('../assets/img/PrivacyOther2.webp')}
+    .privacy-o3{left:8%;bottom:10%;background-image:url('../assets/img/PrivacyOther3.webp')}
+    .privacy-o4{right:9%;bottom:12%;background-image:url('../assets/img/PrivacyOther4.webp')}
+    .privacy-pill{
+      position:absolute;
+      left:50%;
+      top:15px;
+      min-width:170px;
+      padding:10px 16px;
+      border:1px solid rgba(23,61,60,.12);
+      border-radius:999px;
+      background:rgba(255,253,249,.95);
+      color:var(--forest);
+      font-size:12px;
+      font-weight:800;
+      transform:translateX(-50%);
+      box-shadow:0 10px 24px rgba(23,61,60,.08);
+    }
+    .privacy-pill::before{
+      content:"Only you";
+      animation:privacyText 9s ease-in-out infinite;
+    }
+    @keyframes privacyPulse{
+      0%,20%{opacity:0;transform:scale(.8)}
+      28%,52%{opacity:1;transform:scale(1)}
+      60%,100%{opacity:0;transform:scale(.86)}
+    }
+    @keyframes ringGrow{
+      0%,18%{transform:translate(-50%,-50%) scale(.52);opacity:.72}
+      28%,52%{transform:translate(-50%,-50%) scale(1);opacity:.9}
+      60%,100%{transform:translate(-50%,-50%) scale(1.45);opacity:.12}
+    }
+    @keyframes privacyText{
+      0%,28%{content:"Only you"}
+      29%,62%{content:"Friends & family"}
+      63%,100%{content:"Everyone"}
+    }
+
+    .stats-benefit{
+      grid-column:11/13;
+      grid-row:1/4;
+      background:linear-gradient(160deg,#183b3b,#2d4f4b);
+      color:#fff;
+      text-align:center;
+    }
+    .stats-benefit p{color:rgba(255,255,255,.72)}
+    .stats-benefit .benefit-icon{background:rgba(255,138,85,.14);color:#ff8a55;margin-inline:auto}
+    .miles-meter{
+      position:relative;
+      width:152px;height:216px;
+      margin:22px auto 10px;
+      border-radius:30px;
+      border:5px solid rgba(255,255,255,.85);
+      overflow:hidden;
+      background:rgba(255,255,255,.06);
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);
+    }
+    .miles-meter::before{
+      content:"";
+      position:absolute;
+      left:50%;top:-18px;
+      width:52px;height:22px;
+      border-radius:999px 999px 0 0;
+      background:rgba(255,255,255,.88);
+      transform:translateX(-50%);
+    }
+    .miles-fill{
+      position:absolute;
+      left:0;right:0;bottom:0;
+      height:0;
+      background:linear-gradient(180deg,#7ad98a,#63bf5c);
+      animation:milesFill 2.2s var(--ease) .35s forwards;
+    }
+    .miles-fill strong{
+      position:absolute;
+      left:50%;top:44%;
+      color:#173d3c;
+      font-family:var(--display);
+      font-size:32px;
+      line-height:1;
+      transform:translate(-50%,-50%);
+    }
+    .stat-mini-row{
+      display:grid;
+      gap:8px;
+      margin-top:10px;
+    }
+    .stat-mini{
+      padding:8px 10px;
+      border-radius:14px;
+      background:rgba(255,255,255,.08);
+      color:rgba(255,255,255,.86);
+      font-size:12px;
+      font-weight:700;
+    }
+    @keyframes milesFill{from{height:0}to{height:84%}}
+
+    .cost-benefit{
+      grid-column:1/5;
+      grid-row:4/6;
+      background:linear-gradient(145deg,#fff,#fff1e8);
+    }
+    .cost-benefit h3{max-width:320px}
+    .cost-list{display:grid;gap:8px;margin-top:18px}
+    .cost-row{
+      display:flex;
+      justify-content:space-between;
+      padding:10px 12px;
+      border-radius:12px;
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(38,39,37,.06);
+      font-size:13px;
+      font-weight:700;
+    }
+    .cost-caption{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:700;
+    }
+
+    .voyage-benefit{
+      grid-column:5/13;
+      grid-row:4/6;
+      padding:0;
+      color:#fff;
+      background:#273337;
+    }
+    .voyage-benefit img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .voyage-benefit::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.68));
+    }
+    .voyage-benefit-copy{
+      position:absolute;
+      z-index:2;
+      left:28px;
+      right:28px;
+      bottom:27px;
+    }
+    .voyage-benefit-copy p{max-width:480px;color:rgba(255,255,255,.75)}
+
+    .result-section{
+      padding:108px 0;
+      background:var(--paper);
+    }
+    .result-panel{
+      display:grid;
+      grid-template-columns:.92fr 1.08fr;
+      gap:48px;
+      align-items:center;
+      padding:34px;
+      border:1px solid var(--line);
+      border-radius:34px;
+      background:linear-gradient(135deg,#fff8f2,#f3eee5);
+      box-shadow:0 20px 58px rgba(22,28,26,.06);
+    }
+    .result-copy{padding:20px}
+    .result-copy h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(46px,4.8vw,70px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.05em;
+    }
+    .result-copy p{
+      margin:20px 0 25px;
+      color:var(--muted);
+      font-size:18px;
+    }
+    .result-visual{
+      position:relative;
+      min-height:520px;
+      overflow:hidden;
+      border-radius:27px;
+      background:#dce5e7;
+    }
+    .result-visual img{
+      width:100%;
+      height:100%;
+      min-height:520px;
+      object-fit:cover;
+      object-position:center;
+    }
+    .result-chip{
+      position:absolute;
+      left:20px;
+      bottom:20px;
+      padding:11px 14px;
+      border-radius:999px;
+      background:rgba(255,253,249,.94);
+      color:var(--ink);
+      font-size:12px;
+      font-weight:800;
+      box-shadow:0 12px 28px rgba(0,0,0,.12);
+      backdrop-filter:blur(12px);
+    }
+
+    .audience-section{
+      padding:90px 0;
+      background:var(--forest);
+      color:#fff;
+      text-align:center;
+    }
+    .audience-section h2{
+      max-width:850px;
+      margin:0 auto;
+      font-family:var(--display);
+      font-size:clamp(46px,5vw,72px);
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.05em;
+    }
+    .audience-section p{
+      max-width:690px;
+      margin:18px auto 0;
+      color:rgba(255,255,255,.7);
+      font-size:18px;
+    }
+    .audience-chips{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+    .audience-chips span{
+      padding:10px 14px;
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:999px;
+      background:rgba(255,255,255,.07);
+      color:rgba(255,255,255,.9);
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .faq-section{
+      padding:110px 0;
+      background:var(--cream);
+    }
+    .faq-grid{
+      display:grid;
+      grid-template-columns:.72fr 1.28fr;
+      gap:70px;
+      align-items:start;
+    }
+    .faq-heading{
+      position:sticky;
+      top:110px;
+    }
+    .faq-heading h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(48px,4.8vw,68px);
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.05em;
+    }
+    .faq-heading p{margin:18px 0 0;color:var(--muted)}
+    .faq-list{display:grid;gap:11px}
+    .faq-item{
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:var(--paper);
+      box-shadow:0 10px 30px rgba(0,0,0,.03);
+    }
+    .faq-item summary{
+      position:relative;
+      padding:20px 54px 20px 21px;
+      list-style:none;
+      font-size:17px;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::after{
+      content:"+";
+      position:absolute;
+      right:21px;
+      top:50%;
+      color:var(--orange);
+      font-size:24px;
+      transform:translateY(-50%);
+    }
+    .faq-item[open] summary::after{content:"−"}
+    .faq-answer{
+      padding:0 21px 21px;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .final-cta{
+      position:relative;
+      min-height:480px;
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      color:#fff;
+      text-align:center;
+      isolation:isolate;
+    }
+    .final-cta::before{
+      content:"";
+      position:absolute;
+      inset:-3%;
+      z-index:-2;
+      background:
+        linear-gradient(rgba(7,20,22,.34),rgba(7,20,22,.56)),
+        url('../assets/img/Sunset.svg'),
+        linear-gradient(135deg,#a6552d,#183b3b);
+      background-size:cover;
+      background-position:center;
+      transform:scale(1);
+      transition:transform 7s ease;
+    }
+    .final-cta::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-1;
+      background:radial-gradient(circle at 50% 42%,rgba(245,74,0,.1),transparent 44%);
+    }
+    .final-cta.in-view::before{transform:scale(1.045)}
+    .final-content{
+      max-width:850px;
+      padding:70px 20px;
+      opacity:0;
+      transform:translateY(25px);
+      transition:opacity .7s ease,transform .9s var(--ease);
+    }
+    .final-cta.in-view .final-content{opacity:1;transform:none}
+    .final-content h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(48px,5.4vw,76px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.052em;
+    }
+    .final-content p{
+      margin:17px 0 27px;
+      color:rgba(255,255,255,.86);
+      font-size:18px;
+    }
+    .final-content .store-row{justify-content:center}
+    .final-content .store-stack>a{
+      opacity:0;
+      transform:translateY(14px);
+      transition:opacity .5s ease,transform .7s var(--ease);
+    }
+    .final-cta.in-view .store-stack>a{opacity:1;transform:none}
+    .final-cta.in-view .store-stack:nth-child(1)>a{transition-delay:.16s}
+    .final-cta.in-view .store-stack:nth-child(2)>a{transition-delay:.27s}
+    .download-note{
+      margin-top:14px;
+      color:rgba(255,255,255,.72);
+      font-size:13px;
+      font-weight:700;
+    }
+
+    footer{padding:58px 0 26px;background:#252725;color:#fff}
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.8fr repeat(3,1fr);
+      gap:50px;
+    }
+    .footer-logo{width:210px;margin-bottom:17px}
+    .footer-brand p{max-width:310px;color:rgba(255,255,255,.6)}
+    footer h4{margin:0 0 14px;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+    footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+    footer a{color:rgba(255,255,255,.62);text-decoration:none}
+    footer a:hover{color:#fff}
+    .footer-bottom{
+      margin-top:45px;
+      padding-top:20px;
+      border-top:1px solid rgba(255,255,255,.1);
+      color:rgba(255,255,255,.45);
+      font-size:13px;
+    }
+
+    .mobile-download-bar{display:none}
+
+    @media(max-width:1000px){
+      .site-header .nav{display:none}
+      .menu-toggle{display:grid}
+      .hero-inner{grid-template-columns:1fr;text-align:center}
+      .breadcrumbs,.store-row,.hero-proof{justify-content:center}
+      .hero-copy>p{margin-inline:auto}
+      .hero-visual{width:min(720px,100%);min-height:590px;margin:auto}
+      .hero-phone{right:50%;transform:translateX(50%)!important;width:320px}
+      .hero-modal{left:4%;top:50%;width:240px}
+      .proof-grid,.problem-grid,.result-panel,.faq-grid{grid-template-columns:1fr}
+      .proof-copy,.problem-copy{text-align:center}
+      .proof-list,.problem-points{max-width:620px;margin-inline:auto;text-align:left}
+      .step-grid{grid-template-columns:repeat(2,1fr)}
+      .tracking-step:nth-child(3){grid-column:1/-1;min-height:540px}
+      .benefit-mosaic{grid-template-columns:repeat(6,1fr)}
+      .offline-benefit{grid-column:1/4;grid-row:1/4}
+      .past-benefit{grid-column:4/7;grid-row:1/3}
+      .privacy-benefit{grid-column:1/4;grid-row:4/7}
+      .stats-benefit{grid-column:4/7;grid-row:3/6}
+      .cost-benefit{grid-column:1/4;grid-row:7/9}
+      .voyage-benefit{grid-column:4/7;grid-row:6/9}
+      .faq-heading{position:static;text-align:center}
+      .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
+    }
+
+    @media(max-width:720px){
+      .wrap{width:min(100% - 26px,1180px)}
+      .site-header{top:8px;height:58px}
+      .brand-logo{width:160px}
+      .mobile-menu{top:74px}
+      .tracker-hero{min-height:auto;padding:88px 0 28px}
+      .hero-inner{
+        width:min(100% - 24px,1180px);
+        margin:0 auto;
+        gap:0;
+      }
+      .breadcrumbs{margin-bottom:15px;justify-content:center}
+      .hero-eyebrow{
+        max-width:100%;
+        margin-bottom:14px;
+        padding:7px 9px;
+        white-space:nowrap;
+        font-size:clamp(8px,2.45vw,10px);
+        letter-spacing:.035em;
+      }
+      .hero-copy h1{
+        font-size:clamp(39px,11.4vw,55px);
+        line-height:.98;
+      }
+      .hero-copy>p{
+        max-width:370px;
+        margin:20px auto 18px;
+        font-size:15px;
+      }
+      .hero-proof{gap:7px;margin-bottom:18px}
+      .hero-proof span{padding:7px 9px;font-size:10px}
+      .store-row{gap:10px;flex-wrap:nowrap}
+      .store-stack>a img{height:42px}
+      .store-rating{font-size:10px}
+      .hero-visual{min-height:435px;margin-top:8px}
+      .hero-phone{top:32px;width:215px}
+      .hero-modal{
+        top:50%;
+        left:50%;
+        width:218px;
+        transform:translate(-50%,-50%);
+      }
+      .hero-modal strong{font-size:12px}
+      .hero-modal small{font-size:10px}
+      .hero-metrics{gap:6px}
+      .hero-metric b{font-size:13px}
+      .hero-metric span{font-size:9px}
+
+      .tracker-proof,.problem-section,.how-section,.benefits-section,.result-section,.faq-section{padding:75px 0}
+      .proof-grid,.problem-grid{gap:42px}
+      .proof-copy h2,.problem-copy h2{font-size:clamp(43px,12vw,57px)}
+      .proof-copy p,.problem-copy p{font-size:16px}
+      .video-card{min-height:460px;border-radius:27px}
+      .route-memory{min-height:500px;border-radius:26px}
+      .route-memory-main{width:56%;border-width:7px}
+      .memory-chip{min-width:184px;padding:10px}
+      .memory-chip img{width:40px;height:40px}
+      .memory-chip.one{left:4%;top:9%}
+      .memory-chip.two{left:5%;top:46%}
+      .record-chip{left:29%;top:34%;font-size:10px}
+
+      .section-heading{margin-bottom:35px}
+      .section-heading h2{font-size:clamp(44px,12.5vw,60px)}
+      .section-heading p{font-size:16px}
+      .step-grid{grid-template-columns:1fr}
+      .tracking-step,.tracking-step:nth-child(3){min-height:560px;grid-column:auto}
+      .tracking-step:hover{transform:none}
+      .tracking-step h3{font-size:36px}
+      .step-device{width:205px}
+
+      .benefit-mosaic{display:flex;flex-direction:column}
+      .benefit-card{min-height:260px;border-radius:24px}
+      .offline-benefit{min-height:360px}
+      .privacy-benefit{min-height:340px}
+      .stats-benefit{min-height:390px}
+      .voyage-benefit{min-height:470px}
+      .past-benefit,.cost-benefit{min-height:260px}
+      .benefit-card h3{font-size:37px}
+      .privacy-you{width:76px;height:76px}
+      .privacy-friend{width:48px;height:48px}
+      .privacy-other{width:24px;height:24px}
+      .miles-meter{width:138px;height:200px}
+
+      .result-panel{gap:12px;padding:17px;border-radius:27px}
+      .result-copy{padding:18px 7px}
+      .result-copy h2{font-size:clamp(43px,12vw,56px)}
+      .result-visual,.result-visual img{min-height:430px}
+      .audience-section{padding:72px 0}
+      .audience-section h2{font-size:45px}
+      .audience-section p{font-size:16px}
+      .faq-grid{gap:35px}
+      .faq-heading h2{font-size:50px}
+      .faq-item summary{font-size:15px}
+      .final-cta{min-height:520px}
+      .final-content h2{font-size:clamp(45px,12.5vw,59px)}
+      .final-content p{font-size:16px}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .footer-brand{grid-column:1/-1}
+
+      .mobile-download-bar{
+        position:fixed;
+        z-index:110;
+        left:10px;
+        right:10px;
+        bottom:10px;
+        min-height:66px;
+        padding:10px 10px 10px 14px;
+        align-items:center;
+        justify-content:space-between;
+        gap:12px;
+        border:1px solid rgba(255,255,255,.78);
+        border-radius:20px;
+        background:rgba(255,253,249,.96);
+        box-shadow:0 18px 46px rgba(0,0,0,.2);
+        backdrop-filter:blur(18px);
+        opacity:0;
+        transform:translateY(24px);
+        transition:opacity .28s ease,transform .38s var(--ease);
+      }
+      .mobile-download-bar.is-visible{display:flex;opacity:1;transform:none}
+      .mobile-download-copy{display:grid;line-height:1.2}
+      .mobile-download-copy strong{font-size:14px}
+      .mobile-download-copy span{margin-top:4px;color:var(--muted);font-size:11px}
+      .mobile-download-bar>a{
+        flex:0 0 auto;
+        padding:11px 14px;
+        border-radius:999px;
+        background:var(--orange);
+        color:#fff;
+        font-size:12px;
+        font-weight:800;
+        text-decoration:none;
+        box-shadow:0 8px 20px rgba(245,74,0,.24);
+      }
+    }
+
+    @media(max-width:350px){
+      .hero-eyebrow{display:none}
+      .hero-copy h1{font-size:37px}
+      .store-stack>a img{height:39px}
+      .hero-phone{width:195px}
+      .hero-modal{width:205px}
+      .hero-metrics{grid-template-columns:1fr}
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .hero-phone,.hero-modal,.store-stack>a::after,.play-button::before,.play-button::after,.miles-fill,.privacy-you,.privacy-friend,.privacy-other,.privacy-ring,.privacy-pill::before{
+        animation:none!important;
+      }
+      .tracking-step,.benefit-card,.final-content,.final-cta::before,.mobile-download-bar,.video-card>img{
+        transition:none!important;
+      }
+      .tracking-step,.benefit-card,.final-content{opacity:1!important;transform:none!important}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <a href="../" class="brand-logo" aria-label="EveryVoyage home">
+      <img src="../assets/brand/Logo.png" onerror="this.onerror=null;this.src='../assets-demo/logo-fallback.svg'" alt="EveryVoyage">
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Tracking features</a>
+      <a href="#faq">FAQ</a>
+      <a href="../">EveryVoyage home</a>
+      <details class="language-switcher">
+        <summary aria-label="Choose website language">English (UK) <span aria-hidden="true">⌄</span></summary>
+        <div class="language-menu">
+          <a href="./">English (UK)</a><a href="../en-us/">English (US)</a><a href="../de/">Deutsch</a>
+          <a href="../fr/">Français</a><a href="../es/">Español</a><a href="../it/">Italiano</a>
+          <a href="../nl/">Nederlands</a><a href="../sv/">Svenska</a><a href="../da/">Dansk</a><a href="../no/">Norsk</a>
+        </div>
+      </details>
+      <a href="#download" class="download-nav">Download</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <nav>
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Tracking features</a>
+        <a href="#faq">FAQ</a>
+        <a href="../">EveryVoyage home</a>
+        <a href="#download" class="mobile-download">Download EveryVoyage</a>
+      </nav>
+      <details class="mobile-language">
+        <summary>Language: English (UK)</summary>
+        <div class="mobile-language-grid">
+          <a href="./">English (UK)</a><a href="../en-us/">English (US)</a><a href="../de/">Deutsch</a>
+          <a href="../fr/">Français</a><a href="../es/">Español</a><a href="../it/">Italiano</a>
+          <a href="../nl/">Nederlands</a><a href="../sv/">Svenska</a><a href="../da/">Dansk</a><a href="../no/">Norsk</a>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="tracker-hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="breadcrumbs"><a href="../">Home</a><span>›</span><span>Road Trip Tracker</span></div>
+          <span class="hero-eyebrow">GPS road trip tracking for motorhomes &amp; campervans</span>
+          <h1>Track the road trip. <em>Keep the story.</em></h1>
+          <p>Automatically record your route with GPS, keep tracking when the signal drops, and look back on the whole journey with your stops, photos and Moments attached.</p>
+          <div class="hero-proof">
+            <span>● Live GPS recording</span>
+            <span>⊘ Works offline</span>
+            <span>↺ Add past Trips</span>
+          </div>
+          <div class="store-row">
+            <div class="store-stack">
+              <a href="https://apps.apple.com/app/id6755696102" target="_blank" rel="noopener">
+                <img src="../assets/stores/download-on-the-app-store.svg" onerror="this.onerror=null;this.src='../assets-demo/appstore-badge.png'" alt="Download EveryVoyage on the App Store">
+              </a>
+              <div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
+            </div>
+            <div class="store-stack">
+              <a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" target="_blank" rel="noopener">
+                <img src="../assets/stores/Google_Play_Store_badge_EN.svg" onerror="this.onerror=null;this.src='../assets-demo/googleplay-badge.png'" alt="Get EveryVoyage on Google Play">
+              </a>
+              <div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="EveryVoyage road trip tracking screen">
+          <div class="hero-modal">
+            <div class="hero-modal-top">
+              <div>
+                <span class="hero-modal-badge"><i></i> Recording live</span>
+                <strong>Trip is still building</strong>
+                <small>Saved automatically as you drive</small>
+              </div>
+            </div>
+            <div class="hero-metrics">
+              <div class="hero-metric"><b>42.3</b><span>miles</span></div>
+              <div class="hero-metric"><b>4h 6m</b><span>duration</span></div>
+              <div class="hero-metric"><b>10</b><span>avg mph</span></div>
+            </div>
+          </div>
+          <img class="hero-phone" src="../assets/img/AppPhoneHero.svg" onerror="this.onerror=null;this.src='../assets-demo/hero-phone.png'" alt="EveryVoyage GPS road trip tracking screen">
+        </div>
+      </div>
+    </section>
+
+    <section class="tracker-proof">
+      <div class="wrap proof-grid">
+        <div class="proof-copy">
+          <span class="section-kicker" style="color:#ff8a55">Road trip tracking without the admin</span>
+          <h2>Start recording once. <em>Enjoy the drive after that.</em></h2>
+          <p>You should not have to spend the journey dropping pins, writing down places or trying to remember every road. Record the Trip and let the route build in the background.</p>
+          <div class="proof-list">
+            <div class="proof-item"><span>●</span><div>Records while you drive, even when your phone is locked.</div></div>
+            <div class="proof-item"><span>⊘</span><div>Keeps tracking when your road trip takes you beyond mobile signal.</div></div>
+            <div class="proof-item"><span>↺</span><div>Lets you add a past road trip afterwards and rebuild the route clearly.</div></div>
+          </div>
+        </div>
+        <div class="video-card" id="trackerVideo" role="button" tabindex="0" aria-label="Play the EveryVoyage road trip tracker preview">
+          <img src="../assets/img/AppPreview.webp" onerror="this.onerror=null;this.src='../assets-demo/hero-bg.jpg'" alt="Preview of EveryVoyage tracking a road trip">
+          <div class="video-overlay">
+            <div>
+              <span class="section-kicker" style="color:#ff8a55">See it in action</span>
+              <strong>Watch a road trip become a story.</strong>
+              <span class="play-button" aria-hidden="true">▶</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-section">
+      <div class="wrap problem-grid">
+        <div class="problem-copy">
+          <span class="section-kicker">The route matters too</span>
+          <h2>Your road trip deserves more than <em>a camera roll.</em></h2>
+          <p>Photos capture the highlights, but the route is what ties the whole adventure together. Record where you drove first, then keep the moments attached to the Trip so the story still makes sense later.</p>
+          <div class="problem-points">
+            <div class="problem-point"><span>1</span><div>Keep the roads, timings and stops instead of relying on memory.</div></div>
+            <div class="problem-point"><span>2</span><div>Attach photos and notes to the Trip so each memory stays in context.</div></div>
+            <div class="problem-point"><span>3</span><div>Look back on the full road trip rather than isolated images.</div></div>
+          </div>
+        </div>
+        <div class="route-memory">
+          <span class="record-chip"><i></i> Route being recorded</span>
+          <div class="memory-chip one">
+            <img src="../assets/img/RoadTrip.svg" onerror="this.onerror=null;this.src='../assets-demo/hero-bg.jpg'" alt="">
+            <div><strong>Photo attached to this Trip</strong><small>Mizen Head · 30 Jul</small></div>
+          </div>
+          <div class="memory-chip two">
+            <img src="../assets/img/Sunset.svg" onerror="this.onerror=null;this.src='../assets-demo/cta-bg.jpg'" alt="">
+            <div><strong>Moment added on the map</strong><small>Killarney · 31 Jul</small></div>
+          </div>
+          <div class="route-memory-main">
+            <img src="../assets/img/StoryTrack.svg" onerror="this.onerror=null;this.src='../assets-demo/screen-content.png'" alt="EveryVoyage showing a recorded route">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="wrap">
+        <div class="section-heading">
+          <span class="section-kicker">How the road trip tracker works</span>
+          <h2>From first mile to final map.</h2>
+          <p>Start recording, enjoy the drive and let EveryVoyage turn the route into a road trip you can return to.</p>
+        </div>
+
+        <div class="step-grid">
+          <article class="tracking-step reveal">
+            <span class="step-number">01 / START</span>
+            <h3>Tap record</h3>
+            <p>Start a Trip before you set off. EveryVoyage begins following your route in the background.</p>
+            <div class="step-device"><div class="step-screen"><img src="../assets/img/StoryTrack.svg" onerror="this.onerror=null;this.src='../assets-demo/screen-content.png'" alt="Start recording a road trip in EveryVoyage"></div></div>
+          </article>
+
+          <article class="tracking-step reveal">
+            <span class="step-number">02 / DRIVE</span>
+            <h3>Keep travelling</h3>
+            <p>Your route continues to build as you drive, including when your road trip takes you beyond mobile signal.</p>
+            <div class="step-device"><div class="step-screen"><img src="../assets/img/StoryJournal.svg" onerror="this.onerror=null;this.src='../assets-demo/screen-content.png'" alt="Add photos and Moments while tracking a road trip"></div></div>
+          </article>
+
+          <article class="tracking-step reveal">
+            <span class="step-number">03 / RELIVE</span>
+            <h3>See the whole journey</h3>
+            <p>Finish the Trip and look back on the route, memories and details together as one complete story.</p>
+            <div class="step-device"><div class="step-screen"><img src="../assets/img/StoryVoyage.svg" onerror="this.onerror=null;this.src='../assets-demo/screen-content.png'" alt="Relive a complete road trip on the EveryVoyage map"></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-section" id="features">
+      <div class="wrap">
+        <div class="section-heading">
+          <span class="section-kicker">Built around real road trips</span>
+          <h2>More than a line on a map.</h2>
+          <p>Your route is the start. EveryVoyage keeps the practical details and memories that make the road trip yours.</p>
+        </div>
+
+        <div class="benefit-mosaic">
+          <article class="benefit-card offline-benefit reveal">
+            <span class="benefit-icon">⊘</span>
+            <h3>Works when the signal doesn’t.</h3>
+            <p>Remote coasts, mountain roads and quiet park-ups should not leave a gap in your journey.</p>
+            <div class="offline-scene" aria-hidden="true"></div>
+            <span class="no-signal-pill">No signal needed</span>
+          </article>
+
+          <article class="benefit-card past-benefit reveal">
+            <span class="benefit-icon">↺</span>
+            <h3>Add a past Trip</h3>
+            <p>Choose the places and date, and EveryVoyage helps map the likely roads you took so the route feels accurate, not guessed.</p>
+            <span class="route-replay" aria-hidden="true"></span>
+          </article>
+
+          <article class="benefit-card privacy-benefit reveal">
+            <div class="privacy-title">
+              <span class="benefit-icon">◎</span>
+              <h3>Your route, your privacy.</h3>
+            </div>
+            <div class="privacy-stage" aria-hidden="true">
+              <span class="privacy-pill"></span>
+              <span class="privacy-ring"></span>
+              <span class="privacy-you"></span>
+              <span class="privacy-friend privacy-f1"></span>
+              <span class="privacy-friend privacy-f2"></span>
+              <span class="privacy-friend privacy-f3"></span>
+              <span class="privacy-friend privacy-f4"></span>
+              <span class="privacy-other privacy-o1"></span>
+              <span class="privacy-other privacy-o2"></span>
+              <span class="privacy-other privacy-o3"></span>
+              <span class="privacy-other privacy-o4"></span>
+            </div>
+          </article>
+
+          <article class="benefit-card stats-benefit reveal">
+            <span class="benefit-icon">↗</span>
+            <h3>Track the miles.</h3>
+            <p>See the journey totals build as the road trip grows.</p>
+            <div class="miles-meter" aria-hidden="true">
+              <div class="miles-fill"><strong>1,248 mi</strong></div>
+            </div>
+            <div class="stat-mini-row" aria-hidden="true">
+              <div class="stat-mini">18h 32m total driving</div>
+              <div class="stat-mini">10 mph average speed</div>
+            </div>
+          </article>
+
+          <article class="benefit-card cost-benefit reveal">
+            <span class="benefit-icon">£</span>
+            <h3>Keep costs attached.</h3>
+            <div class="cost-list" aria-hidden="true">
+              <div class="cost-row"><span>Fuel</span><strong>£186</strong></div>
+              <div class="cost-row"><span>Campsites</span><strong>£164</strong></div>
+              <div class="cost-row"><span>Tolls</span><strong>£78</strong></div>
+            </div>
+            <div class="cost-caption">Track expenses for one Trip or the wider road trip.</div>
+          </article>
+
+          <article class="benefit-card voyage-benefit reveal">
+            <img src="../assets/img/AppPreview.webp" onerror="this.onerror=null;this.src='../assets-demo/hero-bg.jpg'" alt="A complete multi-day Voyage in EveryVoyage">
+            <div class="voyage-benefit-copy">
+              <span class="section-kicker" style="color:#ff8a55">Multi-day journeys</span>
+              <h3>Turn Trips into one complete Voyage.</h3>
+              <p>Bring the driving days together and see the bigger road trip as one story.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-section">
+      <div class="wrap result-panel">
+        <div class="result-copy">
+          <span class="section-kicker">What your tracking becomes</span>
+          <h2>A route you can actually feel something about.</h2>
+          <p>The final map is not just proof that you drove somewhere. It is a way to return to the roads, the stops and the moments that made the road trip matter.</p>
+        </div>
+        <div class="result-visual">
+          <img src="../assets/img/StoryVoyage.svg" onerror="this.onerror=null;this.src='../assets-demo/screen-content.png'" alt="A completed EveryVoyage road trip with route and memories">
+          <span class="result-chip">Route · photos · Moments · stats</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-section">
+      <div class="wrap">
+        <span class="section-kicker" style="color:#ff8a55">Made for the open road</span>
+        <h2>Road trip tracking that fits the way you travel.</h2>
+        <p>Whether it is a weekend in the campervan or several months crossing Europe, the complete journey stays together.</p>
+        <div class="audience-chips">
+          <span>Motorhome tours</span>
+          <span>Campervan adventures</span>
+          <span>European road trips</span>
+          <span>Weekend escapes</span>
+          <span>Multi-day journeys</span>
+          <span>Past adventures</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="wrap faq-grid">
+        <div class="faq-heading">
+          <span class="section-kicker">Road trip tracker FAQ</span>
+          <h2>Questions before you start driving?</h2>
+          <p>Everything you need to know about recording a road trip with EveryVoyage.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item"><summary>How does the EveryVoyage road trip tracker work?</summary><div class="faq-answer">Start a Trip in the EveryVoyage app and tap record. The app uses GPS to follow your route in the background while you drive. When you finish, the route is saved with your photos, Moments and Trip details.</div></details>
+          <details class="faq-item"><summary>Does road trip tracking work without mobile signal?</summary><div class="faq-answer">Yes. EveryVoyage can continue recording your route when you have no signal and upload the Trip when your connection returns.</div></details>
+          <details class="faq-item"><summary>Can I add a road trip after I have completed it?</summary><div class="faq-answer">Yes. You can create a past Trip manually, choose the route and date, and EveryVoyage helps rebuild a likely route between those places.</div></details>
+          <details class="faq-item"><summary>Can I keep my road trip private?</summary><div class="faq-answer">Yes. You control who can see your journey, and you can hide exact start and end locations when you share a Trip.</div></details>
+          <details class="faq-item"><summary>Can I add photos and notes to my tracked route?</summary><div class="faq-answer">Yes. Add photos, notes and Moments during or after the journey so each memory stays connected to where it happened.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="download">
+      <div class="final-content">
+        <span class="section-kicker" style="color:#ff8a55">Start tracking your road trip</span>
+        <h2>Make your next road trip one to remember.</h2>
+        <p>Track the route, save the moments and relive the whole adventure in one place.</p>
+        <div class="store-row">
+          <div class="store-stack">
+            <a href="https://apps.apple.com/app/id6755696102" target="_blank" rel="noopener"><img src="../assets/stores/download-on-the-app-store.svg" onerror="this.onerror=null;this.src='../assets-demo/appstore-badge.png'" alt="Download EveryVoyage on the App Store"></a>
+          </div>
+          <div class="store-stack">
+            <a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" target="_blank" rel="noopener"><img src="../assets/stores/Google_Play_Store_badge_EN.svg" onerror="this.onerror=null;this.src='../assets-demo/googleplay-badge.png'" alt="Get EveryVoyage on Google Play"></a>
+          </div>
+        </div>
+        <div class="download-note">Free to download on iOS and Android.</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-download-bar" id="mobileDownloadBar" hidden>
+    <div class="mobile-download-copy"><strong>Track your next road trip</strong><span>Free on iOS and Android</span></div>
+    <a href="#download">Download free</a>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="footer-logo" src="../assets/brand/LogoWhite.png" onerror="this.onerror=null;this.src='../assets-demo/logo-white-fallback.svg'" alt="EveryVoyage">
+          <p>Track your route, keep the journey and relive every adventure.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul><li><a href="../">EveryVoyage home</a></li><li><a href="#how-it-works">Road trip tracking</a></li><li><a href="#features">Tracking features</a></li><li><a href="#download">Download</a></li></ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul><li><a href="../faq.html">FAQ</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul><li><a href="../privacy-policy.html">Privacy</a></li><li><a href="../terms.html">Terms</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 EveryVoyage. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle=document.getElementById('menuToggle');
+    const mobileMenu=document.getElementById('mobileMenu');
+    const siteHeader=document.getElementById('siteHeader');
+    function setMobileMenu(open){
+      menuToggle.setAttribute('aria-expanded',String(open));
+      menuToggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+      mobileMenu.hidden=!open;
+      document.body.classList.toggle('menu-open',open);
+    }
+    menuToggle.addEventListener('click',()=>setMobileMenu(menuToggle.getAttribute('aria-expanded')!=='true'));
+    mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMobileMenu(false)));
+    document.addEventListener('click',event=>{if(!mobileMenu.hidden&&!siteHeader.contains(event.target))setMobileMenu(false);});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!mobileMenu.hidden){setMobileMenu(false);menuToggle.focus();}});
+    addEventListener('resize',()=>{if(innerWidth>1000&&!mobileMenu.hidden)setMobileMenu(false);});
+
+    const revealObserver=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },{threshold:.14,rootMargin:'0px 0px -7%'});
+    document.querySelectorAll('.reveal').forEach((element,index)=>{
+      element.style.transitionDelay=`${Math.min(index*.055,.27)}s`;
+      revealObserver.observe(element);
+    });
+
+    const finalCta=document.querySelector('.final-cta');
+    const finalObserver=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          finalCta.classList.add('in-view');
+          finalObserver.unobserve(entry.target);
+        }
+      });
+    },{threshold:.25});
+    finalObserver.observe(finalCta);
+
+    function openTrackerVideo(){
+      const modal=document.createElement('div');
+      modal.style.cssText='position:fixed;z-index:9999;inset:0;display:grid;place-items:center;padding:24px;background:rgba(0,0,0,.9)';
+      modal.innerHTML=`<div style="position:relative;max-width:min(430px,90vw);max-height:88vh"><button aria-label="Close video" style="position:absolute;right:0;top:-47px;border:0;background:none;color:white;font-size:32px;cursor:pointer">×</button><video controls autoplay muted playsinline style="display:block;max-width:100%;max-height:86vh;border-radius:22px;background:#111"><source src="../assets/video/RoadTripTrackerPreview.mp4" type="video/mp4"><source src="../assets/video/AppPreview.mp4" type="video/mp4"></video></div>`;
+      modal.addEventListener('click',event=>{if(event.target===modal||event.target.tagName==='BUTTON')modal.remove();});
+      document.body.appendChild(modal);
+    }
+    const trackerVideo=document.getElementById('trackerVideo');
+    trackerVideo.addEventListener('click',openTrackerVideo);
+    trackerVideo.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openTrackerVideo();}});
+
+    const mobileDownloadBar=document.getElementById('mobileDownloadBar');
+    const hero=document.querySelector('.tracker-hero');
+    function updateMobileDownloadBar(){
+      if(innerWidth>720){mobileDownloadBar.hidden=true;mobileDownloadBar.classList.remove('is-visible');return;}
+      const heroPassed=hero.getBoundingClientRect().bottom<80;
+      const finalVisible=finalCta.getBoundingClientRect().top<innerHeight*.82;
+      const shouldShow=heroPassed&&!finalVisible;
+      mobileDownloadBar.hidden=!shouldShow;
+      requestAnimationFrame(()=>mobileDownloadBar.classList.toggle('is-visible',shouldShow));
+    }
+    addEventListener('scroll',updateMobileDownloadBar,{passive:true});
+    addEventListener('resize',updateMobileDownloadBar);
+    updateMobileDownloadBar();
+  </script>
+</body>
+</html>
