@@ -585,7 +585,7 @@
 
     /* The real product image is strong enough on its own. */
     .hero-visual{display:grid;place-items:center;min-height:650px}
-    .hero-journal-image{position:relative;right:auto;top:auto;width:min(440px,38vw);transform:rotate(1.2deg)}
+    .hero-journal-image{position:center;right:auto;top:auto;width:min(440px,38vw);transform:rotate(1.2deg)}
     .journal-float{display:none!important}
 
     /* Keep the first line deliberate and make the map visual portrait-led. */
@@ -931,6 +931,245 @@
       .loop-brand{width:98px;height:98px}
       .loop-brand img{width:72px}
     }
+
+    /* ===== Responsive fixes for tablet and mobile ===== */
+
+    /* Centre only the community heading once the section becomes one column. */
+    @media (max-width:1100px){
+      #future-places .community-copy{
+        width:100%;
+        max-width:none;
+        text-align:left !important;
+      }
+
+      #future-places .community-copy .community-heading{
+        width:100%;
+        max-width:none;
+        text-align:center !important;
+      }
+
+      #future-places .community-copy p{
+        max-width:760px;
+        text-align:left;
+      }
+    }
+
+    /* Keep the square product images in normal document flow.
+       This prevents the Trips image covering the tracker link and stops
+       the full-width Voyage card creating an enormous square. */
+    @media (max-width:1000px){
+      .method-card,
+      .method-card:nth-child(3){
+        min-height:0 !important;
+        padding:28px 25px 22px;
+        display:flex;
+        flex-direction:column;
+      }
+
+      .method-image{
+        position:relative;
+        inset:auto;
+        left:auto;
+        right:auto;
+        bottom:auto;
+        width:100%;
+        height:auto !important;
+        margin-top:24px;
+        flex:0 0 auto;
+        aspect-ratio:1 / 1;
+      }
+
+      .method-card:nth-child(3){
+        grid-column:1 / -1;
+      }
+
+      .method-card:nth-child(3) .method-image{
+        width:min(430px,100%);
+        align-self:center;
+      }
+    }
+
+    /* A larger, properly connected loop on tablets. */
+    @media (min-width:721px) and (max-width:1100px){
+      #future-places .community-loop{
+        width:min(720px,100%);
+        min-height:620px;
+        aspect-ratio:auto;
+        display:grid;
+        grid-template-columns:minmax(190px,1fr) 170px minmax(190px,1fr);
+        grid-template-rows:140px 170px 140px;
+        gap:26px 30px;
+        align-items:center;
+        justify-items:stretch;
+        padding:44px 34px;
+        overflow:visible;
+      }
+
+      #future-places .loop-line{
+        left:19%;
+        right:19%;
+        top:16%;
+        bottom:16%;
+        border-radius:50%;
+        border-width:2px;
+      }
+
+      #future-places .loop-node{
+        position:relative;
+        inset:auto;
+        width:100%;
+        min-height:112px;
+        padding:17px 18px;
+        transform:none !important;
+      }
+
+      #future-places .loop-node b{
+        font-size:15px;
+      }
+
+      #future-places .loop-node small{
+        margin-top:7px;
+        font-size:11px;
+        line-height:1.45;
+      }
+
+      #future-places .loop-node.one{
+        grid-column:2;
+        grid-row:1;
+        width:220px;
+        justify-self:center;
+      }
+
+      #future-places .loop-node.two{
+        grid-column:3;
+        grid-row:2;
+      }
+
+      #future-places .loop-node.three{
+        grid-column:2;
+        grid-row:3;
+        width:220px;
+        justify-self:center;
+      }
+
+      #future-places .loop-node.four{
+        grid-column:1;
+        grid-row:2;
+      }
+
+      #future-places .loop-brand{
+        position:relative;
+        grid-column:2;
+        grid-row:2;
+        left:auto;
+        top:auto;
+        width:154px;
+        height:154px;
+        justify-self:center;
+        align-self:center;
+        transform:none;
+      }
+
+      #future-places .loop-brand img{
+        width:112px;
+      }
+    }
+
+    /* On phones use a readable connected journey instead of squeezing
+       four tiny cards around a small circle. */
+    @media (max-width:720px){
+      .method-card,
+      .method-card:nth-child(3){
+        min-height:0 !important;
+        padding:25px 20px 20px;
+      }
+
+      .method-card:nth-child(3) .method-image{
+        width:100%;
+      }
+
+      #future-places .community-loop{
+        width:100%;
+        min-height:0;
+        aspect-ratio:auto;
+        display:flex;
+        flex-direction:column;
+        gap:14px;
+        padding:26px 18px 22px;
+        overflow:visible;
+      }
+
+      #future-places .community-loop::before,
+      #future-places .community-loop::after{
+        display:none;
+      }
+
+      #future-places .loop-line{
+        left:29px;
+        right:auto;
+        top:124px;
+        bottom:30px;
+        width:0;
+        height:auto;
+        border:0;
+        border-left:2px dashed rgba(255,138,85,.48);
+        border-radius:0;
+      }
+
+      #future-places .loop-brand{
+        position:relative;
+        order:-1;
+        left:auto;
+        top:auto;
+        width:132px;
+        height:132px;
+        margin:0 auto 8px;
+        transform:none;
+      }
+
+      #future-places .loop-brand img{
+        width:96px;
+      }
+
+      #future-places .loop-node,
+      #future-places .loop-node.one,
+      #future-places .loop-node.two,
+      #future-places .loop-node.three,
+      #future-places .loop-node.four{
+        position:relative;
+        inset:auto;
+        width:calc(100% - 38px);
+        min-height:0;
+        margin-left:38px;
+        padding:16px 17px;
+        transform:none !important;
+      }
+
+      #future-places .loop-node::before{
+        content:"";
+        position:absolute;
+        left:-31px;
+        top:50%;
+        width:13px;
+        height:13px;
+        border:3px solid var(--deep-blue);
+        border-radius:50%;
+        background:#ff8a55;
+        box-shadow:0 0 0 4px rgba(255,138,85,.13);
+        transform:translateY(-50%);
+      }
+
+      #future-places .loop-node b{
+        font-size:14px;
+      }
+
+      #future-places .loop-node small{
+        margin-top:6px;
+        font-size:10.5px;
+        line-height:1.45;
+      }
+    }
+
 </style>
 </head>
 <body>
@@ -1076,13 +1315,13 @@
 </article>
 <article class="method-card dark reveal">
 <span class="method-number">02 · MOMENTS</span>
-<h3>Add what made it matter.</h3>
+<h3>Add what made it special.</h3>
 <p>Attach a photo and note to the place where the view, stop or story happened.</p>
 <div class="method-image moment-square"><img alt="A photo and note saved as an EveryVoyage Moment" onerror="this.onerror=null;this.src='../assets/img/Lake.jpg'" src="../assets/img/JournalMomentSquare.webp"/></div>
 </article>
 <article class="method-card reveal">
 <span class="method-number">03 · VOYAGES</span>
-<h3>Bring the road trip together.</h3>
+<h3>Bring the road trip to life.</h3>
 <p>Choose the dates and the Trips and Moments within them become one day-by-day Voyage.</p>
 <div class="method-image voyage-horizontal">
 <div class="voyage-landscape"><img alt="Complete Voyage map shown in landscape format" src="../assets/img/SquareMap.svg"/></div>
@@ -1105,7 +1344,7 @@
 <div class="autonomy-copy reveal">
 <span class="section-kicker" style="color:#ff8a55">Built around real road trips</span>
 <h2 class="heading"><span>Press record once.</span><em>Let the road shape the journal.</em></h2>
-<p>Start a Trip and EveryVoyage records the shape of the drive in the background. The route supplies the structure. Photos, notes and Moments add the story whenever something is worth remembering.</p>
+<p>Start a Trip and EveryVoyage records every twist and turn of the drive in the background. The route supplies the structure. Photos, notes and Moments add the story whenever something is worth remembering.</p>
 <div class="autonomy-list">
 <div class="autonomy-item"><span>●</span><div>The Trip records the route, date, time and distance automatically.</div></div>
 <div class="autonomy-item"><span>📷</span><div>Moments explain the views, people and stops that made the day memorable.</div></div>
