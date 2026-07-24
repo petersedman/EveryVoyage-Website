@@ -2564,6 +2564,65 @@
   .privacy-network{top:0;bottom:0;height:100%;}
 }
 
+
+/* Small phones: keep the privacy copy full width, then place the audience animation below it. */
+@media (max-width:720px){
+  .privacy-overview{
+    grid-template-columns:1fr;
+    gap:30px;
+    align-items:start;
+  }
+
+  .privacy-copy{
+    width:100%;
+    max-width:none;
+  }
+
+  .privacy-card{
+    width:100%;
+    min-height:420px;
+    margin:0;
+  }
+
+  .privacy-mode{
+    top:0;
+    left:50%;
+    right:auto;
+    transform:translateX(-50%);
+  }
+
+  .privacy-network{
+    top:58px;
+    right:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:auto;
+  }
+}
+
+
+/* Keep tablet and mid-size privacy copy left aligned. Centre it only on small phones. */
+@media (min-width:481px) and (max-width:1100px){
+  .privacy-copy{
+    text-align:left;
+  }
+
+  .privacy-copy>p{
+    margin-inline:0;
+  }
+}
+
+@media (max-width:480px){
+  .privacy-copy{
+    text-align:center;
+  }
+
+  .privacy-copy>p{
+    margin-inline:auto;
+  }
+}
+
 </style>
 </head>
 <body>
