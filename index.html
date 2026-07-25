@@ -3795,11 +3795,11 @@
     </a>
 
     <nav class="nav" aria-label="Primary navigation">
-      <a href="/features/">Features</a>
       <a href="/road-trip-tracker/">Tracker</a>
       <a href="/road-trip-journal/">Journal</a>
       <a href="/stops/">Stops</a>
       <a href="/road-trip-inspiration/">Inspiration</a>
+      <a href="/features/">Features</a>
       <details class="language-switcher">
         <summary aria-label="Choose website language">English (UK) <span aria-hidden="true">⌄</span></summary>
         <div class="language-menu" aria-label="Website languages">
@@ -3824,11 +3824,11 @@
 
     <div class="mobile-menu" id="mobileMenu" hidden>
       <nav class="mobile-menu-links" aria-label="Mobile navigation">
-        <a href="/features/">Features</a>
         <a href="/road-trip-tracker/">Road trip tracker</a>
         <a href="/road-trip-journal/">Road trip journal</a>
         <a href="/stops/">Stops and useful places</a>
         <a href="/road-trip-inspiration/">Road trip inspiration</a>
+        <a href="/features/">Features</a>
         <a href="#download" class="mobile-download">Download EveryVoyage</a>
       </nav>
       <details class="mobile-language-switcher">
@@ -3858,7 +3858,7 @@
             <span class="hero-line">Plan and track</span>
             <span class="hero-line accent">your road trips.</span>
           </h1>
-          <p>Find campsites and useful stops, record your route with GPS, add photos and Moments, and keep the complete journey together.</p>
+          <p>Find campsites, useful stops, record your route with GPS, add Moments, and keep the complete journey together.</p>
           <div class="stores-with-ratings">
             <div class="store-stack">
               <a href="https://apps.apple.com/app/id6755696102" target="_blank" rel="noopener">
@@ -3927,7 +3927,7 @@
 
             <article class="journey-scene" data-scene="5" data-phase="track">
               <span class="journey-scene-kicker">PAY IT FORWARD</span>
-              <h2>Share place <em>updates.</em></h2>
+              <h2>Add and update <em>places.</em></h2>
               <p>Rate stops, add photos and leave practical updates for the next traveller.</p>
               <a href="/stops/">Explore traveller-powered places <span>→</span></a>
             </article>
@@ -4130,7 +4130,7 @@
             </div>
           </a>
 
-          <a class="mosaic-card expense-card" href="/road-trip-journal/" aria-label="Learn about road trip expense tracking">
+          <article class="mosaic-card expense-card" aria-label="Road trip expense tracking">
             <span class="mosaic-kicker" style="color:var(--orange)">Trip costs</span>
             <h3>Log expenses</h3>
             <div class="expense-total">£428</div>
@@ -4139,7 +4139,7 @@
               <div class="expense-row"><span>Campsites</span><strong>£164</strong></div>
               <div class="expense-row"><span>Tolls</span><strong>£78</strong></div>
             </div>
-          </a>
+          </article>
 
           <a class="mosaic-card share-card share-card-compact" href="/road-trip-inspiration/" aria-label="Learn about sharing Voyages with friends">
             <div>
@@ -4288,7 +4288,7 @@
             </div>
           </article>
 
-          <a class="mosaic-card voyage-card" href="#" aria-label="Learn how Trips become Voyages">
+          <a class="mosaic-card voyage-card" href="#how-it-works" data-relive-link aria-label="Go to the Relive section">
             <video autoplay muted loop playsinline preload="auto" poster="assets/img/AppPreview.webp">
               <source src="assets/video/VoyagesFeature.mp4" type="video/mp4">
               <source src="assets/video/mapfunction.mp4" type="video/mp4">
@@ -4455,7 +4455,7 @@
         image:'assets/img/StoryPlaceUpdate.svg',
         fallback:'assets/img/AppHeroPOIs.svg',
         alt:'EveryVoyage place update with a rating and recent information',
-        label:'Share place updates'
+        label:'Add and update places'
       },
       {
         phase:'relive',
@@ -4580,6 +4580,28 @@
       });
     });
 
+    const reliveFeatureLink=document.querySelector('[data-relive-link]');
+    if(reliveFeatureLink){
+      reliveFeatureLink.addEventListener('click',event=>{
+        event.preventDefault();
+
+        if(innerWidth<=760){
+          const mobileRelive=document.querySelector('.journey-mobile-relive');
+          if(!mobileRelive) return;
+          const target=mobileRelive.getBoundingClientRect().top+scrollY-70;
+          scrollTo({top:target,behavior:'smooth'});
+          return;
+        }
+
+        if(!journeyStory) return;
+        const sceneIndex=6;
+        const scrollable=journeyStory.offsetHeight-innerHeight;
+        const segment=scrollable/journeySceneData.length;
+        const target=journeyStory.offsetTop+(segment*sceneIndex)+8;
+        scrollTo({top:target,behavior:'smooth'});
+      });
+    }
+
     addEventListener('scroll',requestJourneyUpdate,{passive:true});
     addEventListener('resize',requestJourneyUpdate);
     setJourneyState(0);
@@ -4604,7 +4626,7 @@
         titleHtml:[
           'Your travel <em>tracker.</em>',
           'Build your <em>journal.</em>',
-          'Share place <em>updates.</em>'
+          'Add and update <em>places.</em>'
         ][index],
         text:[
           'Record the road automatically, including when the signal drops.',
