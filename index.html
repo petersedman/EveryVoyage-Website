@@ -3713,6 +3713,79 @@
       }
     }
 
+
+    /* ===== Mobile journey heading and swipe refinements ===== */
+    @media (max-width:760px){
+      .journey-mobile-heading{
+        margin-bottom:22px;
+      }
+      .journey-mobile-heading>span{
+        display:block;
+      }
+      .journey-mobile-relive .journey-mobile-heading>span{
+        color:var(--orange);
+      }
+      .journey-mobile-carousel{
+        touch-action:pan-y;
+        user-select:none;
+        -webkit-user-select:none;
+      }
+    }
+
+
+    /* ===== Mobile keyword emphasis and slightly shorter phone frames ===== */
+    @media (max-width:760px){
+      /* Restore the italic orange keyword used by the desktop story. */
+      .journey-mobile-copy h3 em{
+        color:var(--orange);
+        font-style:italic;
+      }
+      .journey-mobile-track .journey-mobile-copy h3 em{
+        color:#ff8a55;
+      }
+
+      /* Shorten only the mobile phone previews very slightly. The tighter
+         ratio crops the small built-in top/bottom margins in the screenshots. */
+      .journey-mobile-phone>div,
+      .journey-mobile-relive-main>div{
+        aspect-ratio:9/19.05;
+      }
+      .journey-mobile-phone img,
+      .journey-mobile-relive-main img{
+        object-position:center center;
+      }
+    }
+
+
+    /* ===== Mobile-only compact story spacing and screenshot ratio ===== */
+    @media (max-width:760px){
+      /* The three mobile phases no longer use supporting description copy. */
+      .journey-mobile-copy p,
+      .journey-mobile-heading>p{
+        display:none!important;
+      }
+
+      /* Remove the space previously reserved for those paragraphs. */
+      .journey-mobile-heading{
+        margin-bottom:12px;
+      }
+      .journey-mobile-copy{
+        min-height:48px;
+      }
+
+      /* Pull only the mobile Plan and Track phones closer to their titles. */
+      .journey-mobile-phone{
+        margin-top:-6px;
+      }
+
+      /* Shorten only the small-screen phone frames a little more so the
+         screenshots crop away their remaining top and bottom whitespace. */
+      .journey-mobile-phone>div,
+      .journey-mobile-relive-main>div{
+        aspect-ratio:9/18.6;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -3931,13 +4004,11 @@
         <section class="journey-mobile-phase" data-mobile-phase="plan">
           <div class="journey-mobile-heading">
             <span>PLAN</span>
-            <h2>Plan the road trip.</h2>
           </div>
 
           <div class="journey-mobile-carousel">
             <div class="journey-mobile-copy">
-              <h3 data-mobile-title>Find useful stops.</h3>
-              <p data-mobile-text>See campsites, aires, parking, services and places worth the detour.</p>
+              <h3 data-mobile-title>Find useful <em>stops.</em></h3>
             </div>
 
             <div class="journey-mobile-phone">
@@ -3962,13 +4033,11 @@
         <section class="journey-mobile-phase journey-mobile-track" data-mobile-phase="track">
           <div class="journey-mobile-heading">
             <span>TRACK</span>
-            <h2>Track the road trip.</h2>
           </div>
 
           <div class="journey-mobile-carousel">
             <div class="journey-mobile-copy">
-              <h3 data-mobile-title>Your travel tracker.</h3>
-              <p data-mobile-text>Record the road automatically, including when the signal drops.</p>
+              <h3 data-mobile-title>Your travel <em>tracker.</em></h3>
             </div>
 
             <div class="journey-mobile-phone">
@@ -3992,9 +4061,7 @@
 
         <section class="journey-mobile-phase journey-mobile-relive">
           <div class="journey-mobile-heading">
-            <span>RELIVE</span>
-            <h2>Relive the adventure.</h2>
-            <p>See the route, stops and Moments together in one complete Voyage.</p>
+            <span>RELIVE THE ADVENTURE.</span>
           </div>
 
           <div class="journey-mobile-relive-stage">
@@ -4521,10 +4588,10 @@
     const mobileCarouselData={
       plan:journeySceneData.slice(0,3).map((item,index)=>({
         ...item,
-        title:[
-          'Find useful stops.',
-          'Refine your search.',
-          'Follow proven routes.'
+        titleHtml:[
+          'Find useful <em>stops.</em>',
+          'Refine your <em>search.</em>',
+          'Follow proven <em>routes.</em>'
         ][index],
         text:[
           'See campsites, aires, parking, services and places worth the detour.',
@@ -4534,10 +4601,10 @@
       })),
       track:journeySceneData.slice(3,6).map((item,index)=>({
         ...item,
-        title:[
-          'Your travel tracker.',
-          'Build your journal.',
-          'Share place updates.'
+        titleHtml:[
+          'Your travel <em>tracker.</em>',
+          'Build your <em>journal.</em>',
+          'Share place <em>updates.</em>'
         ][index],
         text:[
           'Record the road automatically, including when the signal drops.',
@@ -4577,7 +4644,7 @@
         index=(nextIndex+items.length)%items.length;
         const item=items[index];
 
-        if(title) title.textContent=item.title;
+        if(title) title.innerHTML=item.titleHtml;
         if(text) text.textContent=item.text;
         if(image){
           image.style.opacity='.12';
@@ -4614,6 +4681,36 @@
         render(index+1);
         restartAuto();
       });
+
+      let swipeStartX=0;
+      let swipeStartY=0;
+      let swipeTracking=false;
+
+      carousel.addEventListener('touchstart',event=>{
+        const touch=event.changedTouches[0];
+        swipeStartX=touch.clientX;
+        swipeStartY=touch.clientY;
+        swipeTracking=true;
+        clearInterval(autoTimer);
+      },{passive:true});
+
+      carousel.addEventListener('touchend',event=>{
+        if(!swipeTracking)return;
+        swipeTracking=false;
+        const touch=event.changedTouches[0];
+        const deltaX=touch.clientX-swipeStartX;
+        const deltaY=touch.clientY-swipeStartY;
+
+        if(Math.abs(deltaX)>=45&&Math.abs(deltaX)>Math.abs(deltaY)*1.2){
+          render(deltaX<0?index+1:index-1);
+        }
+        restartAuto();
+      },{passive:true});
+
+      carousel.addEventListener('touchcancel',()=>{
+        swipeTracking=false;
+        restartAuto();
+      },{passive:true});
 
       render(0);
       restartAuto();
