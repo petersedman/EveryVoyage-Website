@@ -2623,44 +2623,170 @@
   }
 }
 
+
+
+/* ===== Conversion-first navigation ===== */
+.site-header{padding-left:20px;padding-right:10px}
+.site-header-actions{display:flex;align-items:center;gap:9px}
+.get-app-nav{min-height:44px;padding:0 19px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:var(--orange);color:#fff!important;box-shadow:0 9px 23px rgba(245,74,0,.25);font-size:14px;font-weight:800;line-height:1;text-decoration:none;transition:transform .24s var(--ease),box-shadow .24s ease,background .2s ease}
+.get-app-nav:hover{transform:translateY(-2px);background:var(--orange-dark);box-shadow:0 13px 29px rgba(245,74,0,.31)}
+.menu-toggle{display:grid!important;width:44px;height:44px;border:1px solid rgba(38,39,37,.10);background:rgba(255,255,255,.58);box-shadow:none}
+.menu-toggle:hover{background:var(--orange-soft)}
+.menu-toggle span{background:var(--ink)}
+.mobile-menu{left:auto;right:max(12px,calc((100vw - 1180px)/2 + 12px));width:min(390px,calc(100vw - 24px));padding:20px;border-radius:25px}
+.menu-eyebrow{display:block;padding:2px 6px 11px;color:var(--orange);font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.mobile-menu-links{display:grid;gap:4px}
+.mobile-menu-links .menu-product-link{min-height:50px;padding:12px 13px;display:flex;align-items:center;justify-content:space-between;gap:16px;border:1px solid transparent;border-radius:13px;color:var(--ink);text-decoration:none}
+.mobile-menu-links .menu-product-link:hover{border-color:rgba(245,74,0,.13);background:var(--orange-soft)}
+.menu-product-link strong{font-size:15px;font-weight:800;line-height:1.2}
+.menu-product-link>span{color:var(--orange);font-size:18px;font-weight:800;transition:transform .2s var(--ease)}
+.menu-product-link:hover>span{transform:translateX(3px)}
+.menu-utility-links{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:12px;padding-top:13px;border-top:1px solid var(--line)}
+.menu-utility-links a{padding:10px 11px;border-radius:11px;background:var(--cream);color:var(--ink);font-size:12px;font-weight:800;text-align:center;text-decoration:none}
+.menu-utility-links a:hover{color:var(--orange-dark);background:var(--orange-soft)}
+.mobile-language-switcher{margin-top:11px}
+.mobile-language-switcher summary{padding:10px 4px;color:var(--muted);font-size:13px;font-weight:800;cursor:pointer}
+.menu-get-app{min-height:48px;margin-top:14px;display:flex;align-items:center;justify-content:center;border-radius:999px;background:var(--orange);color:#fff!important;box-shadow:0 10px 24px rgba(245,74,0,.22);font-size:14px;font-weight:850;text-decoration:none}
+.menu-get-app:hover{background:var(--orange-dark)}
+
+/* ===== Desktop QR modal ===== */
+.app-qr-modal[hidden]{display:none!important}
+.app-qr-modal{position:fixed;z-index:10000;inset:0;display:grid;place-items:center;padding:24px}
+.app-qr-backdrop{position:absolute;inset:0;background:rgba(8,20,21,.72);backdrop-filter:blur(9px)}
+.app-qr-dialog{position:relative;z-index:2;width:min(430px,100%);padding:34px 34px 31px;border:1px solid rgba(255,255,255,.72);border-radius:30px;background:var(--paper);color:var(--ink);text-align:center;box-shadow:0 30px 90px rgba(0,0,0,.28);animation:appQrIn .28s var(--ease) both}
+.app-qr-close{position:absolute;top:14px;right:14px;width:38px;height:38px;padding:0;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--ink);font-size:25px;line-height:1;cursor:pointer}
+.app-qr-close:hover{color:var(--orange);background:var(--orange-soft)}
+.app-qr-kicker{display:block;margin-bottom:9px;color:var(--orange);font-size:11px;font-weight:900;letter-spacing:.13em}
+.app-qr-dialog h2{margin:0;font-family:var(--display);font-size:clamp(38px,4.4vw,52px);font-weight:500;line-height:1;letter-spacing:-.045em}
+.app-qr-url{display:inline-block;margin-top:11px;color:var(--muted);font-size:13px;font-weight:750;text-decoration:none}
+.app-qr-url:hover{color:var(--orange)}
+.app-qr-image{width:min(290px,78vw);height:auto;margin:23px auto 0;border-radius:18px;background:#fff}
+.app-qr-dialog p{max-width:300px;margin:17px auto 0;color:var(--muted);font-size:14px}
+body.app-qr-open{overflow:hidden}
+@keyframes appQrIn{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+
+/* ===== Conversion-led footer ===== */
+#site-footer{padding:72px 0 24px;background:#102d2d;color:#fff}
+.footer-main{display:grid;grid-template-columns:minmax(260px,1.35fr) minmax(150px,.72fr) minmax(160px,.78fr) minmax(245px,1fr);gap:clamp(32px,4vw,66px);align-items:start}
+#site-footer .footer-logo{width:205px;height:auto;margin:0 0 18px}
+#site-footer .footer-brand p{max-width:340px;margin:0;color:rgba(255,255,255,.68);font-size:15px;line-height:1.6}
+#site-footer h4{margin:3px 0 18px;color:#ff8a55;font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+#site-footer ul{margin:0;padding:0;display:grid;gap:11px;list-style:none}
+#site-footer .footer-column a{color:rgba(255,255,255,.76);font-size:14px;font-weight:650;text-decoration:none;transition:color .2s ease,transform .2s ease}
+#site-footer .footer-column a:hover{color:#fff;transform:translateX(2px)}
+.footer-socials{display:flex;gap:9px;flex-wrap:wrap;margin-top:23px}
+.footer-socials a{min-height:40px;padding:8px 12px;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(255,255,255,.06);color:#fff!important;font-size:12px;font-weight:800;text-decoration:none}
+.footer-socials a:hover{border-color:rgba(255,138,85,.45);background:rgba(255,138,85,.11)}
+.footer-social-icon{width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:#fff;color:var(--orange)}
+.footer-social-icon svg{width:13px;height:13px;display:block;fill:currentColor}
+.footer-app-card{padding:24px;border:1px solid rgba(255,255,255,.14);border-radius:24px;background:rgba(255,255,255,.07);box-shadow:0 18px 45px rgba(0,0,0,.13)}
+.footer-app-kicker{display:block;margin-bottom:10px;color:#ff8a55;font-size:10px;font-weight:900;letter-spacing:.14em}
+.footer-app-card strong{display:block;font-family:var(--display);font-size:29px;font-weight:500;line-height:1.05;letter-spacing:-.035em}
+.footer-app-card p{margin:10px 0 17px;color:rgba(255,255,255,.66);font-size:13px}
+.footer-app-button{min-height:46px;padding:0 18px;display:flex;align-items:center;justify-content:center;border-radius:999px;background:var(--orange);color:#fff!important;box-shadow:0 10px 24px rgba(245,74,0,.20);font-size:14px;font-weight:850;text-decoration:none}
+.footer-app-button:hover{background:var(--orange-dark)}
+#site-footer .footer-bottom{margin-top:54px;padding-top:21px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.11);color:rgba(255,255,255,.46);font-size:12px}
+.footer-legal{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.footer-legal a{color:rgba(255,255,255,.55);text-decoration:none}
+.footer-legal a:hover{color:#fff}
+
+@media(max-width:1000px){
+  .footer-main{grid-template-columns:1.15fr 1fr 1fr}
+  .footer-app-card{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;align-items:center;gap:5px 24px}
+  .footer-app-kicker,.footer-app-card strong,.footer-app-card p{grid-column:1}
+  .footer-app-button{grid-column:2;grid-row:1/4;min-width:170px}
+}
+
+@media(max-width:720px){
+  .site-header{width:calc(100% - 16px);padding:0 8px 0 14px}
+  .brand-logo{width:145px}
+  .site-header-actions{gap:6px}
+  .get-app-nav{min-height:40px;padding:0 14px;font-size:12px}
+  .menu-toggle{width:40px;height:40px}
+  .mobile-menu{top:74px;left:8px;right:8px;width:auto;max-height:calc(100svh - 86px);padding:17px}
+  .menu-product-link strong{font-size:14px}
+  .app-qr-modal{display:none!important}
+  #site-footer{padding:58px 0 22px}
+  .footer-main{grid-template-columns:1fr 1fr;gap:38px 24px}
+  #site-footer .footer-brand{grid-column:1/-1}
+  .footer-app-card{grid-column:1/-1;display:block}
+  .footer-app-button{margin-top:15px}
+  #site-footer .footer-bottom{margin-top:40px;align-items:flex-start;flex-direction:column;gap:12px}
+}
+
+@media(max-width:440px){
+  .brand-logo{width:132px}
+  .get-app-nav{padding:0 11px;font-size:11px}
+  .site-header-actions{gap:4px}
+  .footer-main{grid-template-columns:1fr}
+  #site-footer .footer-brand,.footer-app-card{grid-column:auto}
+  .footer-socials{margin-top:19px}
+  .footer-column{padding-top:5px}
+}
+
+@media(prefers-reduced-motion:reduce){.app-qr-dialog{animation:none}}
+
 </style>
 </head>
 <body>
-<header class="site-header">
-<a aria-label="EveryVoyage home" class="brand-logo" href="../">
-<img alt="EveryVoyage" src="../assets/brand/Logo.png"/>
+<header class="site-header" id="siteHeader">
+<a aria-label="EveryVoyage home" class="brand-logo" href="/">
+<img alt="EveryVoyage" onerror="this.onerror=null;this.src='/assets-demo/logo-fallback.svg'" src="/assets/brand/Logo.png"/>
 </a>
-<nav aria-label="Primary navigation" class="nav">
-<a href="#whole-journey">How it works</a>
-<a href="#feed">The feed</a>
-<a href="#faq">FAQs</a>
-<a href="../">Home</a>
-<details class="language-switcher">
-<summary aria-label="Choose website language">English (UK) <span aria-hidden="true">⌄</span></summary>
-<div class="language-menu">
-<a href="./">English (UK)</a>
-<a href="../en-us/road-trip-inspiration/">English (US)</a>
-<a href="../de/road-trip-inspiration/">Deutsch</a>
-<a href="../fr/road-trip-inspiration/">Français</a>
-<a href="../es/road-trip-inspiration/">Español</a>
-</div>
-</details>
-<a class="download-nav" href="#download">Download</a>
-</nav>
+
+<div class="site-header-actions">
+<a class="get-app-nav" data-smart-app-link href="/app">Get the app</a>
 <button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" id="menuToggle" type="button">
 <span></span><span></span><span></span>
 </button>
-<div class="mobile-menu" hidden="" id="mobileMenu">
-<nav>
-<a href="#whole-journey">How it works</a>
-<a href="#feed">The feed</a>
-<a href="#faq">FAQS</a>
-<a href="../">Home</a>
+</div>
 
-<a class="mobile-download" href="#download">Download EveryVoyage</a>
+<div class="mobile-menu" hidden="" id="mobileMenu">
+<span class="menu-eyebrow">Explore the app</span>
+
+<nav aria-label="EveryVoyage product navigation" class="mobile-menu-links">
+<a class="menu-product-link" href="/stops/"><strong>Find stops &amp; places</strong><span aria-hidden="true">→</span></a>
+<a class="menu-product-link" href="/road-trip-tracker/"><strong>Track road trips</strong><span aria-hidden="true">→</span></a>
+<a class="menu-product-link" href="/road-trip-journal/"><strong>Keep a road trip journal</strong><span aria-hidden="true">→</span></a>
+<a class="menu-product-link" href="/road-trip-inspiration/"><strong>Explore road trips</strong><span aria-hidden="true">→</span></a>
 </nav>
+
+<div class="menu-utility-links">
+<a href="/#how-it-works">How it works</a>
+<a href="/features/">All features</a>
+</div>
+
+<details class="mobile-language-switcher">
+<summary>Language: English (UK)</summary>
+<div class="mobile-language-grid">
+<a href="/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="/en-us/" hreflang="en-US" lang="en-US">English (US)</a>
+<a href="/de/" hreflang="de" lang="de">Deutsch</a>
+<a href="/fr/" hreflang="fr" lang="fr">Français</a>
+<a href="/es/" hreflang="es" lang="es">Español</a>
+<a href="/it/" hreflang="it" lang="it">Italiano</a>
+<a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="/sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="/da/" hreflang="da" lang="da">Dansk</a>
+<a href="/no/" hreflang="no" lang="no">Norsk</a>
+</div>
+</details>
+
+<a class="menu-get-app" data-smart-app-link href="/app">Get the app</a>
 </div>
 </header>
+
+<div aria-hidden="true" class="app-qr-modal" hidden="" id="appQrModal">
+<div class="app-qr-backdrop" data-close-app-qr></div>
+<section aria-describedby="appQrDescription" aria-labelledby="appQrTitle" aria-modal="true" class="app-qr-dialog" role="dialog">
+<button aria-label="Close QR code" class="app-qr-close" data-close-app-qr type="button">×</button>
+<span class="app-qr-kicker">GET EVERYVOYAGE</span>
+<h2 id="appQrTitle">Scan to get the app</h2>
+<a class="app-qr-url" href="https://everyvoyage.com/app" rel="noopener" target="_blank">everyvoyage.com/app</a>
+<img alt="QR code linking to the EveryVoyage app download page" class="app-qr-image" src="/assets/img/EveryVoyageQR.png"/>
+<p id="appQrDescription">Open your phone camera and point it at the QR code.</p>
+</section>
+</div>
 <main>
 <section class="inspiration-hero" id="top">
 <div class="hero-inner">
@@ -2676,14 +2802,14 @@
 </div>
 <div class="store-row">
 <div class="store-stack">
-<a href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank">
+<a href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank" data-store-link>
 <img alt="Download EveryVoyage on the App Store" src="../assets/stores/download-on-the-app-store.svg"/>
 </a>
 <div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Free on iOS</div>
 </div>
 <div class="store-stack">
-<a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank">
+<a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank" data-store-link>
 <img alt="Get EveryVoyage on Google Play" src="../assets/stores/Google_Play_Store_badge_EN.svg"/>
 </a>
 <div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
@@ -3057,14 +3183,14 @@
 <p>Discover journeys and places, follow the people who inspire you, then track and remember the adventure in EveryVoyage.</p>
 <div class="store-row">
 <div class="store-stack">
-<a href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank">
+<a href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank" data-store-link>
 <img alt="Download EveryVoyage on the App Store" src="../assets/stores/download-on-the-app-store.svg"/>
 </a>
 <div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Free on iOS</div>
 </div>
 <div class="store-stack">
-<a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank">
+<a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank" data-store-link>
 <img alt="Get EveryVoyage on Google Play" src="../assets/stores/Google_Play_Store_badge_EN.svg"/>
 </a>
 <div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
@@ -3075,42 +3201,72 @@
 </div>
 </section>
 </main>
-<footer>
+<footer id="site-footer">
 <div class="wrap">
-<div class="footer-grid">
+<div class="footer-main">
 <div class="footer-brand">
-<img alt="EveryVoyage" class="footer-logo" src="../assets/brand/LogoWhite.png"/>
-<p>Discover road trips, track the route and keep the complete journey.</p>
+<a aria-label="EveryVoyage home" href="/">
+<img alt="EveryVoyage" class="footer-logo" onerror="this.onerror=null;this.src='/assets-demo/logo-white-fallback.svg'" src="/assets/brand/LogoWhite.png"/>
+</a>
+<p>Plan the road trip, track the route and keep the whole adventure together.</p>
+
+<div aria-label="Follow EveryVoyage" class="footer-socials">
+<a href="https://www.instagram.com/everyvoyageapp/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="footer-social-icon">
+<svg role="img" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5Zm8.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"></path></svg>
+</span>
+Instagram
+</a>
+<a href="https://www.tiktok.com/@everyvoyage" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="footer-social-icon">
+<svg role="img" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.72-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.45 3.98-2.14 6.15-1.73.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07Z"></path></svg>
+</span>
+TikTok
+</a>
 </div>
-<div>
-<h4>Product</h4>
+</div>
+
+<nav aria-label="EveryVoyage features" class="footer-column">
+<h4>Features</h4>
 <ul>
-<li><a href="./">Road trip inspiration</a></li>
+<li><a href="/stops/">Stops &amp; places</a></li>
+<li><a href="/road-trip-tracker/">Road trip tracker</a></li>
+<li><a href="/road-trip-journal/">Road trip journal</a></li>
+<li><a href="/road-trip-inspiration/">Road trip inspiration</a></li>
+<li><a href="/features/">All features</a></li>
 </ul>
-</div>
-<div>
-<h4>Explore</h4>
+</nav>
+
+<nav aria-label="EveryVoyage resources" class="footer-column">
+<h4>Resources</h4>
 <ul>
-<li><a href="../guides/">Guides</a></li>
-<li><a href="../motorhome-road-trip-app/">Motorhome road trip app</a></li>
-<li><a href="../features/">Features</a></li>
+<li><a href="/#how-it-works">How EveryVoyage works</a></li>
+<li><a href="/faq.html">FAQ</a></li>
+<li><a href="/about.html">About EveryVoyage</a></li>
+<li><a href="/contact.html">Contact us</a></li>
 </ul>
+</nav>
+
+<div class="footer-app-card">
+<span class="footer-app-kicker">GET EVERYVOYAGE</span>
+<strong>Ready for your next road trip?</strong>
+<p>Free on iOS and Android.</p>
+<a class="footer-app-button" data-smart-app-link href="/app">Get the app</a>
 </div>
-<div>
-<h4>EveryVoyage</h4>
-<ul>
-<li><a href="../privacy/">Privacy</a></li>
-<li><a href="../terms/">Terms</a></li>
-<li><a href="mailto:contact@everyvoyage.com">Contact</a></li>
-</ul>
 </div>
+
+<div class="footer-bottom">
+<span>© 2026 EveryVoyage. SIMPLR LABS LTD.</span>
+<nav aria-label="Legal" class="footer-legal">
+<a href="/privacy-policy.html">Privacy Policy</a>
+<a href="/terms.html">Terms &amp; Conditions</a>
+</nav>
 </div>
-<div class="footer-bottom">© <span id="year"></span> SIMPLR LABS LTD. EveryVoyage.</div>
 </div>
 </footer>
 <div class="mobile-download-bar" id="mobileDownload">
 <div class="mobile-download-copy"><strong>Discover your next road trip</strong><span>Free on iOS and Android</span></div>
-<a href="#download">Download</a>
+<a data-smart-app-link href="/app">Get the app</a>
 </div>
 <script>
     const menuToggle = document.getElementById('menuToggle');
@@ -3239,6 +3395,90 @@
     }
 
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  
+
+/* Smart app download behaviour:
+   iOS and Android use the /app hand-off page.
+   Desktop visitors see the QR code without leaving this page. */
+(function(){
+  const ua=navigator.userAgent||navigator.vendor||window.opera||'';
+  const isAndroid=/android/i.test(ua);
+  const isIOS=/iPad|iPhone|iPod/i.test(ua)
+    ||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  const isMobileAppDevice=isIOS||isAndroid;
+
+  const modal=document.getElementById('appQrModal');
+  const dialog=modal?.querySelector('.app-qr-dialog');
+  const closeButton=modal?.querySelector('.app-qr-close');
+  let lastFocusedElement=null;
+
+  function openAppQrModal(){
+    if(!modal)return;
+    lastFocusedElement=document.activeElement;
+    modal.hidden=false;
+    modal.setAttribute('aria-hidden','false');
+    document.body.classList.add('app-qr-open');
+    requestAnimationFrame(()=>closeButton?.focus());
+  }
+
+  function closeAppQrModal(){
+    if(!modal)return;
+    modal.hidden=true;
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('app-qr-open');
+    lastFocusedElement?.focus?.();
+  }
+
+  document.querySelectorAll('[data-smart-app-link]').forEach(link=>{
+    link.href='/app';
+    link.addEventListener('click',event=>{
+      if(isMobileAppDevice)return;
+      event.preventDefault();
+      openAppQrModal();
+    });
+  });
+
+  document.querySelectorAll('[data-store-link]').forEach(link=>{
+    link.addEventListener('click',event=>{
+      if(isMobileAppDevice)return;
+      event.preventDefault();
+      openAppQrModal();
+    });
+  });
+
+  modal?.querySelectorAll('[data-close-app-qr]').forEach(element=>{
+    element.addEventListener('click',closeAppQrModal);
+  });
+
+  document.addEventListener('keydown',event=>{
+    if(modal?.hidden)return;
+
+    if(event.key==='Escape'){
+      closeAppQrModal();
+      return;
+    }
+
+    if(event.key==='Tab'&&dialog){
+      const focusable=[...dialog.querySelectorAll(
+        'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])'
+      )];
+
+      if(!focusable.length)return;
+
+      const first=focusable[0];
+      const last=focusable[focusable.length-1];
+
+      if(event.shiftKey&&document.activeElement===first){
+        event.preventDefault();
+        last.focus();
+      }else if(!event.shiftKey&&document.activeElement===last){
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
+})();
+
+</script>
 </body>
 </html>
