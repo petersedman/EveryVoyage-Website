@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EveryVoyage | Road Trip Tracker &amp; Travel Journal</title>
-  <meta name="description" content="Track your road trip with GPS, add photos and moments, and relive the full journey on one beautiful map with EveryVoyage." />
+  <title>Road Trip Tracker, Journal &amp; Stops | EveryVoyage</title>
+  <meta name="description" content="Find campsites and useful stops, track road trips with GPS, add photos and Moments, and relive the complete journey with EveryVoyage." />
 
   <meta name="author" content="SIMPLR LABS LTD">
   <meta name="robots" content="index, follow">
@@ -30,8 +30,8 @@
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://everyvoyage.com/">
-  <meta property="og:title" content="EveryVoyage | Road Trip Tracker &amp; Travel Journal">
-  <meta property="og:description" content="Track your road trip with GPS, add photos and moments, and relive the full journey on one beautiful map.">
+  <meta property="og:title" content="Road Trip Tracker, Journal &amp; Stops | EveryVoyage">
+  <meta property="og:description" content="Find useful stops, track your route, add photos and Moments, and relive the complete road trip with EveryVoyage.">
   <meta property="og:image" content="https://everyvoyage.com/assets/img/AppPreview.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -39,8 +39,8 @@
   <meta property="og:locale" content="en_GB">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="EveryVoyage | Road Trip Tracker &amp; Travel Journal">
-  <meta name="twitter:description" content="Track your road trip with GPS, add photos and moments, and relive the full journey on one beautiful map.">
+  <meta name="twitter:title" content="Road Trip Tracker, Journal &amp; Stops | EveryVoyage">
+  <meta name="twitter:description" content="Find useful stops, track your route, add photos and Moments, and relive the complete road trip with EveryVoyage.">
   <meta name="twitter:image" content="https://everyvoyage.com/assets/img/AppPreview.webp">
 
   <meta name="application-name" content="EveryVoyage">
@@ -54,7 +54,7 @@
     "@context":"https://schema.org",
     "@type":"MobileApplication",
     "name":"EveryVoyage",
-    "description":"EveryVoyage is a road trip tracker and travel journal for motorhome and campervan journeys. Record routes with GPS, add photos and moments, and relive the complete journey on a map.",
+    "description":"EveryVoyage is a road trip tracker, travel journal and stop-discovery app for motorhome and campervan journeys. Find useful places, record routes with GPS, add photos and Moments, and relive the complete journey.",
     "applicationCategory":"TravelApplication",
     "operatingSystem":"iOS, Android",
     "url":"https://everyvoyage.com/",
@@ -2774,7 +2774,946 @@
       }
     }
 
-</style>
+
+    /* ===== Homepage Plan / Track / Relive story ===== */
+    .nav{gap:16px}
+    .nav>a,.language-switcher summary{font-size:13px}
+
+    .journey-story{
+      position:relative;
+      min-height:720vh;
+      background:#f8f4ec;
+    }
+    .journey-sticky{
+      position:sticky;
+      top:0;
+      min-height:100svh;
+      overflow:hidden;
+      background:#f8f4ec;
+      color:var(--ink);
+      transition:background-color .78s var(--ease),color .55s ease;
+    }
+    .journey-story[data-phase="track"] .journey-sticky{
+      background:#173d3c;
+      color:#fff;
+    }
+    .journey-story[data-phase="relive"] .journey-sticky{
+      background:#fff;
+      color:var(--ink);
+    }
+    .journey-desktop{
+      position:relative;
+      width:min(1280px,calc(100% - 40px));
+      min-height:100svh;
+      margin:auto;
+      overflow:hidden;
+    }
+
+    .journey-copy-stack{
+      position:absolute;
+      inset:0;
+      z-index:5;
+      pointer-events:none;
+    }
+    .journey-scene{
+      position:absolute;
+      top:46%;
+      width:min(420px,34vw);
+      opacity:0;
+      pointer-events:none;
+      transform:translateY(calc(-50% + 34px));
+      filter:none;
+      transition:
+        opacity .42s ease,
+        transform .72s var(--ease);
+    }
+    .journey-scene[data-phase="plan"]{left:4%}
+    .journey-scene[data-phase="track"]{right:4%}
+    .journey-scene.is-active{
+      opacity:1;
+      pointer-events:auto;
+      transform:translateY(-50%);
+      filter:none;
+    }
+    .journey-story.is-transitioning .journey-scene{
+      opacity:0;
+      transform:translateY(calc(-50% + 18px));
+      filter:none;
+    }
+    .journey-scene-kicker{
+      display:block;
+      margin-bottom:17px;
+      color:var(--orange);
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    .journey-story[data-phase="track"] .journey-scene-kicker{color:#ff8a55}
+    .journey-scene h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(40px,4vw,62px);
+      font-weight:500;
+      line-height:.94;
+      letter-spacing:-.055em;
+    }
+    .journey-scene h2 em{
+      display:block;
+      color:var(--orange);
+      font-style:italic;
+    }
+    .journey-story[data-phase="track"] .journey-scene h2 em{color:#ff8a55}
+    .journey-scene p{
+      display:none;
+    }
+    .journey-story[data-phase="track"] .journey-scene p{color:rgba(255,255,255,.7)}
+    .journey-scene a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      margin-top:17px;
+      color:var(--orange);
+      font-size:14px;
+      font-weight:900;
+      text-decoration:none;
+      pointer-events:auto;
+      transition:color .22s ease;
+    }
+    .journey-scene a.journey-muted-link{color:#8a8e89}
+    .journey-scene a.journey-muted-link:hover,
+    .journey-scene a.journey-muted-link:focus-visible{color:#5f645f}
+    .journey-story[data-phase="track"] .journey-scene a{color:#ff8a55}
+
+    .journey-phone-zone{
+      position:absolute;
+      z-index:4;
+      left:50%;
+      top:50%;
+      width:520px;
+      height:690px;
+      display:grid;
+      place-items:center;
+      transform:translate(-50%,-50%);
+      transition:transform .9s var(--ease),opacity .45s ease;
+    }
+    .journey-story[data-phase="plan"] .journey-phone-zone{
+      transform:translate(calc(-50% + 250px),-50%);
+    }
+    .journey-story[data-phase="track"] .journey-phone-zone{
+      transform:translate(calc(-50% - 250px),-50%);
+    }
+    .journey-story[data-phase="relive"] .journey-phone-zone{
+      transform:translate(-50%,-53%) scale(1.07);
+    }
+    .journey-phone-glow{
+      position:absolute;
+      width:470px;
+      height:470px;
+      border-radius:50%;
+      background:radial-gradient(circle,rgba(245,74,0,.14),transparent 68%);
+      filter:blur(7px);
+      transition:background .65s ease;
+    }
+    .journey-story[data-phase="track"] .journey-phone-glow{
+      background:radial-gradient(circle,rgba(255,138,85,.15),transparent 68%);
+    }
+    .journey-phone{
+      position:relative;
+      z-index:3;
+      width:285px;
+      aspect-ratio:9/19.5;
+      padding:10px;
+      border-radius:48px;
+      background:linear-gradient(145deg,#202425,#050606 60%,#2b2d2e);
+      box-shadow:0 34px 72px rgba(23,31,30,.28),inset 0 0 0 2px rgba(255,255,255,.13);
+      transition:transform .7s var(--ease);
+    }
+    .journey-phone::before{
+      content:"";
+      position:absolute;
+      z-index:8;
+      top:17px;
+      left:50%;
+      width:34%;
+      height:24px;
+      border-radius:999px;
+      background:#050505;
+      transform:translateX(-50%);
+    }
+    .journey-phone-screen{
+      position:relative;
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      border-radius:39px;
+      background:#edf0eb;
+      clip-path:inset(0 round 39px);
+      contain:paint;
+      transform:translateZ(0);
+    }
+    .journey-screen-track{
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      height:700%;
+      will-change:transform;
+      transform:translate3d(
+        0,
+        calc(var(--journey-screen-step,0) * -14.285714%),
+        0
+      );
+      transition:transform .64s cubic-bezier(.22,1,.36,1);
+      backface-visibility:hidden;
+      -webkit-backface-visibility:hidden;
+    }
+    .journey-screen-panel{
+      position:relative;
+      height:14.285714%;
+      overflow:hidden;
+      background:#edf0eb;
+      transform:translateZ(0);
+    }
+    .journey-screen-panel img{
+      width:100%;
+      height:100%;
+      max-width:none;
+      object-fit:cover;
+      backface-visibility:hidden;
+      -webkit-backface-visibility:hidden;
+    }
+
+    .journey-relive{
+      position:absolute;
+      z-index:3;
+      inset:80px 0 88px;
+      opacity:0;
+      pointer-events:none;
+      transform:scale(.96);
+      transition:opacity .65s ease .15s,transform .9s var(--ease);
+    }
+    .journey-story[data-phase="relive"] .journey-relive{
+      opacity:1;
+      transform:scale(1);
+    }
+    .relive-screen{
+      position:absolute;
+      width:126px;
+      aspect-ratio:9/19.5;
+      overflow:hidden;
+      border-radius:23px;
+      background:#e9ece9;
+      box-shadow:0 18px 38px rgba(0,0,0,.14);
+      opacity:0;
+      transform:translateY(18px) scale(.88);
+      transition:opacity .55s ease,transform .85s var(--ease);
+    }
+    .journey-story[data-phase="relive"] .relive-screen{
+      opacity:1;
+      transform:none;
+    }
+    .relive-screen img{width:100%;height:100%;object-fit:cover}
+    .relive-screen-one{left:8%;top:23%;transition-delay:.18s;animation:reliveFloatA 6.4s ease-in-out infinite}
+    .relive-screen-two{left:22%;top:4%;transition-delay:.25s;animation:reliveFloatB 7s ease-in-out infinite}
+    .relive-screen-three{left:26%;bottom:2%;transition-delay:.32s;animation:reliveFloatA 7.6s ease-in-out infinite}
+    .relive-screen-four{right:22%;top:3%;transition-delay:.28s;animation:reliveFloatB 6.8s ease-in-out infinite}
+    .relive-screen-five{right:7%;top:28%;transition-delay:.22s;animation:reliveFloatA 7.2s ease-in-out infinite}
+    .relive-screen-six{right:25%;bottom:0;transition-delay:.35s;animation:reliveFloatB 7.8s ease-in-out infinite}
+    @keyframes reliveFloatA{0%,100%{translate:0 0}50%{translate:0 -9px}}
+    @keyframes reliveFloatB{0%,100%{translate:0 0}50%{translate:0 8px}}
+
+    .journey-relive-copy{
+      position:absolute;
+      left:50%;
+      bottom:-2px;
+      width:min(650px,58vw);
+      text-align:center;
+      transform:translateX(-50%);
+    }
+    .journey-relive-copy>span{
+      color:var(--orange);
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    .journey-relive-copy h2{
+      margin:8px 0 0;
+      font-family:var(--display);
+      font-size:clamp(50px,5vw,78px);
+      font-weight:500;
+      line-height:.95;
+      letter-spacing:-.055em;
+    }
+    .journey-relive-copy p{
+      max-width:560px;
+      margin:13px auto 0;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .journey-relive-copy a{
+      display:inline-flex;
+      margin-top:16px;
+      color:var(--orange);
+      font-size:13px;
+      font-weight:900;
+      text-decoration:none;
+      pointer-events:auto;
+    }
+
+    .journey-phase-nav{
+      position:absolute;
+      z-index:12;
+      left:50%;
+      bottom:22px;
+      display:flex;
+      gap:12px;
+      padding:8px;
+      border:1px solid rgba(38,39,37,.1);
+      border-radius:999px;
+      background:rgba(255,253,249,.9);
+      box-shadow:0 13px 32px rgba(0,0,0,.1);
+      transform:translateX(-50%);
+      backdrop-filter:blur(14px);
+    }
+    .journey-story[data-phase="track"] .journey-phase-nav{
+      border-color:rgba(255,255,255,.14);
+      background:rgba(3,30,31,.74);
+    }
+    .journey-phase-nav button{
+      min-width:94px;
+      padding:9px 14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:7px;
+      border:0;
+      border-radius:999px;
+      background:transparent;
+      color:var(--muted);
+      cursor:pointer;
+      font-size:12px;
+    }
+    .journey-story[data-phase="track"] .journey-phase-nav button{color:rgba(255,255,255,.5)}
+    .journey-phase-nav button span{font-size:9px;font-weight:900}
+    .journey-phase-nav button strong{font-weight:900}
+    .journey-phase-nav button.is-active{
+      background:var(--orange);
+      color:#fff!important;
+    }
+
+    .journey-mobile{display:none}
+
+    @media(max-width:1080px){
+      .nav{gap:12px}
+      .nav>a,.language-switcher summary{font-size:12px}
+      .journey-phone-zone{width:450px}
+      .journey-story[data-phase="plan"] .journey-phone-zone{
+        transform:translate(calc(-50% + 205px),-50%);
+      }
+      .journey-story[data-phase="track"] .journey-phone-zone{
+        transform:translate(calc(-50% - 205px),-50%);
+      }
+      .journey-scene{width:min(385px,36vw)}
+      .journey-scene[data-phase="plan"]{left:2%}
+      .journey-scene[data-phase="track"]{right:2%}
+      .relive-screen{width:104px}
+    }
+
+    @media(max-width:760px){
+      .journey-story{min-height:auto;background:var(--paper)}
+      .journey-sticky{display:none}
+      .journey-mobile{display:block}
+
+      .journey-mobile-phase{
+        padding:82px 16px;
+        overflow:hidden;
+        background:#f8f4ec;
+        color:var(--ink);
+      }
+      .journey-mobile-track{
+        background:#173d3c;
+        color:#fff;
+      }
+      .journey-mobile-relive{background:#fff}
+      .journey-mobile-heading{
+        max-width:560px;
+        margin:0 auto 30px;
+        text-align:center;
+      }
+      .journey-mobile-heading>span{
+        color:var(--orange);
+        font-size:11px;
+        font-weight:900;
+        letter-spacing:.12em;
+      }
+      .journey-mobile-track .journey-mobile-heading>span{color:#ff8a55}
+      .journey-mobile-heading h2{
+        margin:8px 0 0;
+        font-family:var(--display);
+        font-size:clamp(43px,12vw,58px);
+        font-weight:500;
+        line-height:.96;
+        letter-spacing:-.05em;
+      }
+      .journey-mobile-heading>p{
+        margin:15px auto 0;
+        color:var(--muted);
+        font-size:15px;
+      }
+      .journey-mobile-carousel{
+        width:min(560px,100%);
+        margin:auto;
+      }
+      .journey-mobile-copy{
+        min-height:105px;
+        text-align:center;
+      }
+      .journey-mobile-copy h3{
+        margin:0;
+        font-family:var(--display);
+        font-size:35px;
+        font-weight:500;
+        line-height:1;
+      }
+      .journey-mobile-copy p{
+        max-width:410px;
+        margin:10px auto 0;
+        color:var(--muted);
+        font-size:14px;
+      }
+      .journey-mobile-track .journey-mobile-copy p{color:rgba(255,255,255,.68)}
+      .journey-mobile-phone{
+        min-height:430px;
+        display:grid;
+        place-items:center;
+      }
+      .journey-mobile-phone>div,
+      .journey-mobile-relive-main>div{
+        position:relative;
+        width:214px;
+        aspect-ratio:9/19.5;
+        padding:8px;
+        border-radius:40px;
+        background:linear-gradient(145deg,#202425,#050606 60%,#2b2d2e);
+        box-shadow:0 27px 58px rgba(0,0,0,.22),inset 0 0 0 2px rgba(255,255,255,.13);
+      }
+      .journey-mobile-phone>div::before,
+      .journey-mobile-relive-main>div::before{
+        content:"";
+        position:absolute;
+        z-index:4;
+        top:14px;
+        left:50%;
+        width:34%;
+        height:19px;
+        border-radius:999px;
+        background:#050505;
+        transform:translateX(-50%);
+      }
+      .journey-mobile-phone img,
+      .journey-mobile-relive-main img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        border-radius:33px;
+        background:#ecefeb;
+        transition:opacity .2s ease;
+      }
+      .journey-mobile-controls{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:16px;
+      }
+      .journey-mobile-controls>button{
+        width:40px;
+        height:40px;
+        display:grid;
+        place-items:center;
+        border:1px solid var(--line);
+        border-radius:50%;
+        background:#fff;
+        color:var(--orange);
+        cursor:pointer;
+        font-weight:900;
+      }
+      .journey-mobile-track .journey-mobile-controls>button{
+        border-color:rgba(255,255,255,.16);
+        background:rgba(255,255,255,.08);
+        color:#ff8a55;
+      }
+      [data-mobile-dots]{display:flex;gap:7px}
+      [data-mobile-dots] button{
+        width:8px;
+        height:8px;
+        padding:0;
+        border:0;
+        border-radius:50%;
+        background:#c9c5bb;
+        cursor:pointer;
+      }
+      [data-mobile-dots] button.is-active{width:24px;border-radius:99px;background:var(--orange)}
+      .journey-mobile-track [data-mobile-dots] button{background:rgba(255,255,255,.26)}
+      .journey-mobile-track [data-mobile-dots] button.is-active{background:#ff8a55}
+
+      .journey-mobile-relive-stage{
+        position:relative;
+        min-height:510px;
+        width:min(560px,100%);
+        margin:auto;
+      }
+      .journey-mobile-relive-main{
+        position:absolute;
+        z-index:4;
+        left:50%;
+        top:44%;
+        transform:translate(-50%,-50%);
+      }
+      .journey-mobile-relive-mini{
+        position:absolute;
+        width:76px;
+        aspect-ratio:9/19.5;
+        overflow:hidden;
+        border-radius:16px;
+        box-shadow:0 12px 28px rgba(0,0,0,.12);
+      }
+      .journey-mobile-relive-mini img{width:100%;height:100%;object-fit:cover}
+      .mini-one{left:4%;top:12%}
+      .mini-two{right:3%;top:8%}
+      .mini-three{left:5%;bottom:7%}
+      .mini-four{right:5%;bottom:5%}
+      .journey-mobile-link{
+        display:block;
+        width:max-content;
+        max-width:100%;
+        margin:0 auto;
+        color:var(--orange);
+        font-size:13px;
+        font-weight:900;
+        text-align:center;
+        text-decoration:none;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .journey-sticky,.journey-phone-zone,.journey-scene,.journey-phone-screen img,.journey-relive,.relive-screen{
+        transition:none!important;
+      }
+      .relive-screen{animation:none!important}
+    }
+
+
+    /* Scroll-linked story motion must remain immediate and deterministic. */
+    @media(min-width:761px){
+      .journey-scene{
+        will-change:transform,opacity;
+        transition:none!important;
+      }
+    }
+
+    /* ===== Homepage refinements requested ===== */
+
+    /* Keep the POI phone secondary in the hero rather than competing with the Voyage. */
+    @media(min-width:721px){
+      .hero-phone.back{
+        width:min(310px,27vw);
+        left:8%;
+        top:50px;
+      }
+    }
+
+    /* Restore the copy moving vertically with the scroll direction. */
+    .journey-scene{
+      transform:translateY(calc(-50% + 185px));
+    }
+    .journey-scene.is-before{
+      opacity:0;
+      transform:translateY(calc(-50% - 185px));
+      filter:none;
+    }
+    .journey-scene.is-after{
+      opacity:0;
+      transform:translateY(calc(-50% + 185px));
+      filter:none;
+    }
+    .journey-scene.is-active{
+      opacity:1;
+      transform:translateY(-50%);
+      filter:none;
+    }
+    .journey-story.is-transitioning .journey-scene{
+      opacity:0;
+    }
+
+    /* The phase navigation is intentionally just Plan, Track and Relive. */
+    .journey-phase-nav button{
+      min-width:108px;
+      gap:0;
+    }
+    .journey-phase-nav button strong{
+      font-size:13px;
+    }
+
+    /* Relive: smaller centre phone, two screens per side and clear copy below. */
+    .journey-story[data-phase="relive"] .journey-phone-zone{
+      transform:translate(-50%,-60%) scale(.80);
+    }
+    .journey-relive{
+      inset:74px 0 92px;
+    }
+    .relive-screen{
+      width:96px;
+      border-radius:19px;
+      box-shadow:0 15px 32px rgba(0,0,0,.12);
+    }
+    .relive-screen-one{
+      left:10%;
+      top:13%;
+    }
+    .relive-screen-two{
+      left:24%;
+      top:49%;
+    }
+    .relive-screen-four{
+      right:24%;
+      top:10%;
+    }
+    .relive-screen-five{
+      right:10%;
+      top:48%;
+    }
+    .journey-relive-copy{
+      bottom:12px;
+      width:min(680px,58vw);
+    }
+    .journey-relive-copy h2{
+      font-size:clamp(43px,4.5vw,66px);
+    }
+    .journey-relive-copy p{
+      margin-top:9px;
+      font-size:15px;
+    }
+    .journey-relive-copy a{
+      margin-top:11px;
+    }
+
+    @media(max-width:1080px) and (min-width:761px){
+      .journey-story[data-phase="relive"] .journey-phone-zone{
+        transform:translate(-50%,-61%) scale(.74);
+      }
+      .relive-screen{
+        width:78px;
+      }
+      .relive-screen-one{left:7%;top:15%}
+      .relive-screen-two{left:20%;top:50%}
+      .relive-screen-four{right:20%;top:12%}
+      .relive-screen-five{right:7%;top:49%}
+      .journey-relive-copy{
+        bottom:15px;
+        width:min(610px,62vw);
+      }
+    }
+
+
+
+    /* ===== Scroll story refinement: crisp entry, smaller type, stronger upward travel ===== */
+    @media(min-width:761px){
+      .journey-scene{
+        top:46%;
+        width:min(420px,34vw);
+        filter:none!important;
+      }
+      .journey-scene.is-before,
+      .journey-scene.is-after,
+      .journey-scene.is-active,
+      .journey-story.is-transitioning .journey-scene{
+        filter:none!important;
+      }
+      .journey-scene h2{
+        font-size:clamp(40px,4vw,62px);
+        line-height:.98;
+      }
+      .journey-scene p{display:none!important}
+      .journey-scene a{margin-top:17px}
+    }
+
+
+    /* ===== Consistent secondary links across Plan, Track and Relive ===== */
+    .journey-story{
+      --journey-action:#747873;
+      --journey-action-hover:#343834;
+    }
+    .journey-story[data-phase="track"]{
+      --journey-action:rgba(255,255,255,.72);
+      --journey-action-hover:#fff;
+    }
+    .journey-story[data-phase="relive"]{
+      --journey-action:#747873;
+      --journey-action-hover:#343834;
+    }
+    .journey-scene a,
+    .journey-scene a.journey-muted-link,
+    .journey-relive-copy a{
+      color:var(--journey-action);
+      font-weight:800;
+      transition:color .22s ease,opacity .22s ease;
+    }
+    .journey-scene a:hover,
+    .journey-scene a:focus-visible,
+    .journey-scene a.journey-muted-link:hover,
+    .journey-scene a.journey-muted-link:focus-visible,
+    .journey-relive-copy a:hover,
+    .journey-relive-copy a:focus-visible{
+      color:var(--journey-action-hover);
+    }
+    .journey-mobile-link{
+      color:#747873;
+      font-weight:800;
+      transition:color .22s ease;
+    }
+    .journey-mobile-link:hover,
+    .journey-mobile-link:focus-visible{
+      color:#343834;
+    }
+
+
+
+    /* Keep the opening Plan headline together on one line. */
+    @media (min-width:761px){
+      .journey-scene[data-scene="0"]{
+        width:min(500px,42vw);
+      }
+      .journey-scene[data-scene="0"] h2{
+        white-space:nowrap;
+        font-size:clamp(36px,3.65vw,58px);
+      }
+      .journey-scene[data-scene="0"] h2 em{
+        display:inline;
+      }
+    }
+
+    /* ===== Final journey-story polish ===== */
+
+    /* Make the feature phone only marginally wider. */
+    @media (min-width:761px){
+      .journey-phone{
+        width:292px;
+      }
+    }
+    @media (max-width:760px){
+      .journey-mobile-phone>div,
+      .journey-mobile-relive-main>div{
+        width:220px;
+      }
+    }
+
+    /* Softer secondary actions throughout Plan and Track. */
+    .journey-story{
+      --journey-action:#929691;
+      --journey-action-hover:#737873;
+    }
+    .journey-story[data-phase="track"]{
+      --journey-action:rgba(221,227,222,.58);
+      --journey-action-hover:rgba(241,244,241,.88);
+    }
+    .journey-scene a,
+    .journey-scene a.journey-muted-link{
+      color:var(--journey-action);
+    }
+    .journey-scene a:hover,
+    .journey-scene a:focus-visible,
+    .journey-scene a.journey-muted-link:hover,
+    .journey-scene a.journey-muted-link:focus-visible{
+      color:var(--journey-action-hover);
+    }
+    .journey-story[data-phase="track"] .journey-scene a,
+    .journey-story[data-phase="track"] .journey-scene a.journey-muted-link{
+      color:rgba(221,227,222,.58);
+    }
+    .journey-story[data-phase="track"] .journey-scene a:hover,
+    .journey-story[data-phase="track"] .journey-scene a:focus-visible,
+    .journey-story[data-phase="track"] .journey-scene a.journey-muted-link:hover,
+    .journey-story[data-phase="track"] .journey-scene a.journey-muted-link:focus-visible{
+      color:rgba(241,244,241,.88);
+    }
+
+    /* Relive is the single orange action at the end of the sequence. */
+    .journey-story[data-phase="relive"] .journey-relive-copy a,
+    .journey-mobile-relive .journey-mobile-link{
+      color:var(--orange);
+    }
+    .journey-story[data-phase="relive"] .journey-relive-copy a:hover,
+    .journey-story[data-phase="relive"] .journey-relive-copy a:focus-visible,
+    .journey-mobile-relive .journey-mobile-link:hover,
+    .journey-mobile-relive .journey-mobile-link:focus-visible{
+      color:var(--orange-dark);
+    }
+
+    /* Pull the four Relive screenshots gently toward the centre composition. */
+    .relive-screen-one{
+      left:12%;
+      top:19%;
+    }
+    .relive-screen-two{
+      left:26%;
+      top:43%;
+    }
+    .relive-screen-four{
+      right:26%;
+      top:18%;
+    }
+    .relive-screen-five{
+      right:12%;
+      top:42%;
+    }
+
+    @media (max-width:1080px) and (min-width:761px){
+      .relive-screen-one{left:10%;top:20%}
+      .relive-screen-two{left:23%;top:44%}
+      .relive-screen-four{right:23%;top:19%}
+      .relive-screen-five{right:10%;top:43%}
+    }
+
+    @media (max-width:760px){
+      .mini-one{left:8%;top:17%}
+      .mini-two{right:8%;top:15%}
+      .mini-three{left:9%;bottom:12%}
+      .mini-four{right:9%;bottom:11%}
+    }
+
+  
+    /* ===== Final requested refinements: one-line headings and larger Relive photos ===== */
+
+    /* Keep all six Plan and Track feature titles together on one line. */
+    @media (min-width:761px){
+      .journey-scene[data-scene]{
+        width:min(540px,44vw);
+      }
+      .journey-scene[data-scene] h2{
+        white-space:nowrap;
+        font-size:clamp(34px,3.5vw,56px);
+      }
+      .journey-scene[data-scene] h2 em{
+        display:inline;
+      }
+    }
+
+    /* Use a slightly smaller one-line scale on intermediate screens. */
+    @media (min-width:761px) and (max-width:1080px){
+      .journey-scene[data-scene]{
+        width:min(420px,46vw);
+      }
+      .journey-scene[data-scene] h2{
+        font-size:clamp(31px,4.2vw,43px);
+      }
+    }
+
+    /* Enlarge the four Relive photos by roughly 1.5x and keep them framing the phone. */
+    @media (min-width:1081px){
+      .relive-screen{
+        width:144px;
+        border-radius:28px;
+      }
+      .relive-screen-one{
+        left:8%;
+        top:10%;
+      }
+      .relive-screen-two{
+        left:22%;
+        top:30%;
+      }
+      .relive-screen-four{
+        right:22%;
+        top:9%;
+      }
+      .relive-screen-five{
+        right:8%;
+        top:29%;
+      }
+      .journey-relive-copy{
+        bottom:8px;
+      }
+    }
+
+    @media (min-width:761px) and (max-width:1080px){
+      .relive-screen{
+        width:117px;
+        border-radius:23px;
+      }
+      .relive-screen-one{
+        left:7%;
+        top:12%;
+      }
+      .relive-screen-two{
+        left:21%;
+        top:29%;
+      }
+      .relive-screen-four{
+        right:21%;
+        top:11%;
+      }
+      .relive-screen-five{
+        right:7%;
+        top:28%;
+      }
+      .journey-relive-copy{
+        bottom:10px;
+      }
+    }
+
+
+    /* Protect the copy/image gap on shorter laptop viewports as well. */
+    @media (min-width:761px) and (max-height:820px){
+      .relive-screen-one{
+        top:6%;
+      }
+      .relive-screen-two{
+        top:18%;
+      }
+      .relive-screen-four{
+        top:5%;
+      }
+      .relive-screen-five{
+        top:17%;
+      }
+    }
+
+    /* Give the Relive label a clearer visual gap from the lower photos. */
+    .journey-relive-copy>span{
+      display:inline-block;
+      padding-top:8px;
+    }
+
+    /* Carry the larger four-photo treatment through to the mobile Relive collage. */
+    @media (max-width:760px){
+      .journey-mobile-relive-stage{
+        min-height:590px;
+      }
+      .journey-mobile-relive-mini{
+        width:114px;
+        border-radius:22px;
+      }
+      .mini-one{
+        left:1%;
+        top:10%;
+      }
+      .mini-two{
+        right:1%;
+        top:8%;
+      }
+      .mini-three{
+        left:2%;
+        bottom:10%;
+      }
+      .mini-four{
+        right:2%;
+        bottom:9%;
+      }
+    }
+
+  </style>
 </head>
 <body>
   <header class="site-header" id="siteHeader">
@@ -2783,9 +3722,11 @@
     </a>
 
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#how-it-works">How it works</a>
-      <a href="#features">Features</a>
-      <a href="#difference">Why EveryVoyage</a>
+      <a href="/features/">Features</a>
+      <a href="/road-trip-tracker/">Tracker</a>
+      <a href="/road-trip-journal/">Journal</a>
+      <a href="/stops/">Stops</a>
+      <a href="/road-trip-inspiration/">Inspiration</a>
       <details class="language-switcher">
         <summary aria-label="Choose website language">English (UK) <span aria-hidden="true">⌄</span></summary>
         <div class="language-menu" aria-label="Website languages">
@@ -2810,9 +3751,11 @@
 
     <div class="mobile-menu" id="mobileMenu" hidden>
       <nav class="mobile-menu-links" aria-label="Mobile navigation">
-        <a href="#how-it-works">How it works</a>
-        <a href="#features">Features</a>
-        <a href="#difference">Why EveryVoyage</a>
+        <a href="/features/">Features</a>
+        <a href="/road-trip-tracker/">Road trip tracker</a>
+        <a href="/road-trip-journal/">Road trip journal</a>
+        <a href="/stops/">Stops and useful places</a>
+        <a href="/road-trip-inspiration/">Road trip inspiration</a>
         <a href="#download" class="mobile-download">Download EveryVoyage</a>
       </nav>
       <details class="mobile-language-switcher">
@@ -2839,10 +3782,10 @@
         <div class="hero-copy">
           <span class="eyebrow">The road trip app for motorhomes &amp; campervans</span>
           <h1>
-            <span class="hero-line">Track your road trips.</span>
-            <span class="hero-line accent">Relive the adventure.</span>
+            <span class="hero-line">Plan and track</span>
+            <span class="hero-line accent">your road trips.</span>
           </h1>
-          <p>EveryVoyage records your route with GPS, lets you add photos and moments, and turns the whole journey into a beautiful map you can look back on.</p>
+          <p>Find campsites and useful stops, record your route with GPS, add photos and Moments, and keep the complete journey together.</p>
           <div class="stores-with-ratings">
             <div class="store-stack">
               <a href="https://apps.apple.com/app/id6755696102" target="_blank" rel="noopener">
@@ -2859,11 +3802,226 @@
           </div>
         </div>
         <div class="hero-phones" aria-label="EveryVoyage app screens">
-          <img class="hero-phone back" src="assets/img/AppPhoneHero2.svg" onerror="this.onerror=null;this.src='assets-demo/hero-phone.png'" alt="EveryVoyage app map screen">
+          <img class="hero-phone back" src="assets/img/AppHeroPOIs.svg" onerror="this.onerror=null;this.src='assets/img/AppPhoneHero2.svg'" alt="EveryVoyage map showing campsites, parking and useful road trip stops">
           <img class="hero-phone front" src="assets/img/AppPhoneHero.svg" onerror="this.onerror=null;this.src='assets-demo/hero-phone.png'" alt="EveryVoyage app journey screen">
         </div>
       </div>
     </section>
+
+    <div class="section-bridge" data-next="#how-it-works">
+      <button type="button" aria-label="Continue to how EveryVoyage works"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg></button>
+    </div>
+
+
+    <section class="journey-story" id="how-it-works" data-phase="plan" data-scene="0">
+      <div class="journey-sticky">
+        <div class="journey-desktop">
+          <div class="journey-copy-stack" aria-live="polite">
+            <article class="journey-scene is-active" data-scene="0" data-phase="plan">
+              <span class="journey-scene-kicker">PLAN THE ROAD TRIP</span>
+              <h2>Find useful <em>stops.</em></h2>
+              <p>See campsites, aires, parking, services and places worth the detour.</p>
+              <a href="/stops/">Explore stops and places <span>→</span></a>
+            </article>
+
+            <article class="journey-scene" data-scene="1" data-phase="plan">
+              <span class="journey-scene-kicker">PLAN YOUR WAY</span>
+              <h2>Refine your <em>search.</em></h2>
+              <p>Filter places around the facilities, location and activities that matter to you.</p>
+              <a class="journey-muted-link" href="/stops/">See how stop discovery works <span>→</span></a>
+            </article>
+
+            <article class="journey-scene" data-scene="2" data-phase="plan">
+              <span class="journey-scene-kicker">PLAN WITH REAL JOURNEYS</span>
+              <h2>Follow proven <em>routes.</em></h2>
+              <p>Open complete Voyages to see where real travellers went and how the stops fitted together.</p>
+              <a href="/road-trip-inspiration/">Discover real road trips <span>→</span></a>
+            </article>
+
+            <article class="journey-scene" data-scene="3" data-phase="track">
+              <span class="journey-scene-kicker">TRACK THE ROAD TRIP</span>
+              <h2>Your travel <em>tracker.</em></h2>
+              <p>Record the road automatically, including when the signal drops.</p>
+              <a href="/road-trip-tracker/">Explore road trip tracking <span>→</span></a>
+            </article>
+
+            <article class="journey-scene" data-scene="4" data-phase="track">
+              <span class="journey-scene-kicker">KEEP THE STORY</span>
+              <h2>Build your <em>journal.</em></h2>
+              <p>Add photos, Moments and costs while every detail is still fresh.</p>
+              <a href="/road-trip-journal/">Explore the road trip journal <span>→</span></a>
+            </article>
+
+            <article class="journey-scene" data-scene="5" data-phase="track">
+              <span class="journey-scene-kicker">PAY IT FORWARD</span>
+              <h2>Share place <em>updates.</em></h2>
+              <p>Rate stops, add photos and leave practical updates for the next traveller.</p>
+              <a href="/stops/">Explore traveller-powered places <span>→</span></a>
+            </article>
+          </div>
+
+          <div class="journey-phone-zone" aria-label="EveryVoyage feature preview">
+            <div class="journey-phone-glow"></div>
+            <div class="journey-phone">
+              <div class="journey-phone-screen">
+                <div class="journey-screen-track" aria-live="polite">
+                  <div class="journey-screen-panel">
+                    <img src="assets/img/StoryPlanPlaces.svg" onerror="this.onerror=null;this.src='assets/img/AppHeroPOIs.svg'" alt="EveryVoyage map showing campsites and useful places">
+                  </div>
+                  <div class="journey-screen-panel">
+                    <img src="assets/img/StoryPlanFilters.svg" onerror="this.onerror=null;this.src='assets/img/AppHeroPOIs.svg'" alt="EveryVoyage filters for choosing road trip stops">
+                  </div>
+                  <div class="journey-screen-panel">
+                    <img src="assets/img/StoryPlanRoutes.svg" onerror="this.onerror=null;this.src='assets/img/StoryVoyage.svg'" alt="EveryVoyage showing a complete road trip route from another traveller">
+                  </div>
+                  <div class="journey-screen-panel">
+                    <img src="assets/img/StoryTrackRoute.svg" onerror="this.onerror=null;this.src='assets/img/StoryTrack.svg'" alt="EveryVoyage recording a road trip route">
+                  </div>
+                  <div class="journey-screen-panel">
+                    <img src="assets/img/StoryTrackJournal.svg" onerror="this.onerror=null;this.src='assets/img/StoryJournal.svg'" alt="EveryVoyage road trip journal with photos and Moments">
+                  </div>
+                  <div class="journey-screen-panel">
+                    <img src="assets/img/StoryPlaceUpdate.svg" onerror="this.onerror=null;this.src='assets/img/AppHeroPOIs.svg'" alt="EveryVoyage place update with a rating and recent information">
+                  </div>
+                  <div class="journey-screen-panel">
+                    <img src="assets/img/StoryReliveVoyage.svg" onerror="this.onerror=null;this.src='assets/img/StoryVoyage.svg'" alt="EveryVoyage complete Voyage map">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey-relive" aria-hidden="true">
+            <div class="relive-screen relive-screen-one">
+              <img src="assets/img/ReliveTopLeft.svg" onerror="this.onerror=null;this.src='assets/img/Norway.svg'" alt="">
+            </div>
+            <div class="relive-screen relive-screen-two">
+              <img src="assets/img/ReliveBottomLeft.svg" onerror="this.onerror=null;this.src='assets/img/StoryJournal.svg'" alt="">
+            </div>
+            <div class="relive-screen relive-screen-four">
+              <img src="assets/img/ReliveTopRight.svg" onerror="this.onerror=null;this.src='assets/img/StoryTrack.svg'" alt="">
+            </div>
+            <div class="relive-screen relive-screen-five">
+              <img src="assets/img/ReliveBottomRight.svg" onerror="this.onerror=null;this.src='assets/img/AppHeroPOIs.svg'" alt="">
+            </div>
+
+            <div class="journey-relive-copy">
+              <span>YOUR COMPLETE VOYAGE</span>
+              <h2>Relive the adventure.</h2>
+              <p>See the route, stops and Moments together, then share the whole journey.</p>
+              <a href="/road-trip-journal/">Explore Trips, Moments and Voyages <b>→</b></a>
+            </div>
+          </div>
+
+          <nav class="journey-phase-nav" aria-label="Plan, Track and Relive progress">
+            <button class="is-active" type="button" data-phase-jump="0">
+              <strong>Plan</strong>
+            </button>
+            <button type="button" data-phase-jump="3">
+              <strong>Track</strong>
+            </button>
+            <button type="button" data-phase-jump="6">
+              <strong>Relive</strong>
+            </button>
+          </nav>
+        </div>
+      </div>
+
+      <div class="journey-mobile">
+        <section class="journey-mobile-phase" data-mobile-phase="plan">
+          <div class="journey-mobile-heading">
+            <span>PLAN</span>
+            <h2>Plan the road trip.</h2>
+          </div>
+
+          <div class="journey-mobile-carousel">
+            <div class="journey-mobile-copy">
+              <h3 data-mobile-title>Find useful stops.</h3>
+              <p data-mobile-text>See campsites, aires, parking, services and places worth the detour.</p>
+            </div>
+
+            <div class="journey-mobile-phone">
+              <div>
+                <img
+                  data-mobile-image
+                  src="assets/img/StoryPlanPlaces.svg"
+                  data-fallback="assets/img/AppHeroPOIs.svg"
+                  alt="EveryVoyage map showing useful road trip stops"
+                >
+              </div>
+            </div>
+
+            <div class="journey-mobile-controls" aria-label="Plan feature carousel">
+              <button type="button" data-mobile-prev aria-label="Previous planning feature">←</button>
+              <div data-mobile-dots></div>
+              <button type="button" data-mobile-next aria-label="Next planning feature">→</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="journey-mobile-phase journey-mobile-track" data-mobile-phase="track">
+          <div class="journey-mobile-heading">
+            <span>TRACK</span>
+            <h2>Track the road trip.</h2>
+          </div>
+
+          <div class="journey-mobile-carousel">
+            <div class="journey-mobile-copy">
+              <h3 data-mobile-title>Your travel tracker.</h3>
+              <p data-mobile-text>Record the road automatically, including when the signal drops.</p>
+            </div>
+
+            <div class="journey-mobile-phone">
+              <div>
+                <img
+                  data-mobile-image
+                  src="assets/img/StoryTrackRoute.svg"
+                  data-fallback="assets/img/StoryTrack.svg"
+                  alt="EveryVoyage route tracking screen"
+                >
+              </div>
+            </div>
+
+            <div class="journey-mobile-controls" aria-label="Track feature carousel">
+              <button type="button" data-mobile-prev aria-label="Previous tracking feature">←</button>
+              <div data-mobile-dots></div>
+              <button type="button" data-mobile-next aria-label="Next tracking feature">→</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="journey-mobile-phase journey-mobile-relive">
+          <div class="journey-mobile-heading">
+            <span>RELIVE</span>
+            <h2>Relive the adventure.</h2>
+            <p>See the route, stops and Moments together in one complete Voyage.</p>
+          </div>
+
+          <div class="journey-mobile-relive-stage">
+            <div class="journey-mobile-relive-mini mini-one">
+              <img src="assets/img/ReliveTopLeft.svg" onerror="this.onerror=null;this.src='assets/img/Norway.svg'" alt="">
+            </div>
+            <div class="journey-mobile-relive-mini mini-two">
+              <img src="assets/img/ReliveTopRight.svg" onerror="this.onerror=null;this.src='assets/img/StoryJournal.svg'" alt="">
+            </div>
+            <div class="journey-mobile-relive-main">
+              <div>
+                <img src="assets/img/StoryReliveVoyage.svg" onerror="this.onerror=null;this.src='assets/img/StoryVoyage.svg'" alt="EveryVoyage complete Voyage map">
+              </div>
+            </div>
+            <div class="journey-mobile-relive-mini mini-three">
+              <img src="assets/img/ReliveBottomLeft.svg" onerror="this.onerror=null;this.src='assets/img/SwitzerlandMap.png'" alt="">
+            </div>
+            <div class="journey-mobile-relive-mini mini-four">
+              <img src="assets/img/ReliveBottomRight.svg" onerror="this.onerror=null;this.src='assets/img/StoryTrack.svg'" alt="">
+            </div>
+          </div>
+
+          <a class="journey-mobile-link" href="/road-trip-journal/">Explore Trips, Moments and Voyages →</a>
+        </section>
+      </div>
+    </section>
+
 
     <div class="section-bridge" data-next="#video-section">
       <button type="button" aria-label="Continue to the app preview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg></button>
@@ -2880,126 +4038,6 @@
       </div>
     </section>
 
-    <div class="section-bridge" data-next="#how-it-works">
-      <button type="button" aria-label="Continue to how EveryVoyage works"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg></button>
-    </div>
-
-    <section class="story" id="how-it-works" data-story-step="0">
-      <div class="story-sticky">
-        <div class="story-inner">
-          <div class="story-copy">
-            <div class="story-kicker">How EveryVoyage works</div>
-
-            <article class="story-step active" data-step="0">
-              <div class="step-count">01 / 03</div>
-              <h2>Track your <em>route</em></h2>
-              <p>Hit record and let EveryVoyage follow the journey in the background, even when you have no signal.</p>
-              <a href="#">Explore road trip tracking <span>→</span></a>
-            </article>
-
-            <article class="story-step" data-step="1">
-              <div class="step-count">02 / 03</div>
-              <h2>Keep a travel <em>journal</em></h2>
-              <p>Add photos, notes and Moments as you travel. Every memory stays connected to where it happened.</p>
-              <a href="#">Explore the travel journal <span>→</span></a>
-            </article>
-
-            <article class="story-step" data-step="2">
-              <div class="step-count">03 / 03</div>
-              <h2>Relive it on <em>one map</em></h2>
-              <p>Bring every Trip and Moment into one Voyage, then look back on the whole route as one complete story.</p>
-              <a href="#">Explore maps and Voyages <span>→</span></a>
-            </article>
-          </div>
-
-          <div class="device-stage">
-            <div class="device-glow"></div>
-
-            <div class="benefit-card one">
-              <span class="benefit-icon" aria-hidden="true">●</span>
-              <span><strong>Live GPS recording</strong><small>Your route records as you drive.</small></span>
-            </div>
-            <div class="benefit-card two">
-              <span class="benefit-icon" aria-hidden="true">⊘</span>
-              <span><strong>Works offline</strong><small>Keep recording without signal.</small></span>
-            </div>
-            <div class="benefit-card three">
-              <span class="benefit-icon" aria-hidden="true">↺</span>
-              <span><strong>Add a past Trip</strong><small>Map an adventure afterwards.</small></span>
-            </div>
-
-            <div class="phone-shell" aria-label="Scroll-controlled EveryVoyage app screenshots">
-              <div class="phone-screen">
-                <div class="screen-track">
-                  <!-- Replace these with real PNG/WebP/JPG screenshots. No SVG animation is used. -->
-                  <div class="screen-panel"><img src="assets/img/StoryTrack.svg" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage tracking screen"></div>
-                  <div class="screen-panel"><img src="assets/img/StoryJournal.svg" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage journal screen"></div>
-                  <div class="screen-panel"><img src="assets/img/StoryVoyage.svg" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage Voyage screen"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="story-nav" aria-label="How EveryVoyage works progress">
-            <button class="active" data-jump="0">Track</button>
-            <button data-jump="1">Journal</button>
-            <button data-jump="2">Relive</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="story-mobile" aria-label="How EveryVoyage works">
-        <article class="story-mobile-step story-mobile-step-track">
-          <div class="story-mobile-copy">
-            <div class="story-kicker">How EveryVoyage works</div>
-            <div class="step-count">01 / 03</div>
-            <h2>Track your <em>route</em></h2>
-            <p>Hit record and let EveryVoyage follow the journey in the background, even when you have no signal.</p>
-            <a href="#">Explore road trip tracking <span>→</span></a>
-          </div>
-          <div class="story-mobile-device">
-            <div class="story-mobile-phone" aria-label="EveryVoyage tracking screen">
-              <div class="story-mobile-screen">
-                <img src="assets/img/StoryTrack.svg" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage tracking screen">
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="story-mobile-step story-mobile-step-journal">
-          <div class="story-mobile-copy">
-            <div class="step-count">02 / 03</div>
-            <h2>Keep a travel <em>journal</em></h2>
-            <p>Add photos, notes and Moments as you travel. Every memory stays connected to where it happened.</p>
-            <a href="#">Explore the travel journal <span>→</span></a>
-          </div>
-          <div class="story-mobile-device">
-            <div class="story-mobile-phone" aria-label="EveryVoyage journal screen">
-              <div class="story-mobile-screen">
-                <img src="assets/img/StoryJournal.svg" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage journal screen">
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="story-mobile-step story-mobile-step-relive">
-          <div class="story-mobile-copy">
-            <div class="step-count">03 / 03</div>
-            <h2>Relive it on <em>one map</em></h2>
-            <p>Bring every Trip and Moment into one Voyage, then look back on the whole route as one complete story.</p>
-            <a href="#">Explore maps and Voyages <span>→</span></a>
-          </div>
-          <div class="story-mobile-device">
-            <div class="story-mobile-phone" aria-label="EveryVoyage Voyage screen">
-              <div class="story-mobile-screen">
-                <img src="assets/img/StoryVoyage.svg" onerror="this.onerror=null;this.src='assets-demo/screen-content.png'" alt="EveryVoyage Voyage screen">
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
     <div class="section-bridge" data-next="#features">
       <button type="button" aria-label="Continue to EveryVoyage features"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
@@ -3012,7 +4050,7 @@
         </div>
 
         <div class="feature-mosaic feature-mosaic-v8">
-          <a class="mosaic-card offline-card" href="#" aria-label="Learn about offline mode">
+          <a class="mosaic-card offline-card" href="/road-trip-tracker/" aria-label="Learn about offline mode">
             <img src="assets/img/OfflineMode.webp" onerror="this.onerror=null;this.src='assets/img/OfflineMode.webp'" alt="A remote road trip location">
             <div class="signal-chip signal-chip-offline">
               <span class="no-signal-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
@@ -3025,7 +4063,7 @@
             </div>
           </a>
 
-          <a class="mosaic-card expense-card" href="#" aria-label="Learn about road trip expense tracking">
+          <a class="mosaic-card expense-card" href="/road-trip-journal/" aria-label="Learn about road trip expense tracking">
             <span class="mosaic-kicker" style="color:var(--orange)">Trip costs</span>
             <h3>Log expenses</h3>
             <div class="expense-total">£428</div>
@@ -3036,7 +4074,7 @@
             </div>
           </a>
 
-          <a class="mosaic-card share-card share-card-compact" href="#" aria-label="Learn about sharing Voyages with friends">
+          <a class="mosaic-card share-card share-card-compact" href="/road-trip-inspiration/" aria-label="Learn about sharing Voyages with friends">
             <div>
               <span class="mosaic-kicker" style="color:rgba(255,255,255,.72)">Stay connected</span>
               <h3>Share with friends</h3>
@@ -3303,96 +4341,283 @@
       if(innerWidth>1000&&!mobileMenu.hidden)setMobileMenu(false);
     });
 
-    const story=document.querySelector('.story');
-    const root=document.documentElement;
-    const steps=[...document.querySelectorAll('.story-step')];
-    const navButtons=[...document.querySelectorAll('.story-nav button')];
-    const benefitCards=[...document.querySelectorAll('.benefit-card')];
-    let currentStep=-1;
-    let ticking=false;
 
-    const benefitContent=[
-      [
-        {icon:'📍',title:'Live GPS recording',text:'Your route records as you drive.'},
-        {icon:'📵',title:'Works offline',text:'Keep recording without signal.'},
-        {icon:'🕘',title:'Add a past Trip',text:'Map an adventure afterwards.'}
-      ],
-      [
-        {icon:'📷',title:'Add photos and notes',text:'Capture the story as it happens.'},
-        {icon:'🗺️',title:'Moments on the map',text:'Memories stay linked to each place.'},
-        {icon:'📖',title:'Your travel journal',text:'Build a timeline you can revisit.'}
-      ],
-      [
-        {icon:'🚐',title:'Multi-day Voyages',text:'Bring separate driving days together.'},
-        {icon:'📊',title:'Route and Trip stats',text:'See distance, time and journey totals.'},
-        {icon:'👥',title:'Share with friends',text:'Share the complete adventure.'}
-      ]
+    const journeyStory=document.querySelector('.journey-story');
+    const journeyScenes=[...document.querySelectorAll('.journey-scene')];
+    const journeyPhaseButtons=[...document.querySelectorAll('[data-phase-jump]')];
+    const journeyRoot=document.documentElement;
+
+    const journeySceneData=[
+      {
+        phase:'plan',
+        image:'assets/img/StoryPlanPlaces.svg',
+        fallback:'assets/img/AppHeroPOIs.svg',
+        alt:'EveryVoyage map showing campsites and useful places',
+        label:'Find useful stops'
+      },
+      {
+        phase:'plan',
+        image:'assets/img/StoryPlanFilters.svg',
+        fallback:'assets/img/AppHeroPOIs.svg',
+        alt:'EveryVoyage filters for choosing road trip stops',
+        label:'Refine your search'
+      },
+      {
+        phase:'plan',
+        image:'assets/img/StoryPlanRoutes.svg',
+        fallback:'assets/img/StoryVoyage.svg',
+        alt:'EveryVoyage showing a complete road trip route from another traveller',
+        label:'Follow proven routes'
+      },
+      {
+        phase:'track',
+        image:'assets/img/StoryTrackRoute.svg',
+        fallback:'assets/img/StoryTrack.svg',
+        alt:'EveryVoyage recording a road trip route',
+        label:'Your travel tracker'
+      },
+      {
+        phase:'track',
+        image:'assets/img/StoryTrackJournal.svg',
+        fallback:'assets/img/StoryJournal.svg',
+        alt:'EveryVoyage road trip journal with photos and Moments',
+        label:'Build your journal'
+      },
+      {
+        phase:'track',
+        image:'assets/img/StoryPlaceUpdate.svg',
+        fallback:'assets/img/AppHeroPOIs.svg',
+        alt:'EveryVoyage place update with a rating and recent information',
+        label:'Share place updates'
+      },
+      {
+        phase:'relive',
+        image:'assets/img/StoryReliveVoyage.svg',
+        fallback:'assets/img/StoryVoyage.svg',
+        alt:'EveryVoyage complete Voyage map',
+        label:'Relive the adventure'
+      }
     ];
 
-    function clamp(n,min,max){return Math.min(max,Math.max(min,n));}
-    function easeOutCubic(t){return 1-Math.pow(1-t,3);}
+    let journeyCurrentScene=-1;
+    let journeyFramePending=false;
 
-    function updateBenefits(index){
-      benefitCards.forEach(card=>card.classList.add('changing'));
-      window.setTimeout(()=>{
-        benefitCards.forEach((card,i)=>{
-          const content=benefitContent[index][i];
-          card.querySelector('.benefit-icon').textContent=content.icon;
-          card.querySelector('strong').textContent=content.title;
-          card.querySelector('small').textContent=content.text;
-          card.classList.remove('changing');
-        });
-      },120);
+    function journeyClamp(value,min,max){
+      return Math.min(max,Math.max(min,value));
     }
 
-    function setStepPosition(step,index,overallProgress){
-      const totalSteps=steps.length;
-      const raw=(overallProgress*totalSteps)-index;
-      const local=clamp(raw,0,1);
-      const delay=index===0?0:.16;
-      const travelEnd=.72;
-      const exitStart=.90;
-      let y=210;
+    function journeyEaseOutCubic(value){
+      return 1-Math.pow(1-value,3);
+    }
+
+    /*
+     * The copy is positioned directly from scroll progress rather than
+     * waiting for a scene-change timeout. Each block rises into place,
+     * holds briefly, then continues upwards as the following block enters.
+     */
+    function positionJourneyScene(scene,index,progress){
+      const raw=(progress*journeySceneData.length)-index;
+      const local=journeyClamp(raw,0,1);
+      const entryY=185;
+      const entryDelay=index===0?0:.10;
+      const settleAt=.62;
+      const exitAt=.82;
+      let y=entryY;
       let opacity=0;
-      const entryY=window.innerWidth<=720?155:210;
-      if(raw<0){y=entryY;opacity=0;}
-      else if(local<delay){y=entryY;opacity=1;}
-      else if(local<travelEnd){const t=easeOutCubic(clamp((local-delay)/(travelEnd-delay),0,1));y=entryY*(1-t);opacity=1;}
-      else if(index===totalSteps-1||local<exitStart){y=0;opacity=1;}
-      else{const t=clamp((local-exitStart)/(1-exitStart),0,1);y=-44*t;opacity=1-t;}
-      step.style.transform=`translate3d(0,${y.toFixed(1)}px,0)`;
-      step.style.opacity=opacity.toFixed(3);
-      step.classList.toggle('active',opacity>.55&&y<90);
-    }
 
-    function updateStory(){
-      const rect=story.getBoundingClientRect();
-      const scrollable=story.offsetHeight-window.innerHeight;
-      const passed=clamp(-rect.top,0,scrollable);
-      const progress=scrollable>0?passed/scrollable:0;
-      root.style.setProperty('--story-progress',progress.toFixed(4));
-      steps.forEach((step,index)=>setStepPosition(step,index,progress));
-      const index=clamp(Math.floor(progress*steps.length),0,steps.length-1);
-      if(index!==currentStep){
-        currentStep=index;
-        story.dataset.storyStep=String(index);
-        root.style.setProperty('--screen-step',String(index));
-        navButtons.forEach((el,i)=>el.classList.toggle('active',i===index));
-        updateBenefits(index);
+      if(raw<0){
+        y=entryY;
+        opacity=0;
+      }else if(local<entryDelay){
+        y=entryY;
+        opacity=1;
+      }else if(local<settleAt){
+        const eased=journeyEaseOutCubic(
+          journeyClamp((local-entryDelay)/(settleAt-entryDelay),0,1)
+        );
+        y=entryY*(1-eased);
+        opacity=1;
+      }else if(local<exitAt){
+        y=0;
+        opacity=1;
+      }else{
+        const exitProgress=journeyClamp((local-exitAt)/(1-exitAt),0,1);
+        y=-185*exitProgress;
+        opacity=1-exitProgress;
       }
-      ticking=false;
+
+      scene.style.transform=`translate3d(0,calc(-50% + ${y.toFixed(1)}px),0)`;
+      scene.style.opacity=opacity.toFixed(3);
+      scene.classList.toggle('is-active',opacity>.55&&Math.abs(y)<105);
+      scene.setAttribute('aria-hidden',opacity>.15?'false':'true');
     }
 
-    function requestUpdate(){if(!ticking){requestAnimationFrame(updateStory);ticking=true;}}
-    addEventListener('scroll',requestUpdate,{passive:true});
-    addEventListener('resize',requestUpdate);
-    updateStory();
+    function setJourneyState(index){
+      index=journeyClamp(index,0,journeySceneData.length-1);
+      if(index===journeyCurrentScene) return;
 
-    navButtons.forEach((button,index)=>button.addEventListener('click',()=>{
-      const segment=(story.offsetHeight-innerHeight)/steps.length;
-      const top=story.offsetTop+(segment*index)+8;
-      scrollTo({top,behavior:'smooth'});
-    }));
+      journeyCurrentScene=index;
+      const phase=journeySceneData[index].phase;
+      journeyStory.dataset.phase=phase;
+      journeyStory.dataset.scene=String(index);
+      journeyRoot.style.setProperty('--journey-screen-step',String(index));
+
+      const phaseStart={plan:0,track:3,relive:6}[phase];
+      journeyPhaseButtons.forEach(button=>{
+        button.classList.toggle(
+          'is-active',
+          Number(button.dataset.phaseJump)===phaseStart
+        );
+      });
+    }
+
+    function updateJourneyStory(){
+      if(!journeyStory||innerWidth<=760){
+        journeyFramePending=false;
+        return;
+      }
+
+      const rect=journeyStory.getBoundingClientRect();
+      const scrollable=journeyStory.offsetHeight-innerHeight;
+      const passed=journeyClamp(-rect.top,0,scrollable);
+      const progress=scrollable>0?passed/scrollable:0;
+
+      journeyScenes.forEach((scene,index)=>{
+        positionJourneyScene(scene,index,progress);
+      });
+
+      const index=journeyClamp(
+        Math.floor(progress*journeySceneData.length),
+        0,
+        journeySceneData.length-1
+      );
+      setJourneyState(index);
+      journeyFramePending=false;
+    }
+
+    function requestJourneyUpdate(){
+      if(!journeyFramePending){
+        journeyFramePending=true;
+        requestAnimationFrame(updateJourneyStory);
+      }
+    }
+
+    journeyPhaseButtons.forEach(button=>{
+      button.addEventListener('click',()=>{
+        if(!journeyStory) return;
+        const sceneIndex=Number(button.dataset.phaseJump);
+        const scrollable=journeyStory.offsetHeight-innerHeight;
+        const segment=scrollable/journeySceneData.length;
+        const target=journeyStory.offsetTop+(segment*sceneIndex)+8;
+        scrollTo({top:target,behavior:'smooth'});
+      });
+    });
+
+    addEventListener('scroll',requestJourneyUpdate,{passive:true});
+    addEventListener('resize',requestJourneyUpdate);
+    setJourneyState(0);
+    updateJourneyStory();
+
+    const mobileCarouselData={
+      plan:journeySceneData.slice(0,3).map((item,index)=>({
+        ...item,
+        title:[
+          'Find useful stops.',
+          'Refine your search.',
+          'Follow proven routes.'
+        ][index],
+        text:[
+          'See campsites, aires, parking, services and places worth the detour.',
+          'Filter places around the facilities, location and activities that matter to you.',
+          'Open complete Voyages to see where real travellers went and how the stops fitted together.'
+        ][index]
+      })),
+      track:journeySceneData.slice(3,6).map((item,index)=>({
+        ...item,
+        title:[
+          'Your travel tracker.',
+          'Build your journal.',
+          'Share place updates.'
+        ][index],
+        text:[
+          'Record the road automatically, including when the signal drops.',
+          'Add photos, Moments and costs while every detail is still fresh.',
+          'Rate stops, add photos and leave practical updates for the next traveller.'
+        ][index]
+      }))
+    };
+
+    document.querySelectorAll('[data-mobile-phase]').forEach(carousel=>{
+      const phase=carousel.dataset.mobilePhase;
+      const items=mobileCarouselData[phase];
+      if(!items) return;
+
+      const image=carousel.querySelector('[data-mobile-image]');
+      const title=carousel.querySelector('[data-mobile-title]');
+      const text=carousel.querySelector('[data-mobile-text]');
+      const dotsWrap=carousel.querySelector('[data-mobile-dots]');
+      const prev=carousel.querySelector('[data-mobile-prev]');
+      const next=carousel.querySelector('[data-mobile-next]');
+      let index=0;
+      let autoTimer=0;
+
+      const dots=items.map((_,dotIndex)=>{
+        const button=document.createElement('button');
+        button.type='button';
+        button.setAttribute('aria-label',`Show ${phase} feature ${dotIndex+1}`);
+        button.addEventListener('click',()=>{
+          render(dotIndex);
+          restartAuto();
+        });
+        dotsWrap?.appendChild(button);
+        return button;
+      });
+
+      function render(nextIndex){
+        index=(nextIndex+items.length)%items.length;
+        const item=items[index];
+
+        if(title) title.textContent=item.title;
+        if(text) text.textContent=item.text;
+        if(image){
+          image.style.opacity='.12';
+          window.setTimeout(()=>{
+            image.dataset.fallback=item.fallback;
+            image.alt=item.alt;
+            image.src=item.image;
+            image.style.opacity='1';
+          },130);
+        }
+        dots.forEach((dot,dotIndex)=>dot.classList.toggle('is-active',dotIndex===index));
+      }
+
+      if(image){
+        image.addEventListener('error',()=>{
+          const fallback=image.dataset.fallback;
+          if(fallback&&image.src.indexOf(fallback)===-1){
+            image.src=fallback;
+          }
+        });
+      }
+
+      function restartAuto(){
+        clearInterval(autoTimer);
+        if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        autoTimer=window.setInterval(()=>render(index+1),4800);
+      }
+
+      prev?.addEventListener('click',()=>{
+        render(index-1);
+        restartAuto();
+      });
+      next?.addEventListener('click',()=>{
+        render(index+1);
+        restartAuto();
+      });
+
+      render(0);
+      restartAuto();
+    });
 
     /* White section bridge buttons */
     document.querySelectorAll('.section-bridge button').forEach(button=>{
