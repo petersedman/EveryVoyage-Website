@@ -4141,8 +4141,16 @@
     @media(prefers-reduced-motion:reduce){
       .app-qr-dialog{animation:none}
     }
+    /* Centre only the tracker hero heading at tablet widths. */
+    @media (min-width:721px) and (max-width:1000px){
+      .tracker-hero .hero-copy h1{
+        margin-inline:auto;
+      }
+    }
 
 </style>
+
+
 </head>
 <body>
 <header class="site-header" id="siteHeader">
