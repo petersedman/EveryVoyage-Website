@@ -4383,7 +4383,44 @@
       .footer-socials{margin-top:19px}
       .footer-column{padding-top:5px}
     }
+    @media (min-width:1201px){
+      .mobile-menu{
+        position:absolute;
+        top:calc(100% + 18px);
+        right:0;
+      }
+    }
 
+    /* Keep every language option in the compact two-column box layout. */
+    .mobile-language-grid{
+      display:grid !important;
+      grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+      gap:7px !important;
+      padding-top:8px !important;
+    }
+
+    .mobile-language-grid a{
+      min-height:40px;
+      padding:9px 10px !important;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      border:1px solid var(--line,rgba(38,39,37,.11));
+      border-radius:11px !important;
+      background:var(--cream,#f7f4ed);
+      color:var(--ink,#262725) !important;
+      font-size:12px !important;
+      font-weight:800 !important;
+      line-height:1.2;
+      text-decoration:none !important;
+    }
+
+    .mobile-language-grid a:hover,
+    .mobile-language-grid a[aria-current="page"]{
+      border-color:rgba(245,74,0,.22);
+      background:var(--orange-soft,#fff0e8) !important;
+      color:var(--orange-dark,#d94100) !important;
+    }
   </style>
 </head>
 <body>
@@ -4430,7 +4467,7 @@
       <details class="mobile-language-switcher">
         <summary>Language: English (UK)</summary>
         <div class="mobile-language-grid">
-          <a href="/" lang="en-GB" hreflang="en-GB">English (UK)</a>
+          <a href="/" lang="en-GB" hreflang="en-GB" aria-current="page">English (UK)</a>
           <a href="/en-us/" lang="en-US" hreflang="en-US">English (US)</a>
           <a href="/de/" lang="de" hreflang="de">Deutsch</a>
           <a href="/fr/" lang="fr" hreflang="fr">Français</a>
