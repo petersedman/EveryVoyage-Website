@@ -1,0 +1,4902 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Suivi GPS de road trip en camping-car et van | EveryVoyage</title>
+<meta content="Enregistrez vos road trips en camping-car ou van par GPS, même hors ligne, puis réunissez itinéraire, photos et Moments. Gratuit sur iOS et Android." name="description"/><meta content="fr" name="language"/><link href="https://everyvoyage.com/fr/road-trip-tracker/" rel="canonical"/><link href="https://everyvoyage.com/road-trip-tracker/" hreflang="en-GB" rel="alternate"/><link href="https://everyvoyage.com/en-us/road-trip-tracker/" hreflang="en-US" rel="alternate"/><link href="https://everyvoyage.com/de/road-trip-tracker/" hreflang="de" rel="alternate"/><link href="https://everyvoyage.com/fr/road-trip-tracker/" hreflang="fr" rel="alternate"/><link href="https://everyvoyage.com/es/road-trip-tracker/" hreflang="es" rel="alternate"/><link href="https://everyvoyage.com/it/road-trip-tracker/" hreflang="it" rel="alternate"/><link href="https://everyvoyage.com/nl/road-trip-tracker/" hreflang="nl" rel="alternate"/><link href="https://everyvoyage.com/sv/road-trip-tracker/" hreflang="sv" rel="alternate"/><link href="https://everyvoyage.com/da/road-trip-tracker/" hreflang="da" rel="alternate"/><link href="https://everyvoyage.com/no/road-trip-tracker/" hreflang="no" rel="alternate"/><link href="https://everyvoyage.com/road-trip-tracker/" hreflang="x-default" rel="alternate"/>
+<meta content="SIMPLR LABS LTD" name="author"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="#f54a00" name="theme-color"/>
+
+
+
+<link href="/assets/icons/favicon.png" rel="icon" type="image/png"/>
+<link href="/assets/icons/favicon.png" rel="apple-touch-icon"/>
+<meta content="website" property="og:type"/>
+<meta content="https://everyvoyage.com/fr/road-trip-tracker/" property="og:url"/>
+<meta content="EveryVoyage" property="og:site_name"/>
+<meta content="fr_FR" property="og:locale"/>
+<meta content="Suivi GPS de road trip en camping-car et van | EveryVoyage" property="og:title"/>
+<meta content="Enregistrez vos road trips en camping-car ou van par GPS, même hors ligne, puis réunissez itinéraire, photos et Moments. Gratuit sur iOS et Android." property="og:description"/>
+<meta content="https://everyvoyage.com/assets/img/AppPreview.webp" property="og:image"/><meta content="https://everyvoyage.com/assets/img/AppPreview.webp" property="og:image:secure_url"/><meta content="image/webp" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="EveryVoyage affiche un itinéraire de road trip enregistré avec ses photos et souvenirs dans l’application." property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Suivi GPS de road trip en camping-car et van | EveryVoyage" name="twitter:title"/>
+<meta content="Enregistrez vos road trips en camping-car ou van par GPS, même hors ligne, puis réunissez itinéraire, photos et Moments. Gratuit sur iOS et Android." name="twitter:description"/>
+<meta content="https://everyvoyage.com/assets/img/AppPreview.webp" name="twitter:image"/>
+<meta content="EveryVoyage affiche un itinéraire de road trip enregistré avec ses photos et souvenirs dans l’application." name="twitter:image:alt"/>
+<link as="image" fetchpriority="high" href="/assets/img/TrackingBackground.webp" rel="preload"/><link as="image" fetchpriority="high" href="/assets/img/HeroTracking.webp" rel="preload"/><link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://everyvoyage.com/fr/road-trip-tracker/#webpage",
+      "url": "https://everyvoyage.com/fr/road-trip-tracker/",
+      "name": "Suivi GPS de road trip en camping-car et van | EveryVoyage",
+      "description": "Enregistrez vos road trips en camping-car ou van par GPS, même hors ligne, puis réunissez itinéraire, photos et Moments. Gratuit sur iOS et Android.",
+      "inLanguage": "fr",
+      "isPartOf": {
+        "@id": "https://everyvoyage.com/fr/#website"
+      },
+      "about": {
+        "@id": "https://everyvoyage.com/fr/#app"
+      },
+      "breadcrumb": {
+        "@id": "https://everyvoyage.com/fr/road-trip-tracker/#breadcrumb"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://everyvoyage.com/fr/#website",
+      "url": "https://everyvoyage.com/fr/",
+      "name": "EveryVoyage",
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://everyvoyage.com/fr/#app",
+      "name": "EveryVoyage",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "iOS, Android",
+      "url": "https://everyvoyage.com/fr/",
+      "description": "Une application de suivi GPS et un carnet de voyage pour les aventures en camping-car, van aménagé et voiture.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SIMPLR LABS LTD",
+        "url": "https://simplrlabs.com"
+      },
+      "image": "https://everyvoyage.com/assets/img/AppPreview.webp",
+      "isAccessibleForFree": true,
+      "featureList": [
+        "Enregistrement GPS du road trip en direct",
+        "Suivi de l’itinéraire hors ligne",
+        "Création de Trajets passés",
+        "Photos et Moments reliés à l’itinéraire",
+        "Statistiques et dépenses des Trajets",
+        "Confidentialité et partage différé"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://everyvoyage.com/fr/road-trip-tracker/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "EveryVoyage",
+          "item": "https://everyvoyage.com/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Suivi de road trip",
+          "item": "https://everyvoyage.com/fr/road-trip-tracker/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+    :root{
+      --cream:#f7f4ed;
+      --paper:#fffdf9;
+      --ink:#262725;
+      --muted:#686a66;
+      --orange:#f54a00;
+      --orange-dark:#d94100;
+      --orange-soft:#fff0e8;
+      --forest:#173d3c;
+      --forest-deep:#0f2928;
+      --teal-soft:#dfe8e7;
+      --blue-grey:#e8eef2;
+      --line:rgba(38,39,37,.11);
+      --display:'Fraunces',Georgia,'Times New Roman',serif;
+      --body:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      --ease:cubic-bezier(.22,1,.36,1);
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      overflow-x:hidden;
+      background:var(--cream);
+      color:var(--ink);
+      font-family:var(--body);
+      line-height:1.55;
+    }
+    body.menu-open{overflow:hidden}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    button{font:inherit}
+    .wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+    .section-kicker{
+      display:block;
+      margin-bottom:14px;
+      color:var(--orange);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+
+    .site-header{
+      position:fixed;
+      z-index:100;
+      top:14px;
+      left:50%;
+      width:min(1180px,calc(100% - 24px));
+      height:64px;
+      padding:0 14px 0 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:999px;
+      background:rgba(255,253,249,.9);
+      box-shadow:0 12px 34px rgba(0,0,0,.09);
+      backdrop-filter:blur(18px);
+      transform:translateX(-50%);
+    }
+    .brand-logo{display:block;width:184px;text-decoration:none}
+    .brand-logo img{width:100%;height:auto}
+    .nav{display:flex;align-items:center;gap:27px}
+    .nav>a,.language-switcher summary{
+      color:var(--ink);
+      font-size:14px;
+      font-weight:700;
+      text-decoration:none;
+    }
+    .nav>a:hover{color:var(--orange-dark)}
+    .download-nav{
+      padding:12px 19px;
+      border-radius:999px;
+      background:var(--orange);
+      color:#fff!important;
+      box-shadow:0 8px 22px rgba(245,74,0,.24);
+    }
+    .language-switcher{position:relative}
+    .language-switcher summary{
+      display:flex;
+      align-items:center;
+      gap:5px;
+      padding:8px 2px;
+      list-style:none;
+      cursor:pointer;
+    }
+    .language-switcher summary::-webkit-details-marker{display:none}
+    .language-menu{
+      position:absolute;
+      top:calc(100% + 13px);
+      right:-14px;
+      width:205px;
+      display:grid;
+      gap:2px;
+      padding:10px;
+      border:1px solid rgba(38,39,37,.1);
+      border-radius:18px;
+      background:rgba(255,253,249,.98);
+      box-shadow:0 20px 48px rgba(0,0,0,.13);
+      backdrop-filter:blur(18px);
+    }
+    .language-menu a{
+      padding:9px 10px;
+      border-radius:10px;
+      font-size:13px;
+      font-weight:700;
+      text-decoration:none;
+    }
+    .language-menu a:hover{background:var(--orange-soft);color:var(--orange-dark)}
+    .menu-toggle{
+      display:none;
+      width:42px;
+      height:42px;
+      padding:0;
+      place-items:center;
+      align-content:center;
+      gap:5px;
+      border:0;
+      border-radius:50%;
+      background:var(--orange);
+      cursor:pointer;
+      box-shadow:0 8px 22px rgba(245,74,0,.24);
+    }
+    .menu-toggle span{
+      display:block;
+      width:18px;
+      height:2px;
+      border-radius:99px;
+      background:#fff;
+      transition:transform .25s var(--ease),opacity .2s ease;
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+    .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .mobile-menu{
+      position:fixed;
+      z-index:120;
+      top:82px;
+      left:12px;
+      right:12px;
+      max-height:calc(100svh - 94px);
+      overflow:auto;
+      padding:16px;
+      border:1px solid rgba(38,39,37,.1);
+      border-radius:24px;
+      background:rgba(255,253,249,.98);
+      box-shadow:0 24px 60px rgba(0,0,0,.18);
+      backdrop-filter:blur(20px);
+    }
+    .mobile-menu nav{display:grid;gap:4px}
+    .mobile-menu nav a{
+      padding:12px 13px;
+      border-radius:12px;
+      color:var(--ink);
+      font-size:16px;
+      font-weight:750;
+      text-decoration:none;
+    }
+    .mobile-menu nav a:hover{background:var(--orange-soft)}
+    .mobile-menu .mobile-download{
+      margin-top:7px;
+      color:#fff;
+      background:var(--orange);
+      text-align:center;
+    }
+    .mobile-language{
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+    }
+    .mobile-language summary{
+      padding:8px 4px;
+      color:var(--muted);
+      font-size:13px;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .mobile-language-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:6px;
+      padding-top:8px;
+    }
+    .mobile-language-grid a{
+      padding:9px 10px;
+      border-radius:10px;
+      background:var(--cream);
+      color:var(--ink);
+      font-size:13px;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    .tracker-hero{
+      position:relative;
+      min-height:840px;
+      display:grid;
+      align-items:center;
+      overflow:hidden;
+      color:#fff;
+      background:
+        linear-gradient(90deg,rgba(8,21,22,.72),rgba(8,21,22,.32) 56%,rgba(8,21,22,.14)),
+        url('/assets/img/TrackingBackground.webp'),
+        linear-gradient(135deg,#173d3c,#658b82);
+      background-size:cover;
+      background-position:center;
+    }
+    .tracker-hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 76% 41%,rgba(245,74,0,.21),transparent 26%),
+        linear-gradient(180deg,transparent 72%,rgba(5,15,16,.18));
+      pointer-events:none;
+    }
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:min(1180px,calc(100% - 40px));
+      margin:96px auto 0;
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:52px;
+      align-items:center;
+    }
+    .breadcrumbs{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      margin-bottom:24px;
+      color:rgba(255,255,255,.66);
+      font-size:12px;
+      font-weight:700;
+    }
+    .breadcrumbs a{text-decoration:none}
+    .hero-eyebrow{
+      display:inline-flex;
+      padding:8px 13px;
+      margin-bottom:20px;
+      border:1px solid rgba(255,255,255,.34);
+      border-radius:999px;
+      background:rgba(255,255,255,.11);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      backdrop-filter:blur(8px);
+    }
+    .hero-copy h1{
+      max-width:690px;
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(45px,5.6vw,65px);
+      font-weight:500;
+      line-height:.95;
+      letter-spacing:-.055em;
+      text-shadow:0 14px 42px rgba(0,0,0,.25);
+    }
+    .hero-copy h1 em{
+      display:block;
+      color:#ff7130;
+      font-style:italic;
+    }
+    .hero-copy>p{
+      max-width:620px;
+      margin:26px 0;
+      color:rgba(255,255,255,.88);
+      font-size:clamp(17px,1.45vw,21px);
+    }
+    .hero-proof{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom:25px;
+    }
+    .hero-proof span{
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      padding:8px 11px;
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:999px;
+      background:rgba(9,25,26,.34);
+      color:rgba(255,255,255,.88);
+      font-size:12px;
+      font-weight:750;
+      backdrop-filter:blur(8px);
+    }
+    .store-row{display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+    .store-stack{display:grid;justify-items:center;gap:7px}
+    .store-stack>a{
+      position:relative;
+      display:block;
+      overflow:hidden;
+      border-radius:8px;
+    }
+    .store-stack>a img{
+      height:52px;
+      width:auto;
+      filter:drop-shadow(0 10px 20px rgba(0,0,0,.18));
+      transition:transform .25s var(--ease);
+    }
+    .store-stack>a:hover img{transform:translateY(-2px)}
+    .store-stack>a::after{
+      content:"";
+      position:absolute;
+      top:-40%;
+      bottom:-40%;
+      left:-65%;
+      width:42%;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,.44),transparent);
+      transform:skewX(-18deg);
+      pointer-events:none;
+      animation:badgeSheen 1.05s ease 1.05s 1 forwards;
+    }
+    .store-stack:nth-child(2)>a::after{animation-delay:1.27s}
+    .store-rating{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      color:#fff;
+      font-size:12px;
+      text-shadow:0 4px 14px rgba(0,0,0,.35);
+    }
+    .stars{color:#ff7130;letter-spacing:.5px}
+    @keyframes badgeSheen{from{left:-65%}to{left:125%}}
+
+    .hero-visual{
+      position:relative;
+      min-height:640px;
+    }
+    .hero-phone{
+      position:absolute;
+      z-index:3;
+      right:12%;
+      top:8px;
+      width:min(390px,31vw);
+      filter:drop-shadow(0 36px 54px rgba(0,0,0,.4));
+      animation:phoneIn 1s var(--ease) .2s both,phoneFloat 7s ease-in-out 1.25s infinite;
+    }
+    .hero-modal{
+      position:absolute;
+      z-index:5;
+      left:2%;
+      top:49%;
+      width:255px;
+      padding:16px 16px 14px;
+      border:1px solid rgba(255,255,255,.62);
+      border-radius:22px;
+      background:rgba(255,253,249,.95);
+      color:var(--ink);
+      box-shadow:0 18px 44px rgba(0,0,0,.16);
+      backdrop-filter:blur(14px);
+      transform:translateY(-50%);
+      animation:statusIn .8s var(--ease) .72s both;
+    }
+    .hero-modal-top{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:14px;
+    }
+    .hero-modal-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      background:var(--orange-soft);
+      color:var(--orange);
+      font-size:12px;
+      font-weight:800;
+    }
+    .hero-modal-badge i{
+      width:10px;height:10px;border-radius:50%;background:var(--orange);
+      box-shadow:0 0 0 0 rgba(245,74,0,.35);
+      animation:recordPulse 2s ease-out infinite;
+    }
+    .hero-modal strong{display:block;font-size:13px}
+    .hero-modal small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+    .hero-metrics{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:8px;
+      margin-top:12px;
+    }
+    .hero-metric{
+      padding:9px 8px;
+      border-radius:14px;
+      background:#fff;
+      border:1px solid rgba(38,39,37,.08);
+    }
+    .hero-metric b{display:block;font-size:15px;line-height:1}
+    .hero-metric span{display:block;margin-top:4px;color:var(--muted);font-size:10px;font-weight:700}
+    @keyframes phoneIn{from{opacity:0;transform:translate3d(50px,70px,0) rotate(10deg) scale(.88)}to{opacity:1;transform:translate3d(0,0,0) rotate(2deg) scale(1)}}
+    @keyframes phoneFloat{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(-15px) rotate(.8deg)}}
+    @keyframes statusIn{from{opacity:0;transform:translateY(-40%) scale(.94)}to{opacity:1;transform:translateY(-50%) scale(1)}}
+    @keyframes recordPulse{0%{box-shadow:0 0 0 0 rgba(245,74,0,.35)}75%,100%{box-shadow:0 0 0 12px rgba(245,74,0,0)}}
+
+    .tracker-proof{
+      padding:88px 0 100px;
+      background:#172b2a;
+      color:#fff;
+    }
+    .proof-grid{
+      display:grid;
+      grid-template-columns:.86fr 1.14fr;
+      gap:62px;
+      align-items:center;
+    }
+    .proof-copy h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(48px,5vw,74px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.05em;
+    }
+    .proof-copy h2 em{color:#ff8a55;font-style:italic}
+    .proof-copy>p{
+      margin:21px 0 25px;
+      color:rgba(255,255,255,.72);
+      font-size:18px;
+    }
+    .proof-list{display:grid;gap:13px}
+    .proof-item{
+      display:flex;
+      gap:11px;
+      align-items:flex-start;
+      color:rgba(255,255,255,.88);
+      font-weight:700;
+    }
+    .proof-item span{
+      flex:0 0 29px;
+      width:29px;
+      height:29px;
+      display:grid;
+      place-items:center;
+      border-radius:10px;
+      background:rgba(255,138,85,.14);
+      color:#ff8a55;
+    }
+    .video-card{
+      position:relative;
+      min-height:560px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:34px;
+      background:#dfe3e5;
+      box-shadow:0 25px 70px rgba(0,0,0,.26);
+      cursor:pointer;
+      isolation:isolate;
+    }
+    .video-card>img{
+      position:absolute;
+      inset:0;
+      z-index:-2;
+      width:100%;
+      height:100%;
+      max-width:none;
+      object-fit:cover;
+      transition:transform 1.2s var(--ease);
+    }
+    .video-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-1;
+      background:linear-gradient(180deg,rgba(4,15,16,.12),rgba(4,15,16,.58));
+    }
+    .video-card:hover>img{transform:scale(1.045)}
+    .video-overlay{
+      position:absolute;
+      inset:0;
+      display:grid;
+      place-items:center;
+      padding:30px;
+      text-align:center;
+    }
+    .video-overlay strong{
+      max-width:460px;
+      font-family:var(--display);
+      font-size:clamp(34px,4vw,56px);
+      font-weight:500;
+      line-height:1;
+      text-shadow:0 7px 25px rgba(0,0,0,.38);
+    }
+    .play-button{
+      position:relative;
+      width:78px;
+      height:78px;
+      margin-top:25px;
+      display:grid;
+      place-items:center;
+      border:1px solid rgba(255,255,255,.64);
+      border-radius:50%;
+      background:rgba(245,74,0,.9);
+      color:#fff;
+      font-size:24px;
+      box-shadow:0 18px 42px rgba(0,0,0,.28);
+      transition:transform .28s var(--ease);
+    }
+    .play-button::before,.play-button::after{
+      content:"";
+      position:absolute;
+      inset:-12px;
+      border:2px solid rgba(255,255,255,.55);
+      border-radius:50%;
+      animation:playRipple 2.2s ease-out infinite;
+    }
+    .play-button::after{animation-delay:1.1s}
+    .video-card:hover .play-button{transform:scale(1.08)}
+    @keyframes playRipple{0%{opacity:.7;transform:scale(.8)}75%,100%{opacity:0;transform:scale(1.45)}}
+
+    .problem-section{
+      padding:100px 0;
+      background:var(--paper);
+    }
+    .problem-grid{
+      display:grid;
+      grid-template-columns:.92fr 1.08fr;
+      gap:74px;
+      align-items:center;
+    }
+    .problem-copy h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(48px,5vw,72px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.05em;
+    }
+    .problem-copy h2 em{color:var(--orange);font-style:italic}
+    .problem-copy p{
+      margin:22px 0 0;
+      color:var(--muted);
+      font-size:19px;
+    }
+    .problem-points{
+      display:grid;
+      gap:12px;
+      margin-top:28px;
+    }
+    .problem-point{
+      display:flex;
+      align-items:flex-start;
+      gap:11px;
+      font-size:15px;
+      font-weight:700;
+    }
+    .problem-point span{
+      flex:0 0 27px;
+      width:27px;
+      height:27px;
+      display:grid;
+      place-items:center;
+      border-radius:9px;
+      background:var(--orange-soft);
+      color:var(--orange);
+      font-size:13px;
+    }
+    .route-memory{
+      position:relative;
+      min-height:545px;
+      border-radius:34px;
+      background:linear-gradient(145deg,#e9edf0,#dce7e5);
+      overflow:hidden;
+      box-shadow:0 24px 65px rgba(23,61,60,.12);
+    }
+    .route-memory::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 78% 17%,rgba(245,74,0,.16),transparent 25%),
+        linear-gradient(135deg,transparent 55%,rgba(255,255,255,.48));
+    }
+    .route-memory-main{
+      position:absolute;
+      right:5%;
+      bottom:5%;
+      width:58%;
+      overflow:hidden;
+      border:8px solid #151718;
+      border-radius:34px;
+      background:#eef2ec;
+      box-shadow:0 25px 54px rgba(0,0,0,.2);
+      transform:rotate(3deg);
+    }
+    .route-memory-main img{
+      width:100%;
+      aspect-ratio:9/14;
+      object-fit:cover;
+      object-position:center top;
+    }
+    .memory-chip{
+      position:absolute;
+      display:flex;
+      align-items:center;
+      gap:9px;
+      min-width:220px;
+      padding:11px 12px;
+      border:1px solid rgba(38,39,37,.08);
+      border-radius:18px;
+      background:rgba(255,255,255,.94);
+      box-shadow:0 14px 32px rgba(0,0,0,.1);
+      backdrop-filter:blur(14px);
+    }
+    .memory-chip img{
+      width:48px;
+      height:48px;
+      object-fit:cover;
+      border-radius:12px;
+    }
+    .memory-chip strong{display:block;font-size:13px;line-height:1.2}
+    .memory-chip small{display:block;margin-top:4px;color:var(--muted);font-size:11px}
+    .memory-chip.one{left:6%;top:10%;transform:rotate(-5deg)}
+    .memory-chip.two{left:10%;top:43%;transform:rotate(4deg)}
+    .record-chip{
+      position:absolute;
+      left:30%;
+      top:31%;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:var(--orange);
+      color:#fff;
+      font-size:12px;
+      font-weight:800;
+      box-shadow:0 12px 28px rgba(245,74,0,.28);
+    }
+    .record-chip i{
+      width:9px;height:9px;border-radius:50%;background:#fff;
+      box-shadow:0 0 0 0 rgba(255,255,255,.4);
+      animation:recordPulseWhite 2s ease-out infinite;
+    }
+    @keyframes recordPulseWhite{0%{box-shadow:0 0 0 0 rgba(255,255,255,.45)}75%,100%{box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+
+    .how-section{
+      padding:105px 0 115px;
+      background:linear-gradient(180deg,var(--cream),#f3eee5);
+    }
+    .section-heading{
+      max-width:820px;
+      margin:0 auto 55px;
+      text-align:center;
+    }
+    .section-heading h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(50px,5.3vw,78px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.052em;
+    }
+    .section-heading p{
+      max-width:680px;
+      margin:18px auto 0;
+      color:var(--muted);
+      font-size:18px;
+    }
+    .step-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .tracking-step{
+      position:relative;
+      min-height:590px;
+      padding:26px 24px 0;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:30px;
+      background:#f8f4ec;
+      box-shadow:0 16px 44px rgba(22,28,26,.05);
+      opacity:0;
+      transform:translateY(28px);
+      transition:opacity .65s ease,transform .85s var(--ease),box-shadow .28s ease;
+    }
+    .tracking-step.in-view{opacity:1;transform:none}
+    .tracking-step:nth-child(2){background:var(--forest);color:#fff}
+    .tracking-step:nth-child(3){background:var(--blue-grey)}
+    .tracking-step:hover{
+      transform:translateY(-8px) scale(1.02);
+      box-shadow:0 26px 58px rgba(22,28,26,.14);
+      z-index:2;
+    }
+    .step-number{
+      color:var(--orange);
+      font-size:13px;
+      font-weight:900;
+      letter-spacing:.1em;
+    }
+    .tracking-step:nth-child(2) .step-number{color:#ff8a55}
+    .tracking-step h3{
+      margin:13px 0 10px;
+      font-family:var(--display);
+      font-size:38px;
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.04em;
+    }
+    .tracking-step p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .tracking-step:nth-child(2) p{color:rgba(255,255,255,.7)}
+    .step-device{
+      position:absolute;
+      left:50%;
+      bottom:-66px;
+      width:210px;
+      aspect-ratio:9/17;
+      padding:9px;
+      border-radius:42px;
+      background:linear-gradient(145deg,#1f2224,#050506 60%,#262829);
+      box-shadow:0 26px 58px rgba(20,28,27,.24),inset 0 0 0 2px rgba(255,255,255,.14);
+      transform:translateX(-50%);
+    }
+    .tracking-step:nth-child(3) .step-device{aspect-ratio:9/19;bottom:-100px}
+    .step-device::before{
+      content:"";
+      position:absolute;
+      z-index:3;
+      top:15px;
+      left:50%;
+      width:34%;
+      height:21px;
+      border-radius:999px;
+      background:#050505;
+      transform:translateX(-50%);
+    }
+    .step-screen{
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      border-radius:34px;
+      background:#eef2ec;
+    }
+    .step-screen img{
+      width:100%;
+      height:100%;
+      max-width:none;
+      object-fit:cover;
+      object-position:center top;
+    }
+    .tracking-step:nth-child(1) .step-screen img{transform:scale(1.10) translateY(-2.2%);transform-origin:center top}
+    .tracking-step:nth-child(2) .step-screen img{transform:scale(1.11) translateY(-1.8%);transform-origin:center top}
+    .tracking-step:nth-child(3) .step-screen img{object-position:center}
+
+    .benefits-section{
+      padding:110px 0;
+      background:#f4f5f6;
+    }
+    .benefit-mosaic{
+      display:grid;
+      grid-template-columns:repeat(12,minmax(0,1fr));
+      grid-auto-rows:112px;
+      gap:18px;
+    }
+    .benefit-card{
+      position:relative;
+      overflow:hidden;
+      padding:26px;
+      border:1px solid rgba(38,39,37,.08);
+      border-radius:30px;
+      background:#fff;
+      box-shadow:0 16px 44px rgba(22,28,26,.06);
+      opacity:0;
+      transform:translateY(28px);
+      transition:opacity .65s ease,transform .85s var(--ease),box-shadow .3s ease;
+    }
+    .benefit-card.in-view{opacity:1;transform:none}
+    .benefit-card:hover{box-shadow:0 24px 58px rgba(22,28,26,.11)}
+    .benefit-card h3{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(30px,3vw,42px);
+      font-weight:500;
+      line-height:1.02;
+      letter-spacing:-.04em;
+    }
+    .benefit-card p{margin:11px 0 0;color:var(--muted)}
+    .benefit-icon{
+      width:43px;
+      height:43px;
+      margin-bottom:18px;
+      display:grid;
+      place-items:center;
+      border-radius:14px;
+      background:var(--orange-soft);
+      color:var(--orange);
+      font-size:21px;
+    }
+
+    .offline-benefit{
+      grid-column:1/5;
+      grid-row:1/4;
+      color:#fff;
+      background:#173d3c;
+    }
+    .offline-benefit p{max-width:340px;color:rgba(255,255,255,.7)}
+    .offline-benefit .benefit-icon{background:rgba(255,138,85,.14);color:#ff8a55}
+    .offline-scene{
+      position:absolute;
+      left:0;right:0;bottom:0;
+      height:48%;
+      background:
+        linear-gradient(180deg,transparent,rgba(0,0,0,.16)),
+        url('/assets/img/OfflineMode.webp'),
+        linear-gradient(135deg,#284a49,#7b9187);
+      background-size:cover;
+      background-position:center;
+      opacity:.9;
+      mask-image:linear-gradient(180deg,transparent 0,rgba(0,0,0,.9) 28%);
+      -webkit-mask-image:linear-gradient(180deg,transparent 0,rgba(0,0,0,.9) 28%);
+    }
+    .no-signal-pill{
+      position:absolute;
+      right:22px;
+      bottom:24px;
+      padding:8px 12px;
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:999px;
+      background:rgba(11,25,24,.56);
+      color:#fff;
+      font-size:11px;
+      font-weight:800;
+      backdrop-filter:blur(10px);
+    }
+
+    .past-benefit{
+      grid-column:5/8;
+      grid-row:1/3;
+      background:linear-gradient(145deg,#fff,#fff1e8);
+    }
+    .past-benefit p{max-width:280px}
+    .route-replay{
+      position:absolute;
+      right:20px;
+      bottom:18px;
+      width:118px;height:118px;
+      border-radius:50%;
+      border:2px dashed rgba(245,74,0,.22);
+    }
+    .route-replay::before{
+      content:"↺";
+      position:absolute;
+      left:50%;top:50%;
+      color:var(--orange);
+      font-size:36px;
+      font-weight:700;
+      transform:translate(-50%,-50%);
+    }
+
+    .privacy-benefit{
+      grid-column:8/11;
+      grid-row:1/4;
+      background:linear-gradient(145deg,#eaf4f6,#dce9ef);
+      padding:24px 24px 0;
+    }
+    .privacy-benefit p{display:none}
+    .privacy-title{
+      position:relative;
+      z-index:3;
+      max-width:190px;
+    }
+    .privacy-stage{
+      position:absolute;
+      inset:auto 0 0 0;
+      height:70%;
+      overflow:hidden;
+    }
+    .privacy-you,.privacy-friend,.privacy-other{
+      position:absolute;
+      border-radius:50%;
+      background-size:cover;
+      background-position:center;
+      box-shadow:0 12px 26px rgba(15,41,40,.18);
+      opacity:0;
+      animation:privacyPulse 9s ease-in-out infinite;
+    }
+    .privacy-you{
+      left:50%;top:52%;
+      width:88px;height:88px;
+      background-image:url('/assets/img/PrivacyYou.webp');
+      transform:translate(-50%,-50%);
+      opacity:1;
+      z-index:3;
+    }
+    .privacy-ring{
+      position:absolute;
+      left:50%;top:52%;
+      width:140px;height:140px;
+      border-radius:50%;
+      border:1px solid rgba(23,61,60,.12);
+      transform:translate(-50%,-50%);
+      z-index:1;
+      animation:ringGrow 9s ease-in-out infinite;
+    }
+    .privacy-friend{
+      width:56px;height:56px;
+      z-index:2;
+      animation-delay:2.2s;
+    }
+    .privacy-f1{left:20%;top:32%;background-image:url('/assets/img/PrivacyFriend1.webp')}
+    .privacy-f2{right:16%;top:34%;background-image:url('/assets/img/PrivacyFriend2.webp')}
+    .privacy-f3{left:26%;bottom:20%;background-image:url('/assets/img/PrivacyFriend3.webp')}
+    .privacy-f4{right:21%;bottom:18%;background-image:url('/assets/img/PrivacyFriend4.webp')}
+    .privacy-other{
+      width:30px;height:30px;
+      animation-delay:5.1s;
+      box-shadow:0 8px 18px rgba(15,41,40,.14);
+    }
+    .privacy-o1{left:10%;top:14%;background-image:url('/assets/img/PrivacyOther1.webp')}
+    .privacy-o2{right:11%;top:16%;background-image:url('/assets/img/PrivacyOther2.webp')}
+    .privacy-o3{left:8%;bottom:10%;background-image:url('/assets/img/PrivacyOther3.webp')}
+    .privacy-o4{right:9%;bottom:12%;background-image:url('/assets/img/PrivacyOther4.webp')}
+    .privacy-pill{
+      position:absolute;
+      left:50%;
+      top:15px;
+      min-width:170px;
+      padding:10px 16px;
+      border:1px solid rgba(23,61,60,.12);
+      border-radius:999px;
+      background:rgba(255,253,249,.95);
+      color:var(--forest);
+      font-size:12px;
+      font-weight:800;
+      transform:translateX(-50%);
+      box-shadow:0 10px 24px rgba(23,61,60,.08);
+    }
+    .privacy-pill::before{
+      content:"Seulement vous";
+      animation:privacyText 9s ease-in-out infinite;
+    }
+    @keyframes privacyPulse{
+      0%,20%{opacity:0;transform:scale(.8)}
+      28%,52%{opacity:1;transform:scale(1)}
+      60%,100%{opacity:0;transform:scale(.86)}
+    }
+    @keyframes ringGrow{
+      0%,18%{transform:translate(-50%,-50%) scale(.52);opacity:.72}
+      28%,52%{transform:translate(-50%,-50%) scale(1);opacity:.9}
+      60%,100%{transform:translate(-50%,-50%) scale(1.45);opacity:.12}
+    }
+    @keyframes privacyText{
+      0%,28%{content:"Seulement vous"}
+      29%,62%{content:"Amis et famille"}
+      63%,100%{content:"Tout le monde"}
+    }
+
+    .stats-benefit{
+      grid-column:11/13;
+      grid-row:1/4;
+      background:linear-gradient(160deg,#183b3b,#2d4f4b);
+      color:#fff;
+      text-align:center;
+    }
+    .stats-benefit p{color:rgba(255,255,255,.72)}
+    .stats-benefit .benefit-icon{background:rgba(255,138,85,.14);color:#ff8a55;margin-inline:auto}
+    .miles-meter{
+      position:relative;
+      width:152px;height:216px;
+      margin:22px auto 10px;
+      border-radius:30px;
+      border:5px solid rgba(255,255,255,.85);
+      overflow:hidden;
+      background:rgba(255,255,255,.06);
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);
+    }
+    .miles-meter::before{
+      content:"";
+      position:absolute;
+      left:50%;top:-18px;
+      width:52px;height:22px;
+      border-radius:999px 999px 0 0;
+      background:rgba(255,255,255,.88);
+      transform:translateX(-50%);
+    }
+    .miles-fill{
+      position:absolute;
+      left:0;right:0;bottom:0;
+      height:0;
+      background:linear-gradient(180deg,#7ad98a,#63bf5c);
+      animation:milesFill 2.2s var(--ease) .35s forwards;
+    }
+    .miles-fill strong{
+      position:absolute;
+      left:50%;top:44%;
+      color:#173d3c;
+      font-family:var(--display);
+      font-size:32px;
+      line-height:1;
+      transform:translate(-50%,-50%);
+    }
+    .stat-mini-row{
+      display:grid;
+      gap:8px;
+      margin-top:10px;
+    }
+    .stat-mini{
+      padding:8px 10px;
+      border-radius:14px;
+      background:rgba(255,255,255,.08);
+      color:rgba(255,255,255,.86);
+      font-size:12px;
+      font-weight:700;
+    }
+    @keyframes milesFill{from{height:0}to{height:84%}}
+
+    .cost-benefit{
+      grid-column:1/5;
+      grid-row:4/6;
+      background:linear-gradient(145deg,#fff,#fff1e8);
+    }
+    .cost-benefit h3{max-width:320px}
+    .cost-list{display:grid;gap:8px;margin-top:18px}
+    .cost-row{
+      display:flex;
+      justify-content:space-between;
+      padding:10px 12px;
+      border-radius:12px;
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(38,39,37,.06);
+      font-size:13px;
+      font-weight:700;
+    }
+    .cost-caption{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:700;
+    }
+
+    .voyage-benefit{
+      grid-column:5/13;
+      grid-row:4/6;
+      padding:0;
+      color:#fff;
+      background:#273337;
+    }
+    .voyage-benefit img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .voyage-benefit::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.68));
+    }
+    .voyage-benefit-copy{
+      position:absolute;
+      z-index:2;
+      left:28px;
+      right:28px;
+      bottom:27px;
+    }
+    .voyage-benefit-copy p{max-width:480px;color:rgba(255,255,255,.75)}
+
+    .result-section{
+      padding:108px 0;
+      background:var(--paper);
+    }
+    .result-panel{
+      display:grid;
+      grid-template-columns:.92fr 1.08fr;
+      gap:48px;
+      align-items:center;
+      padding:34px;
+      border:1px solid var(--line);
+      border-radius:34px;
+      background:linear-gradient(135deg,#fff8f2,#f3eee5);
+      box-shadow:0 20px 58px rgba(22,28,26,.06);
+    }
+    .result-copy{padding:20px}
+    .result-copy h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(46px,4.8vw,70px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.05em;
+    }
+    .result-copy p{
+      margin:20px 0 25px;
+      color:var(--muted);
+      font-size:18px;
+    }
+    .result-visual{
+      position:relative;
+      min-height:520px;
+      overflow:hidden;
+      border-radius:27px;
+      background:#dce5e7;
+    }
+    .result-visual img{
+      width:100%;
+      height:100%;
+      min-height:520px;
+      object-fit:cover;
+      object-position:center;
+    }
+    .result-chip{
+      position:absolute;
+      left:20px;
+      bottom:20px;
+      padding:11px 14px;
+      border-radius:999px;
+      background:rgba(255,253,249,.94);
+      color:var(--ink);
+      font-size:12px;
+      font-weight:800;
+      box-shadow:0 12px 28px rgba(0,0,0,.12);
+      backdrop-filter:blur(12px);
+    }
+
+    .audience-section{
+      padding:90px 0;
+      background:var(--forest);
+      color:#fff;
+      text-align:center;
+    }
+    .audience-section h2{
+      max-width:850px;
+      margin:0 auto;
+      font-family:var(--display);
+      font-size:clamp(46px,5vw,72px);
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.05em;
+    }
+    .audience-section p{
+      max-width:690px;
+      margin:18px auto 0;
+      color:rgba(255,255,255,.7);
+      font-size:18px;
+    }
+    .audience-chips{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+    .audience-chips span{
+      padding:10px 14px;
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:999px;
+      background:rgba(255,255,255,.07);
+      color:rgba(255,255,255,.9);
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .faq-section{
+      padding:110px 0;
+      background:var(--cream);
+    }
+    .faq-grid{
+      display:grid;
+      grid-template-columns:.72fr 1.28fr;
+      gap:70px;
+      align-items:start;
+    }
+    .faq-heading{
+      position:sticky;
+      top:110px;
+    }
+    .faq-heading h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(48px,4.8vw,68px);
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.05em;
+    }
+    .faq-heading p{margin:18px 0 0;color:var(--muted)}
+    .faq-list{display:grid;gap:11px}
+    .faq-item{
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:var(--paper);
+      box-shadow:0 10px 30px rgba(0,0,0,.03);
+    }
+    .faq-item summary{
+      position:relative;
+      padding:20px 54px 20px 21px;
+      list-style:none;
+      font-size:17px;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::after{
+      content:"+";
+      position:absolute;
+      right:21px;
+      top:50%;
+      color:var(--orange);
+      font-size:24px;
+      transform:translateY(-50%);
+    }
+    .faq-item[open] summary::after{content:"−"}
+    .faq-answer{
+      padding:0 21px 21px;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .final-cta{
+      position:relative;
+      min-height:480px;
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      color:#fff;
+      text-align:center;
+      isolation:isolate;
+    }
+    .final-cta::before{
+      content:"";
+      position:absolute;
+      inset:-3%;
+      z-index:-2;
+      background:
+        linear-gradient(rgba(7,20,22,.34),rgba(7,20,22,.56)),
+        url('/assets/img/Sunset.webp'),
+        linear-gradient(135deg,#a6552d,#183b3b);
+      background-size:cover;
+      background-position:center;
+      transform:scale(1);
+      transition:transform 7s ease;
+    }
+    .final-cta::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-1;
+      background:radial-gradient(circle at 50% 42%,rgba(245,74,0,.1),transparent 44%);
+    }
+    .final-cta.in-view::before{transform:scale(1.045)}
+    .final-content{
+      max-width:850px;
+      padding:70px 20px;
+      opacity:0;
+      transform:translateY(25px);
+      transition:opacity .7s ease,transform .9s var(--ease);
+    }
+    .final-cta.in-view .final-content{opacity:1;transform:none}
+    .final-content h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(48px,5.4vw,76px);
+      font-weight:500;
+      line-height:.98;
+      letter-spacing:-.052em;
+    }
+    .final-content p{
+      margin:17px 0 27px;
+      color:rgba(255,255,255,.86);
+      font-size:18px;
+    }
+    .final-content .store-row{justify-content:center}
+    .final-content .store-stack>a{
+      opacity:0;
+      transform:translateY(14px);
+      transition:opacity .5s ease,transform .7s var(--ease);
+    }
+    .final-cta.in-view .store-stack>a{opacity:1;transform:none}
+    .final-cta.in-view .store-stack:nth-child(1)>a{transition-delay:.16s}
+    .final-cta.in-view .store-stack:nth-child(2)>a{transition-delay:.27s}
+    .download-note{
+      margin-top:14px;
+      color:rgba(255,255,255,.72);
+      font-size:13px;
+      font-weight:700;
+    }
+
+    footer{padding:58px 0 26px;background:#252725;color:#fff}
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.8fr repeat(3,1fr);
+      gap:50px;
+    }
+    .footer-logo{width:210px;margin-bottom:17px}
+    .footer-brand p{max-width:310px;color:rgba(255,255,255,.6)}
+    footer h4{margin:0 0 14px;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+    footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+    footer a{color:rgba(255,255,255,.62);text-decoration:none}
+    footer a:hover{color:#fff}
+    .footer-bottom{
+      margin-top:45px;
+      padding-top:20px;
+      border-top:1px solid rgba(255,255,255,.1);
+      color:rgba(255,255,255,.45);
+      font-size:13px;
+    }
+
+    .mobile-download-bar{display:none}
+
+    @media(max-width:1000px){
+      .site-header .nav{display:none}
+      .menu-toggle{display:grid}
+      .hero-inner{grid-template-columns:1fr;text-align:center}
+      .breadcrumbs,.store-row,.hero-proof{justify-content:center}
+      .hero-copy>p{margin-inline:auto}
+      .hero-visual{width:min(720px,100%);min-height:590px;margin:auto}
+      .hero-phone{right:50%;transform:translateX(50%)!important;width:320px}
+      .hero-modal{left:4%;top:50%;width:240px}
+      .proof-grid,.problem-grid,.result-panel,.faq-grid{grid-template-columns:1fr}
+      .proof-copy,.problem-copy{text-align:center}
+      .proof-list,.problem-points{max-width:620px;margin-inline:auto;text-align:left}
+      .step-grid{grid-template-columns:repeat(2,1fr)}
+      .tracking-step:nth-child(3){grid-column:1/-1;min-height:540px}
+      .benefit-mosaic{grid-template-columns:repeat(6,1fr)}
+      .offline-benefit{grid-column:1/4;grid-row:1/4}
+      .past-benefit{grid-column:4/7;grid-row:1/3}
+      .privacy-benefit{grid-column:1/4;grid-row:4/7}
+      .stats-benefit{grid-column:4/7;grid-row:3/6}
+      .cost-benefit{grid-column:1/4;grid-row:7/9}
+      .voyage-benefit{grid-column:4/7;grid-row:6/9}
+      .faq-heading{position:static;text-align:center}
+      .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
+    }
+
+    @media(max-width:720px){
+      .wrap{width:min(100% - 26px,1180px)}
+      .site-header{top:8px;height:58px}
+      .brand-logo{width:160px}
+      .mobile-menu{top:74px}
+      .tracker-hero{min-height:auto;padding:88px 0 28px}
+      .hero-inner{
+        width:min(100% - 24px,1180px);
+        margin:0 auto;
+        gap:0;
+      }
+      .breadcrumbs{margin-bottom:15px;justify-content:center}
+      .hero-eyebrow{
+        max-width:100%;
+        margin-bottom:14px;
+        padding:7px 9px;
+        white-space:nowrap;
+        font-size:clamp(8px,2.45vw,10px);
+        letter-spacing:.035em;
+      }
+      .hero-copy h1{
+        font-size:clamp(39px,11.4vw,55px);
+        line-height:.98;
+      }
+      .hero-copy>p{
+        max-width:370px;
+        margin:20px auto 18px;
+        font-size:15px;
+      }
+      .hero-proof{gap:7px;margin-bottom:18px}
+      .hero-proof span{padding:7px 9px;font-size:10px}
+      .store-row{gap:10px;flex-wrap:nowrap}
+      .store-stack>a img{height:42px}
+      .store-rating{font-size:10px}
+      .hero-visual{min-height:435px;margin-top:8px}
+      .hero-phone{top:32px;width:215px}
+      .hero-modal{
+        top:50%;
+        left:50%;
+        width:218px;
+        transform:translate(-50%,-50%);
+      }
+      .hero-modal strong{font-size:12px}
+      .hero-modal small{font-size:10px}
+      .hero-metrics{gap:6px}
+      .hero-metric b{font-size:13px}
+      .hero-metric span{font-size:9px}
+
+      .tracker-proof,.problem-section,.how-section,.benefits-section,.result-section,.faq-section{padding:75px 0}
+      .proof-grid,.problem-grid{gap:42px}
+      .proof-copy h2,.problem-copy h2{font-size:clamp(43px,12vw,57px)}
+      .proof-copy p,.problem-copy p{font-size:16px}
+      .video-card{min-height:460px;border-radius:27px}
+      .route-memory{min-height:500px;border-radius:26px}
+      .route-memory-main{width:56%;border-width:7px}
+      .memory-chip{min-width:184px;padding:10px}
+      .memory-chip img{width:40px;height:40px}
+      .memory-chip.one{left:4%;top:9%}
+      .memory-chip.two{left:5%;top:46%}
+      .record-chip{left:29%;top:34%;font-size:10px}
+
+      .section-heading{margin-bottom:35px}
+      .section-heading h2{font-size:clamp(44px,12.5vw,60px)}
+      .section-heading p{font-size:16px}
+      .step-grid{grid-template-columns:1fr}
+      .tracking-step,.tracking-step:nth-child(3){min-height:560px;grid-column:auto}
+      .tracking-step:hover{transform:none}
+      .tracking-step h3{font-size:36px}
+      .step-device{width:205px}
+
+      .benefit-mosaic{display:flex;flex-direction:column}
+      .benefit-card{min-height:260px;border-radius:24px}
+      .offline-benefit{min-height:360px}
+      .privacy-benefit{min-height:340px}
+      .stats-benefit{min-height:390px}
+      .voyage-benefit{min-height:470px}
+      .past-benefit,.cost-benefit{min-height:260px}
+      .benefit-card h3{font-size:37px}
+      .privacy-you{width:76px;height:76px}
+      .privacy-friend{width:48px;height:48px}
+      .privacy-other{width:24px;height:24px}
+      .miles-meter{width:138px;height:200px}
+
+      .result-panel{gap:12px;padding:17px;border-radius:27px}
+      .result-copy{padding:18px 7px}
+      .result-copy h2{font-size:clamp(43px,12vw,56px)}
+      .result-visual,.result-visual img{min-height:430px}
+      .audience-section{padding:72px 0}
+      .audience-section h2{font-size:45px}
+      .audience-section p{font-size:16px}
+      .faq-grid{gap:35px}
+      .faq-heading h2{font-size:50px}
+      .faq-item summary{font-size:15px}
+      .final-cta{min-height:520px}
+      .final-content h2{font-size:clamp(45px,12.5vw,59px)}
+      .final-content p{font-size:16px}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .footer-brand{grid-column:1/-1}
+
+      .mobile-download-bar{
+        position:fixed;
+        z-index:110;
+        left:10px;
+        right:10px;
+        bottom:10px;
+        min-height:66px;
+        padding:10px 10px 10px 14px;
+        align-items:center;
+        justify-content:space-between;
+        gap:12px;
+        border:1px solid rgba(255,255,255,.78);
+        border-radius:20px;
+        background:rgba(255,253,249,.96);
+        box-shadow:0 18px 46px rgba(0,0,0,.2);
+        backdrop-filter:blur(18px);
+        opacity:0;
+        transform:translateY(24px);
+        transition:opacity .28s ease,transform .38s var(--ease);
+      }
+      .mobile-download-bar.is-visible{display:flex;opacity:1;transform:none}
+      .mobile-download-copy{display:grid;line-height:1.2}
+      .mobile-download-copy strong{font-size:14px}
+      .mobile-download-copy span{margin-top:4px;color:var(--muted);font-size:11px}
+      .mobile-download-bar>a{
+        flex:0 0 auto;
+        padding:11px 14px;
+        border-radius:999px;
+        background:var(--orange);
+        color:#fff;
+        font-size:12px;
+        font-weight:800;
+        text-decoration:none;
+        box-shadow:0 8px 20px rgba(245,74,0,.24);
+      }
+    }
+
+    @media(max-width:350px){
+      .hero-eyebrow{display:none}
+      .hero-copy h1{font-size:37px}
+      .store-stack>a img{height:39px}
+      .hero-phone{width:195px}
+      .hero-modal{width:205px}
+      .hero-metrics{grid-template-columns:1fr}
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .hero-phone,.hero-modal,.store-stack>a::after,.play-button::before,.play-button::after,.miles-fill,.privacy-you,.privacy-friend,.privacy-other,.privacy-ring,.privacy-pill::before{
+        animation:none!important;
+      }
+      .tracking-step,.benefit-card,.final-content,.final-cta::before,.mobile-download-bar,.video-card>img{
+        transition:none!important;
+      }
+      .tracking-step,.benefit-card,.final-content{opacity:1!important;transform:none!important}
+    }
+  
+    /* ===== Road-trip tracker refinement pass ===== */
+
+    /* Keep the play control directly beneath the title, centred in the image. */
+    .video-overlay > div{
+      display:grid;
+      justify-items:center;
+      width:100%;
+    }
+    .video-overlay .section-kicker,
+    .video-overlay strong{
+      text-align:center;
+    }
+    .play-button{
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    /*
+     * Camera-roll story visual:
+     * no enclosing box, four-photo camera roll behind the AppPhoneHero,
+     * with the route/attachment relationship made explicit.
+     */
+    .camera-route-visual{
+      position:relative;
+      min-height:570px;
+      overflow:visible;
+    }
+    .camera-roll-card{
+      position:absolute;
+      z-index:1;
+      left:0;
+      top:36px;
+      width:55%;
+      padding:16px;
+      border:1px solid rgba(38,39,37,.09);
+      border-radius:24px;
+      background:#fff;
+      box-shadow:0 20px 48px rgba(0,0,0,.11);
+      transform:rotate(-5deg);
+    }
+    .camera-roll-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:8px;
+    }
+    .camera-roll-grid img{
+      width:100%;
+      aspect-ratio:1;
+      object-fit:cover;
+      border-radius:12px;
+    }
+    .camera-roll-label{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:800;
+    }
+    .camera-route-phone{
+      position:absolute;
+      z-index:4;
+      right:2%;
+      bottom:0;
+      width:min(360px,58%);
+      filter:drop-shadow(0 30px 54px rgba(20,28,27,.24));
+      transform:rotate(2deg);
+    }
+    .route-recording-chip{
+      position:absolute;
+      z-index:6;
+      left:26%;
+      top:20%;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:var(--orange);
+      color:#fff;
+      font-size:12px;
+      font-weight:800;
+      box-shadow:0 12px 28px rgba(245,74,0,.28);
+    }
+    .route-recording-chip i{
+      width:9px;
+      height:9px;
+      border-radius:50%;
+      background:#fff;
+      box-shadow:0 0 0 0 rgba(255,255,255,.45);
+      animation:recordPulseWhite 2s ease-out infinite;
+    }
+    .photo-attached-chip{
+      position:absolute;
+      z-index:7;
+      right:0;
+      bottom:44px;
+      max-width:245px;
+      padding:12px 14px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      border:1px solid rgba(38,39,37,.08);
+      border-radius:18px;
+      background:rgba(255,253,249,.96);
+      box-shadow:0 16px 36px rgba(0,0,0,.12);
+      backdrop-filter:blur(12px);
+    }
+    .photo-attached-chip > span{
+      flex:0 0 34px;
+      width:34px;
+      height:34px;
+      display:grid;
+      place-items:center;
+      border-radius:11px;
+      background:var(--orange-soft);
+      font-size:16px;
+    }
+    .photo-attached-chip strong{
+      display:block;
+      font-size:12px;
+      line-height:1.2;
+    }
+    .photo-attached-chip small{
+      display:block;
+      margin-top:3px;
+      color:var(--muted);
+      font-size:10px;
+      line-height:1.3;
+    }
+
+    @media(max-width:1000px){
+      .camera-route-visual{
+        width:min(760px,100%);
+        min-height:570px;
+        margin-inline:auto;
+      }
+      .camera-roll-card{
+        left:4%;
+        width:48%;
+      }
+      .camera-route-phone{
+        right:7%;
+        width:min(350px,52%);
+      }
+      .route-recording-chip{
+        left:31%;
+      }
+      .photo-attached-chip{
+        right:2%;
+      }
+    }
+
+    @media(max-width:720px){
+      .camera-route-visual{
+        min-height:500px;
+      }
+      .camera-roll-card{
+        left:0;
+        top:24px;
+        width:56%;
+        padding:11px;
+        border-radius:19px;
+      }
+      .camera-roll-grid{
+        gap:6px;
+      }
+      .camera-roll-grid img{
+        border-radius:9px;
+      }
+      .camera-route-phone{
+        right:0;
+        width:min(235px,59%);
+      }
+      .route-recording-chip{
+        left:24%;
+        top:42%;
+        padding:8px 10px;
+        font-size:10px;
+      }
+      .photo-attached-chip{
+        right:0;
+        bottom:22px;
+        max-width:205px;
+        padding:10px 11px;
+      }
+      .photo-attached-chip strong{
+        font-size:11px;
+      }
+      .photo-attached-chip small{
+        font-size:9px;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .route-recording-chip i{
+        animation:none!important;
+      }
+    }
+
+
+    /* ===== Road-trip tracker feature mosaic v4 ===== */
+
+    .camera-roll-label{
+      display:grid;
+      gap:2px;
+      line-height:1.25;
+    }
+    .camera-roll-label strong{
+      color:var(--ink);
+      font-size:12px;
+    }
+    .camera-roll-label span{
+      color:var(--orange);
+      font-size:11px;
+      font-weight:800;
+    }
+
+    .benefit-mosaic-v4{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      grid-auto-rows:minmax(360px,auto);
+      gap:18px;
+    }
+    .benefit-mosaic-v4 .benefit-card{
+      grid-column:auto!important;
+      grid-row:auto!important;
+      min-height:360px;
+      padding:27px;
+      border-radius:30px;
+    }
+    .feature-card-copy{
+      position:relative;
+      z-index:4;
+    }
+    .feature-card-copy .section-kicker{
+      margin-bottom:11px;
+    }
+    .feature-card-copy h3{
+      font-size:clamp(25px,2vw,35px);
+    }
+    .feature-card-copy p{
+      max-width:420px;
+      font-size:15px;
+      line-height:1.5;
+    }
+
+    /* Offline */
+    .offline-feature-v4{
+      color:#fff;
+      background:var(--forest);
+    }
+    .offline-feature-v4 .section-kicker{
+      color:#ff8a55;
+    }
+    .offline-feature-v4 p{
+      color:rgba(255,255,255,.72);
+    }
+    .offline-feature-scene{
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:48%;
+      background:
+        linear-gradient(180deg,rgba(23,61,60,0),rgba(10,28,27,.28)),
+        url('/assets/img/OfflineMode.webp'),
+        linear-gradient(135deg,#284a49,#7b9187);
+      background-size:cover;
+      background-position:center;
+      mask-image:linear-gradient(180deg,transparent 0,rgba(0,0,0,.96) 26%);
+      -webkit-mask-image:linear-gradient(180deg,transparent 0,rgba(0,0,0,.96) 26%);
+    }
+    .offline-feature-pill{
+      position:absolute;
+      right:20px;
+      bottom:20px;
+      padding:9px 12px;
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:999px;
+      background:rgba(7,25,23,.68);
+      color:#fff;
+      font-size:11px;
+      font-weight:800;
+      backdrop-filter:blur(10px);
+    }
+
+    /* Past Trip */
+    .past-feature-v4{
+      background:linear-gradient(145deg,#fffaf6,#ffede3);
+    }
+    .past-route-visual{
+      position:absolute;
+      left:22px;
+      right:22px;
+      bottom:18px;
+      height:142px;
+      overflow:hidden;
+      border:1px solid rgba(245,74,0,.10);
+      border-radius:22px;
+      background:
+        linear-gradient(rgba(255,255,255,.62),rgba(255,255,255,.62)),
+        linear-gradient(90deg,rgba(245,74,0,.06) 1px,transparent 1px),
+        linear-gradient(rgba(245,74,0,.06) 1px,transparent 1px);
+      background-size:auto,28px 28px,28px 28px;
+    }
+    .past-route-map{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+    }
+    .past-road{
+      stroke:#cabfb6;
+      stroke-width:5;
+      stroke-linecap:round;
+    }
+    .road-two{
+      stroke-width:3;
+      opacity:.62;
+    }
+    .past-route-line{
+      stroke:var(--orange);
+      stroke-width:6;
+      stroke-linecap:round;
+      stroke-dasharray:430;
+      stroke-dashoffset:430;
+    }
+    .past-feature-v4.in-view .past-route-line{
+      animation:drawPastRoute 1.6s var(--ease) .3s forwards;
+    }
+    .past-pin-start,
+    .past-pin-end{
+      fill:#fff;
+      stroke:var(--orange);
+      stroke-width:5;
+      opacity:0;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .past-feature-v4.in-view .past-pin-start{
+      animation:pastPinIn .45s var(--ease) .25s forwards;
+    }
+    .past-feature-v4.in-view .past-pin-end{
+      animation:pastPinIn .45s var(--ease) 1.55s forwards;
+    }
+    .past-location{
+      position:absolute;
+      padding:5px 8px;
+      border-radius:999px;
+      background:#fff;
+      color:var(--ink);
+      font-size:9px;
+      font-weight:800;
+      box-shadow:0 7px 18px rgba(0,0,0,.08);
+    }
+    .past-location.start{left:14px;bottom:8px}
+    .past-location.finish{right:10px;top:7px}
+    .past-replay-icon{
+      position:absolute;
+      right:17px;
+      bottom:15px;
+      width:38px;
+      height:38px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:var(--orange);
+      color:#fff;
+      font-size:21px;
+      font-weight:800;
+      box-shadow:0 10px 24px rgba(245,74,0,.25);
+    }
+    .past-route-label{
+      position:absolute;
+      left:50%;
+      top:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(255,255,255,.9);
+      color:var(--orange);
+      font-size:10px;
+      font-weight:800;
+      transform:translateX(-50%);
+    }
+    @keyframes drawPastRoute{to{stroke-dashoffset:0}}
+    @keyframes pastPinIn{
+      from{opacity:0;transform:scale(.3)}
+      to{opacity:1;transform:scale(1)}
+    }
+
+    /* Privacy */
+    .privacy-feature-v4{
+      background:
+        radial-gradient(circle at 50% 42%,rgba(32,175,255,.18),transparent 37%),
+        linear-gradient(145deg,#eaf4f7,#dbeaf0);
+      color:#173d3c;
+    }
+    .privacy-feature-pill{
+      position:absolute;
+      z-index:6;
+      top:20px;
+      right:20px;
+      min-width:148px;
+      padding:9px 13px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid rgba(23,61,60,.10);
+      border-radius:999px;
+      background:rgba(255,253,249,.94);
+      font-size:11px;
+      box-shadow:0 10px 24px rgba(23,61,60,.09);
+      backdrop-filter:blur(10px);
+    }
+    .privacy-feature-pill-icon{
+      color:#20afff;
+      font-size:10px;
+    }
+    .privacy-mini-network{
+      position:absolute;
+      left:0;
+      right:0;
+      top:42px;
+      height:220px;
+    }
+    .privacy-mini-ring{
+      position:absolute;
+      left:50%;
+      top:52%;
+      border:1px solid rgba(23,61,60,.11);
+      border-radius:50%;
+      transform:translate(-50%,-50%);
+      transition:width .7s var(--ease),height .7s var(--ease),opacity .5s ease;
+    }
+    .ring-one{width:120px;height:120px}
+    .ring-two{width:205px;height:180px;opacity:.3}
+    .privacy-mini-person{
+      position:absolute;
+      left:50%;
+      top:52%;
+      overflow:hidden;
+      border:2px solid rgba(255,255,255,.84);
+      border-radius:50%;
+      box-shadow:0 12px 25px rgba(23,61,60,.18);
+      opacity:0;
+      transform:translate(-50%,-50%) scale(.25);
+      transition:opacity .45s ease,transform .7s var(--ease);
+    }
+    .privacy-mini-person img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .privacy-mini-you{
+      width:82px;
+      height:82px;
+      z-index:3;
+      opacity:1;
+      transform:translate(-50%,-50%) scale(1);
+    }
+    .privacy-mini-friend{width:47px;height:47px}
+    .privacy-mini-other{width:29px;height:29px}
+    .friend-one{--x:-100px;--y:-42px}
+    .friend-two{--x:102px;--y:-35px}
+    .friend-three{--x:-80px;--y:68px}
+    .other-one{--x:142px;--y:61px}
+    .other-two{--x:-148px;--y:32px}
+    .other-three{--x:34px;--y:-92px}
+
+    .privacy-feature-v4[data-level="1"] .privacy-mini-friend,
+    .privacy-feature-v4[data-level="2"] .privacy-mini-friend,
+    .privacy-feature-v4[data-level="2"] .privacy-mini-other{
+      opacity:1;
+      transform:translate(-50%,-50%) translate(var(--x),var(--y)) scale(1);
+    }
+    .privacy-feature-v4[data-level="0"] .ring-one{
+      width:104px;
+      height:104px;
+    }
+    .privacy-feature-v4[data-level="0"] .ring-two{
+      opacity:.08;
+    }
+    .privacy-feature-v4[data-level="2"] .ring-two{
+      width:250px;
+      height:205px;
+      opacity:.56;
+    }
+    .privacy-feature-footer{
+      position:absolute;
+      z-index:5;
+      left:24px;
+      right:24px;
+      bottom:22px;
+    }
+    .privacy-feature-footer h3{
+      font-size:34px;
+    }
+    .privacy-safeguards{
+      display:flex;
+      gap:6px;
+      flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .privacy-safeguards span{
+      padding:6px 8px;
+      border:1px solid rgba(23,61,60,.10);
+      border-radius:999px;
+      background:rgba(255,255,255,.56);
+      color:#395456;
+      font-size:9px;
+      font-weight:800;
+    }
+
+    /* Statistics */
+    .stats-feature-v4{
+      color:#fff;
+      background:linear-gradient(150deg,#173d3c,#244f4c);
+    }
+    .stats-feature-v4 .section-kicker{
+      color:#ff8a55;
+    }
+    .stats-feature-v4 p{
+      color:rgba(255,255,255,.7);
+    }
+    .stats-visual-v4{
+      position:absolute;
+      left:23px;
+      right:23px;
+      bottom:21px;
+    }
+    .distance-odometer{
+      display:flex;
+      align-items:flex-end;
+      gap:9px;
+    }
+
+    .distance-odometer small{
+      padding-bottom:5px;
+      color:rgba(255,255,255,.62);
+      font-size:11px;
+      font-weight:800;
+    }
+    .stats-bars-v4{
+      height:54px;
+      margin:17px 0 13px;
+      display:flex;
+      align-items:flex-end;
+      gap:7px;
+    }
+    .stats-bars-v4 i{
+      flex:1;
+      height:10%;
+      border-radius:7px 7px 2px 2px;
+      background:linear-gradient(180deg,#ff8a55,#f54a00);
+      transition:height .8s var(--ease);
+    }
+    .stats-feature-v4.in-view .stats-bars-v4 i:nth-child(1){height:30%;transition-delay:.12s}
+    .stats-feature-v4.in-view .stats-bars-v4 i:nth-child(2){height:52%;transition-delay:.20s}
+    .stats-feature-v4.in-view .stats-bars-v4 i:nth-child(3){height:43%;transition-delay:.28s}
+    .stats-feature-v4.in-view .stats-bars-v4 i:nth-child(4){height:76%;transition-delay:.36s}
+    .stats-feature-v4.in-view .stats-bars-v4 i:nth-child(5){height:62%;transition-delay:.44s}
+    .stats-feature-v4.in-view .stats-bars-v4 i:nth-child(6){height:94%;transition-delay:.52s}
+    .stats-mini-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:8px;
+    }
+    .stats-mini-grid span{
+      padding:9px 10px;
+      border-radius:12px;
+      background:rgba(255,255,255,.08);
+    }
+    .stats-mini-grid strong{
+      display:block;
+      font-size:12px;
+    }
+    .stats-mini-grid small{
+      display:block;
+      margin-top:2px;
+      color:rgba(255,255,255,.55);
+      font-size:9px;
+    }
+
+    /* Costs */
+    .costs-feature-v4{
+      background:linear-gradient(145deg,#fffaf6,#fff0e8);
+    }
+    .cost-rollup-v4{
+      position:absolute;
+      left:22px;
+      right:22px;
+      bottom:19px;
+      display:grid;
+      gap:8px;
+    }
+    .cost-trip-row,
+    .cost-voyage-total{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      border-radius:14px;
+    }
+    .cost-trip-row{
+      padding:9px 11px;
+      border:1px solid rgba(38,39,37,.06);
+      background:rgba(255,255,255,.72);
+    }
+    .cost-trip-row span{
+      display:grid;
+    }
+    .cost-trip-row small{
+      color:var(--orange);
+      font-size:8px;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .cost-trip-row strong{
+      margin-top:2px;
+      font-size:11px;
+    }
+    .cost-trip-row b{
+      font-size:13px;
+    }
+    .cost-voyage-total{
+      padding:12px 13px;
+      background:var(--orange);
+      color:#fff;
+      font-size:11px;
+      font-weight:800;
+      box-shadow:0 10px 25px rgba(245,74,0,.20);
+    }
+    .cost-voyage-total strong{
+      font-size:20px;
+    }
+
+    /* Multi-day Voyage */
+    .voyage-feature-v4{
+      padding:0!important;
+      color:#fff;
+      background:#253a3a;
+    }
+    .voyage-feature-v4 > img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .voyage-feature-shade{
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(6,15,16,.72));
+    }
+    .voyage-feature-badge{
+      position:absolute;
+      z-index:3;
+      top:20px;
+      right:20px;
+      padding:8px 11px;
+      border-radius:999px;
+      background:rgba(255,255,255,.92);
+      color:var(--orange);
+      font-size:10px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+    }
+    .voyage-feature-copy{
+      position:absolute;
+      z-index:3;
+      left:24px;
+      right:24px;
+      bottom:23px;
+    }
+    .voyage-feature-copy h3{
+      color:#fff;
+      font-size:38px;
+      text-shadow:0 5px 20px rgba(0,0,0,.42);
+    }
+    .voyage-feature-copy p{
+      margin-top:8px;
+      color:rgba(255,255,255,.78);
+      font-size:13px;
+      white-space:nowrap;
+    }
+
+    @media(max-width:1000px){
+      .benefit-mosaic-v4{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+      .benefit-mosaic-v4 .benefit-card{
+        min-height:370px;
+      }
+      .privacy-feature-v4{
+        min-height:390px!important;
+      }
+      .voyage-feature-copy p{
+        white-space:normal;
+      }
+    }
+
+    @media(max-width:720px){
+      .benefit-mosaic-v4{
+        display:flex;
+        flex-direction:column;
+      }
+      .benefit-mosaic-v4 .benefit-card{
+        width:100%;
+        min-height:390px;
+      }
+      .offline-feature-v4{
+        min-height:420px!important;
+      }
+      .past-feature-v4{
+        min-height:410px!important;
+      }
+      .privacy-feature-v4{
+        min-height:440px!important;
+      }
+      .stats-feature-v4{
+        min-height:430px!important;
+      }
+      .costs-feature-v4{
+        min-height:430px!important;
+      }
+      .voyage-feature-v4{
+        min-height:460px!important;
+      }
+      .privacy-mini-network{
+        top:54px;
+      }
+      .privacy-feature-footer h3{
+        font-size:35px;
+      }
+      .voyage-feature-copy h3{
+        font-size:39px;
+      }
+      .voyage-feature-copy p{
+        white-space:normal;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .past-route-line{
+        stroke-dashoffset:0!important;
+        animation:none!important;
+      }
+      .past-pin-start,
+      .past-pin-end{
+        opacity:1!important;
+        transform:scale(1)!important;
+        animation:none!important;
+      }
+      .privacy-mini-person,
+      .privacy-mini-ring,
+      .stats-bars-v4 i{
+        transition:none!important;
+      }
+    }
+
+
+    /* ===== Road-trip tracker feature mosaic v5 refinements ===== */
+
+    /* Offline: full photograph, no coloured gradient, minimal copy. */
+    .offline-feature-v4{
+      padding:0!important;
+      background:#172b2a;
+      color:#fff;
+    }
+    .offline-feature-image-v5{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      max-width:none;
+      object-fit:cover;
+      object-position:center;
+      filter:brightness(.72) saturate(.92);
+      transition:transform 1.2s var(--ease);
+    }
+    .offline-feature-v4:hover .offline-feature-image-v5{
+      transform:scale(1.035);
+    }
+    .offline-feature-copy-v5{
+      position:absolute;
+      z-index:4;
+      left:27px;
+      right:27px;
+      bottom:25px;
+      text-shadow:0 4px 18px rgba(0,0,0,.72);
+    }
+    .offline-feature-copy-v5 .section-kicker{
+      margin-bottom:9px;
+      color:#ff8a55;
+      text-shadow:0 3px 12px rgba(0,0,0,.65);
+    }
+    .offline-feature-copy-v5 h3{
+      max-width:410px;
+      color:#fff;
+      font-size:clamp(37px,3.1vw,47px);
+    }
+    .offline-feature-copy-v5 p{
+      max-width:360px;
+      margin-top:9px;
+      color:rgba(255,255,255,.88);
+      font-size:13px;
+      font-weight:700;
+      line-height:1.4;
+    }
+
+    /* Exact visual language used by the homepage's No signal pill. */
+    .signal-chip-v5{
+      position:absolute;
+      z-index:6;
+      top:22px;
+      right:22px;
+      padding:10px 13px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:999px;
+      background:rgba(7,25,23,.66);
+      color:#fff;
+      font-size:12px;
+      font-weight:800;
+      box-shadow:0 10px 26px rgba(0,0,0,.16);
+      backdrop-filter:blur(12px);
+    }
+    .no-signal-icon-v5{
+      position:relative;
+      width:21px;
+      height:18px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      gap:2px;
+    }
+    .no-signal-icon-v5 i{
+      display:block;
+      width:3px;
+      border-radius:4px;
+      background:rgba(255,255,255,.34);
+    }
+    .no-signal-icon-v5 i:nth-child(1){height:5px}
+    .no-signal-icon-v5 i:nth-child(2){height:9px}
+    .no-signal-icon-v5 i:nth-child(3){height:13px}
+    .no-signal-icon-v5 i:nth-child(4){height:17px}
+    .no-signal-icon-v5::after{
+      content:"";
+      position:absolute;
+      top:8px;
+      width:25px;
+      height:2px;
+      border-radius:999px;
+      background:#fff;
+      box-shadow:0 0 0 1px rgba(0,0,0,.08);
+      transform:rotate(46deg);
+    }
+
+    /* Past Trip: keep labels clear of the route endpoints. */
+    .past-location.start{
+      left:10px;
+      bottom:45px;
+    }
+    .past-location.finish{
+      right:14px;
+      top:40px;
+    }
+    .past-route-traveller{
+      filter:drop-shadow(0 4px 7px rgba(245,74,0,.34));
+    }
+
+    /* Privacy: exact deep-blue treatment from the homepage. */
+    .privacy-feature-v4{
+      background:
+        radial-gradient(circle at 50% 38%,rgba(32,175,255,.14),transparent 38%),
+        linear-gradient(135deg,#032c38,#061d29);
+      color:#fff;
+      border-color:rgba(255,255,255,.04);
+    }
+    .privacy-feature-pill{
+      border-color:rgba(42,185,255,.25);
+      background:rgba(0,10,16,.58);
+      color:#fff;
+      box-shadow:0 13px 32px rgba(0,0,0,.22);
+    }
+    .privacy-feature-pill-icon{
+      color:#20afff;
+    }
+    .privacy-mini-ring{
+      border-color:rgba(42,185,255,.20);
+    }
+    .privacy-mini-person{
+      border-color:rgba(255,255,255,.72);
+      box-shadow:0 12px 25px rgba(0,0,0,.28);
+    }
+    .privacy-feature-footer h3{
+      color:#fff;
+    }
+    .privacy-safeguards span{
+      border-color:rgba(42,185,255,.20);
+      background:rgba(0,10,16,.44);
+      color:rgba(255,255,255,.78);
+    }
+
+    /* Costs: shorter heading with more room for the useful roll-up visual. */
+    .costs-feature-v4 .feature-card-copy h3{
+      max-width:310px;
+      font-size:clamp(34px,2.55vw,40px);
+    }
+
+    /* Multi-day: make the hierarchy and message unmistakable. */
+    .voyage-feature-copy h3{
+      max-width:350px;
+      font-size:clamp(34px,2.8vw,40px);
+    }
+    .voyage-feature-copy p{
+      max-width:360px;
+      white-space:nowrap;
+    }
+
+    @media(max-width:1000px){
+      .voyage-feature-copy p{
+        white-space:normal;
+      }
+    }
+
+    @media(max-width:720px){
+      .offline-feature-copy-v5{
+        left:22px;
+        right:22px;
+        bottom:22px;
+      }
+      .offline-feature-copy-v5 h3{
+        font-size:42px;
+      }
+      .signal-chip-v5{
+        top:18px;
+        right:18px;
+      }
+      .past-location.start{
+        bottom:40px;
+      }
+      .past-location.finish{
+        top:42px;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .past-route-traveller{
+        display:none;
+      }
+      .offline-feature-image-v5{
+        transition:none!important;
+      }
+    }
+
+
+    /* ===== Road-trip tracker feature mosaic v6 ===== */
+
+    .privacy-feature-pill-icon{
+      width:20px;
+      height:20px;
+      display:grid;
+      place-items:center;
+      color:inherit;
+      font-size:14px;
+      line-height:1;
+    }
+
+    .costs-feature-v4 .feature-card-copy h3{
+      max-width:330px;
+      font-size:clamp(33px,2.55vw,39px);
+    }
+
+    /*
+     * Multi-day Voyage:
+     * Separate driving days visibly merge into one complete Voyage.
+     * This is more useful than another scenic photograph because it explains
+     * the product relationship between a Trip and a Voyage.
+     */
+    .voyage-feature-v6{
+      padding:27px!important;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 82% 16%,rgba(245,74,0,.14),transparent 30%),
+        linear-gradient(145deg,#fffaf6,#ffede3);
+    }
+    .voyage-feature-v6 .section-kicker{
+      color:var(--orange);
+    }
+    .voyage-feature-v6 .feature-card-copy h3{
+      max-width:360px;
+      font-size:clamp(34px,2.75vw,41px);
+    }
+    .voyage-feature-v6 .feature-card-copy p{
+      max-width:340px;
+      margin-top:8px;
+      color:var(--muted);
+      font-size:13px;
+      white-space:normal;
+    }
+    .voyage-merge-v6{
+      position:absolute;
+      left:22px;
+      right:22px;
+      bottom:18px;
+      height:176px;
+      padding:12px;
+      overflow:hidden;
+      border:1px solid rgba(245,74,0,.10);
+      border-radius:22px;
+      background:
+        linear-gradient(rgba(255,255,255,.68),rgba(255,255,255,.68)),
+        linear-gradient(90deg,rgba(245,74,0,.055) 1px,transparent 1px),
+        linear-gradient(rgba(245,74,0,.055) 1px,transparent 1px);
+      background-size:auto,28px 28px,28px 28px;
+    }
+    .voyage-trip-row-v6{
+      position:relative;
+      z-index:3;
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:7px;
+    }
+    .voyage-trip-chip-v6{
+      min-width:0;
+      padding:8px 8px 7px;
+      display:grid;
+      gap:2px;
+      border:1px solid rgba(38,39,37,.07);
+      border-radius:12px;
+      background:#fff;
+      box-shadow:0 8px 20px rgba(0,0,0,.06);
+      opacity:0;
+      transform:translateY(-12px);
+    }
+    .voyage-trip-chip-v6 b{
+      color:var(--orange);
+      font-size:9px;
+      letter-spacing:.08em;
+    }
+    .voyage-trip-chip-v6 small{
+      overflow:hidden;
+      color:var(--ink);
+      font-size:8px;
+      font-weight:800;
+      line-height:1.2;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+    .voyage-feature-v6.in-view .trip-one{
+      animation:voyageChipIn .48s var(--ease) .14s forwards;
+    }
+    .voyage-feature-v6.in-view .trip-two{
+      animation:voyageChipIn .48s var(--ease) .30s forwards;
+    }
+    .voyage-feature-v6.in-view .trip-three{
+      animation:voyageChipIn .48s var(--ease) .46s forwards;
+    }
+    .voyage-merge-lines-v6{
+      position:absolute;
+      z-index:1;
+      top:54px;
+      left:18%;
+      right:18%;
+      height:48px;
+    }
+    .voyage-merge-lines-v6 i{
+      position:absolute;
+      top:0;
+      width:2px;
+      height:0;
+      border-radius:999px;
+      background:linear-gradient(var(--orange),rgba(245,74,0,.22));
+      transform-origin:top;
+    }
+    .voyage-merge-lines-v6 i:nth-child(1){
+      left:7%;
+      transform:rotate(-31deg);
+    }
+    .voyage-merge-lines-v6 i:nth-child(2){
+      left:50%;
+      transform:translateX(-50%);
+    }
+    .voyage-merge-lines-v6 i:nth-child(3){
+      right:7%;
+      transform:rotate(31deg);
+    }
+    .voyage-feature-v6.in-view .voyage-merge-lines-v6 i{
+      animation:voyageLineGrow .56s var(--ease) .72s forwards;
+    }
+    .voyage-complete-card-v6{
+      position:absolute;
+      z-index:4;
+      left:12px;
+      right:12px;
+      bottom:11px;
+      min-height:70px;
+      padding:10px 13px;
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      align-items:center;
+      gap:10px;
+      border-radius:16px;
+      background:var(--orange);
+      color:#fff;
+      box-shadow:0 13px 28px rgba(245,74,0,.23);
+      opacity:0;
+      transform:translateY(18px) scale(.96);
+    }
+    .voyage-feature-v6.in-view .voyage-complete-card-v6{
+      animation:voyageCompleteIn .65s var(--ease) 1.02s forwards;
+    }
+    .voyage-complete-card-v6 svg{
+      width:100%;
+      height:46px;
+      overflow:visible;
+    }
+    .voyage-road-v6{
+      fill:none;
+      stroke:#fff;
+      stroke-width:5;
+      stroke-linecap:round;
+      stroke-dasharray:380;
+      stroke-dashoffset:380;
+    }
+    .voyage-complete-card-v6 circle{
+      fill:#fff;
+      opacity:0;
+    }
+    .voyage-feature-v6.in-view .voyage-road-v6{
+      animation:voyageRouteDraw 1.1s var(--ease) 1.36s forwards;
+    }
+    .voyage-feature-v6.in-view .voyage-complete-card-v6 circle{
+      animation:voyagePointIn .35s ease 2.06s forwards;
+    }
+    .voyage-complete-card-v6 div{
+      display:grid;
+      gap:2px;
+      text-align:right;
+    }
+    .voyage-complete-card-v6 small{
+      color:rgba(255,255,255,.75);
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .voyage-complete-card-v6 strong{
+      font-size:14px;
+    }
+
+    @keyframes voyageChipIn{
+      to{opacity:1;transform:none}
+    }
+    @keyframes voyageLineGrow{
+      to{height:56px}
+    }
+    @keyframes voyageCompleteIn{
+      to{opacity:1;transform:none}
+    }
+    @keyframes voyageRouteDraw{
+      to{stroke-dashoffset:0}
+    }
+    @keyframes voyagePointIn{
+      to{opacity:1}
+    }
+
+    @media(max-width:1000px){
+      .voyage-feature-v6 .feature-card-copy h3{
+        max-width:410px;
+      }
+    }
+
+    @media(max-width:720px){
+      .voyage-feature-v6{
+        min-height:430px!important;
+      }
+      .voyage-merge-v6{
+        height:184px;
+      }
+      .voyage-trip-chip-v6 small{
+        font-size:7.5px;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .voyage-trip-chip-v6,
+      .voyage-complete-card-v6,
+      .voyage-complete-card-v6 circle{
+        opacity:1!important;
+        transform:none!important;
+        animation:none!important;
+      }
+      .voyage-merge-lines-v6 i{
+        height:56px!important;
+        animation:none!important;
+      }
+      .voyage-road-v6{
+        stroke-dashoffset:0!important;
+        animation:none!important;
+      }
+    }
+
+
+    /* ===== Road-trip tracker feature mosaic v7: real Voyage video ===== */
+
+    .sr-only{
+      position:absolute!important;
+      width:1px!important;
+      height:1px!important;
+      padding:0!important;
+      margin:-1px!important;
+      overflow:hidden!important;
+      clip:rect(0,0,0,0)!important;
+      white-space:nowrap!important;
+      border:0!important;
+    }
+
+    .voyage-video-card-v7{
+      padding:0!important;
+      overflow:hidden;
+      color:#fff;
+      background:#061d29;
+      isolation:isolate;
+    }
+    .voyage-video-card-v7::before{
+      content:"";
+      position:absolute;
+      z-index:-2;
+      inset:-28px;
+      background:
+        url('/assets/img/TripsIntoVoyagePoster.webp')
+        center / cover no-repeat;
+      filter:blur(22px) saturate(.84);
+      opacity:.34;
+      transform:scale(1.12);
+    }
+    .voyage-video-card-v7::after{
+      content:"";
+      position:absolute;
+      z-index:-1;
+      inset:0;
+      background:
+        radial-gradient(circle at 50% 46%,transparent 20%,rgba(3,18,26,.22) 72%),
+        linear-gradient(180deg,rgba(3,18,26,.08),rgba(3,18,26,.35));
+      pointer-events:none;
+    }
+    .voyage-video-v7{
+      position:absolute;
+      z-index:2;
+      inset:0;
+      width:100%;
+      height:110%;
+      object-fit:contain;
+      background:transparent;
+    }
+    .voyage-video-label-v7{
+      position:absolute;
+      z-index:5;
+      top:20px;
+      right:20px;
+      padding:9px 12px;
+      border:1px solid rgba(255,255,255,.3);
+      border-radius:999px;
+      background:rgba(4,20,28,.72);
+      color:#fff;
+      font-size:10px;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      box-shadow:0 10px 26px rgba(0,0,0,.2);
+      backdrop-filter:blur(12px);
+    }
+
+    /* Large desktop:
+       Offline        | Voyage video | Privacy
+       Past Trip      | Voyage video | Costs
+       Statistics across the complete bottom row
+    */
+    @media(min-width:1001px){
+      .benefit-mosaic-v4{
+        grid-template-columns:minmax(0,1fr) minmax(300px,.9fr) minmax(0,1fr);
+        grid-template-rows:360px 360px 250px;
+        grid-auto-rows:unset;
+      }
+      .benefit-mosaic-v4 .offline-feature-v4{
+        grid-column:1!important;
+        grid-row:1!important;
+      }
+      .benefit-mosaic-v4 .past-feature-v4{
+        grid-column:1!important;
+        grid-row:2!important;
+      }
+      .benefit-mosaic-v4 .voyage-video-card-v7{
+        grid-column:2!important;
+        grid-row:1 / 3!important;
+        min-height:738px;
+      }
+      .benefit-mosaic-v4 .privacy-feature-v4{
+        grid-column:3!important;
+        grid-row:1!important;
+      }
+      .benefit-mosaic-v4 .costs-feature-v4{
+        grid-column:3!important;
+        grid-row:2!important;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4{
+        grid-column:1 / 4!important;
+        grid-row:3!important;
+        min-height:250px;
+        padding:31px 34px;
+        display:grid;
+        grid-template-columns:minmax(0,.9fr) minmax(440px,1.1fr);
+        align-items:center;
+        gap:50px;
+        text-align:left;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4 .feature-card-copy{
+        max-width:470px;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4 .feature-card-copy h3{
+        font-size:clamp(38px,3.35vw,50px);
+      }
+      .benefit-mosaic-v4 .stats-feature-v4 .feature-card-copy p{
+        max-width:450px;
+      }
+      .benefit-mosaic-v4 .stats-visual-v4{
+        position:relative;
+        left:auto;
+        right:auto;
+        bottom:auto;
+      }
+      .benefit-mosaic-v4 .stats-bars-v4{
+        height:78px;
+        margin:0 0 14px;
+      }
+      .benefit-mosaic-v4 .stats-mini-grid span{
+        padding:11px 13px;
+      }
+      .benefit-mosaic-v4 .stats-mini-grid strong{
+        font-size:14px;
+      }
+    }
+
+    /* Tablet / intermediate:
+       Offline | Privacy
+       Voyage video across the centre
+       Past Trip | Costs
+       Statistics across the bottom
+    */
+    @media(min-width:721px) and (max-width:1000px){
+      .benefit-mosaic-v4{
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        grid-template-rows:370px 610px 390px 260px;
+        grid-auto-rows:unset;
+      }
+      .benefit-mosaic-v4 .offline-feature-v4{
+        grid-column:1!important;
+        grid-row:1!important;
+      }
+      .benefit-mosaic-v4 .privacy-feature-v4{
+        grid-column:2!important;
+        grid-row:1!important;
+        min-height:370px!important;
+      }
+      .benefit-mosaic-v4 .voyage-video-card-v7{
+        grid-column:1 / 3!important;
+        grid-row:2!important;
+        min-height:610px!important;
+      }
+      .benefit-mosaic-v4 .past-feature-v4{
+        grid-column:1!important;
+        grid-row:3!important;
+        min-height:390px!important;
+      }
+      .benefit-mosaic-v4 .costs-feature-v4{
+        grid-column:2!important;
+        grid-row:3!important;
+        min-height:390px!important;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4{
+        grid-column:1 / 3!important;
+        grid-row:4!important;
+        min-height:260px!important;
+        padding:29px 30px;
+        display:grid;
+        grid-template-columns:minmax(0,.9fr) minmax(360px,1.1fr);
+        align-items:center;
+        gap:30px;
+        text-align:left;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4 .feature-card-copy h3{
+        font-size:40px;
+      }
+      .benefit-mosaic-v4 .stats-visual-v4{
+        position:relative;
+        left:auto;
+        right:auto;
+        bottom:auto;
+      }
+      .benefit-mosaic-v4 .stats-bars-v4{
+        height:68px;
+        margin:0 0 13px;
+      }
+    }
+
+    /* Phone order:
+       Offline → Past Trip → Voyage video → Privacy → Statistics → Costs
+    */
+    @media(max-width:720px){
+      .benefit-mosaic-v4 .offline-feature-v4{order:1}
+      .benefit-mosaic-v4 .past-feature-v4{order:2}
+      .benefit-mosaic-v4 .voyage-video-card-v7{
+        order:3;
+        min-height:650px!important;
+      }
+      .benefit-mosaic-v4 .privacy-feature-v4{order:4}
+      .benefit-mosaic-v4 .stats-feature-v4{order:5}
+      .benefit-mosaic-v4 .costs-feature-v4{order:6}
+      .voyage-video-label-v7{
+        top:17px;
+        right:17px;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .voyage-video-v7{
+        display:none;
+      }
+      .voyage-video-card-v7::before{
+        filter:none;
+        opacity:1;
+        inset:0;
+        transform:none;
+      }
+    }
+
+
+    /* ===== Road-trip tracker feature mosaic v8 ===== */
+
+    /*
+     * Large desktop:
+     * Offline tracking spans the complete width first.
+     *
+     * Statistics | Voyage video | Privacy
+     * Past Trip  | Voyage video | Costs
+     */
+    @media(min-width:1001px){
+      .benefit-mosaic-v4{
+        grid-template-columns:minmax(0,1fr) minmax(300px,.9fr) minmax(0,1fr);
+        grid-template-rows:290px 360px 360px;
+        grid-auto-rows:unset;
+      }
+
+      .benefit-mosaic-v4 .offline-feature-v4{
+        grid-column:1 / 4!important;
+        grid-row:1!important;
+        min-height:290px!important;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4{
+        grid-column:1!important;
+        grid-row:2!important;
+        min-height:360px!important;
+        padding:27px;
+        display:block;
+        text-align:left;
+      }
+      .benefit-mosaic-v4 .past-feature-v4{
+        grid-column:1!important;
+        grid-row:3!important;
+        min-height:360px!important;
+      }
+      .benefit-mosaic-v4 .voyage-video-card-v7{
+        grid-column:2!important;
+        grid-row:2 / 4!important;
+        min-height:738px!important;
+      }
+      .benefit-mosaic-v4 .privacy-feature-v4{
+        grid-column:3!important;
+        grid-row:2!important;
+        min-height:360px!important;
+      }
+      .benefit-mosaic-v4 .costs-feature-v4{
+        grid-column:3!important;
+        grid-row:3!important;
+        min-height:360px!important;
+      }
+
+      /* Restore the normal vertical statistics card now it occupies the top-left. */
+      .benefit-mosaic-v4 .stats-feature-v4 .feature-card-copy{
+        max-width:none;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4 .feature-card-copy h3{
+        font-size:clamp(25px,2vw,35px);
+      }
+      .benefit-mosaic-v4 .stats-feature-v4 .stats-visual-v4{
+        position:absolute;
+        left:23px;
+        right:23px;
+        bottom:21px;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4 .stats-bars-v4{
+        height:54px;
+        margin:17px 0 13px;
+      }
+
+      /* Use the wider offline card to make the key benefit feel important. */
+      .benefit-mosaic-v4 .offline-feature-copy-v5{
+        left:34px;
+        right:260px;
+        bottom:31px;
+      }
+      .benefit-mosaic-v4 .offline-feature-copy-v5 h3{
+        max-width:700px;
+        font-size:clamp(43px,4.2vw,58px);
+      }
+      .benefit-mosaic-v4 .offline-feature-image-v5{
+        object-position:center 52%;
+      }
+      .benefit-mosaic-v4 .signal-chip-v5{
+        top:24px;
+        right:26px;
+      }
+    }
+
+    /*
+     * Tablet:
+     * Offline spans the top.
+     * Statistics and Privacy share the next row.
+     * Video spans the centre.
+     * Past Trip and Costs share the row beneath.
+     */
+    @media(min-width:721px) and (max-width:1000px){
+      .benefit-mosaic-v4{
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        grid-template-rows:280px 370px 610px 390px;
+        grid-auto-rows:unset;
+      }
+      .benefit-mosaic-v4 .offline-feature-v4{
+        grid-column:1 / 3!important;
+        grid-row:1!important;
+        min-height:280px!important;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4{
+        grid-column:1!important;
+        grid-row:2!important;
+        min-height:370px!important;
+        padding:27px;
+        display:block;
+        text-align:left;
+      }
+      .benefit-mosaic-v4 .privacy-feature-v4{
+        grid-column:2!important;
+        grid-row:2!important;
+        min-height:370px!important;
+      }
+      .benefit-mosaic-v4 .voyage-video-card-v7{
+        grid-column:1 / 3!important;
+        grid-row:3!important;
+        min-height:610px!important;
+      }
+      .benefit-mosaic-v4 .past-feature-v4{
+        grid-column:1!important;
+        grid-row:4!important;
+        min-height:390px!important;
+      }
+      .benefit-mosaic-v4 .costs-feature-v4{
+        grid-column:2!important;
+        grid-row:4!important;
+        min-height:390px!important;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4 .stats-visual-v4{
+        position:absolute;
+        left:23px;
+        right:23px;
+        bottom:21px;
+      }
+      .benefit-mosaic-v4 .stats-feature-v4 .stats-bars-v4{
+        height:54px;
+        margin:17px 0 13px;
+      }
+      .benefit-mosaic-v4 .offline-feature-copy-v5{
+        left:29px;
+        right:230px;
+        bottom:27px;
+      }
+      .benefit-mosaic-v4 .offline-feature-copy-v5 h3{
+        max-width:600px;
+        font-size:48px;
+      }
+    }
+
+    /*
+     * Phone:
+     * Important tracking benefits come first, then the Voyage demonstration.
+     */
+    @media(max-width:720px){
+      .benefit-mosaic-v4 .offline-feature-v4{order:1}
+      .benefit-mosaic-v4 .stats-feature-v4{order:2}
+      .benefit-mosaic-v4 .voyage-video-card-v7{order:3}
+      .benefit-mosaic-v4 .privacy-feature-v4{order:4}
+      .benefit-mosaic-v4 .past-feature-v4{order:5}
+      .benefit-mosaic-v4 .costs-feature-v4{order:6}
+    }
+
+    /*
+     * The supplied recording included the iPhone status bar.
+     * The exported web asset is physically cropped; this positioning also
+     * keeps the first useful app content at the top edge of the card.
+     */
+    .voyage-video-v7{
+      object-position:center top;
+    }
+
+
+    /* ===== Road-trip tracker v9: storytelling cards + responsive hero ===== */
+
+    @media(max-width:1000px){
+      .hero-phone{
+        left:50%;
+        right:auto;
+        margin:0;
+        transform:translateX(-50%)!important;
+        animation:none!important;
+      }
+    }
+
+    .tracking-step{
+      padding:0;
+      min-height:590px;
+    }
+    .step-overlay-copy{
+      position:absolute;
+      z-index:6;
+      top:27px;
+      left:25px;
+      right:25px;
+    }
+    .step-overlay-copy h3{
+      margin:13px 0 10px;
+      font-family:var(--display);
+      font-size:38px;
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.04em;
+    }
+    .step-overlay-copy p{
+      max-width:310px;
+      margin:0;
+      font-size:15px;
+      line-height:1.48;
+    }
+
+    .tracking-step-start{
+      color:#fff;
+      background:
+        radial-gradient(circle at 76% 72%,rgba(255,255,255,.13),transparent 28%),
+        linear-gradient(145deg,#ef1744,#f54a00);
+    }
+    .tracking-step-start .step-number{
+      color:#fff;
+      opacity:.76;
+    }
+    .tracking-step-start .step-overlay-copy p{
+      color:rgba(255,255,255,.78);
+    }
+    .tap-record-animation{
+      position:absolute;
+      left:50%;
+      bottom: 120px;
+      width:230px;
+      height:230px;
+      display:grid;
+      place-items:center;
+      transform:translateX(-50%);
+    }
+    .record-ring{
+      position:absolute;
+      width:188px;
+      height:188px;
+      border:2px solid rgba(255,255,255,.26);
+      border-radius:50%;
+      animation:recordRingPulse 2.2s ease-out infinite;
+    }
+    .record-button-simple{
+      position:absolute;
+      width:112px;
+      height:112px;
+      display:grid;
+      place-items:center;
+      border:8px solid rgba(217, 217, 217, 0.92);
+      border-radius:50%;
+      background:rgba(255,255,255,.16);
+      box-shadow:0 24px 45px rgba(92,9,15,.25);
+      backdrop-filter:blur(8px);
+    }
+    .record-button-simple i{
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      background:rgba(217, 217, 217, 0.92);
+      box-shadow:0 0 0 0 rgba(255,255,255,.34);
+      animation:recordButtonPulse 1.9s ease-out infinite;
+    }
+    .tap-finger{
+      position:absolute;
+      z-index:4;
+      right:-10px;
+      bottom:5px;
+      font-size:82px;
+      line-height:1;
+      filter:grayscale(1) brightness(0) invert(1);
+      transform-origin:bottom center;
+      animation:fingerTap 2.25s var(--ease) infinite;
+    }
+    .tap-record-animation small{
+      position:absolute;
+      bottom:-20px;
+      color:rgba(255,255,255,.74);
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    @keyframes fingerTap{
+      0%,18%,100%{transform:translate3d(0,0,0) rotate(-9deg)}
+      38%,53%{transform:translate3d(-34px,-37px,0) rotate(-15deg) scale(.92)}
+      64%{transform:translate3d(-29px,-31px,0) rotate(-13deg)}
+    }
+    @keyframes recordRingPulse{
+      0%{opacity:.55;transform:scale(.75)}
+      70%,100%{opacity:0;transform:scale(1.18)}
+    }
+    @keyframes recordButtonPulse{
+      0%{box-shadow:0 0 0 0 rgba(255,255,255,.35)}
+      72%,100%{box-shadow:0 0 0 25px rgba(255,255,255,0)}
+    }
+
+    .tracking-step-image{
+      color:#fff;
+      background:#102725;
+    }
+    .step-background-image{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      max-width:none;
+      object-fit:cover;
+      object-position:center;
+      transition:transform 1.2s var(--ease);
+    }
+    .tracking-step-image:hover .step-background-image{
+      transform:scale(1.035);
+    }
+    .step-image-shade{
+      position:absolute;
+      inset:0;
+      z-index:2;
+      background:
+        linear-gradient(180deg,rgba(5,15,17,.72) 0%,rgba(5,15,17,.19) 48%,rgba(5,15,17,.34) 100%);
+    }
+    .tracking-step-image .step-number{
+      color:#ff8a55;
+    }
+    .tracking-step-image .step-overlay-copy p{
+      color:rgba(255,255,255,.76);
+      text-shadow:0 4px 17px rgba(0,0,0,.48);
+    }
+    .tracking-step-image .step-overlay-copy h3{
+      text-shadow:0 5px 20px rgba(0,0,0,.55);
+    }
+    .tracking-step-drive .step-background-image{
+      object-position:center 58%;
+    }
+    .tracking-step-relive .step-background-image{
+      object-position:center;
+    }
+
+    .result-panel{
+      grid-template-columns:minmax(0,1fr) minmax(270px,.68fr);
+      gap:42px;
+    }
+    .result-visual{
+      width:min(100%,420px);
+      min-height:360px;
+      max-height:390px;
+      justify-self:end;
+    }
+    .result-visual img{
+      width:100%;
+      height:100%;
+      min-height:360px;
+      max-height:390px;
+      object-fit:cover;
+      object-position:center;
+    }
+
+    @media(max-width:1000px){
+      .result-panel{
+        grid-template-columns:1fr;
+      }
+      .result-visual{
+        width:min(100%,540px);
+        justify-self:center;
+      }
+    }
+
+    @media(max-width:720px){
+      .tracking-step,
+      .tracking-step:nth-child(3){
+        min-height:540px;
+      }
+      .step-overlay-copy{
+        top:23px;
+        left:21px;
+        right:21px;
+      }
+      .step-overlay-copy h3{
+        font-size:36px;
+      }
+      .tap-record-animation{
+        bottom:54px;
+        width:210px;
+        height:210px;
+      }
+      .record-ring{
+        width:170px;
+        height:170px;
+      }
+      .record-button-simple{
+        width:102px;
+        height:102px;
+      }
+      .record-button-simple i{
+        width:52px;
+        height:52px;
+      }
+      .tap-finger{
+        right:14px;
+        bottom:16px;
+        font-size:73px;
+      }
+      .result-visual,
+      .result-visual img{
+        min-height:320px;
+        max-height:340px;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .record-ring,
+      .record-button-simple i,
+      .tap-finger{
+        animation:none!important;
+      }
+      .tap-finger{
+        transform:translate3d(-28px,-30px,0) rotate(-13deg);
+      }
+      .step-background-image{
+        transition:none!important;
+      }
+    }
+
+
+    /* ===== Road-trip tracker v10: Start card and Relive image ===== */
+
+    /* Slightly calmer, deeper background for 01 / Start. */
+    .tracking-step-start{
+      background:
+        radial-gradient(circle at 76% 72%,rgba(255,255,255,.09),transparent 30%),
+        linear-gradient(145deg,#bd2947,#d94a1a);
+    }
+
+    /* Make the pressing hand more prominent. */
+    .tap-finger{
+      right:20px;
+      bottom:0px;
+      font-size:96px;
+    }
+
+    /* Reduce the solid centre dot while keeping the outer button clear. */
+    .record-button-simple i{
+      width:44px;
+      height:44px;
+    }
+
+    /* Slightly soften the surrounding pulse so the card feels less bright. */
+    .record-ring{
+      border-color:rgba(255,255,255,.19);
+    }
+    .record-button-simple{
+      background:rgba(255,255,255,.12);
+      box-shadow:0 22px 42px rgba(70,9,16,.25);
+    }
+
+    @media(max-width:720px){
+      .tap-finger{
+        right:5px;
+        bottom:7px;
+        font-size:84px;
+      }
+      .record-button-simple i{
+        width:40px;
+        height:40px;
+      }
+    }
+
+    /* Hide the live-recording information card only on phone screens. */
+    @media(max-width:720px){
+      .tracker-hero .hero-modal{
+        display:none;
+      }
+    }
+
+    /* ===== Homepage-style clickable section bridges ===== */
+    section[id],
+    footer[id]{
+      scroll-margin-top:88px;
+    }
+
+    .section-bridge{
+      position:relative;
+      z-index:20;
+      height:20px;
+      display:grid;
+      place-items:center;
+      background:#fff;
+      border-top:1px solid rgba(38,39,37,.09);
+      border-bottom:1px solid rgba(38,39,37,.09);
+    }
+    .section-bridge button{
+      width:58px;
+      height:58px;
+      margin-top:-10px;
+      display:grid;
+      place-items:center;
+      padding:0;
+      border:1px solid rgba(38,39,37,.12);
+      border-radius:50%;
+      background:#fff;
+      color:var(--orange);
+      cursor:pointer;
+      box-shadow:0 13px 32px rgba(0,0,0,.10);
+      transition:transform .25s var(--ease),box-shadow .25s ease,color .2s ease;
+      animation:bridgeBob 2.2s ease-in-out infinite;
+    }
+    .section-bridge button:hover{
+      transform:translateY(4px) scale(1.05);
+      color:var(--orange-dark);
+      box-shadow:0 18px 36px rgba(0,0,0,.14);
+    }
+    .section-bridge button:focus-visible{
+      outline:3px solid rgba(245,74,0,.28);
+      outline-offset:4px;
+    }
+    .section-bridge svg{
+      width:24px;
+      height:24px;
+    }
+
+
+    /* The homepage uses a slightly taller 24px divider on phone screens. */
+    @media(max-width:720px){
+      .section-bridge{
+        height:24px;
+      }
+      .section-bridge button{
+        width:38px;
+        height:38px;
+        margin:0;
+        line-height:0;
+        animation:none;
+      }
+      .section-bridge svg{
+        display:block;
+        width:17px;
+        height:17px;
+        transform:translateY(1px);
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .section-bridge button{
+        animation:none!important;
+      }
+    }
+
+
+
+    /* ===== Conversion-first navigation ===== */
+    .site-header{
+      padding-left:20px;
+      padding-right:10px;
+    }
+
+    .site-header-actions{
+      display:flex;
+      align-items:center;
+      gap:9px;
+    }
+
+    .get-app-nav{
+      min-height:44px;
+      padding:0 19px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      background:var(--orange);
+      color:#fff!important;
+      box-shadow:0 9px 23px rgba(245,74,0,.25);
+      font-size:14px;
+      font-weight:800;
+      line-height:1;
+      text-decoration:none;
+      transition:transform .24s var(--ease),box-shadow .24s ease,background .2s ease;
+    }
+
+    .get-app-nav:hover{
+      transform:translateY(-2px);
+      background:var(--orange-dark);
+      box-shadow:0 13px 29px rgba(245,74,0,.31);
+    }
+
+    .menu-toggle{
+      display:grid!important;
+      width:44px;
+      height:44px;
+      border:1px solid rgba(38,39,37,.10);
+      background:rgba(255,255,255,.58);
+      box-shadow:none;
+    }
+
+    .menu-toggle:hover{background:var(--orange-soft)}
+    .menu-toggle span{background:var(--ink)}
+
+    .mobile-menu{
+      left:auto;
+      right:max(12px,calc((100vw - 1180px)/2 + 12px));
+      width:min(390px,calc(100vw - 24px));
+      padding:20px;
+      border-radius:25px;
+    }
+
+    .menu-eyebrow{
+      display:block;
+      padding:2px 6px 11px;
+      color:var(--orange);
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+
+    .mobile-menu-links{
+      display:grid;
+      gap:4px;
+    }
+
+    .mobile-menu-links .menu-product-link{
+      min-height:50px;
+      padding:12px 13px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      border:1px solid transparent;
+      border-radius:13px;
+      color:var(--ink);
+      text-decoration:none;
+    }
+
+    .mobile-menu-links .menu-product-link:hover{
+      border-color:rgba(245,74,0,.13);
+      background:var(--orange-soft);
+    }
+
+    .menu-product-link strong{
+      font-size:15px;
+      font-weight:800;
+      line-height:1.2;
+    }
+
+    .menu-product-link>span{
+      color:var(--orange);
+      font-size:18px;
+      font-weight:800;
+      transition:transform .2s var(--ease);
+    }
+
+    .menu-product-link:hover>span{transform:translateX(3px)}
+
+    .menu-utility-links{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:7px;
+      margin-top:12px;
+      padding-top:13px;
+      border-top:1px solid var(--line);
+    }
+
+    .menu-utility-links a{
+      padding:10px 11px;
+      border-radius:11px;
+      background:var(--cream);
+      color:var(--ink);
+      font-size:12px;
+      font-weight:800;
+      text-align:center;
+      text-decoration:none;
+    }
+
+    .menu-utility-links a:hover{
+      color:var(--orange-dark);
+      background:var(--orange-soft);
+    }
+
+    .mobile-language-switcher{
+      margin-top:11px;
+    }
+
+    .mobile-language-switcher summary{
+      padding:10px 4px;
+      color:var(--muted);
+      font-size:13px;
+      font-weight:800;
+      cursor:pointer;
+    }
+
+    .menu-get-app{
+      min-height:48px;
+      margin-top:14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      background:var(--orange);
+      color:#fff!important;
+      box-shadow:0 10px 24px rgba(245,74,0,.22);
+      font-size:14px;
+      font-weight:850;
+      text-decoration:none;
+    }
+
+    .menu-get-app:hover{background:var(--orange-dark)}
+
+    /* ===== Desktop app-download QR modal ===== */
+    .app-qr-modal[hidden]{display:none!important}
+
+    .app-qr-modal{
+      position:fixed;
+      z-index:10000;
+      inset:0;
+      display:grid;
+      place-items:center;
+      padding:24px;
+    }
+
+    .app-qr-backdrop{
+      position:absolute;
+      inset:0;
+      background:rgba(8,20,21,.72);
+      backdrop-filter:blur(9px);
+    }
+
+    .app-qr-dialog{
+      position:relative;
+      z-index:2;
+      width:min(430px,100%);
+      padding:34px 34px 31px;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:30px;
+      background:var(--paper);
+      color:var(--ink);
+      text-align:center;
+      box-shadow:0 30px 90px rgba(0,0,0,.28);
+      animation:appQrIn .28s var(--ease) both;
+    }
+
+    .app-qr-close{
+      position:absolute;
+      top:14px;
+      right:14px;
+      width:38px;
+      height:38px;
+      padding:0;
+      display:grid;
+      place-items:center;
+      border:1px solid var(--line);
+      border-radius:50%;
+      background:#fff;
+      color:var(--ink);
+      font-size:25px;
+      line-height:1;
+      cursor:pointer;
+    }
+
+    .app-qr-close:hover{
+      color:var(--orange);
+      background:var(--orange-soft);
+    }
+
+    .app-qr-kicker{
+      display:block;
+      margin-bottom:9px;
+      color:var(--orange);
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.13em;
+    }
+
+    .app-qr-dialog h2{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(38px,4.4vw,52px);
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.045em;
+    }
+
+    .app-qr-url{
+      display:inline-block;
+      margin-top:11px;
+      color:var(--muted);
+      font-size:13px;
+      font-weight:750;
+      text-decoration:none;
+    }
+
+    .app-qr-url:hover{color:var(--orange)}
+
+    .app-qr-image{
+      width:min(290px,78vw);
+      height:auto;
+      margin:23px auto 0;
+      border-radius:18px;
+      background:#fff;
+    }
+
+    .app-qr-dialog p{
+      max-width:300px;
+      margin:17px auto 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    body.app-qr-open{overflow:hidden}
+
+    @keyframes appQrIn{
+      from{opacity:0;transform:translateY(16px) scale(.97)}
+      to{opacity:1;transform:none}
+    }
+
+    /* ===== Conversion-led footer ===== */
+    #site-footer{
+      padding:72px 0 24px;
+      background:#102d2d;
+      color:#fff;
+    }
+
+    .footer-main{
+      display:grid;
+      grid-template-columns:minmax(260px,1.35fr) minmax(150px,.72fr) minmax(160px,.78fr) minmax(245px,1fr);
+      gap:clamp(32px,4vw,66px);
+      align-items:start;
+    }
+
+    #site-footer .footer-logo{
+      width:205px;
+      height:auto;
+      margin:0 0 18px;
+    }
+
+    #site-footer .footer-brand p{
+      max-width:340px;
+      margin:0;
+      color:rgba(255,255,255,.68);
+      font-size:15px;
+      line-height:1.6;
+    }
+
+    #site-footer h4{
+      margin:3px 0 18px;
+      color:#ff8a55;
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    #site-footer ul{
+      margin:0;
+      padding:0;
+      display:grid;
+      gap:11px;
+      list-style:none;
+    }
+
+    #site-footer .footer-column a{
+      color:rgba(255,255,255,.76);
+      font-size:14px;
+      font-weight:650;
+      text-decoration:none;
+      transition:color .2s ease,transform .2s ease;
+    }
+
+    #site-footer .footer-column a:hover{
+      color:#fff;
+      transform:translateX(2px);
+    }
+
+    .footer-socials{
+      display:flex;
+      gap:9px;
+      flex-wrap:wrap;
+      margin-top:23px;
+    }
+
+    .footer-socials a{
+      min-height:40px;
+      padding:8px 12px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      color:#fff!important;
+      font-size:12px;
+      font-weight:800;
+      text-decoration:none;
+    }
+
+    .footer-socials a:hover{
+      border-color:rgba(255,138,85,.45);
+      background:rgba(255,138,85,.11);
+    }
+
+    .footer-social-icon{
+      width:22px;
+      height:22px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:#fff;
+      color:var(--orange);
+    }
+
+    .footer-social-icon svg{
+      width:13px;
+      height:13px;
+      display:block;
+      fill:currentColor;
+    }
+
+    .footer-app-card{
+      padding:24px;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:24px;
+      background:rgba(255,255,255,.07);
+      box-shadow:0 18px 45px rgba(0,0,0,.13);
+    }
+
+    .footer-app-kicker{
+      display:block;
+      margin-bottom:10px;
+      color:#ff8a55;
+      font-size:10px;
+      font-weight:900;
+      letter-spacing:.14em;
+    }
+
+    .footer-app-card strong{
+      display:block;
+      font-family:var(--display);
+      font-size:29px;
+      font-weight:500;
+      line-height:1.05;
+      letter-spacing:-.035em;
+    }
+
+    .footer-app-card p{
+      margin:10px 0 17px;
+      color:rgba(255,255,255,.66);
+      font-size:13px;
+    }
+
+    .footer-app-button{
+      min-height:46px;
+      padding:0 18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      background:var(--orange);
+      color:#fff!important;
+      box-shadow:0 10px 24px rgba(245,74,0,.20);
+      font-size:14px;
+      font-weight:850;
+      text-decoration:none;
+    }
+
+    .footer-app-button:hover{background:var(--orange-dark)}
+
+    #site-footer .footer-bottom{
+      margin-top:54px;
+      padding-top:21px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      border-top:1px solid rgba(255,255,255,.11);
+      color:rgba(255,255,255,.46);
+      font-size:12px;
+    }
+
+    .footer-legal{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .footer-legal a{
+      color:rgba(255,255,255,.55);
+      text-decoration:none;
+    }
+
+    .footer-legal a:hover{color:#fff}
+
+    @media(max-width:1000px){
+      .footer-main{
+        grid-template-columns:1.15fr 1fr 1fr;
+      }
+
+      .footer-app-card{
+        grid-column:1/-1;
+        display:grid;
+        grid-template-columns:1fr auto;
+        align-items:center;
+        gap:5px 24px;
+      }
+
+      .footer-app-kicker,
+      .footer-app-card strong,
+      .footer-app-card p{
+        grid-column:1;
+      }
+
+      .footer-app-button{
+        grid-column:2;
+        grid-row:1/4;
+        min-width:170px;
+      }
+    }
+
+    @media(max-width:720px){
+      .site-header{
+        width:calc(100% - 16px);
+        padding:0 8px 0 14px;
+      }
+
+      .brand-logo{width:145px}
+
+      .site-header-actions{gap:6px}
+
+      .get-app-nav{
+        min-height:40px;
+        padding:0 14px;
+        font-size:12px;
+      }
+
+      .menu-toggle{
+        width:40px;
+        height:40px;
+      }
+
+      .mobile-menu{
+        top:74px;
+        left:8px;
+        right:8px;
+        width:auto;
+        max-height:calc(100svh - 86px);
+        padding:17px;
+      }
+
+      .menu-product-link strong{font-size:14px}
+      .app-qr-modal{display:none!important}
+
+      #site-footer{padding:58px 0 22px}
+
+      .footer-main{
+        grid-template-columns:1fr 1fr;
+        gap:38px 24px;
+      }
+
+      #site-footer .footer-brand{
+        grid-column:1/-1;
+      }
+
+      .footer-app-card{
+        grid-column:1/-1;
+        display:block;
+      }
+
+      .footer-app-button{margin-top:15px}
+
+      #site-footer .footer-bottom{
+        margin-top:40px;
+        align-items:flex-start;
+        flex-direction:column;
+        gap:12px;
+      }
+    }
+
+    @media(max-width:440px){
+      .brand-logo{width:132px}
+      .get-app-nav{padding:0 11px;font-size:11px}
+      .site-header-actions{gap:4px}
+
+      .footer-main{grid-template-columns:1fr}
+      #site-footer .footer-brand,
+      .footer-app-card{grid-column:auto}
+      .footer-socials{margin-top:19px}
+      .footer-column{padding-top:5px}
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .app-qr-dialog{animation:none}
+    }
+    /* Centre only the tracker hero heading at tablet widths. */
+    @media (min-width:721px) and (max-width:1000px){
+      .tracker-hero .hero-copy h1{
+        margin-inline:auto;
+      }
+    }
+    @media (min-width:1201px){
+      .mobile-menu{
+        position:absolute;
+        top:calc(100% + 18px);
+        right:0;
+      }
+    }
+
+    /* Keep every language option in the compact two-column box layout. */
+    .mobile-language-grid{
+      display:grid !important;
+      grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+      gap:7px !important;
+      padding-top:8px !important;
+    }
+
+    .mobile-language-grid a{
+      min-height:40px;
+      padding:9px 10px !important;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      border:1px solid var(--line,rgba(38,39,37,.11));
+      border-radius:11px !important;
+      background:var(--cream,#f7f4ed);
+      color:var(--ink,#262725) !important;
+      font-size:12px !important;
+      font-weight:800 !important;
+      line-height:1.2;
+      text-decoration:none !important;
+    }
+
+    .mobile-language-grid a:hover,
+    .mobile-language-grid a[aria-current="page"]{
+      border-color:rgba(245,74,0,.22);
+      background:var(--orange-soft,#fff0e8) !important;
+      color:var(--orange-dark,#d94100) !important;
+    }
+
+/* Locale-specific length safeguards */
+html[lang="fr"] .menu-product-link strong{max-width:250px}
+html[lang="fr"] .hero-eyebrow{font-size:11px}
+html[lang="fr"] .costs-feature-v4 .feature-card-copy h3{font-size:clamp(31px,2.35vw,37px)}
+@media(max-width:720px){html[lang="fr"] .hero-eyebrow{font-size:clamp(7.5px,2.2vw,9.5px)}html[lang="fr"] .audience-section h2{font-size:42px}}
+</style>
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+<a aria-label="Accueil EveryVoyage" class="brand-logo" href="/fr/">
+<img alt="EveryVoyage" onerror="this.onerror=null;this.src='/assets-demo/logo-fallback.svg'" src="/assets/brand/Logo.png"/>
+</a>
+<div class="site-header-actions">
+<a class="get-app-nav" data-smart-app-link="" href="/app">Télécharger l’app</a>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Ouvrir le menu de navigation" class="menu-toggle" id="menuToggle" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+<div class="mobile-menu" hidden="" id="mobileMenu">
+<span class="menu-eyebrow">Découvrir l’app</span>
+<nav aria-label="Navigation des produits EveryVoyage" class="mobile-menu-links">
+<a class="menu-product-link" href="/fr/stops/">
+<strong>Trouver des aires et des lieux</strong>
+<span aria-hidden="true">→</span>
+</a>
+<a class="menu-product-link" href="/fr/road-trip-tracker/">
+<strong>Suivre vos road trips</strong>
+<span aria-hidden="true">→</span>
+</a>
+<a class="menu-product-link" href="/fr/road-trip-journal/">
+<strong>Tenir un carnet de voyage</strong>
+<span aria-hidden="true">→</span>
+</a>
+<a class="menu-product-link" href="/fr/road-trip-inspiration/">
+<strong>Découvrir des road trips</strong>
+<span aria-hidden="true">→</span>
+</a>
+</nav>
+<div class="menu-utility-links">
+<a href="/fr/#how-it-works">Comment ça marche</a>
+<a href="/fr/features/">Toutes les fonctionnalités</a>
+</div>
+<details class="mobile-language-switcher">
+<summary>Langue : Français</summary>
+<div class="mobile-language-grid">
+<a href="/road-trip-tracker/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="/en-us/road-trip-tracker/" hreflang="en-US" lang="en-US">English (US)</a>
+<a href="/de/road-trip-tracker/" hreflang="de" lang="de">Deutsch</a>
+<a aria-current="page" href="/fr/road-trip-tracker/" hreflang="fr" lang="fr">Français</a>
+<a href="/es/road-trip-tracker/" hreflang="es" lang="es">Español</a>
+<a href="/it/road-trip-tracker/" hreflang="it" lang="it">Italiano</a>
+<a href="/nl/road-trip-tracker/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="/sv/road-trip-tracker/" hreflang="sv" lang="sv">Svenska</a>
+<a href="/da/road-trip-tracker/" hreflang="da" lang="da">Dansk</a>
+<a href="/no/road-trip-tracker/" hreflang="no" lang="no">Norsk</a>
+</div>
+</details>
+<a class="menu-get-app" data-smart-app-link="" href="/app">Télécharger l’app</a>
+</div>
+</header>
+<div aria-hidden="true" class="app-qr-modal" hidden="" id="appQrModal">
+<div class="app-qr-backdrop" data-close-app-qr=""></div>
+<section aria-describedby="appQrDescription" aria-labelledby="appQrTitle" aria-modal="true" class="app-qr-dialog" role="dialog">
+<button aria-label="Fermer le QR code" class="app-qr-close" data-close-app-qr="" type="button">×</button>
+<span class="app-qr-kicker">TÉLÉCHARGER EVERYVOYAGE</span>
+<h2 id="appQrTitle">Scannez pour télécharger l’app</h2>
+<a class="app-qr-url" href="https://everyvoyage.com/app" rel="noopener" target="_blank">everyvoyage.com/app</a>
+<img alt="QR code vers la page de téléchargement de l’app EveryVoyage" class="app-qr-image" src="/assets/img/EveryVoyageQR.png"/>
+<p id="appQrDescription">Ouvrez l’appareil photo de votre téléphone et pointez-le vers le QR code.</p>
+</section>
+</div>
+<main>
+<section class="tracker-hero">
+<div class="hero-inner">
+<div class="hero-copy">
+<div class="breadcrumbs"><a href="/fr/">Accueil</a><span>›</span><span>Suivi de road trip</span></div>
+<span class="hero-eyebrow">Suivi GPS des road trips en camping-car et van aménagé</span>
+<h1>Suivez votre road trip. <em>Gardez toute l’histoire.</em></h1>
+<p>Enregistrez automatiquement votre itinéraire par GPS, continuez même sans réseau, puis retrouvez tout le Voyage avec vos étapes, photos et Moments au bon endroit.</p>
+<div class="hero-proof">
+<span>● Enregistrement GPS en direct</span>
+<span>⊘ Fonctionne hors ligne</span>
+<span>↺ Ajouter des Trajets passés</span>
+</div>
+<div class="store-row">
+<div class="store-stack">
+<a data-store-link="" href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank">
+<img alt="Télécharger EveryVoyage sur l’App Store" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/appstore-badge.png'" src="/assets/stores/download-on-the-app-store.svg"/>
+</a>
+<div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
+</div>
+<div class="store-stack">
+<a data-store-link="" href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank">
+<img alt="Télécharger EveryVoyage sur Google Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/googleplay-badge.png'" src="/assets/stores/Google_Play_Store_badge_EN.svg"/>
+</a>
+<div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
+</div>
+</div>
+</div>
+<div aria-label="Écran de suivi de road trip EveryVoyage" class="hero-visual">
+<div class="hero-modal">
+<div class="hero-modal-top">
+<div>
+<span class="hero-modal-badge"><i></i> Enregistrement en cours</span>
+<strong>Le Trajet se crée en direct</strong>
+<small>Enregistré automatiquement pendant la conduite</small>
+</div>
+</div>
+<div class="hero-metrics">
+<div class="hero-metric"><b>68,1</b><span>km</span></div>
+<div class="hero-metric"><b>4 h 6 min</b><span>durée</span></div>
+<div class="hero-metric"><b>16</b><span>km/h moy.</span></div>
+</div>
+</div>
+<img alt="Road trip terminé dans EveryVoyage avec itinéraire, statistiques et souvenirs" class="hero-phone" decoding="async" fetchpriority="high" onerror="this.onerror=null;this.src='/assets/img/AppPhoneHero.webp'" src="/assets/img/HeroTracking.webp"/>
+</div>
+</div>
+</section>
+<div class="section-bridge" data-next="#tracker-proof">
+<button aria-label="Continuer vers le suivi de road trip sans contraintes" type="button"><svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+<section class="tracker-proof" id="tracker-proof">
+<div class="wrap proof-grid">
+<div class="proof-copy">
+<span class="section-kicker" style="color:#ff8a55">Le suivi sans contraintes</span>
+<h2>Un seul geste pour démarrer. <em>Profitez ensuite de la route.</em></h2>
+<p>Un road trip ne devrait pas devenir une corvée. Appuyez une fois sur Enregistrer et laissez l’itinéraire se tracer pendant que vous roulez.</p>
+<div class="proof-list">
+<div class="proof-item"><span>●</span><div>Continue même lorsque le téléphone est verrouillé.</div></div>
+<div class="proof-item"><span>⊘</span><div>Continue le suivi sans réseau.</div></div>
+<div class="proof-item"><span>↺</span><div>Ajoutez vos anciens road trips après coup.</div></div>
+</div>
+</div>
+<div aria-label="Lire l’aperçu du suivi de road trip EveryVoyage" class="video-card" id="trackerVideo" role="button" tabindex="0">
+<img alt="Aperçu d’un road trip suivi avec EveryVoyage" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/hero-bg.jpg'" src="/assets/img/AppPreview.webp"/>
+<div class="video-overlay">
+<div>
+<span class="section-kicker" style="color:#ff8a55">Voir en action</span>
+<strong>Regardez un road trip devenir une histoire.</strong>
+<span aria-hidden="true" class="play-button">▶</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="section-bridge" data-next="#how-it-works">
+<button aria-label="Continuer vers le fonctionnement du suivi de road trip" type="button"><svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+<section class="how-section" id="how-it-works">
+<div class="wrap">
+<div class="section-heading">
+<span class="section-kicker">Comment fonctionne le suivi de road trip</span>
+<h2>Du premier kilomètre à la carte finale.</h2>
+<p>Lancez l’enregistrement, profitez de la route et laissez EveryVoyage transformer l’itinéraire en un road trip à revivre.</p>
+</div>
+<div class="step-grid">
+<article class="tracking-step tracking-step-start reveal">
+<div class="step-overlay-copy">
+<span class="step-number">01 / DÉPART</span>
+<h3>Appuyez sur Enregistrer</h3>
+<p>Lancez avant de prendre la route.</p>
+</div>
+<div aria-hidden="true" class="tap-record-animation">
+<span class="record-ring"></span>
+<span class="record-button-simple"><i></i></span>
+<span class="tap-finger">☝</span>
+<small>Appuyez pour démarrer</small>
+</div>
+</article>
+<article class="tracking-step tracking-step-image tracking-step-drive reveal">
+<img alt="Un camping-car suivant un itinéraire enregistré lumineux" class="step-background-image" decoding="async" loading="lazy" src="/assets/img/TrackingAnimation.webp"/>
+<span class="step-image-shade"></span>
+<div class="step-overlay-copy">
+<span class="step-number">02 / ROUTE</span>
+<h3>Profitez de la route</h3>
+<p>L’itinéraire se trace automatiquement, même sans réseau.</p>
+</div>
+</article>
+<article class="tracking-step tracking-step-image tracking-step-relive reveal">
+<img alt="Une carte EveryVoyage terminée avec l’itinéraire complet du road trip" class="step-background-image" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets/img/StoryVoyage.webp'" src="/assets/img/mapzoom.webp"/>
+<span class="step-image-shade"></span>
+<div class="step-overlay-copy">
+<span class="step-number">03 / REVIVRE</span>
+<h3>Retrouvez tout le Voyage</h3>
+<p>Itinéraire, étapes, photos et détails réunis.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<div class="section-bridge" data-next="#route-story">
+<button aria-label="Continuer vers l’importance de l’itinéraire" type="button"><svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+<section class="problem-section" id="route-story">
+<div class="wrap problem-grid">
+<div class="problem-copy">
+<span class="section-kicker">L’itinéraire compte aussi</span>
+<h2>Votre road trip mérite mieux qu’ <em>une simple galerie photo.</em></h2>
+<p>Un road trip ne se résume pas à des photos. Ce sont les routes choisies, les étapes imprévues, les kilomètres parcourus et la façon dont l’aventure s’est dessinée.</p>
+<div class="problem-points">
+<div class="problem-point"><span>1</span><div>Ne reconstituez plus l’itinéraire à partir de photos éparpillées et de recherches sur une carte.</div></div>
+<div class="problem-point"><span>2</span><div>Chaque souvenir reste relié au lieu où il a été vécu.</div></div>
+<div class="problem-point"><span>3</span><div>Retrouvez tout le road trip, pas seulement quelques moments forts.</div></div>
+</div>
+</div>
+<div aria-label="EveryVoyage relie un itinéraire enregistré aux photos prises en chemin" class="camera-route-visual">
+<div class="camera-roll-card">
+<div class="camera-roll-grid">
+<img alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/hero-bg.jpg'" src="/assets/img/OfflineMode.webp"/>
+<img alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/hero-bg.jpg'" src="/assets/img/RoadTrip.webp"/>
+<img alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/cta-bg.jpg'" src="/assets/img/Sunset.webp"/>
+<img alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/hero-bg.jpg'" src="/assets/img/Norway.webp"/>
+</div>
+<div class="camera-roll-label"><strong>Les photos gardent les moments forts.</strong><span>EveryVoyage conserve toute l’histoire.</span></div>
+</div>
+<div class="route-recording-chip"><i></i> Itinéraire enregistré automatiquement</div>
+<img alt="EveryVoyage affiche un road trip enregistré avec son itinéraire et ses souvenirs" class="camera-route-phone" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/hero-phone.png'" src="/assets/img/AppPhoneHero.webp"/>
+<div class="photo-attached-chip">
+<span>📷</span>
+<div><strong>Les photos restent avec le Trajet</strong><small>Reliées au lieu où elles ont été prises</small></div>
+</div>
+</div>
+</div>
+</section>
+<div class="section-bridge" data-next="#features">
+<button aria-label="Continuer vers les fonctionnalités de suivi" type="button"><svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+<section class="benefits-section" id="features">
+<div class="wrap">
+<div class="section-heading">
+<span class="section-kicker">Pensé pour de vrais road trips</span>
+<h2>Bien plus qu’une ligne sur une carte.</h2>
+<p>Votre itinéraire n’est que le début. EveryVoyage réunit les détails pratiques, les choix et les Moments qui rendent ce road trip unique.</p>
+</div>
+<div class="benefit-mosaic benefit-mosaic-v4">
+<article class="benefit-card offline-feature-v4 reveal">
+<img alt="Un lieu isolé où EveryVoyage continue le suivi hors ligne" class="offline-feature-image-v5" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/hero-bg.jpg'" src="/assets/img/OfflineMode.webp"/>
+<div class="signal-chip-v5">
+<span aria-hidden="true" class="no-signal-icon-v5"><i></i><i></i><i></i><i></i></span>
+<span>Aucun réseau</span>
+</div>
+<div class="offline-feature-copy-v5">
+<span class="section-kicker">Suivi hors ligne</span>
+<h3>Continuez à enregistrer, même sans réseau.</h3>
+</div>
+</article>
+<article class="benefit-card past-feature-v4 reveal">
+<div class="feature-card-copy">
+<span class="section-kicker">Ajoutez-le après coup</span>
+<h3>Ajouter un Trajet passé.</h3>
+<p>Choisissez les lieux et la date. EveryVoyage suit les routes qui les relient pour recréer un itinéraire réaliste plutôt qu’une ligne droite.</p>
+</div>
+<div aria-hidden="true" class="past-route-visual">
+<svg class="past-route-map" fill="none" viewbox="0 0 360 150">
+<path class="past-road faint-road" d="M-10 122C50 96 85 135 128 108C176 78 179 34 235 46C284 57 308 22 376 15"></path>
+<path class="past-route-line" d="M28 118C74 92 109 130 148 102C190 72 197 42 238 49C278 56 299 34 332 22"></path>
+<circle class="past-pin-start" cx="28" cy="118" r="8"></circle>
+<circle class="past-pin-end" cx="332" cy="22" r="8"></circle>
+<g class="past-route-traveller">
+<circle fill="#f54a00" r="8"></circle>
+<circle fill="#ffffff" r="3"></circle>
+<animatemotion begin="1.7s" dur="3.2s" path="M28 118C74 92 109 130 148 102C190 72 197 42 238 49C278 56 299 34 332 22" repeatcount="indefinite">
+</animatemotion>
+</g>
+</svg>
+<span class="past-location start">Départ</span>
+<span class="past-location finish">Arrivée</span>
+<span class="past-replay-icon">↺</span>
+<span class="past-route-label">Itinéraire probable recréé</span>
+</div>
+</article>
+<article class="benefit-card privacy-feature-v4 reveal" data-level="0" id="privacyFeatureCard">
+<div class="privacy-feature-pill">
+<span aria-hidden="true" class="privacy-feature-pill-icon" id="privacyFeatureIcon">🔒</span>
+<strong id="privacyFeatureLabel">Seulement vous</strong>
+</div>
+<div aria-hidden="true" class="privacy-mini-network">
+<span class="privacy-mini-ring ring-one"></span>
+<span class="privacy-mini-ring ring-two"></span>
+<span class="privacy-mini-person privacy-mini-you">
+<img alt="" decoding="async" loading="lazy" src="/assets/img/PrivacyYou.webp"/>
+</span>
+<span class="privacy-mini-person privacy-mini-friend friend-one">
+<img alt="" decoding="async" loading="lazy" src="/assets/img/PrivacyFriend1.webp"/>
+</span>
+<span class="privacy-mini-person privacy-mini-friend friend-two">
+<img alt="" decoding="async" loading="lazy" src="/assets/img/PrivacyFriend2.webp"/>
+</span>
+<span class="privacy-mini-person privacy-mini-friend friend-three">
+<img alt="" decoding="async" loading="lazy" src="/assets/img/PrivacyFriend3.webp"/>
+</span>
+<span class="privacy-mini-person privacy-mini-other other-one">
+<img alt="" decoding="async" loading="lazy" src="/assets/img/PrivacyOther1.webp"/>
+</span>
+<span class="privacy-mini-person privacy-mini-other other-two">
+<img alt="" decoding="async" loading="lazy" src="/assets/img/PrivacyOther2.webp"/>
+</span>
+<span class="privacy-mini-person privacy-mini-other other-three">
+<img alt="" decoding="async" loading="lazy" src="/assets/img/PrivacyOther3.webp"/>
+</span>
+</div>
+<div class="privacy-feature-footer">
+<h3>Votre itinéraire, votre vie privée.</h3>
+<div class="privacy-safeguards">
+<span>Partager plus tard</span>
+<span>Masquer le lieu exact</span>
+<span>Masquer la position en direct</span>
+</div>
+</div>
+</article>
+<article class="benefit-card stats-feature-v4 reveal" id="statsFeatureCard">
+<div class="feature-card-copy">
+<span class="section-kicker">Statistiques du Trajet</span>
+<h3>Voyez le Voyage prendre forme.</h3>
+<p>Consultez la distance, le temps de conduite, la vitesse moyenne et les totaux de chaque Trajet.</p>
+</div>
+<div aria-label="Exemple de statistiques de Trajet" class="stats-visual-v4">
+<div class="distance-odometer">
+</div>
+<div aria-hidden="true" class="stats-bars-v4">
+<i></i><i></i><i></i><i></i><i></i><i></i>
+</div>
+<div class="stats-mini-grid">
+<span><strong>18 h 32 min</strong><small>conduite</small></span>
+<span><strong>68,1 km/h</strong><small>moyenne</small></span>
+</div>
+</div>
+</article>
+<article class="benefit-card voyage-video-card-v7 reveal">
+<h3 class="sr-only">Voyage sur plusieurs jours</h3>
+<video aria-label="Plusieurs Trajets réunis dans un Voyage complet sur plusieurs jours" class="voyage-video-v7" loop="" muted="" playsinline="" poster="/assets/img/TripsIntoVoyagePoster.webp" preload="metadata">
+<source src="/assets/video/TripsIntoVoyage.mp4" type="video/mp4"/>
+</video>
+<span class="voyage-video-label-v7">Voyage sur plusieurs jours</span>
+</article>
+<article class="benefit-card costs-feature-v4 reveal">
+<div class="feature-card-copy">
+<span class="section-kicker">Dépenses des Trajets et du Voyage</span>
+<h3>Gardez chaque dépense avec le Voyage.</h3>
+</div>
+<div aria-hidden="true" class="cost-rollup-v4">
+<div class="cost-trip-row">
+<span><small>Trajet 01</small><strong>Calais → Reims</strong></span>
+<b>94 €</b>
+</div>
+<div class="cost-trip-row">
+<span><small>Trajet 02</small><strong>Reims → Annecy</strong></span>
+<b>125 €</b>
+</div>
+<div class="cost-voyage-total">
+<span>Voyage complet</span>
+<strong>219 €</strong>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<div class="section-bridge" data-next="#made-for-road">
+<button aria-label="Continuer vers les voyageurs auxquels EveryVoyage s’adresse" type="button"><svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+<section class="audience-section" id="made-for-road">
+<div class="wrap">
+<span class="section-kicker" style="color:#ff8a55">Pensé pour la route</span>
+<h2>Un suivi de road trip adapté à votre façon de voyager.</h2>
+<p>Que vous partiez un week-end en van aménagé ou plusieurs mois à travers l’Europe, tout le Voyage reste réuni.</p>
+<div class="audience-chips">
+<span>Circuits en camping-car</span>
+<span>Aventures en van aménagé</span>
+<span>Road trips en Europe</span>
+<span>Escapades le week-end</span>
+<span>Voyages de plusieurs jours</span>
+<span>Aventures passées</span>
+</div>
+</div>
+</section>
+<div class="section-bridge" data-next="#faq">
+<button aria-label="Continuer vers les questions sur le suivi de road trip" type="button"><svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+<section class="faq-section" id="faq">
+<div class="wrap faq-grid">
+<div class="faq-heading">
+<span class="section-kicker">FAQ sur le suivi de road trip</span>
+<h2>Des questions avant de prendre la route ?</h2>
+<p>Tout ce qu’il faut savoir pour enregistrer un road trip avec EveryVoyage.</p>
+</div>
+<div class="faq-list">
+<details class="faq-item"><summary>Comment fonctionne le suivi de road trip EveryVoyage ?</summary><div class="faq-answer">Démarrez un Trajet dans l’app EveryVoyage et appuyez sur Enregistrer. Le GPS suit votre itinéraire en arrière-plan pendant la conduite. À l’arrivée, il est sauvegardé avec vos photos, Moments et détails du Trajet.</div></details>
+<details class="faq-item"><summary>Le suivi fonctionne-t-il sans réseau mobile ?</summary><div class="faq-answer">Oui. EveryVoyage continue d’enregistrer votre itinéraire sans réseau, puis synchronise le Trajet dès que la connexion revient.</div></details>
+<details class="faq-item"><summary>Puis-je ajouter un road trip après l’avoir terminé ?</summary><div class="faq-answer">Oui. Vous pouvez créer manuellement un Trajet passé, choisir les lieux et la date, puis laisser EveryVoyage recréer l’itinéraire le plus probable.</div></details>
+<details class="faq-item"><summary>Puis-je garder mon road trip privé ?</summary><div class="faq-answer">Oui. Vous choisissez qui peut voir votre Voyage et pouvez masquer les lieux exacts de départ et d’arrivée lorsque vous partagez un Trajet.</div></details>
+<details class="faq-item"><summary>Puis-je ajouter des photos et des notes à mon itinéraire ?</summary><div class="faq-answer">Oui. Ajoutez des photos, des notes et des Moments pendant ou après le Voyage pour que chaque souvenir reste relié au bon endroit.</div></details>
+</div>
+</div>
+</section>
+<div class="section-bridge" data-next="#download">
+<button aria-label="Continuer vers le téléchargement d’EveryVoyage" type="button"><svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+<section class="final-cta" id="download">
+<div class="final-content">
+<span class="section-kicker" style="color:#ff8a55">Commencez à suivre votre road trip</span>
+<h2>Faites de votre prochain road trip un souvenir inoubliable.</h2>
+<p>Enregistrez l’itinéraire, gardez les Moments et revivez toute l’aventure au même endroit.</p>
+<div class="store-row">
+<div class="store-stack">
+<a data-store-link="" href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank"><img alt="Télécharger EveryVoyage sur l’App Store" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/appstore-badge.png'" src="/assets/stores/download-on-the-app-store.svg"/></a>
+</div>
+<div class="store-stack">
+<a data-store-link="" href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank"><img alt="Télécharger EveryVoyage sur Google Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='/assets-demo/googleplay-badge.png'" src="/assets/stores/Google_Play_Store_badge_EN.svg"/></a>
+</div>
+</div>
+<div class="download-note">Téléchargement gratuit sur iOS et Android.</div>
+</div>
+</section>
+<div class="section-bridge" data-next="#site-footer">
+<button aria-label="Continuer vers le pied de page EveryVoyage" type="button"><svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+</main>
+<div class="mobile-download-bar" hidden="" id="mobileDownloadBar">
+<div class="mobile-download-copy"><strong>Suivez votre prochain road trip</strong><span>Gratuit sur iOS et Android</span></div>
+<a data-smart-app-link="" href="/app">Télécharger l’app</a>
+</div>
+<footer id="site-footer">
+<div class="wrap">
+<div class="footer-main">
+<div class="footer-brand">
+<a aria-label="Accueil EveryVoyage" href="/fr/">
+<img alt="EveryVoyage" class="footer-logo" onerror="this.onerror=null;this.src='/assets-demo/logo-white-fallback.svg'" src="/assets/brand/LogoWhite.png"/>
+</a>
+<p>Planifiez le road trip, enregistrez l’itinéraire et gardez toute l’aventure au même endroit.</p>
+<div aria-label="Suivre EveryVoyage" class="footer-socials">
+<a href="https://www.instagram.com/everyvoyageapp/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="footer-social-icon">
+<svg role="img" viewbox="0 0 24 24">
+<path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5Zm8.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"></path>
+</svg>
+</span>
+Instagram
+</a>
+<a href="https://www.tiktok.com/@everyvoyage" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="footer-social-icon">
+<svg role="img" viewbox="0 0 24 24">
+<path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.72-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.45 3.98-2.14 6.15-1.73.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07Z"></path>
+</svg>
+</span>
+TikTok
+</a>
+</div>
+</div>
+<nav aria-label="Fonctionnalités EveryVoyage" class="footer-column">
+<h4>Fonctionnalités</h4>
+<ul>
+<li><a href="/fr/stops/">Aires &amp; lieux</a></li>
+<li><a href="/fr/road-trip-tracker/">Suivi de road trip</a></li>
+<li><a href="/fr/road-trip-journal/">Carnet de voyage</a></li>
+<li><a href="/fr/road-trip-inspiration/">Inspiration road trip</a></li>
+<li><a href="/fr/features/">Toutes les fonctionnalités</a></li>
+</ul>
+</nav>
+<nav aria-label="Ressources EveryVoyage" class="footer-column">
+<h4>Ressources</h4>
+<ul>
+<li><a href="/fr/#how-it-works">Comment fonctionne EveryVoyage</a></li>
+<li><a href="/fr/faq/">FAQ</a></li>
+<li><a href="/fr/about/">À propos d’EveryVoyage</a></li>
+<li><a href="/fr/contact/">Nous contacter</a></li>
+</ul>
+</nav>
+<div class="footer-app-card">
+<span class="footer-app-kicker">TÉLÉCHARGER EVERYVOYAGE</span>
+<strong>Prêt pour votre prochain road trip ?</strong>
+<p>Gratuit sur iOS et Android.</p>
+<a class="footer-app-button" data-smart-app-link="" href="/app">Télécharger l’app</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 EveryVoyage. SIMPLR LABS LTD.</span>
+<nav aria-label="Mentions légales" class="footer-legal">
+<a href="/fr/privacy-policy/">Politique de confidentialité</a>
+<a href="/fr/terms/">Conditions générales</a>
+</nav>
+</div>
+</div>
+</footer>
+<script>
+    const menuToggle=document.getElementById('menuToggle');
+    const mobileMenu=document.getElementById('mobileMenu');
+    const siteHeader=document.getElementById('siteHeader');
+    function setMobileMenu(open){
+      menuToggle.setAttribute('aria-expanded',String(open));
+      menuToggle.setAttribute('aria-label',open?'Fermer le menu de navigation':'Ouvrir le menu de navigation');
+      mobileMenu.hidden=!open;
+      document.body.classList.toggle('menu-open',open);
+    }
+    menuToggle.addEventListener('click',()=>setMobileMenu(menuToggle.getAttribute('aria-expanded')!=='true'));
+    mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMobileMenu(false)));
+    document.addEventListener('click',event=>{if(!mobileMenu.hidden&&!siteHeader.contains(event.target))setMobileMenu(false);});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!mobileMenu.hidden){setMobileMenu(false);menuToggle.focus();}});
+    addEventListener('resize',()=>{if(innerWidth>1000&&!mobileMenu.hidden)setMobileMenu(false);});
+
+    const revealObserver=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },{threshold:.14,rootMargin:'0px 0px -7%'});
+    document.querySelectorAll('.reveal').forEach((element,index)=>{
+      element.style.transitionDelay=`${Math.min(index*.055,.27)}s`;
+      revealObserver.observe(element);
+    });
+
+    const finalCta=document.querySelector('.final-cta');
+    const finalObserver=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          finalCta.classList.add('in-view');
+          finalObserver.unobserve(entry.target);
+        }
+      });
+    },{threshold:.25});
+    finalObserver.observe(finalCta);
+
+    function openTrackerVideo(){
+      const modal=document.createElement('div');
+      modal.style.cssText='position:fixed;z-index:9999;inset:0;display:grid;place-items:center;padding:24px;background:rgba(0,0,0,.9)';
+      modal.innerHTML=`<div style="position:relative;max-width:min(430px,90vw);max-height:88vh"><button aria-label="Fermer la vidéo" style="position:absolute;right:0;top:-47px;border:0;background:none;color:white;font-size:32px;cursor:pointer">×</button><video controls autoplay muted playsinline style="display:block;max-width:100%;max-height:86vh;border-radius:22px;background:#111"><source src="/assets/video/RoadTripTrackerPreview.mp4" type="video/mp4"><source src="/assets/video/RecordATrip.mp4" type="video/mp4"></video></div>`;
+      modal.addEventListener('click',event=>{if(event.target===modal||event.target.tagName==='BUTTON')modal.remove();});
+      document.body.appendChild(modal);
+    }
+    const trackerVideo=document.getElementById('trackerVideo');
+    trackerVideo.addEventListener('click',openTrackerVideo);
+    trackerVideo.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openTrackerVideo();}});
+
+
+    /* Feature-card privacy cycle and visible Trip-stat animation */
+    const privacyFeatureCard=document.getElementById('privacyFeatureCard');
+    const privacyFeatureLabel=document.getElementById('privacyFeatureLabel');
+    const privacyFeatureIcon=document.getElementById('privacyFeatureIcon');
+    const privacyFeatureModes=['Seulement vous','Amis et famille','Tout le monde'];
+    const privacyFeatureIcons=['🔒','👥','🌍'];
+    let privacyFeatureLevel=0;
+
+    function setPrivacyFeatureLevel(level){
+      privacyFeatureLevel=(level+privacyFeatureModes.length)%privacyFeatureModes.length;
+      privacyFeatureCard.dataset.level=String(privacyFeatureLevel);
+      privacyFeatureLabel.textContent=privacyFeatureModes[privacyFeatureLevel];
+      privacyFeatureIcon.textContent=privacyFeatureIcons[privacyFeatureLevel];
+    }
+
+    if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+      setInterval(()=>setPrivacyFeatureLevel(privacyFeatureLevel+1),2800);
+    }
+
+    const statsFeatureCard=document.getElementById('statsFeatureCard');
+    const distanceNumber=document.getElementById('distanceNumber');
+
+    if(statsFeatureCard&&distanceNumber){
+      let distanceAnimated=false;
+      const statsCounterObserver=new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+          if(!entry.isIntersecting||distanceAnimated)return;
+          distanceAnimated=true;
+          const target=1248;
+          const duration=1500;
+          const start=performance.now();
+
+          function animateDistance(now){
+            const progress=Math.min((now-start)/duration,1);
+            const eased=1-Math.pow(1-progress,3);
+            distanceNumber.textContent=Math.round(target*eased).toLocaleString();
+            if(progress<1)requestAnimationFrame(animateDistance);
+          }
+
+          requestAnimationFrame(animateDistance);
+          statsCounterObserver.disconnect();
+        });
+      },{threshold:.45});
+
+      statsCounterObserver.observe(statsFeatureCard);
+    }
+
+
+
+    /* Play the multi-day Voyage preview only while it is visible. */
+    const voyageVideo=document.querySelector('.voyage-video-v7');
+
+    if(voyageVideo&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+      const voyageVideoObserver=new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            voyageVideo.play().catch(()=>{});
+          }else{
+            voyageVideo.pause();
+          }
+        });
+      },{threshold:.35,rootMargin:'120px 0px'});
+
+      voyageVideoObserver.observe(voyageVideo);
+    }
+
+
+
+    /* Homepage-style section bridge navigation */
+    document.querySelectorAll('.section-bridge button').forEach(button=>{
+      button.addEventListener('click',()=>{
+        const bridgeElement=button.closest('.section-bridge');
+        const target=document.querySelector(bridgeElement.dataset.next);
+        if(target)target.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+
+
+    const mobileDownloadBar=document.getElementById('mobileDownloadBar');
+    const hero=document.querySelector('.tracker-hero');
+    function updateMobileDownloadBar(){
+      if(innerWidth>720){mobileDownloadBar.hidden=true;mobileDownloadBar.classList.remove('is-visible');return;}
+      const heroPassed=hero.getBoundingClientRect().bottom<80;
+      const finalVisible=finalCta.getBoundingClientRect().top<innerHeight*.82;
+      const shouldShow=heroPassed&&!finalVisible;
+      mobileDownloadBar.hidden=!shouldShow;
+      requestAnimationFrame(()=>mobileDownloadBar.classList.toggle('is-visible',shouldShow));
+    }
+    addEventListener('scroll',updateMobileDownloadBar,{passive:true});
+    addEventListener('resize',updateMobileDownloadBar);
+    updateMobileDownloadBar();
+  
+
+    /* Smart app download behaviour:
+       iOS and Android use the /app hand-off page.
+       Desktop visitors see the QR code without leaving this page. */
+    (function(){
+      const ua=navigator.userAgent||navigator.vendor||window.opera||'';
+      const isAndroid=/android/i.test(ua);
+      const isIOS=/iPad|iPhone|iPod/i.test(ua)
+        ||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+      const isMobileAppDevice=isIOS||isAndroid;
+
+      const modal=document.getElementById('appQrModal');
+      const dialog=modal?.querySelector('.app-qr-dialog');
+      const closeButton=modal?.querySelector('.app-qr-close');
+      let lastFocusedElement=null;
+
+      function openAppQrModal(){
+        if(!modal)return;
+        lastFocusedElement=document.activeElement;
+        modal.hidden=false;
+        modal.setAttribute('aria-hidden','false');
+        document.body.classList.add('app-qr-open');
+        requestAnimationFrame(()=>closeButton?.focus());
+      }
+
+      function closeAppQrModal(){
+        if(!modal)return;
+        modal.hidden=true;
+        modal.setAttribute('aria-hidden','true');
+        document.body.classList.remove('app-qr-open');
+        lastFocusedElement?.focus?.();
+      }
+
+      document.querySelectorAll('[data-smart-app-link]').forEach(link=>{
+        link.href='/app';
+
+        link.addEventListener('click',event=>{
+          if(isMobileAppDevice)return;
+          event.preventDefault();
+          openAppQrModal();
+        });
+      });
+
+      document.querySelectorAll('[data-store-link]').forEach(link=>{
+        link.addEventListener('click',event=>{
+          if(isMobileAppDevice)return;
+          event.preventDefault();
+          openAppQrModal();
+        });
+      });
+
+      modal?.querySelectorAll('[data-close-app-qr]').forEach(element=>{
+        element.addEventListener('click',closeAppQrModal);
+      });
+
+      document.addEventListener('keydown',event=>{
+        if(modal?.hidden)return;
+
+        if(event.key==='Escape'){
+          closeAppQrModal();
+          return;
+        }
+
+        if(event.key==='Tab'&&dialog){
+          const focusable=[...dialog.querySelectorAll(
+            'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])'
+          )];
+
+          if(!focusable.length)return;
+
+          const first=focusable[0];
+          const last=focusable[focusable.length-1];
+
+          if(event.shiftKey&&document.activeElement===first){
+            event.preventDefault();
+            last.focus();
+          }else if(!event.shiftKey&&document.activeElement===last){
+            event.preventDefault();
+            first.focus();
+          }
+        }
+      });
+    })();
+
+</script>
+</body>
+</html>
