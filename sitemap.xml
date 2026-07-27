@@ -1,70 +1,1717 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Root pages -->
-  <url><loc>https://everyvoyage.com/</loc></url>
-  <url><loc>https://everyvoyage.com/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/faq.html</loc></url>
-  <url><loc>https://everyvoyage.com/app.html</loc></url>
+  <!-- Generated for EveryVoyage. Only canonical, indexable URLs belong here. -->
+  <!-- hreflang clusters include every translated equivalent, itself, and x-default. -->
 
-  <!-- Legal (root only) -->
-  <url><loc>https://everyvoyage.com/privacy-policy.html</loc></url>
-  <url><loc>https://everyvoyage.com/terms.html</loc></url>
-  <url><loc>https://everyvoyage.com/cookie-policy.html</loc></url>
+  <!-- Homepage -->
+  <url>
+    <loc>https://everyvoyage.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/" />
+  </url>
 
-  <!-- Danish -->
-  <url><loc>https://everyvoyage.com/da/</loc></url>
-  <url><loc>https://everyvoyage.com/da/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/da/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/da/faq.html</loc></url>
+  <!-- About -->
+  <url>
+    <loc>https://everyvoyage.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/about.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/about.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/about.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about.html" />
+  </url>
 
-  <!-- German -->
-  <url><loc>https://everyvoyage.com/de/</loc></url>
-  <url><loc>https://everyvoyage.com/de/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/de/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/de/faq.html</loc></url>
+  <!-- App -->
+  <url>
+    <loc>https://everyvoyage.com/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/app.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/app.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/app.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/app.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/app.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/app.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app.html" />
+  </url>
 
-  <!-- English US -->
-  <url><loc>https://everyvoyage.com/en-us/</loc></url>
-  <url><loc>https://everyvoyage.com/en-us/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/en-us/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/en-us/faq.html</loc></url>
+  <!-- Contact -->
+  <url>
+    <loc>https://everyvoyage.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/contact.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/contact.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact.html" />
+  </url>
 
-  <!-- Spanish -->
-  <url><loc>https://everyvoyage.com/es/</loc></url>
-  <url><loc>https://everyvoyage.com/es/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/es/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/es/faq.html</loc></url>
+  <!-- FAQ -->
+  <url>
+    <loc>https://everyvoyage.com/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/faq.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/faq.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq.html" />
+  </url>
 
-  <!-- French -->
-  <url><loc>https://everyvoyage.com/fr/</loc></url>
-  <url><loc>https://everyvoyage.com/fr/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/fr/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/fr/faq.html</loc></url>
+  <!-- Features -->
+  <url>
+    <loc>https://everyvoyage.com/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/features.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/features.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/features.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/features.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/features.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/features.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features.html" />
+  </url>
 
-  <!-- Italian -->
-  <url><loc>https://everyvoyage.com/it/</loc></url>
-  <url><loc>https://everyvoyage.com/it/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/it/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/it/faq.html</loc></url>
+  <!-- Privacy policy -->
+  <url>
+    <loc>https://everyvoyage.com/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy.html" />
+  </url>
 
-  <!-- Dutch -->
-  <url><loc>https://everyvoyage.com/nl/</loc></url>
-  <url><loc>https://everyvoyage.com/nl/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/nl/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/nl/faq.html</loc></url>
+  <!-- Road-trip inspiration -->
+  <url>
+    <loc>https://everyvoyage.com/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/road-trip-inspiration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-inspiration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration.html" />
+  </url>
 
-  <!-- Norwegian -->
-  <url><loc>https://everyvoyage.com/no/</loc></url>
-  <url><loc>https://everyvoyage.com/no/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/no/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/no/faq.html</loc></url>
+  <!-- Road-trip journal -->
+  <url>
+    <loc>https://everyvoyage.com/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/road-trip-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-journal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal.html" />
+  </url>
 
-  <!-- Swedish -->
-  <url><loc>https://everyvoyage.com/sv/</loc></url>
-  <url><loc>https://everyvoyage.com/sv/about.html</loc></url>
-  <url><loc>https://everyvoyage.com/sv/contact.html</loc></url>
-  <url><loc>https://everyvoyage.com/sv/faq.html</loc></url>
+  <!-- Road-trip tracker -->
+  <url>
+    <loc>https://everyvoyage.com/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/road-trip-tracker.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/road-trip-tracker.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker.html" />
+  </url>
+
+  <!-- Stops -->
+  <url>
+    <loc>https://everyvoyage.com/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/stops.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/stops.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/stops.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/stops.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/stops.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/stops.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/stops.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/stops.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops.html" />
+  </url>
+
+  <!-- Terms -->
+  <url>
+    <loc>https://everyvoyage.com/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/en-us/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/terms.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms.html" />
+  </url>
+
+  <!-- Cookie policy: EN-GB only in the current file structure -->
+  <url>
+    <loc>https://everyvoyage.com/cookie-policy.html</loc>
+  </url>
 
 </urlset>

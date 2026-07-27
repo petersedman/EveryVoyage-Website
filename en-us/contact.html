@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,35 +8,29 @@
   <title>Contact EveryVoyage - Get in Touch | Simplr Labs</title>
   <meta name="title" content="Contact EveryVoyage - Get in Touch | Simplr Labs">
   <meta name="description" content="Get in touch with the EveryVoyage team at Simplr Labs. Questions, feedback, feature requests, or support - we'd love to hear from you.">
-  <meta name="keywords" content="contact EveryVoyage, EveryVoyage support, RV app help, Simplr Labs contact, feature request">
+  <meta name="keywords" content="contact EveryVoyage, EveryVoyage support, motorhome app help, Simplr Labs contact, feature request">
   <meta name="author" content="Simplr Labs">
   <meta name="robots" content="index, follow">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://everyvoyage.com/en-us/contact.html">
-
-  <!-- hreflang tags -->
-  <link rel="alternate" hreflang="en-GB" href="https://www.everyvoyage.com/contact.html" />
-  <link rel="alternate" hreflang="en-US" href="https://www.everyvoyage.com/en-us/contact.html" />
-  <link rel="alternate" hreflang="x-default" href="https://www.everyvoyage.com/contact.html" />
+  <link rel="canonical" href="https://everyvoyage.com/contact.html">
 
   <!-- Favicon & Icons -->
-  <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
-  <link rel="apple-touch-icon" href="../assets/icons/favicon.png">
+  <link href="/assets/icons/favicon.png" rel="icon" type="image/png"/>
+  <link href="/assets/icons/favicon.png" rel="apple-touch-icon"/>
   <meta name="theme-color" content="#f54a00">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://everyvoyage.com/en-us/contact.html">
+  <meta property="og:url" content="https://everyvoyage.com/contact.html">
   <meta property="og:title" content="Contact EveryVoyage - Get in Touch">
   <meta property="og:description" content="Get in touch with the EveryVoyage team at Simplr Labs. Questions, feedback, or ideas welcome.">
   <meta property="og:image" content="https://everyvoyage.com/assets/brand/Logo.png">
   <meta property="og:site_name" content="EveryVoyage">
-  <meta property="og:locale" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://everyvoyage.com/en-us/contact.html">
+  <meta name="twitter:url" content="https://everyvoyage.com/contact.html">
   <meta name="twitter:title" content="Contact EveryVoyage - Get in Touch">
   <meta name="twitter:description" content="Get in touch with the EveryVoyage team at Simplr Labs. Questions, feedback, or ideas welcome.">
   <meta name="twitter:image" content="https://everyvoyage.com/assets/brand/Logo.png">
@@ -48,7 +42,7 @@
     "@type": "ContactPage",
     "name": "Contact EveryVoyage",
     "description": "Get in touch with the EveryVoyage team at Simplr Labs.",
-    "url": "https://everyvoyage.com/en-us/contact.html",
+    "url": "https://everyvoyage.com/contact.html",
     "mainEntity": {
       "@type": "Organization",
       "name": "EveryVoyage",
@@ -85,8 +79,6 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,800&family=DM+Sans:opsz,wght@9..40,500;9..40,600&display=optional">
   </noscript>
-
-  <script src="../assets/js/site-nav.js" defer></script>
 
   <style>
     :root{
@@ -523,7 +515,7 @@
     }
 
     @media (max-width:768px){
-      .hero{ padding:3rem 1.25rem 2.5rem; }
+      .hero{ padding:0.5rem 1.25rem 2.5rem; }
       main{ padding:2rem 1.25rem; }
       .contact-main-card{ padding:2rem; }
       .response-card{ padding:2rem; }
@@ -535,12 +527,691 @@
       .footer-col ul{ text-align:center; }
       .footer-bottom{ flex-direction:column; text-align:center; }
     }
-  </style>
+  
+
+    /* ===== Shared EveryVoyage navigation ===== */
+    body.menu-open,
+    body.app-qr-open{overflow:hidden}
+
+    .site-header{
+      position:fixed;
+      z-index:100;
+      top:14px;
+      left:50%;
+      width:min(1180px,calc(100% - 24px));
+      height:64px;
+      padding:0 10px 0 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:999px;
+      background:rgba(254,253,251,.92);
+      box-shadow:0 12px 34px rgba(0,0,0,.09);
+      backdrop-filter:blur(18px);
+      transform:translateX(-50%);
+    }
+
+    .brand-logo{display:block;width:184px;text-decoration:none}
+    .brand-logo img{display:block;width:100%;height:auto}
+    .site-header-actions{display:flex;align-items:center;gap:9px}
+
+    .get-app-nav{
+      min-height:44px;
+      padding:0 19px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      background:var(--color-orange);
+      color:#fff!important;
+      box-shadow:0 9px 23px rgba(245,74,0,.25);
+      font-size:14px;
+      font-weight:800;
+      line-height:1;
+      text-decoration:none;
+    }
+
+    .get-app-nav:hover{background:#d94100}
+
+    .menu-toggle{
+      width:44px;
+      height:44px;
+      padding:0;
+      display:grid;
+      place-items:center;
+      align-content:center;
+      gap:5px;
+      border:1px solid rgba(38,39,37,.10);
+      border-radius:50%;
+      background:rgba(255,255,255,.58);
+      cursor:pointer;
+    }
+
+    .menu-toggle:hover{background:#fff0e8}
+
+    .menu-toggle span{
+      width:18px;
+      height:2px;
+      display:block;
+      border-radius:99px;
+      background:var(--color-charcoal);
+      transition:transform .25s var(--ease-smooth),opacity .2s ease;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+    .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+    .mobile-menu{
+      position:fixed;
+      z-index:120;
+      top:82px;
+      right:max(12px,calc((100vw - 1180px)/2 + 12px));
+      width:min(390px,calc(100vw - 24px));
+      max-height:calc(100svh - 94px);
+      overflow:auto;
+      padding:20px;
+      border:1px solid rgba(38,39,37,.11);
+      border-radius:25px;
+      background:rgba(254,253,251,.98);
+      box-shadow:0 24px 60px rgba(0,0,0,.18);
+    }
+
+    .menu-eyebrow{
+      display:block;
+      padding:2px 6px 11px;
+      color:var(--color-orange);
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+
+    .mobile-menu-links{display:grid;gap:4px}
+
+    .menu-product-link{
+      min-height:50px;
+      padding:12px 13px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      border:1px solid transparent;
+      border-radius:13px;
+      color:var(--color-charcoal);
+      text-decoration:none;
+    }
+
+    .menu-product-link:hover{
+      border-color:rgba(245,74,0,.13);
+      background:#fff0e8;
+    }
+
+    .menu-product-link strong{font-size:15px;font-weight:800;line-height:1.2}
+    .menu-product-link>span{color:var(--color-orange);font-size:18px;font-weight:800}
+
+    .menu-utility-links{
+      margin-top:12px;
+      padding-top:13px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:7px;
+      border-top:1px solid rgba(38,39,37,.11);
+    }
+
+    .menu-utility-links a{
+      padding:10px 11px;
+      border-radius:11px;
+      background:var(--color-cream);
+      color:var(--color-charcoal);
+      font-size:12px;
+      font-weight:800;
+      text-align:center;
+      text-decoration:none;
+    }
+
+    .mobile-language-switcher{margin-top:11px}
+
+    .mobile-language-switcher summary{
+      padding:10px 4px;
+      color:var(--color-slate);
+      font-size:13px;
+      font-weight:800;
+      cursor:pointer;
+    }
+
+    .mobile-language-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:6px;
+      padding-top:6px;
+    }
+
+    .mobile-language-grid a{
+      padding:8px;
+      border-radius:9px;
+      background:var(--color-cream);
+      font-size:12px;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    .menu-get-app{
+      min-height:48px;
+      margin-top:14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      background:var(--color-orange);
+      color:#fff!important;
+      font-size:14px;
+      font-weight:850;
+      text-decoration:none;
+    }
+
+    /* Keep the original simple hero, with room for the fixed header. */
+    .hero{padding-top:9rem}
+
+    /* ===== Desktop QR popup ===== */
+    .app-qr-modal[hidden]{display:none!important}
+
+    .app-qr-modal{
+      position:fixed;
+      z-index:10000;
+      inset:0;
+      display:grid;
+      place-items:center;
+      padding:24px;
+    }
+
+    .app-qr-backdrop{
+      position:absolute;
+      inset:0;
+      background:rgba(8,20,21,.72);
+      backdrop-filter:blur(9px);
+    }
+
+    .app-qr-dialog{
+      position:relative;
+      z-index:2;
+      width:min(430px,100%);
+      padding:34px 34px 31px;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:30px;
+      background:var(--color-warm-white);
+      color:var(--color-charcoal);
+      text-align:center;
+      box-shadow:0 30px 90px rgba(0,0,0,.28);
+    }
+
+    .app-qr-close{
+      position:absolute;
+      top:14px;
+      right:14px;
+      width:38px;
+      height:38px;
+      padding:0;
+      display:grid;
+      place-items:center;
+      border:1px solid rgba(38,39,37,.11);
+      border-radius:50%;
+      background:#fff;
+      color:var(--color-charcoal);
+      font-size:25px;
+      cursor:pointer;
+    }
+
+    .app-qr-kicker{
+      display:block;
+      margin-bottom:9px;
+      color:var(--color-orange);
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.13em;
+    }
+
+    .app-qr-dialog h2{
+      margin:0;
+      font-family:var(--font-display);
+      font-size:clamp(38px,4.4vw,52px);
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.045em;
+    }
+
+    .app-qr-url{
+      display:inline-block;
+      margin-top:11px;
+      color:var(--color-slate);
+      font-size:13px;
+      font-weight:750;
+      text-decoration:none;
+    }
+
+    .app-qr-image{
+      width:min(290px,78vw);
+      height:auto;
+      margin:23px auto 0;
+      border-radius:18px;
+      background:#fff;
+    }
+
+    .app-qr-dialog p{
+      max-width:300px;
+      margin:17px auto 0;
+      color:var(--color-slate);
+      font-size:14px;
+    }
+
+    /* ===== Shared conversion footer ===== */
+    #site-footer{
+      padding:72px 0 24px;
+      background:#102d2d;
+      color:#fff;
+    }
+
+    .footer-wrap{
+      width:min(1180px,calc(100% - 40px));
+      margin-inline:auto;
+    }
+
+    .footer-main{
+      display:grid;
+      grid-template-columns:minmax(260px,1.35fr) minmax(150px,.72fr) minmax(160px,.78fr) minmax(245px,1fr);
+      gap:clamp(32px,4vw,66px);
+      align-items:start;
+    }
+
+    .footer-logo-new{
+      width:205px;
+      height:auto;
+      margin:0 0 18px;
+    }
+
+    .footer-brand-new p{
+      max-width:340px;
+      margin:0;
+      color:rgba(255,255,255,.68);
+      font-size:15px;
+      line-height:1.6;
+      text-align:left;
+    }
+
+    #site-footer h4{
+      margin:3px 0 18px;
+      color:#ff8a55;
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      text-align:left;
+    }
+
+    #site-footer ul{
+      margin:0;
+      padding:0;
+      display:grid;
+      gap:11px;
+      list-style:none;
+      text-align:left;
+    }
+
+    .footer-column-new a{
+      color:rgba(255,255,255,.76);
+      font-size:14px;
+      font-weight:650;
+      text-decoration:none;
+    }
+
+    .footer-column-new a:hover{color:#fff}
+
+    .footer-socials{
+      margin-top:23px;
+      display:flex;
+      gap:9px;
+      flex-wrap:wrap;
+    }
+
+    .footer-socials a{
+      min-height:40px;
+      padding:8px 12px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      color:#fff!important;
+      font-size:12px;
+      font-weight:800;
+      text-decoration:none;
+    }
+
+    .footer-social-icon{
+      width:22px;
+      height:22px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:#fff;
+      color:var(--color-orange);
+    }
+
+    .footer-social-icon svg{
+      width:13px;
+      height:13px;
+      display:block;
+      fill:currentColor;
+    }
+
+    .footer-app-card{
+      padding:24px;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:24px;
+      background:rgba(255,255,255,.07);
+      box-shadow:0 18px 45px rgba(0,0,0,.13);
+    }
+
+    .footer-app-kicker{
+      display:block;
+      margin-bottom:10px;
+      color:#ff8a55;
+      font-size:10px;
+      font-weight:900;
+      letter-spacing:.14em;
+    }
+
+    .footer-app-card strong{
+      display:block;
+      font-family:var(--font-display);
+      font-size:29px;
+      font-weight:500;
+      line-height:1.05;
+      letter-spacing:-.035em;
+    }
+
+    .footer-app-card p{
+      margin:10px 0 17px;
+      color:rgba(255,255,255,.66);
+      font-size:13px;
+    }
+
+    .footer-app-button{
+      min-height:46px;
+      padding:0 18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      background:var(--color-orange);
+      color:#fff!important;
+      font-size:14px;
+      font-weight:850;
+      text-decoration:none;
+    }
+
+    .footer-bottom-new{
+      margin-top:54px;
+      padding-top:21px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      border-top:1px solid rgba(255,255,255,.11);
+      color:rgba(255,255,255,.46);
+      font-size:12px;
+    }
+
+    .footer-legal{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .footer-legal a{
+      color:rgba(255,255,255,.55);
+      text-decoration:none;
+    }
+
+    @media(max-width:1000px){
+      .footer-main{grid-template-columns:1.15fr 1fr 1fr}
+
+      .footer-app-card{
+        grid-column:1/-1;
+        display:grid;
+        grid-template-columns:1fr auto;
+        align-items:center;
+        gap:5px 24px;
+      }
+
+      .footer-app-kicker,
+      .footer-app-card strong,
+      .footer-app-card p{grid-column:1}
+
+      .footer-app-button{
+        grid-column:2;
+        grid-row:1/4;
+        min-width:170px;
+      }
+    }
+
+    @media(max-width:768px){
+      .site-header{
+        top:8px;
+        width:calc(100% - 16px);
+        height:58px;
+        padding:0 8px 0 14px;
+      }
+
+      .brand-logo{width:145px}
+      .site-header-actions{gap:6px}
+
+      .get-app-nav{
+        min-height:40px;
+        padding:0 14px;
+        font-size:12px;
+      }
+
+      .menu-toggle{width:40px;height:40px}
+
+      .mobile-menu{
+        top:74px;
+        left:8px;
+        right:8px;
+        width:auto;
+        max-height:calc(100svh - 86px);
+        padding:17px;
+      }
+
+      .menu-product-link strong{font-size:14px}
+      .app-qr-modal{display:none!important}
+
+      .hero{padding:6.5rem 1.25rem 2.5rem}
+
+      #site-footer{padding:58px 0 22px}
+
+      .footer-main{
+        grid-template-columns:1fr 1fr;
+        gap:38px 24px;
+      }
+
+      .footer-brand-new{grid-column:1/-1}
+
+      .footer-app-card{
+        grid-column:1/-1;
+        display:block;
+      }
+
+      .footer-app-button{margin-top:15px}
+
+      .footer-bottom-new{
+        margin-top:40px;
+        align-items:flex-start;
+        flex-direction:column;
+        gap:12px;
+      }
+    }
+
+    @media(max-width:440px){
+      .brand-logo{width:132px}
+      .get-app-nav{padding:0 11px;font-size:11px}
+      .site-header-actions{gap:4px}
+
+      .footer-main{grid-template-columns:1fr}
+      .footer-brand-new,
+      .footer-app-card{grid-column:auto}
+    }
+/* Keep every language option in the compact two-column box layout. */
+.mobile-language-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:7px !important;
+  padding-top:8px !important;
+}
+
+.mobile-language-grid a{
+  min-height:40px;
+  padding:9px 10px !important;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  border:1px solid var(--line,rgba(38,39,37,.11));
+  border-radius:11px !important;
+  background:var(--cream,#f7f4ed);
+  color:var(--ink,#262725) !important;
+  font-size:12px !important;
+  font-weight:800 !important;
+  line-height:1.2;
+  text-decoration:none !important;
+}
+
+.mobile-language-grid a:hover,
+.mobile-language-grid a[aria-current="page"]{
+  border-color:rgba(245,74,0,.22);
+  background:var(--orange-soft,#fff0e8) !important;
+  color:var(--orange-dark,#d94100) !important;
+}
+
+@media (min-width:1201px){
+  .mobile-menu{
+    position:absolute;
+    top:calc(100% + 18px);
+    right:0;
+  }
+}
+</style>
 </head>
 
 <body>
   <!-- Navigation -->
-  <site-nav lang="en-us" page="contact" base-path="../"></site-nav>
+  <header class="site-header" id="siteHeader">
+    <a class="brand-logo" href="/" aria-label="EveryVoyage home">
+      <img src="/assets/brand/Logo.png" alt="EveryVoyage">
+    </a>
+
+    <div class="site-header-actions">
+      <a class="get-app-nav" data-smart-app-link href="/app">Get the app</a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <span class="menu-eyebrow">Explore the app</span>
+
+      <nav class="mobile-menu-links" aria-label="EveryVoyage product navigation">
+        <a class="menu-product-link" href="/stops/">
+          <strong>Find stops &amp; places</strong>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a class="menu-product-link" href="/road-trip-tracker/">
+          <strong>Track road trips</strong>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a class="menu-product-link" href="/road-trip-journal/">
+          <strong>Keep a road trip journal</strong>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a class="menu-product-link" href="/road-trip-inspiration/">
+          <strong>Explore road trips</strong>
+          <span aria-hidden="true">→</span>
+        </a>
+      </nav>
+
+      <div class="menu-utility-links">
+        <a href="/en-us/#how-it-works">How it works</a>
+        <a href="/en-us/features/">All features</a>
+      </div>
+
+      <details class="mobile-language-switcher">
+        <summary>Language: English (US)</summary>
+        <div class="mobile-language-grid">
+          <a href="/contact" lang="en-GB" hreflang="en-GB">English (UK)</a>
+          <a href="/en-us/contact" lang="en-US" hreflang="en-US" aria-current="page">English (US)</a>
+          <a href="/de/contact" lang="de" hreflang="de">Deutsch</a>
+          <a href="/fr/contact" lang="fr" hreflang="fr">Français</a>
+          <a href="/es/contact" lang="es" hreflang="es">Español</a>
+          <a href="/it/contact" lang="it" hreflang="it">Italiano</a>
+          <a href="/nl/contact" lang="nl" hreflang="nl">Nederlands</a>
+          <a href="/sv/contact" lang="sv" hreflang="sv">Svenska</a>
+          <a href="/da/contact" lang="da" hreflang="da">Dansk</a>
+          <a href="/no/contact" lang="no" hreflang="no">Norsk</a>
+        </div>
+      </details>
+
+      <a class="menu-get-app" data-smart-app-link href="/app">Get the app</a>
+    </div>
+  </header>
+
+  <div class="app-qr-modal" id="appQrModal" hidden aria-hidden="true">
+    <div class="app-qr-backdrop" data-close-app-qr></div>
+
+    <section
+      class="app-qr-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="appQrTitle"
+      aria-describedby="appQrDescription"
+    >
+      <button
+        class="app-qr-close"
+        type="button"
+        aria-label="Close QR code"
+        data-close-app-qr
+      >×</button>
+
+      <span class="app-qr-kicker">GET EVERYVOYAGE</span>
+      <h2 id="appQrTitle">Scan to get the app</h2>
+
+      <a
+        class="app-qr-url"
+        href="https://everyvoyage.com/app"
+        target="_blank"
+        rel="noopener"
+      >everyvoyage.com/app</a>
+
+      <img
+        class="app-qr-image"
+        src="/assets/img/EveryVoyageQR.png"
+        alt="QR code linking to the EveryVoyage app download page"
+      >
+
+      <p id="appQrDescription">
+        Open your phone camera and point it at the QR code.
+      </p>
+    </section>
+  </div>
 
   <!-- Hero -->
   <section class="hero">
@@ -677,72 +1348,176 @@
   </main>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <img src="../assets/brand/LogoWhite.png" alt="EveryVoyage" class="footer-logo-img">
+  <footer id="site-footer">
+    <div class="footer-wrap">
+      <div class="footer-main">
+        <div class="footer-brand-new">
+          <a href="/" aria-label="EveryVoyage home">
+            <img
+              class="footer-logo-new"
+              src="/assets/brand/LogoWhite.png"
+              alt="EveryVoyage"
+            >
+          </a>
+
+          <p>
+            Plan the road trip, track the route and keep the whole adventure together.
+          </p>
+
+          <div class="footer-socials" aria-label="Follow EveryVoyage">
+            <a
+              href="https://www.instagram.com/everyvoyageapp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer-social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5Zm8.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
+                </svg>
+              </span>
+              Instagram
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@everyvoyage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer-social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.72-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.45 3.98-2.14 6.15-1.73.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07Z"/>
+                </svg>
+              </span>
+              TikTok
+            </a>
+          </div>
         </div>
-        <p>The RV travel companion. Record journeys, capture memories, and share adventures.</p>
+
+        <nav class="footer-column-new" aria-label="EveryVoyage features">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/en-us/stops/">Stops &amp; places</a></li>
+            <li><a href="/en-us/road-trip-tracker/">Road trip tracker</a></li>
+            <li><a href="/en-us/road-trip-journal/">Road trip journal</a></li>
+            <li><a href="/en-us/road-trip-inspiration/">Road trip inspiration</a></li>
+            <li><a href="/en-us/features/">All features</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column-new" aria-label="EveryVoyage resources">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/en-us/#how-it-works">How EveryVoyage works</a></li>
+            <li><a href="/en-us/faq">FAQ</a></li>
+            <li><a href="/en-us/about">About EveryVoyage</a></li>
+            <li><a href="/en-us/contact">Contact us</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-app-card">
+          <span class="footer-app-kicker">GET EVERYVOYAGE</span>
+          <strong>Ready for your next road trip?</strong>
+          <p>Free on iOS and Android.</p>
+          <a class="footer-app-button" data-smart-app-link href="/app">Get the app</a>
+        </div>
       </div>
 
-      <div class="footer-col">
-        <h4>Product</h4>
-        <ul>
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#download">Download</a></li>
-        </ul>
-      </div>
+      <div class="footer-bottom-new">
+        <span>© 2026 EveryVoyage. SIMPLR LABS LTD.</span>
 
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Information</h4>
-        <ul>
-          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="../terms.html">Terms of Service</a></li>
-          <!-- <li><a href="../cookie-policy.html">Cookie Policy</a></li> -->
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 EveryVoyage. All rights reserved. Built with care by <a href="https://simplrlabs.com" target="_blank" rel="noopener">Simplr Labs</a></p>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/everyvoyageapp/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-          </svg>
-        </a>
-        <a href="https://x.com/EveryVoyageApp" target="_blank" rel="noopener" aria-label="Twitter">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61586013161067" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-          </svg>
-        </a>
-        <a href="https://www.youtube.com/channel/UCngXG7f5rpUi8UTMZ-I7zCQ" target="_blank" rel="noopener" aria-label="YouTube">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
-            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
-          </svg>
-        </a>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="/en-us//privacy-policy">Privacy Policy</a>
+          <a href="/en-us/terms">Terms &amp; Conditions</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-  <script src="../assets/js/main-en-us.js"></script>
+  <script>
+    (function () {
+      var menuToggle = document.getElementById("menuToggle");
+      var mobileMenu = document.getElementById("mobileMenu");
+
+      function closeMenu() {
+        if (!menuToggle || !mobileMenu) return;
+        menuToggle.setAttribute("aria-expanded", "false");
+        mobileMenu.hidden = true;
+        document.body.classList.remove("menu-open");
+      }
+
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener("click", function () {
+          var isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+          menuToggle.setAttribute("aria-expanded", String(!isOpen));
+          mobileMenu.hidden = isOpen;
+          document.body.classList.toggle("menu-open", !isOpen);
+        });
+
+        mobileMenu.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", closeMenu);
+        });
+
+        document.addEventListener("click", function (event) {
+          if (mobileMenu.hidden) return;
+          if (mobileMenu.contains(event.target) || menuToggle.contains(event.target)) return;
+          closeMenu();
+        });
+      }
+
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera || "";
+      var isAndroid = /android/i.test(userAgent);
+      var isIOS =
+        /iPad|iPhone|iPod/i.test(userAgent) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      var isMobileAppDevice = isIOS || isAndroid;
+
+      var modal = document.getElementById("appQrModal");
+      var closeButton = modal ? modal.querySelector(".app-qr-close") : null;
+      var lastFocusedElement = null;
+
+      function openAppQrModal() {
+        if (!modal) return;
+        lastFocusedElement = document.activeElement;
+        modal.hidden = false;
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("app-qr-open");
+        if (closeButton) closeButton.focus();
+      }
+
+      function closeAppQrModal() {
+        if (!modal) return;
+        modal.hidden = true;
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("app-qr-open");
+        if (lastFocusedElement && lastFocusedElement.focus) {
+          lastFocusedElement.focus();
+        }
+      }
+
+      document.querySelectorAll("[data-smart-app-link]").forEach(function (link) {
+        link.href = "/app";
+
+        link.addEventListener("click", function (event) {
+          if (isMobileAppDevice) return;
+          event.preventDefault();
+          openAppQrModal();
+        });
+      });
+
+      if (modal) {
+        modal.querySelectorAll("[data-close-app-qr]").forEach(function (element) {
+          element.addEventListener("click", closeAppQrModal);
+        });
+      }
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeMenu();
+          if (modal && !modal.hidden) closeAppQrModal();
+        }
+      });
+    })();
+  </script>
+
 </body>
 </html>
