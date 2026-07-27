@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-  <title>Open in EveryVoyage</title>
+  <title>Page not found | EveryVoyage</title>
   <meta
+    id="metaDescription"
     name="description"
-    content="Open this road trip, Moment or traveller profile in the EveryVoyage app."
+    content="The page you’re looking for doesn’t exist or may have moved."
   >
   <meta name="robots" content="noindex, follow">
   <meta name="theme-color" content="#f54a00">
@@ -414,27 +415,27 @@
 
 <body>
   <main class="page-shell">
-    <a class="brand" href="/" aria-label="EveryVoyage home">
+    <a class="brand" id="brandLink" href="/" aria-label="EveryVoyage home">
       <img src="/assets/brand/Logo.png" alt="EveryVoyage">
     </a>
 
     <section class="handoff-card" aria-labelledby="title">
       <div class="handoff-copy">
-        <span class="eyebrow" id="eyebrow">OPEN IN EVERYVOYAGE</span>
+        <span class="eyebrow" id="eyebrow">EVERYVOYAGE</span>
 
         <h1 id="title">
-          Continue the journey.
-          <em>Get EveryVoyage.</em>
+          Page not found.
+          <em>Keep exploring.</em>
         </h1>
 
         <p class="subtitle" id="subtitle">
-          Download the app to open this shared road trip.
+          The page you’re looking for doesn’t exist or may have moved.
         </p>
 
         <span class="link-type" id="linkType">Shared journey</span>
 
         <div class="store-area">
-          <div class="store-row" aria-label="Download EveryVoyage">
+          <div class="store-row" id="storeRow" aria-label="Download EveryVoyage">
             <a
               class="store-link ios-store"
               href="https://apps.apple.com/app/id6755696102"
@@ -462,14 +463,14 @@
         </div>
 
         <div class="not-found-actions">
-          <a class="primary-button" href="/">Return to EveryVoyage</a>
-          <a class="secondary-button" href="/app">Get the app</a>
+          <a class="primary-button" id="primaryButton" href="/">Return to EveryVoyage</a>
+          <a class="secondary-button" id="secondaryButton" href="/app">Get the app</a>
         </div>
 
-        <a class="home-link" href="/">Continue to everyvoyage.com</a>
+        <a class="home-link" id="homeLink" href="/">Continue to everyvoyage.com</a>
       </div>
 
-      <aside class="desktop-panel" aria-label="Scan to get EveryVoyage">
+      <aside class="desktop-panel" id="desktopPanel" aria-label="Scan to get EveryVoyage">
         <img
           class="app-icon"
           src="/assets/icons/favicon.png"
@@ -477,20 +478,22 @@
           aria-hidden="true"
         >
 
-        <strong id="panelTitle">Scan to get the app</strong>
+        <strong id="panelTitle">Plan, track and relive road trips</strong>
 
         <p id="panelCopy">
-          Open your phone camera and point it at the QR code.
+          Discover EveryVoyage on iPhone and Android.
         </p>
 
         <img
           class="qr-code"
+          id="qrCode"
           src="/assets/img/EveryVoyageQR.png"
           alt="QR code linking to the EveryVoyage app download page"
         >
 
         <a
           class="qr-url"
+          id="qrUrl"
           href="https://everyvoyage.com/app"
           target="_blank"
           rel="noopener"
@@ -502,12 +505,291 @@
   <script>
     (function () {
       var path = window.location.pathname || "";
+      var pathSegments = path.split("/").filter(Boolean);
+      var firstSegment = (pathSegments[0] || "").toLowerCase();
       var userAgent = navigator.userAgent || navigator.vendor || window.opera || "";
 
       var isAndroid = /android/i.test(userAgent);
       var isIOS =
         /iPad|iPhone|iPod/i.test(userAgent) ||
         (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
+      /*
+       * English UK is the root site and the fallback for unknown URLs.
+       * English US has its own /en-us/ pages, but shares the root English QR code.
+       */
+      var localeConfig = {
+        "en-gb": {
+          htmlLang: "en-GB",
+          homeUrl: "/",
+          appUrl: "/app",
+          qrImage: "/assets/img/EveryVoyageQR.png",
+          qrHref: "https://everyvoyage.com/app",
+          qrLabel: "everyvoyage.com/app",
+          copy: {
+            pageTitle: "Page not found | EveryVoyage",
+            metaDescription: "The page you’re looking for doesn’t exist or may have moved.",
+            title: "Page not found.",
+            accent: "Keep exploring.",
+            subtitle: "The page you’re looking for doesn’t exist or may have moved.",
+            homeButton: "Return to EveryVoyage",
+            appButton: "Get the app",
+            homeLink: "Continue to everyvoyage.com",
+            panelTitle: "Plan, track and relive road trips",
+            panelCopy: "Discover EveryVoyage on iPhone and Android.",
+            brandAria: "EveryVoyage home",
+            panelAria: "Scan to get EveryVoyage",
+            qrAlt: "QR code linking to the EveryVoyage app download page"
+          }
+        },
+
+        "en-us": {
+          htmlLang: "en-US",
+          homeUrl: "/en-us/",
+          appUrl: "/en-us/app",
+          qrImage: "/assets/img/EveryVoyageQR.png",
+          qrHref: "https://everyvoyage.com/app",
+          qrLabel: "everyvoyage.com/app",
+          copy: {
+            pageTitle: "Page not found | EveryVoyage",
+            metaDescription: "The page you’re looking for doesn’t exist or may have moved.",
+            title: "Page not found.",
+            accent: "Keep exploring.",
+            subtitle: "The page you’re looking for doesn’t exist or may have moved.",
+            homeButton: "Return to EveryVoyage",
+            appButton: "Get the app",
+            homeLink: "Continue to everyvoyage.com",
+            panelTitle: "Plan, track and relive road trips",
+            panelCopy: "Discover EveryVoyage on iPhone and Android.",
+            brandAria: "EveryVoyage home",
+            panelAria: "Scan to get EveryVoyage",
+            qrAlt: "QR code linking to the EveryVoyage app download page"
+          }
+        },
+
+        da: {
+          htmlLang: "da",
+          homeUrl: "/da/",
+          appUrl: "/da/app",
+          qrImage: "/assets/img/EveryVoyageQR-da.png",
+          qrHref: "https://everyvoyage.com/da/app",
+          qrLabel: "everyvoyage.com/da/app",
+          copy: {
+            pageTitle: "Siden blev ikke fundet | EveryVoyage",
+            metaDescription: "Siden, du leder efter, findes ikke eller er måske blevet flyttet.",
+            title: "Siden blev ikke fundet.",
+            accent: "Fortsæt eventyret.",
+            subtitle: "Siden, du leder efter, findes ikke eller er måske blevet flyttet.",
+            homeButton: "Tilbage til EveryVoyage",
+            appButton: "Hent appen",
+            homeLink: "Fortsæt til everyvoyage.com",
+            panelTitle: "Planlæg, spor og genoplev roadtrips",
+            panelCopy: "Oplev EveryVoyage på iPhone og Android.",
+            brandAria: "EveryVoyage-forside",
+            panelAria: "Scan for at hente EveryVoyage",
+            qrAlt: "QR-kode, der fører til downloadsiden for EveryVoyage-appen"
+          }
+        },
+
+        de: {
+          htmlLang: "de",
+          homeUrl: "/de/",
+          appUrl: "/de/app",
+          qrImage: "/assets/img/EveryVoyageQR-de.png",
+          qrHref: "https://everyvoyage.com/de/app",
+          qrLabel: "everyvoyage.com/de/app",
+          copy: {
+            pageTitle: "Seite nicht gefunden | EveryVoyage",
+            metaDescription: "Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.",
+            title: "Seite nicht gefunden.",
+            accent: "Entdecke weiter.",
+            subtitle: "Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.",
+            homeButton: "Zurück zu EveryVoyage",
+            appButton: "App herunterladen",
+            homeLink: "Weiter zu everyvoyage.com",
+            panelTitle: "Roadtrips planen, aufzeichnen und neu erleben",
+            panelCopy: "Entdecke EveryVoyage für iPhone und Android.",
+            brandAria: "EveryVoyage-Startseite",
+            panelAria: "Scannen, um EveryVoyage herunterzuladen",
+            qrAlt: "QR-Code zur Downloadseite der EveryVoyage-App"
+          }
+        },
+
+        es: {
+          htmlLang: "es",
+          homeUrl: "/es/",
+          appUrl: "/es/app",
+          qrImage: "/assets/img/EveryVoyageQR-es.png",
+          qrHref: "https://everyvoyage.com/es/app",
+          qrLabel: "everyvoyage.com/es/app",
+          copy: {
+            pageTitle: "Página no encontrada | EveryVoyage",
+            metaDescription: "La página que buscas no existe o puede haberse movido.",
+            title: "Página no encontrada.",
+            accent: "Sigue explorando.",
+            subtitle: "La página que buscas no existe o puede haberse movido.",
+            homeButton: "Volver a EveryVoyage",
+            appButton: "Descargar la app",
+            homeLink: "Continuar a everyvoyage.com",
+            panelTitle: "Planifica, registra y revive tus viajes por carretera",
+            panelCopy: "Descubre EveryVoyage en iPhone y Android.",
+            brandAria: "Inicio de EveryVoyage",
+            panelAria: "Escanea para descargar EveryVoyage",
+            qrAlt: "Código QR que enlaza con la página de descarga de la app EveryVoyage"
+          }
+        },
+
+        fr: {
+          htmlLang: "fr",
+          homeUrl: "/fr/",
+          appUrl: "/fr/app",
+          qrImage: "/assets/img/EveryVoyageQR-fr.png",
+          qrHref: "https://everyvoyage.com/fr/app",
+          qrLabel: "everyvoyage.com/fr/app",
+          copy: {
+            pageTitle: "Page introuvable | EveryVoyage",
+            metaDescription: "La page que vous recherchez n’existe pas ou a peut-être été déplacée.",
+            title: "Page introuvable.",
+            accent: "Continuez l’aventure.",
+            subtitle: "La page que vous recherchez n’existe pas ou a peut-être été déplacée.",
+            homeButton: "Retour à EveryVoyage",
+            appButton: "Télécharger l’application",
+            homeLink: "Continuer vers everyvoyage.com",
+            panelTitle: "Planifiez, suivez et revivez vos road trips",
+            panelCopy: "Découvrez EveryVoyage sur iPhone et Android.",
+            brandAria: "Accueil EveryVoyage",
+            panelAria: "Scannez pour télécharger EveryVoyage",
+            qrAlt: "Code QR menant à la page de téléchargement de l’application EveryVoyage"
+          }
+        },
+
+        it: {
+          htmlLang: "it",
+          homeUrl: "/it/",
+          appUrl: "/it/app",
+          qrImage: "/assets/img/EveryVoyageQR-it.png",
+          qrHref: "https://everyvoyage.com/it/app",
+          qrLabel: "everyvoyage.com/it/app",
+          copy: {
+            pageTitle: "Pagina non trovata | EveryVoyage",
+            metaDescription: "La pagina che stai cercando non esiste o potrebbe essere stata spostata.",
+            title: "Pagina non trovata.",
+            accent: "Continua a esplorare.",
+            subtitle: "La pagina che stai cercando non esiste o potrebbe essere stata spostata.",
+            homeButton: "Torna a EveryVoyage",
+            appButton: "Scarica l’app",
+            homeLink: "Continua su everyvoyage.com",
+            panelTitle: "Pianifica, traccia e rivivi i tuoi viaggi on the road",
+            panelCopy: "Scopri EveryVoyage su iPhone e Android.",
+            brandAria: "Home page di EveryVoyage",
+            panelAria: "Scansiona per scaricare EveryVoyage",
+            qrAlt: "Codice QR che rimanda alla pagina di download dell’app EveryVoyage"
+          }
+        },
+
+        nl: {
+          htmlLang: "nl",
+          homeUrl: "/nl/",
+          appUrl: "/nl/app",
+          qrImage: "/assets/img/EveryVoyageQR-nl.png",
+          qrHref: "https://everyvoyage.com/nl/app",
+          qrLabel: "everyvoyage.com/nl/app",
+          copy: {
+            pageTitle: "Pagina niet gevonden | EveryVoyage",
+            metaDescription: "De pagina die je zoekt bestaat niet of is mogelijk verplaatst.",
+            title: "Pagina niet gevonden.",
+            accent: "Blijf ontdekken.",
+            subtitle: "De pagina die je zoekt bestaat niet of is mogelijk verplaatst.",
+            homeButton: "Terug naar EveryVoyage",
+            appButton: "Download de app",
+            homeLink: "Ga verder naar everyvoyage.com",
+            panelTitle: "Plan, volg en herbeleef je roadtrips",
+            panelCopy: "Ontdek EveryVoyage op iPhone en Android.",
+            brandAria: "EveryVoyage-homepage",
+            panelAria: "Scan om EveryVoyage te downloaden",
+            qrAlt: "QR-code die naar de downloadpagina van de EveryVoyage-app leidt"
+          }
+        },
+
+        no: {
+          htmlLang: "no",
+          homeUrl: "/no/",
+          appUrl: "/no/app",
+          qrImage: "/assets/img/EveryVoyageQR-no.png",
+          qrHref: "https://everyvoyage.com/no/app",
+          qrLabel: "everyvoyage.com/no/app",
+          copy: {
+            pageTitle: "Fant ikke siden | EveryVoyage",
+            metaDescription: "Siden du leter etter, finnes ikke eller kan ha blitt flyttet.",
+            title: "Fant ikke siden.",
+            accent: "Fortsett å utforske.",
+            subtitle: "Siden du leter etter, finnes ikke eller kan ha blitt flyttet.",
+            homeButton: "Tilbake til EveryVoyage",
+            appButton: "Last ned appen",
+            homeLink: "Fortsett til everyvoyage.com",
+            panelTitle: "Planlegg, spor og gjenopplev roadtrips",
+            panelCopy: "Oppdag EveryVoyage på iPhone og Android.",
+            brandAria: "EveryVoyage-forside",
+            panelAria: "Skann for å laste ned EveryVoyage",
+            qrAlt: "QR-kode som lenker til nedlastingssiden for EveryVoyage-appen"
+          }
+        },
+
+        sv: {
+          htmlLang: "sv",
+          homeUrl: "/sv/",
+          appUrl: "/sv/app",
+          qrImage: "/assets/img/EveryVoyageQR-sv.png",
+          qrHref: "https://everyvoyage.com/sv/app",
+          qrLabel: "everyvoyage.com/sv/app",
+          copy: {
+            pageTitle: "Sidan hittades inte | EveryVoyage",
+            metaDescription: "Sidan du letar efter finns inte eller kan ha flyttats.",
+            title: "Sidan hittades inte.",
+            accent: "Fortsätt utforska.",
+            subtitle: "Sidan du letar efter finns inte eller kan ha flyttats.",
+            homeButton: "Tillbaka till EveryVoyage",
+            appButton: "Hämta appen",
+            homeLink: "Fortsätt till everyvoyage.com",
+            panelTitle: "Planera, spåra och återupplev roadtrips",
+            panelCopy: "Upptäck EveryVoyage på iPhone och Android.",
+            brandAria: "EveryVoyage-startsida",
+            panelAria: "Skanna för att hämta EveryVoyage",
+            qrAlt: "QR-kod som länkar till nedladdningssidan för EveryVoyage-appen"
+          }
+        }
+      };
+
+      var fallbackLocaleKey = "en-gb";
+      var localeKey = Object.prototype.hasOwnProperty.call(localeConfig, firstSegment)
+        ? firstSegment
+        : fallbackLocaleKey;
+      var locale = localeConfig[localeKey];
+      var copy = locale.copy;
+
+      var brandLink = document.getElementById("brandLink");
+      var primaryButton = document.getElementById("primaryButton");
+      var secondaryButton = document.getElementById("secondaryButton");
+      var homeLink = document.getElementById("homeLink");
+      var desktopPanel = document.getElementById("desktopPanel");
+      var qrCode = document.getElementById("qrCode");
+      var qrUrl = document.getElementById("qrUrl");
+      var metaDescription = document.getElementById("metaDescription");
+
+      document.documentElement.lang = locale.htmlLang;
+
+      brandLink.href = locale.homeUrl;
+      brandLink.setAttribute("aria-label", copy.brandAria);
+
+      primaryButton.href = locale.homeUrl;
+      secondaryButton.href = locale.appUrl;
+      homeLink.href = locale.homeUrl;
+
+      desktopPanel.setAttribute("aria-label", copy.panelAria);
+      qrCode.src = locale.qrImage;
+      qrCode.alt = copy.qrAlt;
+      qrUrl.href = locale.qrHref;
+      qrUrl.textContent = locale.qrLabel;
 
       var routeConfig = [
         {
@@ -543,29 +825,34 @@
         document.body.classList.add("is-mobile", "is-android");
       }
 
+      /* Preserve the original app-handoff behaviour for valid shared routes. */
       if (route) {
         document.title = route.label + " | EveryVoyage";
+        metaDescription.content = route.subtitle;
 
+        document.getElementById("eyebrow").textContent = "OPEN IN EVERYVOYAGE";
         document.getElementById("title").innerHTML =
           route.title + "<em>" + route.accent + "</em>";
-
         document.getElementById("subtitle").textContent = route.subtitle;
         document.getElementById("linkType").textContent = route.label;
         return;
       }
 
+      /* Genuine 404: localise from the first URL segment, otherwise use en-GB. */
       document.body.classList.add("is-not-found");
-      document.title = "Page not found | EveryVoyage";
+      document.title = copy.pageTitle;
+      metaDescription.content = copy.metaDescription;
 
       document.getElementById("eyebrow").textContent = "EVERYVOYAGE";
       document.getElementById("title").innerHTML =
-        "Page not found.<em>Keep exploring.</em>";
-      document.getElementById("subtitle").textContent =
-        "The page you’re looking for doesn’t exist or may have moved.";
-      document.getElementById("panelTitle").textContent =
-        "Plan, track and relive road trips";
-      document.getElementById("panelCopy").textContent =
-        "Discover EveryVoyage on iPhone and Android.";
+        copy.title + "<em>" + copy.accent + "</em>";
+      document.getElementById("subtitle").textContent = copy.subtitle;
+
+      primaryButton.textContent = copy.homeButton;
+      secondaryButton.textContent = copy.appButton;
+      homeLink.textContent = copy.homeLink;
+      document.getElementById("panelTitle").textContent = copy.panelTitle;
+      document.getElementById("panelCopy").textContent = copy.panelCopy;
     })();
   </script>
 </body>
