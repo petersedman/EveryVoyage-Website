@@ -5539,7 +5539,7 @@
     privacyLoadObserver.observe(privacyCard);
 
     function openVideo(){
-      const videoPath='/assets/video/AppPreview.mp4';
+      const videoPath='/assets/video/AppPreviewStops.mp4';
       const modal=document.createElement('div');
       modal.style.cssText='position:fixed;z-index:9999;inset:0;display:grid;place-items:center;padding:25px;background:rgba(0,0,0,.88)';
       modal.innerHTML=`<div style="position:relative;max-width:min(430px,90vw);max-height:88vh"><button aria-label="Lukk" style="position:absolute;right:0;top:-45px;border:0;background:none;color:white;font-size:30px;cursor:pointer">×</button><video controls autoplay muted playsinline style="display:block;max-width:100%;max-height:86vh;border-radius:22px;background:#111"><source src="${videoPath}" type="video/mp4"></video></div>`;
