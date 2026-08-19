@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# OpenAI search
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic search
+User-agent: Claude-SearchBot
+Allow: /
+
+# Anthropic user-requested retrieval
+User-agent: Claude-User
+Allow: /
+
+# Perplexity search
+User-agent: PerplexityBot
+Allow: /
+
+# Google Gemini training and grounding controls
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://everyvoyage.com/sitemap.xml

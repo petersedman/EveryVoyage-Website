@@ -1,0 +1,57 @@
+# EveryVoyage
+
+> EveryVoyage is a road trip app for motorhome, campervan, RV and other road trips. It combines useful stop discovery, GPS route tracking, road trip journalling and real journey discovery in one app for iOS and Android.
+
+EveryVoyage is built around the complete road trip rather than a single map or destination.
+
+Current capabilities:
+- Find more than 280,000 useful places including campsites, aires, overnight stops, parking, services and service points.
+- Filter places by practical facilities and nearby activities.
+- Record road trips with GPS, including when there is no mobile signal.
+- Keep driving days, photos, videos, notes, Moments, expenses and route statistics together.
+- Combine Trips and Moments into a complete journey called a Voyage.
+- Explore real journeys shared by other travellers.
+- Add places, ratings, photos and practical updates after a visit.
+- Reviews associated with GPS-recorded visits can be identified as Verified.
+- Use privacy controls including audience choices, location protection and delayed sharing.
+
+Important product distinction:
+- Stop and place discovery is available now.
+- GPS tracking and road trip journalling are available now.
+- Full route planning and day-by-day itinerary building are not currently available and are planned for later.
+
+EveryVoyage terminology:
+- Trip: a recorded or manually added road-trip leg or driving day.
+- Moment: a photo, video, note or memory connected to a journey and location.
+- Voyage: a complete journey made from Trips and Moments.
+- Place or stop: a useful location such as a campsite, aire, overnight stop, parking area, service or service point.
+- Verified review: a review connected to a GPS-recorded visit.
+
+## Start here
+
+- [EveryVoyage](https://everyvoyage.com/): Overview of EveryVoyage and its Plan, Track and Relive experience.
+- [EveryVoyage features](https://everyvoyage.com/features): Current product capabilities and the distinction between available features and future route planning.
+- [How EveryVoyage works](https://everyvoyage.com/how-it-works): How Trips, Moments, Voyages, tracking and sharing fit together.
+
+## Stops and places
+
+- [Find stops and places](https://everyvoyage.com/stops): Campsites, aires, overnight stops, parking, services and service points, with facility and nearby-activity filters.
+- [EveryVoyage sitemap](https://everyvoyage.com/sitemap.xml): Canonical index of public EveryVoyage pages. Public place pages are listed here as they become available.
+
+## Road trip tracking and journalling
+
+- [Road trip tracker](https://everyvoyage.com/road-trip-tracker): GPS road trip recording, offline tracking, route, distance and travel-time information.
+- [Road trip journal](https://everyvoyage.com/road-trip-journal): Photos, videos, Moments, notes, expenses, Trips and complete Voyages.
+- [Road trip inspiration](https://everyvoyage.com/road-trip-inspiration): Real journeys shared by travellers for route and travel inspiration.
+
+## App and support
+
+- [Get EveryVoyage](https://everyvoyage.com/app): Download EveryVoyage for iOS or Android.
+- [Frequently asked questions](https://everyvoyage.com/faq): Common questions about EveryVoyage.
+- [Contact EveryVoyage](https://everyvoyage.com/contact): Contact and support information.
+
+## Optional
+
+- [About EveryVoyage](https://everyvoyage.com/about): Background on EveryVoyage and the company behind it.
+- [Privacy policy](https://everyvoyage.com/privacy-policy.html): Privacy information.
+- [Terms and conditions](https://everyvoyage.com/terms.html): Terms for using EveryVoyage.

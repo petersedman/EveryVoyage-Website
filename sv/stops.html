@@ -35,7 +35,7 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://everyvoyage.com/sv/stops/#webpage",
+      "@id": "https://everyvoyage.com/sv/stops#webpage",
       "url": "https://everyvoyage.com/sv/stops",
       "name": "Hitta ställplatser, campingar och servicepunkter | EveryVoyage",
       "description": "Hitta ställplatser, campingar, övernattning, parkering, färskvatten, tömning och gasol. Filtrera efter faciliteter och aktiviteter i närheten.",
@@ -47,7 +47,7 @@
         "@id": "https://everyvoyage.com/sv/#app"
       },
       "breadcrumb": {
-        "@id": "https://everyvoyage.com/sv/stops/#breadcrumb"
+        "@id": "https://everyvoyage.com/sv/stops#breadcrumb"
       }
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://everyvoyage.com/sv/stops/#breadcrumb",
+      "@id": "https://everyvoyage.com/sv/stops#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -133,7 +133,15 @@
           "name": "Hur håller EveryVoyage platsinformationen användbar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Den långsiktiga fördelen är kopplingen till riktiga roadtrips. När platsrecensioner lanseras kan ett verkligt besök naturligt leda till en ny bild, ett betyg eller en praktisk uppdatering som hjälper nästa resenär."
+            "text": "EveryVoyage kopplar platser till riktiga roadtrips. Efter ett registrerat besök kan du lägga till en bild, ett betyg, en recension eller en praktisk uppdatering medan informationen fortfarande är färsk. Recensioner efter registrerade besök kan märkas som Verifierade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jag lägga till eller uppdatera en plats i EveryVoyage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Du kan lägga till platser som saknas, ladda upp bilder, lämna betyg och recensioner och uppdatera praktisk information för att hålla platsen användbar för nästa resenär."
           }
         },
         {
@@ -141,15 +149,15 @@
           "name": "Kommer EveryVoyage att få ruttplanering?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Att upptäcka ställplatser är det första lagret i planeringen. Senare kan sparade platser fördelas över dagar och kopplas ihop i rutter kring nyttiga stopp, höjdpunkter och den resa du vill göra."
+            "text": "Inte ännu. Du kan redan hitta och filtrera ställplatser och andra nyttiga platser. Fullständig ruttplanering, där platser fördelas över dagar och kopplas ihop till rutter, kommer senare."
           }
         },
         {
           "@type": "Question",
-          "name": "Hur fungerar det tillsammans med roadtrip-spårningen?",
+          "name": "Hur fungerar ställplatser tillsammans med roadtrip-spårningen?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "EveryVoyages roadtrip-spårning registrerar redan var du kör. Det gör det möjligt att föreslå nyttiga platser utifrån din position, riktning och resa i stället för att behandla sökningen efter ställplatser som en helt fristående funktion."
+            "text": "Roadtrip-spårningen registrerar din rutt och kan känna igen var du faktiskt har stannat. Efter ett besök kan du betygsätta eller recensera platsen eller uppdatera informationen. Recensioner efter registrerade besök kan märkas som Verifierade."
           }
         }
       ]
@@ -2019,14 +2027,14 @@ body.app-qr-open{overflow:hidden}
 <a data-store-link="" href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank">
 <img alt="Ladda ner EveryVoyage i App Store" src="/assets/stores/download-on-the-app-store.svg"/>
 </a>
-<div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
+<div class="store-rating"><strong>4,9/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Gratis för iOS</div>
 </div>
 <div class="store-stack">
 <a data-store-link="" href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank">
 <img alt="Ladda ner EveryVoyage på Google Play" src="/assets/stores/Google_Play_Store_badge_EN.svg"/>
 </a>
-<div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
+<div class="store-rating"><strong>4,8/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Gratis för Android</div>
 </div>
 </div>
@@ -2040,7 +2048,7 @@ body.app-qr-open{overflow:hidden}
 </div>
 <div class="hero-note two">
 <span>Utforska vägen framför dig</span>
-<strong>Nyttiga stopp nära Lake District.</strong>
+<strong>Nyttiga stopp längs Höga Kusten.</strong>
 </div>
 </div>
 </div>
@@ -2210,7 +2218,7 @@ body.app-qr-open{overflow:hidden}
 <div class="contribute-copy reveal">
 <span class="section-kicker">Upptäck platser. Förbättra kartan.</span>
 <h2 class="heading"><span>Hittat en fantastisk plats?</span><em>Dela den med andra.</em></h2>
-<p>Lägg till en plats som saknas, ladda upp en bild, lämna ett betyg eller dela en nyttig detalj. Efter ett riktigt besök kan EveryVoyage påminna dig medan informationen fortfarande är färsk.</p>
+<p>Lägg till en plats som saknas, ladda upp en bild, lämna ett betyg eller en recension eller dela en nyttig detalj. Efter ett riktigt besök kan EveryVoyage påminna dig medan informationen fortfarande är färsk.</p>
 <div class="contribute-proof">
 <div><span>＋</span><p>Lägg till en plats som saknas.</p></div>
 <div><span>★</span><p>Betygsätt platsen och lägg till egna bilder.</p></div>
@@ -2308,15 +2316,19 @@ body.app-qr-open{overflow:hidden}
 </details>
 <details class="faq-item reveal">
 <summary>Hur håller EveryVoyage platsinformationen användbar?</summary>
-<div class="faq-answer">Den långsiktiga fördelen är kopplingen till riktiga roadtrips. När platsrecensioner lanseras kan ett verkligt besök naturligt leda till en ny bild, ett betyg eller en praktisk uppdatering som hjälper nästa resenär.</div>
+<div class="faq-answer">EveryVoyage kopplar platser till riktiga roadtrips. Efter ett registrerat besök kan du lägga till en bild, ett betyg, en recension eller en praktisk uppdatering medan informationen fortfarande är färsk. Recensioner efter registrerade besök kan märkas som Verifierade.</div>
 </details>
+<details class="faq-item reveal">
+  <summary>Kan jag lägga till eller uppdatera en plats i EveryVoyage?</summary>
+  <div class="faq-answer">Ja. Du kan lägga till platser som saknas, ladda upp bilder, lämna betyg och recensioner och uppdatera praktisk information för att hålla platsen användbar för nästa resenär.</div>
+  </details>
 <details class="faq-item reveal">
 <summary>Kommer EveryVoyage att få ruttplanering?</summary>
-<div class="faq-answer">Att upptäcka ställplatser är det första lagret i planeringen. Senare kan sparade platser fördelas över dagar och kopplas ihop i rutter kring nyttiga stopp, höjdpunkter och den resa du vill göra.</div>
+<div class="faq-answer">Inte ännu. Du kan redan hitta och filtrera ställplatser och andra nyttiga platser. Fullständig ruttplanering, där platser fördelas över dagar och kopplas ihop till rutter, kommer senare.</div>
 </details>
 <details class="faq-item reveal">
-<summary>Hur fungerar det tillsammans med roadtrip-spårningen?</summary>
-<div class="faq-answer">EveryVoyages <a href="/sv/road-trip-tracker">roadtrip-spårning</a> registrerar redan var du kör. Det gör det möjligt att föreslå nyttiga platser utifrån din position, riktning och resa i stället för att behandla sökningen efter ställplatser som en helt fristående funktion.</div>
+<summary>Hur fungerar ställplatser tillsammans med roadtrip-spårningen?</summary>
+<div class="faq-answer">EveryVoyages <a href="/sv/road-trip-tracker">roadtrip-spårning</a> registrerar din rutt och kan känna igen var du faktiskt har stannat. Efter ett besök kan du betygsätta eller recensera platsen eller uppdatera informationen. Recensioner efter registrerade besök kan märkas som Verifierade.</div>
 </details>
 </div>
 </div>
@@ -2335,14 +2347,14 @@ body.app-qr-open{overflow:hidden}
 <a data-store-link="" href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank">
 <img alt="Ladda ner EveryVoyage i App Store" src="/assets/stores/download-on-the-app-store.svg"/>
 </a>
-<div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
+<div class="store-rating"><strong>4,9/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Gratis för iOS</div>
 </div>
 <div class="store-stack">
 <a data-store-link="" href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank">
 <img alt="Ladda ner EveryVoyage på Google Play" src="/assets/stores/Google_Play_Store_badge_EN.svg"/>
 </a>
-<div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
+<div class="store-rating"><strong>4,8/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Gratis för Android</div>
 </div>
 </div>

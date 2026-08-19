@@ -23,9 +23,9 @@
     navLinks.innerHTML = `
       <li><a href="${href('#features')}">Features</a></li>
       <li><a href="${href('#how-it-works')}">How It Works</a></li>
-      <li><a href="about.html"${isActive('about.html') ? ' class="active"' : ''}>About</a></li>
-      <li><a href="faq.html"${isActive('faq.html') ? ' class="active"' : ''}>FAQ</a></li>
-      <li><a href="contact.html"${isActive('contact.html') ? ' class="active"' : ''}>Contact</a></li>
+      <li><a href="about"${isActive('about.html') ? ' class="active"' : ''}>About</a></li>
+      <li><a href="faq"${isActive('faq.html') ? ' class="active"' : ''}>FAQ</a></li>
+      <li><a href="contact"${isActive('contact.html') ? ' class="active"' : ''}>Contact</a></li>
       <li><a href="${href('#download')}" class="nav-cta">Download</a></li>
       <li>
         <div class="lang-switcher" id="langSwitcher">
@@ -36,16 +36,16 @@
             </svg>
           </button>
           <div class="lang-dropdown">
-            <a href="../index.html">English (UK)</a>
-            <a href="index.html" class="active">English (US)</a>
-            <a href="../es/index.html">Español</a>
-            <a href="../de/index.html">Deutsch</a>
-            <a href="../sv/index.html">Svenska</a>
-            <a href="../it/index.html">Italiano</a>
-            <a href="../fr/index.html">Français</a>
-            <a href="../nl/index.html">Nederlands</a>
-            <a href="../da/index.html">Dansk</a>
-            <a href="../no/index.html">Norsk</a>
+            <a href="../index">English (UK)</a>
+            <a href="index" class="active">English (US)</a>
+            <a href="../es/index">Español</a>
+            <a href="../de/index">Deutsch</a>
+            <a href="../sv/index">Svenska</a>
+            <a href="../it/index">Italiano</a>
+            <a href="../fr/index">Français</a>
+            <a href="../nl/index">Nederlands</a>
+            <a href="../da/index">Dansk</a>
+            <a href="../no/index">Norsk</a>
           </div>
         </div>
       </li>
@@ -59,23 +59,23 @@
       <hr class="mobile-divider">
       <a href="${href('#features')}">Features</a>
       <a href="${href('#how-it-works')}">How It Works</a>
-      <a href="about.html"${isActive('about.html') ? ' class="active"' : ''}>About</a>
-      <a href="faq.html"${isActive('faq.html') ? ' class="active"' : ''}>FAQ</a>
-      <a href="contact.html"${isActive('contact.html') ? ' class="active"' : ''}>Contact</a>
+      <a href="about"${isActive('about.html') ? ' class="active"' : ''}>About</a>
+      <a href="faq"${isActive('faq.html') ? ' class="active"' : ''}>FAQ</a>
+      <a href="contact"${isActive('contact.html') ? ' class="active"' : ''}>Contact</a>
       <hr class="mobile-divider">
       <a href="${href('#download')}" class="mobile-cta">Download</a>
       <hr class="mobile-divider">
       <div class="mobile-lang-switch">
-        <a href="../index.html">UK</a>
-        <a href="index.html" class="active">US</a>
-        <a href="../es/index.html">ES</a>
-        <a href="../de/index.html">DE</a>
-        <a href="../sv/index.html">SV</a>
-        <a href="../it/index.html">IT</a>
-        <a href="../fr/index.html">FR</a>
-        <a href="../nl/index.html">NL</a>
-        <a href="../da/index.html">DA</a>
-        <a href="../no/index.html">NO</a>
+        <a href="../index">UK</a>
+        <a href="index" class="active">US</a>
+        <a href="../es/index">ES</a>
+        <a href="../de/index">DE</a>
+        <a href="../sv/index">SV</a>
+        <a href="../it/index">IT</a>
+        <a href="../fr/index">FR</a>
+        <a href="../nl/index">NL</a>
+        <a href="../da/index">DA</a>
+        <a href="../no/index">NO</a>
       </div>
     `;
   }

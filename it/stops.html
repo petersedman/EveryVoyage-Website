@@ -35,7 +35,7 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://everyvoyage.com/it/stops/#webpage",
+      "@id": "https://everyvoyage.com/it/stops#webpage",
       "url": "https://everyvoyage.com/it/stops",
       "name": "Trova aree sosta camper, campeggi e servizi | EveryVoyage",
       "description": "Trova aree sosta camper, campeggi, parcheggi, acqua potabile, scarico, GPL e servizi utili. Filtra per dotazioni e attività nei dintorni.",
@@ -47,7 +47,7 @@
         "@id": "https://everyvoyage.com/it/#app"
       },
       "breadcrumb": {
-        "@id": "https://everyvoyage.com/it/stops/#breadcrumb"
+        "@id": "https://everyvoyage.com/it/stops#breadcrumb"
       }
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://everyvoyage.com/it/stops/#breadcrumb",
+      "@id": "https://everyvoyage.com/it/stops#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -133,7 +133,15 @@
           "name": "Come mantiene EveryVoyage utili e aggiornate le informazioni sui luoghi?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Il vantaggio nel tempo è il collegamento con viaggi reali. Con l’arrivo delle recensioni, una visita autentica potrà generare una foto recente, una valutazione o un aggiornamento pratico per aiutare chi passerà dopo."
+            "text": "EveryVoyage collega i luoghi a viaggi reali. Dopo una visita registrata, puoi aggiungere una foto, una valutazione, una recensione o un aggiornamento pratico mentre le informazioni sono ancora fresche. Le recensioni delle visite registrate possono essere contrassegnate come Verificate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso aggiungere o aggiornare un luogo in EveryVoyage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Puoi aggiungere luoghi mancanti, caricare foto, lasciare valutazioni e recensioni e aggiornare informazioni pratiche per mantenerle utili per chi viaggerà dopo di te."
           }
         },
         {
@@ -141,15 +149,15 @@
           "name": "EveryVoyage includerà la pianificazione degli itinerari?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "La scoperta delle soste è il primo livello della pianificazione. In seguito, i luoghi salvati potranno essere organizzati per giorni e collegati in itinerari costruiti intorno a soste utili, punti imperdibili e al tipo di viaggio che desideri."
+            "text": "Non ancora. Puoi già trovare e filtrare soste e altri luoghi utili. La pianificazione completa degli itinerari, compresa l’organizzazione dei luoghi per giorni e percorsi, arriverà più avanti."
           }
         },
         {
           "@type": "Question",
-          "name": "Come funziona insieme al tracciamento GPS?",
+          "name": "Come funzionano le soste con il tracciamento GPS?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Il tracciamento GPS dei viaggi registra già dove stai viaggiando. Questo permette di suggerire luoghi utili in base alla posizione, alla direzione e al viaggio, invece di trattare la ricerca delle soste come una funzione separata."
+            "text": "Il tracciamento GPS registra il tuo percorso e può riconoscere dove ti sei realmente fermato. Dopo una visita puoi valutare o recensire il luogo oppure aggiornarne le informazioni. Le recensioni delle visite registrate possono essere contrassegnate come Verificate."
           }
         }
       ]
@@ -2019,14 +2027,14 @@ body.app-qr-open{overflow:hidden}
 <a data-store-link="" href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank">
 <img alt="Scarica EveryVoyage su App Store" src="/assets/stores/download-on-the-app-store.svg"/>
 </a>
-<div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
+<div class="store-rating"><strong>4,9/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Gratis su iOS</div>
 </div>
 <div class="store-stack">
 <a data-store-link="" href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank">
 <img alt="Scarica EveryVoyage su Google Play" src="/assets/stores/Google_Play_Store_badge_EN.svg"/>
 </a>
-<div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
+<div class="store-rating"><strong>4,8/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Gratis su Android</div>
 </div>
 </div>
@@ -2040,7 +2048,7 @@ body.app-qr-open{overflow:hidden}
 </div>
 <div class="hero-note two">
 <span>Scopri cosa ti aspetta lungo la strada</span>
-<strong>Soste utili vicino al Lake District.</strong>
+<strong>Soste utili nelle Dolomiti.</strong>
 </div>
 </div>
 </div>
@@ -2210,7 +2218,7 @@ body.app-qr-open{overflow:hidden}
 <div class="contribute-copy reveal">
 <span class="section-kicker">Scopri luoghi. Migliora la mappa.</span>
 <h2 class="heading"><span>Hai trovato un posto fantastico?</span><em>Condividilo con gli altri.</em></h2>
-<p>Aggiungi un luogo mancante, carica una foto, lascia una valutazione o condividi un dettaglio utile. Dopo una visita reale, EveryVoyage può ricordartelo mentre le informazioni sono ancora fresche.</p>
+<p>Aggiungi un luogo mancante, carica una foto, lascia una valutazione o una recensione oppure condividi un dettaglio utile. Dopo una visita reale, EveryVoyage può ricordartelo mentre le informazioni sono ancora fresche.</p>
 <div class="contribute-proof">
 <div><span>＋</span><p>Aggiungi un luogo mancante.</p></div>
 <div><span>★</span><p>Valutalo e aggiungi le tue foto.</p></div>
@@ -2308,15 +2316,19 @@ body.app-qr-open{overflow:hidden}
 </details>
 <details class="faq-item reveal">
 <summary>Come mantiene EveryVoyage utili e aggiornate le informazioni sui luoghi?</summary>
-<div class="faq-answer">Il vantaggio nel tempo è il collegamento con viaggi reali. Con l’arrivo delle recensioni, una visita autentica potrà generare una foto recente, una valutazione o un aggiornamento pratico per aiutare chi passerà dopo.</div>
+<div class="faq-answer">EveryVoyage collega i luoghi a viaggi reali. Dopo una visita registrata, puoi aggiungere una foto, una valutazione, una recensione o un aggiornamento pratico mentre le informazioni sono ancora fresche. Le recensioni delle visite registrate possono essere contrassegnate come Verificate.</div>
 </details>
+<details class="faq-item reveal">
+  <summary>Posso aggiungere o aggiornare un luogo in EveryVoyage?</summary>
+  <div class="faq-answer">Sì. Puoi aggiungere luoghi mancanti, caricare foto, lasciare valutazioni e recensioni e aggiornare informazioni pratiche per mantenerle utili per chi viaggerà dopo di te.</div>
+  </details>
 <details class="faq-item reveal">
 <summary>EveryVoyage includerà la pianificazione degli itinerari?</summary>
-<div class="faq-answer">La scoperta delle soste è il primo livello della pianificazione. In seguito, i luoghi salvati potranno essere organizzati per giorni e collegati in itinerari costruiti intorno a soste utili, punti imperdibili e al tipo di viaggio che desideri.</div>
+<div class="faq-answer">Non ancora. Puoi già trovare e filtrare soste e altri luoghi utili. La pianificazione completa degli itinerari, compresa l’organizzazione dei luoghi per giorni e percorsi, arriverà più avanti.</div>
 </details>
 <details class="faq-item reveal">
-<summary>Come funziona insieme al tracciamento GPS?</summary>
-<div class="faq-answer">Il <a href="/it/road-trip-tracker">tracciamento GPS dei viaggi</a> registra già dove stai viaggiando. Questo permette di suggerire luoghi utili in base alla posizione, alla direzione e al viaggio, invece di trattare la ricerca delle soste come una funzione separata.</div>
+<summary>Come funzionano le soste con il tracciamento GPS?</summary>
+<div class="faq-answer">Il <a href="/it/road-trip-tracker">tracciamento GPS dei viaggi</a> registra il tuo percorso e può riconoscere dove ti sei realmente fermato. Dopo una visita puoi valutare o recensire il luogo oppure aggiornarne le informazioni. Le recensioni delle visite registrate possono essere contrassegnate come Verificate.</div>
 </details>
 </div>
 </div>
@@ -2335,14 +2347,14 @@ body.app-qr-open{overflow:hidden}
 <a data-store-link="" href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank">
 <img alt="Scarica EveryVoyage su App Store" src="/assets/stores/download-on-the-app-store.svg"/>
 </a>
-<div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
+<div class="store-rating"><strong>4,9/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Gratis su iOS</div>
 </div>
 <div class="store-stack">
 <a data-store-link="" href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank">
 <img alt="Scarica EveryVoyage su Google Play" src="/assets/stores/Google_Play_Store_badge_EN.svg"/>
 </a>
-<div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
+<div class="store-rating"><strong>4,8/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Gratis su Android</div>
 </div>
 </div>

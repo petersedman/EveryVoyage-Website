@@ -35,14 +35,14 @@
     "@graph":[
       {
         "@type":"WebPage",
-        "@id":"https://everyvoyage.com/stops/#webpage",
+        "@id":"https://everyvoyage.com/stops#webpage",
         "url":"https://everyvoyage.com/stops",
         "name":"Find Motorhome Stops, Campsites & Service Points | EveryVoyage",
-        "description":"Find campsites, aires, motorhome parking, drinking water, waste disposal, LPG and useful services with filters built around your vehicle and road trip. Coming soon to EveryVoyage.",
+        "description":"Find campsites, aires, motorhome parking, drinking water, waste disposal, LPG and useful services with filters built around your vehicle and road trip.",
         "inLanguage":"en-GB",
         "isPartOf":{"@id":"https://everyvoyage.com/#website"},
         "about":{"@id":"https://everyvoyage.com/#app"},
-        "breadcrumb":{"@id":"https://everyvoyage.com/stops/#breadcrumb"}
+        "breadcrumb":{"@id":"https://everyvoyage.com/stops#breadcrumb"}
       },
       {
         "@type":"WebSite",
@@ -58,20 +58,20 @@
         "applicationCategory":"TravelApplication",
         "operatingSystem":"iOS, Android",
         "url":"https://everyvoyage.com/",
-        "description":"A road trip tracker, travel journal and upcoming stop-discovery app for motorhome, campervan and RV journeys.",
+        "description":"A road trip tracker, travel journal and stop-discovery app for motorhome, campervan and RV journeys.",
         "offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},
         "publisher":{"@type":"Organization","name":"SIMPLR LABS LTD","url":"https://simplrlabs.com"},
         "featureList":[
           "GPS road trip tracking",
           "Road trip journal with Trips, Moments and Voyages",
-          "Upcoming motorhome stop and service-point discovery",
+          "Motorhome stop and service-point discovery",
           "Vehicle and amenity filters",
           "Privacy controls and offline route recording"
         ]
       },
       {
         "@type":"BreadcrumbList",
-        "@id":"https://everyvoyage.com/stops/#breadcrumb",
+        "@id":"https://everyvoyage.com/stops#breadcrumb",
         "itemListElement":[
           {"@type":"ListItem","position":1,"name":"EveryVoyage","item":"https://everyvoyage.com/"},
           {"@type":"ListItem","position":2,"name":"Stops","item":"https://everyvoyage.com/stops"}
@@ -82,23 +82,59 @@
         "mainEntity":[
           {
             "@type":"Question",
-            "name":"What types of motorhome stops will EveryVoyage show?",
-            "acceptedAnswer":{"@type":"Answer","text":"EveryVoyage is being built to show overnight stops, campsites, aires, parking, practical services and service points such as drinking water, grey-water disposal and toilet disposal."}
+            "name":"What types of motorhome stops can I find in EveryVoyage?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"EveryVoyage includes campsites, aires, overnight stops, motorhome parking, parkups, parking, services and service points, including useful places for drinking water, waste disposal, LPG, laundry and other practical needs."
+            }
           },
           {
             "@type":"Question",
             "name":"Can I filter stops by facilities?",
-            "acceptedAnswer":{"@type":"Answer","text":"The upcoming Explore feature is designed to filter places by practical needs such as toilets, showers, drinking water, electricity, waste disposal, laundry, LPG, pets and vehicle access."}
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Yes. Filter places by facilities such as toilets, showers, drinking water, waste disposal, electricity, laundry, pets and large-vehicle access, as well as nearby activities including swimming, hiking, cycling, kayaking and sightseeing."
+            }
           },
           {
             "@type":"Question",
-            "name":"Are motorhome stops live in EveryVoyage now?",
-            "acceptedAnswer":{"@type":"Answer","text":"Road trip tracking and journalling are available now. Stop and service-point discovery is in development and will be added in a future release."}
+            "name":"Are motorhome stops available in EveryVoyage now?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Yes. Campsites, aires, parking, services and service points are available in EveryVoyage now, with filters for facilities and nearby activities."
+            }
           },
           {
             "@type":"Question",
-            "name":"Will EveryVoyage include route planning?",
-            "acceptedAnswer":{"@type":"Answer","text":"Stop discovery is the first step towards planning. Later planning work is intended to connect useful places, saved stops and route choices inside the same road trip."}
+            "name":"Can I add or update a place in EveryVoyage?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Yes. Travellers can add missing places, upload photos, leave ratings and contribute practical updates to help keep place information useful for the next traveller."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"How does EveryVoyage keep place information useful?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"EveryVoyage connects places with real road trips. After visiting a place, travellers can add a photo, rating, review or practical update while the information is still fresh."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Does EveryVoyage include route planning?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Not yet. Stop discovery is available now. Full route planning and itinerary building that connects saved places into days and routes is planned for later."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"How do stops work with the road trip tracker?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"EveryVoyage records the route you travel and can connect your journey with the places you stopped at, making it easier to review or update places after a visit."
+            }
           }
         ]
       }
@@ -1992,7 +2028,7 @@ body.app-qr-open{overflow:hidden}
 </div>
 </div>
 </div>
-<div aria-label="Preview of the upcoming EveryVoyage stop discovery map" class="explore-preview">
+<div aria-label="Preview of the EveryVoyage stop discovery map" class="explore-preview">
 <div class="hero-shot-wrap">
 <img alt="EveryVoyage map showing campsites, parking, services and service points" class="hero-shot" src="../assets/img/AppHeroPOIs.webp"/>
 <div class="hero-note one">
@@ -2251,13 +2287,18 @@ body.app-qr-open{overflow:hidden}
 <div class="wrap faq-grid">
 <div class="faq-heading reveal">
 <span class="section-kicker">Motorhome stop FAQs</span>
-<h2 class="heading"><span>Questions before</span><em>Explore launches?</em></h2>
-<p>The current plan for stops, filters and future route planning.</p>
+<h2 class="heading"><span>Questions about</span><em>stops in EveryVoyage?</em></h2>
+<p>How stop discovery, filters, place updates and future route planning work.</p>
 </div>
 <div class="faq-list">
 <details class="faq-item reveal">
-<summary>What types of motorhome stops will EveryVoyage show?</summary>
-<div class="faq-answer">The upcoming Explore map is being built around overnight stops, parking, practical services and service points. That includes campsites, aires, motorhome parking, drinking water, grey-water disposal, toilet disposal, LPG, laundry and other useful places.</div>
+<summary>What types of motorhome stops does EveryVoyage show?</summary>
+<div class="faq-answer">
+  EveryVoyage shows campsites, aires, overnight stops, motorhome parking,
+  parking, practical services and service points. That includes drinking
+  water, grey-water disposal, toilet disposal, LPG, laundry and other
+  useful places for the road.
+</div>
 </details>
 <details class="faq-item reveal">
 <summary>Can I filter places by facilities?</summary>
@@ -2268,8 +2309,23 @@ body.app-qr-open{overflow:hidden}
 <div class="faq-answer">Yes. Stops, parking, services, service points, amenity filters and nearby activity filters are available in EveryVoyage.</div>
 </details>
 <details class="faq-item reveal">
-<summary>How will EveryVoyage keep place information useful?</summary>
-<div class="faq-answer">The long-term advantage is the connection to real road trips. When place reviews launch, a genuine visit can lead naturally to a recent photo, rating or practical update, helping the next person make a better decision.</div>
+  <summary>How does EveryVoyage keep place information useful?</summary>
+  <div class="faq-answer">
+    EveryVoyage connects places to real road trips. After a recorded visit,
+    you can rate a place, add photos, leave a review or update practical
+    information while the visit is still fresh. Reviews from recorded visits
+    can also be marked as Verified, helping travellers distinguish feedback
+    from a confirmed visit.
+  </div>
+</details>
+
+<details class="faq-item reveal">
+  <summary>Can I add or update a place?</summary>
+  <div class="faq-answer">
+    Yes. You can add a missing place, upload photos, leave a rating and
+    suggest updates to practical information, helping keep EveryVoyage useful
+    for the next traveller.
+  </div>
 </details>
 <details class="faq-item reveal">
 <summary>Will EveryVoyage include route planning?</summary>
@@ -2356,9 +2412,9 @@ TikTok
 <h4>Resources</h4>
 <ul>
 <li><a href="/#how-it-works">How EveryVoyage works</a></li>
-<li><a href="/faq.html">FAQ</a></li>
-<li><a href="/about.html">About EveryVoyage</a></li>
-<li><a href="/contact.html">Contact us</a></li>
+<li><a href="/faq">FAQ</a></li>
+<li><a href="/about">About EveryVoyage</a></li>
+<li><a href="/contact">Contact us</a></li>
 </ul>
 </nav>
 
@@ -2373,8 +2429,8 @@ TikTok
 <div class="footer-bottom">
 <span>© 2026 EveryVoyage. SIMPLR LABS LTD.</span>
 <nav aria-label="Legal" class="footer-legal">
-<a href="/privacy-policy.html">Privacy Policy</a>
-<a href="/terms.html">Terms &amp; Conditions</a>
+<a href="/privacy-policy">Privacy Policy</a>
+<a href="/terms">Terms &amp; Conditions</a>
 </nav>
 </div>
 </div>
