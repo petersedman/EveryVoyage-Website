@@ -149,7 +149,7 @@
 
   <!-- About -->
   <url>
-    <loc>https://everyvoyage.com/about.html</loc>
+    <loc>https://everyvoyage.com/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -163,7 +163,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/about.html</loc>
+    <loc>https://everyvoyage.com/en-us/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -177,7 +177,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/about.html</loc>
+    <loc>https://everyvoyage.com/da/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -191,7 +191,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/about.html</loc>
+    <loc>https://everyvoyage.com/de/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -205,7 +205,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/about.html</loc>
+    <loc>https://everyvoyage.com/es/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -219,7 +219,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/about.html</loc>
+    <loc>https://everyvoyage.com/fr/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -233,7 +233,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/about.html</loc>
+    <loc>https://everyvoyage.com/it/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -247,7 +247,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/about.html</loc>
+    <loc>https://everyvoyage.com/nl/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -261,7 +261,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/about.html</loc>
+    <loc>https://everyvoyage.com/no/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -275,7 +275,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/about" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/about.html</loc>
+    <loc>https://everyvoyage.com/sv/about</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/about" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/about" />
@@ -291,7 +291,7 @@
 
   <!-- App -->
   <url>
-    <loc>https://everyvoyage.com/app.html</loc>
+    <loc>https://everyvoyage.com/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -305,7 +305,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/app.html</loc>
+    <loc>https://everyvoyage.com/en-us/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -319,7 +319,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/app.html</loc>
+    <loc>https://everyvoyage.com/da/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -333,7 +333,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/app.html</loc>
+    <loc>https://everyvoyage.com/de/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -347,7 +347,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/app.html</loc>
+    <loc>https://everyvoyage.com/es/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -361,7 +361,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/app.html</loc>
+    <loc>https://everyvoyage.com/fr/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -375,7 +375,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/app.html</loc>
+    <loc>https://everyvoyage.com/it/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -389,7 +389,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/app.html</loc>
+    <loc>https://everyvoyage.com/nl/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -403,7 +403,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/app.html</loc>
+    <loc>https://everyvoyage.com/no/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -417,7 +417,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/app" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/app.html</loc>
+    <loc>https://everyvoyage.com/sv/app</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/app" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/app" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/app" />
@@ -433,7 +433,7 @@
 
   <!-- Contact -->
   <url>
-    <loc>https://everyvoyage.com/contact.html</loc>
+    <loc>https://everyvoyage.com/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -447,7 +447,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/contact.html</loc>
+    <loc>https://everyvoyage.com/en-us/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -461,7 +461,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/contact.html</loc>
+    <loc>https://everyvoyage.com/da/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -475,7 +475,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/contact.html</loc>
+    <loc>https://everyvoyage.com/de/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -489,7 +489,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/contact.html</loc>
+    <loc>https://everyvoyage.com/es/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -503,7 +503,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/contact.html</loc>
+    <loc>https://everyvoyage.com/fr/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -517,7 +517,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/contact.html</loc>
+    <loc>https://everyvoyage.com/it/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -531,7 +531,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/contact.html</loc>
+    <loc>https://everyvoyage.com/nl/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -545,7 +545,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/contact.html</loc>
+    <loc>https://everyvoyage.com/no/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -559,7 +559,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/contact" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/contact.html</loc>
+    <loc>https://everyvoyage.com/sv/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/contact" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/contact" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/contact" />
@@ -575,7 +575,7 @@
 
   <!-- FAQ -->
   <url>
-    <loc>https://everyvoyage.com/faq.html</loc>
+    <loc>https://everyvoyage.com/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -589,7 +589,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/faq.html</loc>
+    <loc>https://everyvoyage.com/en-us/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -603,7 +603,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/faq.html</loc>
+    <loc>https://everyvoyage.com/da/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -617,7 +617,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/faq.html</loc>
+    <loc>https://everyvoyage.com/de/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -631,7 +631,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/faq.html</loc>
+    <loc>https://everyvoyage.com/es/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -645,7 +645,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/faq.html</loc>
+    <loc>https://everyvoyage.com/fr/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -659,7 +659,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/faq.html</loc>
+    <loc>https://everyvoyage.com/it/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -673,7 +673,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/faq.html</loc>
+    <loc>https://everyvoyage.com/nl/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -687,7 +687,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/faq.html</loc>
+    <loc>https://everyvoyage.com/no/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -701,7 +701,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/faq" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/faq.html</loc>
+    <loc>https://everyvoyage.com/sv/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/faq" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/faq" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/faq" />
@@ -717,7 +717,7 @@
 
   <!-- Features -->
   <url>
-    <loc>https://everyvoyage.com/features.html</loc>
+    <loc>https://everyvoyage.com/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -731,7 +731,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/features.html</loc>
+    <loc>https://everyvoyage.com/en-us/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -745,7 +745,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/features.html</loc>
+    <loc>https://everyvoyage.com/da/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -759,7 +759,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/features.html</loc>
+    <loc>https://everyvoyage.com/de/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -773,7 +773,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/features.html</loc>
+    <loc>https://everyvoyage.com/es/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -787,7 +787,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/features.html</loc>
+    <loc>https://everyvoyage.com/fr/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -801,7 +801,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/features.html</loc>
+    <loc>https://everyvoyage.com/it/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -815,7 +815,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/features.html</loc>
+    <loc>https://everyvoyage.com/nl/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -829,7 +829,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/features.html</loc>
+    <loc>https://everyvoyage.com/no/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -843,7 +843,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/features" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/features.html</loc>
+    <loc>https://everyvoyage.com/sv/features</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/features" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/features" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/features" />
@@ -859,7 +859,7 @@
 
   <!-- Privacy policy -->
   <url>
-    <loc>https://everyvoyage.com/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -873,7 +873,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/en-us/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -887,7 +887,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/da/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -901,7 +901,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/de/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -915,7 +915,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/es/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -929,7 +929,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/fr/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -943,7 +943,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/it/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -957,7 +957,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/nl/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -971,7 +971,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/no/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -985,7 +985,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/privacy-policy" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/privacy-policy.html</loc>
+    <loc>https://everyvoyage.com/sv/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/privacy-policy" />
@@ -1001,7 +1001,7 @@
 
   <!-- Road-trip inspiration -->
   <url>
-    <loc>https://everyvoyage.com/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1015,7 +1015,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/en-us/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1029,7 +1029,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/da/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1043,7 +1043,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/de/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1057,7 +1057,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/es/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1071,7 +1071,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/fr/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1085,7 +1085,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/it/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1099,7 +1099,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/nl/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1113,7 +1113,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/no/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1127,7 +1127,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/road-trip-inspiration.html</loc>
+    <loc>https://everyvoyage.com/sv/road-trip-inspiration</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-inspiration" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-inspiration" />
@@ -1143,7 +1143,7 @@
 
   <!-- Road-trip journal -->
   <url>
-    <loc>https://everyvoyage.com/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1157,7 +1157,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/en-us/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1171,7 +1171,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/da/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1185,7 +1185,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/de/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1199,7 +1199,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/es/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1213,7 +1213,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/fr/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1227,7 +1227,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/it/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1241,7 +1241,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/nl/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1255,7 +1255,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/no/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1269,7 +1269,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-journal" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/road-trip-journal.html</loc>
+    <loc>https://everyvoyage.com/sv/road-trip-journal</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-journal" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-journal" />
@@ -1285,7 +1285,7 @@
 
   <!-- Road-trip tracker -->
   <url>
-    <loc>https://everyvoyage.com/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1299,7 +1299,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/en-us/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1313,7 +1313,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/da/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1327,7 +1327,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/de/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1341,7 +1341,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/es/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1355,7 +1355,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/fr/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1369,7 +1369,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/it/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1383,7 +1383,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/nl/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1397,7 +1397,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/no/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1411,7 +1411,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-tracker" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/road-trip-tracker.html</loc>
+    <loc>https://everyvoyage.com/sv/road-trip-tracker</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/road-trip-tracker" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/road-trip-tracker" />
@@ -1427,7 +1427,7 @@
 
   <!-- Stops -->
   <url>
-    <loc>https://everyvoyage.com/stops.html</loc>
+    <loc>https://everyvoyage.com/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1441,7 +1441,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/stops.html</loc>
+    <loc>https://everyvoyage.com/en-us/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1455,7 +1455,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/stops.html</loc>
+    <loc>https://everyvoyage.com/da/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1469,7 +1469,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/stops.html</loc>
+    <loc>https://everyvoyage.com/de/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1483,7 +1483,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/stops.html</loc>
+    <loc>https://everyvoyage.com/es/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1497,7 +1497,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/stops.html</loc>
+    <loc>https://everyvoyage.com/fr/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1511,7 +1511,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/stops.html</loc>
+    <loc>https://everyvoyage.com/it/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1525,7 +1525,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/stops.html</loc>
+    <loc>https://everyvoyage.com/nl/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1539,7 +1539,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/stops.html</loc>
+    <loc>https://everyvoyage.com/no/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1553,7 +1553,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/stops" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/stops.html</loc>
+    <loc>https://everyvoyage.com/sv/stops</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/stops" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/stops" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/stops" />
@@ -1569,7 +1569,7 @@
 
   <!-- Terms -->
   <url>
-    <loc>https://everyvoyage.com/terms.html</loc>
+    <loc>https://everyvoyage.com/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1583,7 +1583,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/en-us/terms.html</loc>
+    <loc>https://everyvoyage.com/en-us/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1597,7 +1597,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/da/terms.html</loc>
+    <loc>https://everyvoyage.com/da/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1611,7 +1611,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/de/terms.html</loc>
+    <loc>https://everyvoyage.com/de/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1625,7 +1625,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/es/terms.html</loc>
+    <loc>https://everyvoyage.com/es/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1639,7 +1639,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/fr/terms.html</loc>
+    <loc>https://everyvoyage.com/fr/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1653,7 +1653,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/it/terms.html</loc>
+    <loc>https://everyvoyage.com/it/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1667,7 +1667,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/nl/terms.html</loc>
+    <loc>https://everyvoyage.com/nl/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1681,7 +1681,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/no/terms.html</loc>
+    <loc>https://everyvoyage.com/no/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1695,7 +1695,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/terms" />
   </url>
   <url>
-    <loc>https://everyvoyage.com/sv/terms.html</loc>
+    <loc>https://everyvoyage.com/sv/terms</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/terms" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/terms" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/terms" />
@@ -1711,7 +1711,7 @@
 
   <!-- Cookie policy: EN-GB only in the current file structure -->
   <url>
-    <loc>https://everyvoyage.com/cookie-policy.html</loc>
+    <loc>https://everyvoyage.com/cookie-policy</loc>
   </url>
 
 </urlset>
