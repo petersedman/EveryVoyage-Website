@@ -12,8 +12,8 @@
 <link href="https://everyvoyage.com/road-trip-inspiration" rel="canonical"/>
 <link href="https://everyvoyage.com/road-trip-inspiration" hreflang="en-GB" rel="alternate"/>
 <link href="https://everyvoyage.com/road-trip-inspiration" hreflang="x-default" rel="alternate"/>
-<link href="../assets/icons/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/icons/favicon.png" rel="apple-touch-icon"/>
+<link href="/assets/icons/favicon.png" rel="icon" type="image/png"/>
+<link href="/assets/icons/favicon.png" rel="apple-touch-icon"/>
 <meta content="website" property="og:type"/>
 <meta content="https://everyvoyage.com/road-trip-inspiration" property="og:url"/>
 <meta content="EveryVoyage" property="og:site_name"/>
@@ -26,7 +26,7 @@
 <meta content="Road Trip Inspiration &amp; Routes from Real Travellers | EveryVoyage" name="twitter:title"/>
 <meta content="Follow fresh road trips from real people. See the route, stops and story together, then find places for your own adventure." name="twitter:description"/>
 <meta content="https://everyvoyage.com/assets/img/AppPreview.webp" name="twitter:image"/>
-<link as="image" href="../assets/img/InspirationBackground.webp" rel="preload"/>
+<link as="image" href="/assets/img/InspirationBackground.webp" rel="preload"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;display=swap" rel="stylesheet"/>
@@ -34,7 +34,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
+      "@type": "CollectionPage",
       "@id": "https://everyvoyage.com/road-trip-inspiration#webpage",
       "url": "https://everyvoyage.com/road-trip-inspiration",
       "name": "Road Trip Inspiration & Routes from Real Travellers | EveryVoyage",
@@ -48,6 +48,9 @@
       },
       "breadcrumb": {
         "@id": "https://everyvoyage.com/road-trip-inspiration#breadcrumb"
+      },
+      "hasPart": {
+        "@id": "https://everyvoyage.com/road-trip-inspiration#community-stories"
       }
     },
     {
@@ -155,6 +158,25 @@
           }
         }
       ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://everyvoyage.com/road-trip-inspiration#community-stories",
+      "name": "Featured community road trips",
+      "numberOfItems": 1,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "BlogPosting",
+            "@id": "https://everyvoyage.com/norway-family-campervan-road-trip#article",
+            "url": "https://everyvoyage.com/norway-family-campervan-road-trip",
+            "headline": "6,500 km. 30 days. One unforgettable Norway road trip.",
+            "image": "https://f003.backblazeb2.com/file/AnyVoyagePhotos/trip/1ar3d3nwzse4mwmwxc9esfg38/4rr3kkgmntikbwghoyoir398s/full.jpg"
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -250,7 +272,7 @@
       position:relative;min-height:880px;display:grid;align-items:center;overflow:hidden;color:#fff;
       background:
         linear-gradient(90deg,rgba(5,20,20,.9),rgba(5,20,20,.52) 56%,rgba(5,20,20,.18)),
-        url('../assets/img/InspirationBackground.webp') center/cover no-repeat,
+        url('/assets/img/InspirationBackground.webp') center/cover no-repeat,
         linear-gradient(135deg,#173d3c,#7f705d);
     }
     .inspiration-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 76% 42%,rgba(245,74,0,.24),transparent 26%),linear-gradient(180deg,transparent 68%,rgba(4,17,18,.28));pointer-events:none}
@@ -465,7 +487,7 @@
     .faq-answer a{color:var(--orange);font-weight:800}
 
     /* CTA */
-    .final-cta{position:relative;min-height:560px;display:grid;place-items:center;overflow:hidden;color:#fff;text-align:center;isolation:isolate;background:linear-gradient(rgba(7,20,22,.38),rgba(7,20,22,.66)),url('../assets/img/InspirationBackground.webp') center/cover no-repeat,linear-gradient(135deg,#163b38,#9e603f)}
+    .final-cta{position:relative;min-height:560px;display:grid;place-items:center;overflow:hidden;color:#fff;text-align:center;isolation:isolate;background:linear-gradient(rgba(7,20,22,.38),rgba(7,20,22,.66)),url('/assets/img/InspirationBackground.webp') center/cover no-repeat,linear-gradient(135deg,#163b38,#9e603f)}
     .final-content{max-width:940px;padding:70px 20px}
     .final-content h2{margin:0;font-family:var(--display);font-size:clamp(48px,5.4vw,76px);font-weight:500;line-height:.98;letter-spacing:-.052em}
     .final-content h2 span,.final-content h2 em{display:block}
@@ -846,7 +868,7 @@
   border-radius:18px;
   background:
     linear-gradient(rgba(8,31,30,.08),rgba(8,31,30,.16)),
-    url('../assets/img/POIBackground.webp') center/cover no-repeat,
+    url('/assets/img/POIBackground.webp') center/cover no-repeat,
     linear-gradient(145deg,#2e625f,#d4a074);
 }
 .feed-reasons{
@@ -1526,7 +1548,7 @@
 .feed-people-card{
   background:
     linear-gradient(180deg, rgba(10,24,25,.18), rgba(10,24,25,.66)),
-    url('../assets/img/HeroRoadTrip.webp') center/cover no-repeat,
+    url('/assets/img/HeroRoadTrip.webp') center/cover no-repeat,
     linear-gradient(145deg, #244846, #735f4d);
   color: #fff;
 }
@@ -1745,7 +1767,7 @@
 .hidden-place-animation{
   background:
     linear-gradient(rgba(9,27,28,.16), rgba(9,27,28,.06)),
-    url('../assets/img/SquareMap.webp') center/cover no-repeat,
+    url('/assets/img/SquareMap.webp') center/cover no-repeat,
     linear-gradient(145deg,#dce7d9,#d9e0d7);
 }
 .hidden-pin{
@@ -1918,7 +1940,7 @@
 .feed-people-card{
   background:
     linear-gradient(180deg, rgba(8,16,33,.18), rgba(8,16,33,.68)),
-    url('../assets/img/Friends.webp') center/cover no-repeat,
+    url('/assets/img/Friends.webp') center/cover no-repeat,
     linear-gradient(145deg, #162542, #20335b);
 }
 .feed-showcase{grid-template-columns:1fr .88fr; align-items:stretch;}
@@ -2775,6 +2797,48 @@ body.app-qr-open{overflow:hidden}
 }
 </style>
 
+<style>
+/* Community story feature: one published adventure, with a fully clickable card. */
+.hero-story-link{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:11px 20px;margin:0 0 24px;border:1px solid rgba(255,255,255,.55);border-radius:999px;color:#fff;background:rgba(9,25,26,.5);font-size:16px;font-weight:800;text-decoration:none;transition:background .2s}
+.hero-story-link:hover{background:var(--orange-dark)}
+.hero-story-link:focus-visible,.featured-story-link:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+.community-stories{padding:90px 0 100px;background:var(--cream)}
+.community-stories-heading{max-width:790px;margin-bottom:36px}
+.community-stories-heading .heading{font-size:clamp(40px,4.5vw,64px);line-height:1.06}
+.community-stories-heading>p{max-width:660px;color:var(--muted);font-size:18px;line-height:1.6;margin:20px 0 0}
+.featured-story{border:1px solid var(--line);border-radius:28px;background:var(--paper);box-shadow:0 18px 50px rgba(23,61,60,.07)}
+.featured-story-link{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);color:var(--ink);text-decoration:none;border-radius:28px}
+.featured-story-image{position:relative;min-height:520px;overflow:hidden;border-radius:28px 0 0 28px;background:var(--forest)}
+.featured-story-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s var(--ease)}
+.featured-story-link:hover .featured-story-image img{transform:scale(1.025)}
+.featured-story-badge{position:absolute;top:22px;left:22px;max-width:calc(100% - 44px);padding:9px 14px;border-radius:999px;background:var(--paper);color:var(--forest);font-size:13px;font-weight:800}
+.featured-story-copy{padding:clamp(28px,3.5vw,48px);min-width:0;align-self:center}
+.featured-story-location{color:var(--orange-dark);font-size:14px;font-weight:800;margin:0 0 16px;line-height:1.5}
+.featured-story-copy h3{font-family:var(--display);font-size:clamp(32px,3.3vw,46px);font-weight:500;line-height:1.1;letter-spacing:-.035em;margin:0 0 20px;overflow-wrap:break-word}
+#billy-feature-description{color:var(--muted);font-size:16px;line-height:1.7;margin:0 0 23px}
+.featured-story-stats{list-style:none;padding:0;margin:0 0 24px;display:flex;flex-wrap:wrap;gap:8px}
+.featured-story-stats li{padding:7px 11px;border:1px solid var(--line);border-radius:9px;background:var(--cream);font-size:14px;font-weight:700}
+.featured-story-author{font-size:14px;font-weight:800;margin:0 0 24px;line-height:1.6}
+.featured-story-author>span{display:block;color:var(--muted);font-weight:500;overflow-wrap:anywhere}
+.featured-story-cta{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:48px;padding:12px 20px;border-radius:999px;color:#fff;background:var(--orange-dark);font-size:16px;font-weight:800;transition:background .2s}
+.featured-story-link:hover .featured-story-cta{background:var(--forest)}
+@media(max-width:860px){
+.community-stories{padding:64px 0 70px}
+.featured-story-link{grid-template-columns:minmax(0,1fr)}
+.featured-story-image{min-height:0;aspect-ratio:16/10;border-radius:28px 28px 0 0}
+.featured-story-copy{padding:30px}
+.featured-story-copy h3{font-size:clamp(30px,5vw,44px)}
+}
+@media(max-width:560px){
+.community-stories-heading .heading{font-size:38px}
+.community-stories-heading>p{font-size:16px}
+.featured-story-copy{padding:24px}
+.featured-story-image{aspect-ratio:4/3}
+.featured-story-badge{top:16px;left:16px;font-size:12px}
+.featured-story-cta{width:100%}
+}
+@media(prefers-reduced-motion:reduce){.featured-story-image img,.featured-story-cta,.hero-story-link{transition:none}.featured-story-link:hover .featured-story-image img{transform:none}}
+</style>
 </head>
 <body>
 <header class="site-header" id="siteHeader">
@@ -2830,7 +2894,7 @@ body.app-qr-open{overflow:hidden}
 <button aria-label="Close QR code" class="app-qr-close" data-close-app-qr type="button">×</button>
 <span class="app-qr-kicker">GET EVERYVOYAGE</span>
 <h2 id="appQrTitle">Scan to get the app</h2>
-<a class="app-qr-url" href="https://everyvoyage.com/app" rel="noopener" target="_blank">everyvoyage.com/app</a>
+<a class="app-qr-url" href="/app" rel="noopener" target="_blank">everyvoyage.com/app</a>
 <img alt="QR code linking to the EveryVoyage app download page" class="app-qr-image" src="/assets/img/EveryVoyageQR.png"/>
 <p id="appQrDescription">Open your phone camera and point it at the QR code.</p>
 </section>
@@ -2839,10 +2903,11 @@ body.app-qr-open{overflow:hidden}
 <section class="inspiration-hero" id="top">
 <div class="hero-inner">
 <div class="hero-copy">
-<div class="breadcrumbs"><a href="../">Home</a><span>›</span><span>Road Trip Inspiration</span></div>
+<div class="breadcrumbs"><a href="/">Home</a><span>›</span><span>Road Trip Inspiration</span></div>
 <span class="hero-eyebrow"><i></i> Road trip inspiration from real travellers</span>
 <h1><span>Discover road trips</span><em class="hero-nowrap">through real people.</em></h1>
-<p>Follow motorhome and campervan journeys in the feed. See routes, stops and Moments as they are shared, then find fresh places for your own road trip.</p>
+<p>Read real motorhome and campervan adventures, discover the places that made them memorable, then follow more journeys in the EveryVoyage app.</p>
+<a class="hero-story-link" href="#community-stories">Explore the story <span aria-hidden="true">↓</span></a>
 <div class="hero-proof">
 <span>🗺️ Real routes and Voyages</span>
 <span>📍 Recent stop updates</span>
@@ -2851,14 +2916,14 @@ body.app-qr-open{overflow:hidden}
 <div class="store-row">
 <div class="store-stack">
 <a href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank" data-store-link>
-<img alt="Download EveryVoyage on the App Store" src="../assets/stores/download-on-the-app-store.svg"/>
+<img alt="Download EveryVoyage on the App Store" src="/assets/stores/download-on-the-app-store.svg"/>
 </a>
 <div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Free on iOS</div>
 </div>
 <div class="store-stack">
 <a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank" data-store-link>
-<img alt="Get EveryVoyage on Google Play" src="../assets/stores/Google_Play_Store_badge_EN.svg"/>
+<img alt="Get EveryVoyage on Google Play" src="/assets/stores/Google_Play_Store_badge_EN.svg"/>
 </a>
 <div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Free on Android</div>
@@ -2868,20 +2933,45 @@ body.app-qr-open{overflow:hidden}
 <div aria-label="Two EveryVoyage app previews showing road trip discovery and places" class="discovery-stage">
 <div class="hero-preview-pair">
 <div class="hero-preview-item hero-left">
-<img alt="EveryVoyage app showing stops, campsites and useful places on the map" src="../assets/img/AppHeroPOIs.webp"/>
+<img alt="EveryVoyage app showing stops, campsites and useful places on the map" src="/assets/img/AppHeroPOIs.webp"/>
 </div>
 <div class="hero-preview-item hero-right">
-<img alt="EveryVoyage app showing a complete road trip journey" src="../assets/img/AppPhoneHero.webp"/>
+<img alt="EveryVoyage app showing a complete road trip journey" src="/assets/img/AppPhoneHero.webp"/>
 </div>
 </div>
 </div>
 </div>
 </section>
-<div class="section-bridge" data-next="#journeys">
-<button aria-label="Continue to real road trip inspiration" type="button">
+<div class="section-bridge" data-next="#community-stories">
+<button aria-label="Continue to the featured community story" type="button">
 <svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
 </button>
 </div>
+<section class="community-stories" id="community-stories" aria-labelledby="community-stories-title">
+<div class="wrap">
+<div class="community-stories-heading">
+<span class="section-kicker">From the EveryVoyage community</span>
+<h2 class="heading" id="community-stories-title">Real road trips.<em>Stories worth following.</em></h2>
+<p>Meet the travellers, discover their favourite places and find inspiration for your own adventure.</p>
+</div>
+<article class="featured-story">
+<a class="featured-story-link" href="/norway-family-campervan-road-trip" aria-labelledby="billy-feature-title" aria-describedby="billy-feature-description">
+<div class="featured-story-image">
+<img src="https://f003.backblazeb2.com/file/AnyVoyagePhotos/trip/1ar3d3nwzse4mwmwxc9esfg38/4rr3kkgmntikbwghoyoir398s/full.jpg" alt="A member of Billy’s family watching the sunrise at Preikestolen above the Norwegian fjord" loading="lazy" decoding="async"/>
+<span class="featured-story-badge">Featured adventure</span>
+</div>
+<div class="featured-story-copy">
+<p class="featured-story-location">Norway <span aria-hidden="true">·</span> Family campervan adventure</p>
+<h3 id="billy-feature-title">6,500 km. 30 days. One unforgettable Norway road trip.</h3>
+<p id="billy-feature-description">A sunrise hike to Preikestolen, snowy roads and an unexpected day dog sledding. Join Billy and his family on their month-long adventure through Norway.</p>
+<ul class="featured-story-stats" aria-label="Trip details"><li>30 days</li><li>6,500 km</li><li>April 2022</li></ul>
+<p class="featured-story-author">Billy &amp; family <span>@man_adventure_van</span></p>
+<span class="featured-story-cta">Read Billy’s story <span aria-hidden="true">→</span></span>
+</div>
+</a>
+</article>
+</div>
+</section>
 <section class="journey-proof" id="journeys">
 <div class="wrap proof-grid">
 <div class="proof-copy reveal">
@@ -2894,7 +2984,7 @@ body.app-qr-open{overflow:hidden}
 </div>
 </div>
 <div aria-label="Example Outer Hebrides road trip route" class="hebrides-visual reveal">
-<img alt="Outer Hebrides Voyage in EveryVoyage" class="hebrides-image" src="../assets/img/Hebrides.webp"/>
+<img alt="Outer Hebrides Voyage in EveryVoyage" class="hebrides-image" src="/assets/img/Hebrides.webp"/>
 <div aria-label="Outer Hebrides journey statistics" class="hebrides-stats">
 <div><strong>20</strong><span>days</span></div>
 <div><strong>1,256</strong><span>miles</span></div>
@@ -2916,21 +3006,21 @@ body.app-qr-open{overflow:hidden}
 <p>Start with a real journey, use the parts that suit you, then record and remember the road trip you actually take.</p>
 </div>
 <div class="journey-loop-cards">
-<a class="journey-loop-card reveal" href="#journeys">
+<a class="journey-loop-card reveal" href="/norway-family-campervan-road-trip">
 <span class="number">01 · FOLLOW</span>
 <h3>See the road trip behind the photos.</h3>
-<p>Open another traveller’s Voyage to see the route, driving days, stops and Moments in the order they happened.</p>
-<span class="journey-loop-link">Explore a real journey →</span>
+<p>Read Billy’s Norway adventure to discover the route, family memories and places that made the journey.</p>
+<span class="journey-loop-link">Read Billy’s Norway story →</span>
 <div class="journey-loop-visual">🗺️</div>
 </a>
-<a class="journey-loop-card reveal" href="../road-trip-tracker">
+<a class="journey-loop-card reveal" href="/road-trip-tracker">
 <span class="number">02 · TRAVEL</span>
 <h3>Travel and record your version.</h3>
 <p>Choose the places that fit you, then track your own route as you go, including when the signal drops.</p>
 <span class="journey-loop-link">See the road trip tracker →</span>
 <div class="journey-loop-visual">●</div>
 </a>
-<a class="journey-loop-card reveal" href="../road-trip-journal">
+<a class="journey-loop-card reveal" href="/road-trip-journal">
 <span class="number">03 · REMEMBER</span>
 <h3>Keep the road trip you made.</h3>
 <p>Add photos and Moments, bring every driving day into one Voyage, then relive or share it afterwards.</p>
@@ -2962,7 +3052,7 @@ body.app-qr-open{overflow:hidden}
 <article aria-label="Feed journey walkthrough" class="feed-video-card reveal">
 <span class="feed-video-label">See it in action</span>
 <video autoplay="" class="feed-demo-video" loop="" muted="" playsinline="" preload="metadata">
-<source src="../assets/video/FeedDetails.mp4" type="video/mp4"/>
+<source src="/assets/video/FeedDetails.mp4" type="video/mp4"/>
 </video>
 </article>
 </div>
@@ -2984,10 +3074,10 @@ body.app-qr-open{overflow:hidden}
 <div><span>●</span><p>See recommendations in the context of a real road trip.</p></div>
 <div><span>↻</span><p>Use recent ratings, photos and updates to make a better choice.</p></div>
 </div>
-<a class="places-link" href="../stops">Explore stops and places →</a>
+<a class="places-link" href="/stops">Explore stops and places →</a>
 </div>
 <div class="places-visual reveal">
-<img alt="EveryVoyage map showing campsites, parking, services and service points" class="poi-shot" src="../assets/img/AppHeroPOIs.webp"/>
+<img alt="EveryVoyage map showing campsites, parking, services and service points" class="poi-shot" src="/assets/img/AppHeroPOIs.webp"/>
 <div class="place-card pc1">
 <strong>Stayed here last night</strong>
 <p>Quiet after 9pm. Water still available. Easy walk to the beach.</p>
@@ -3038,98 +3128,98 @@ body.app-qr-open{overflow:hidden}
 <span class="privacy-person privacy-person-you" style="--c1:#ffb16f;--c2:#f54a00">
 <span class="privacy-person-face">
 <span class="privacy-fallback">You</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyYou.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyYou.webp" decoding="async" height="512" width="512"/>
 </span>
 <span class="privacy-person-label">You</span>
 </span>
 <span class="privacy-person privacy-person-family family-one" style="--x:-118px;--y:-66px;--size:58px;--delay:.04s;--c1:#7fc8ff;--c2:#2262a8">
 <span class="privacy-person-face">
 <span class="privacy-fallback">A</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend1.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend1.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-family family-two" style="--x:116px;--y:-54px;--size:54px;--delay:.11s;--c1:#ffd49a;--c2:#b86728">
 <span class="privacy-person-face">
 <span class="privacy-fallback">P</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend2.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend2.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-family family-three" style="--x:-104px;--y:74px;--size:49px;--delay:.18s;--c1:#e6a6ff;--c2:#7742a0">
 <span class="privacy-person-face">
 <span class="privacy-fallback">M</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend3.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend3.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-family family-four" style="--x:124px;--y:72px;--size:46px;--delay:.25s;--c1:#9de7bb;--c2:#2d7d54">
 <span class="privacy-person-face">
 <span class="privacy-fallback">J</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend4.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend4.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-family family-five" style="--x:8px;--y:-118px;--size:43px;--delay:.31s;--c1:#ffb8c6;--c2:#b54061">
 <span class="privacy-person-face">
 <span class="privacy-fallback">S</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend5.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend5.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-one" style="--x:-174px;--y:-18px;--size:28px;--delay:.03s;--c1:#8fd5f0;--c2:#34758f">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyOther1.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyOther1.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-two" style="--x:178px;--y:2px;--size:25px;--delay:.08s;--c1:#ffd28c;--c2:#a96325">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyOther2.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyOther2.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-three" style="--x:-154px;--y:112px;--size:23px;--delay:.13s;--c1:#d6b5ff;--c2:#6d4ca3">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyOther3.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyOther3.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-four" style="--x:164px;--y:118px;--size:21px;--delay:.18s;--c1:#91e5bd;--c2:#367b5b">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyOther4.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyOther4.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-five" style="--x:-82px;--y:-132px;--size:22px;--delay:.23s;--c1:#ffafaf;--c2:#a33c3c">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyOther5.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyOther5.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-six" style="--x:92px;--y:-132px;--size:24px;--delay:.28s;--c1:#a8c9ff;--c2:#46679d">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend5.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend5.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-seven" style="--x:-18px;--y:142px;--size:20px;--delay:.33s;--c1:#ffd7a7;--c2:#a76229">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend4.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend4.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-eight" style="--x:48px;--y:136px;--size:18px;--delay:.38s;--c1:#e6b7ff;--c2:#764298">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend3.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend3.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-nine" style="--x:-202px;--y:62px;--size:17px;--delay:.43s;--c1:#a0e6d4;--c2:#32796c">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend2.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend2.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 <span class="privacy-person privacy-person-crowd crowd-ten" style="--x:202px;--y:-74px;--size:19px;--delay:.48s;--c1:#ffc3a1;--c2:#a6542d">
 <span class="privacy-person-face">
 <span class="privacy-fallback">•</span>
-<img alt="" class="privacy-photo" data-src="../assets/img/PrivacyFriend1.webp" decoding="async" height="512" width="512"/>
+<img alt="" class="privacy-photo" data-src="/assets/img/PrivacyFriend1.webp" decoding="async" height="512" width="512"/>
 </span>
 </span>
 </div>
@@ -3215,7 +3305,7 @@ body.app-qr-open{overflow:hidden}
 </details>
 <details class="faq-item reveal">
 <summary>How does this connect to the road trip tracker and journal?</summary>
-<div class="faq-answer">Discovery helps you decide where to go. The <a href="../road-trip-tracker">road trip tracker</a> records the real route, and the <a href="../road-trip-journal">road trip journal</a> keeps the photos, Moments and driving days together afterwards.</div>
+<div class="faq-answer">Discovery helps you decide where to go. The <a href="/road-trip-tracker">road trip tracker</a> records the real route, and the <a href="/road-trip-journal">road trip journal</a> keeps the photos, Moments and driving days together afterwards.</div>
 </details>
 </div>
 </div>
@@ -3232,14 +3322,14 @@ body.app-qr-open{overflow:hidden}
 <div class="store-row">
 <div class="store-stack">
 <a href="https://apps.apple.com/app/id6755696102" rel="noopener" target="_blank" data-store-link>
-<img alt="Download EveryVoyage on the App Store" src="../assets/stores/download-on-the-app-store.svg"/>
+<img alt="Download EveryVoyage on the App Store" src="/assets/stores/download-on-the-app-store.svg"/>
 </a>
 <div class="store-rating"><strong>4.9/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Free on iOS</div>
 </div>
 <div class="store-stack">
 <a href="https://play.google.com/store/apps/details?id=com.everyvoyage.app" rel="noopener" target="_blank" data-store-link>
-<img alt="Get EveryVoyage on Google Play" src="../assets/stores/Google_Play_Store_badge_EN.svg"/>
+<img alt="Get EveryVoyage on Google Play" src="/assets/stores/Google_Play_Store_badge_EN.svg"/>
 </a>
 <div class="store-rating"><strong>4.8/5</strong><span class="stars">★★★★★</span></div>
 <div class="store-free">Free on Android</div>
