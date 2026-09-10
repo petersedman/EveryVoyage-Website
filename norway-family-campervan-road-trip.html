@@ -1014,17 +1014,58 @@
 }
 
 </style>
+
+<style>
+/* Responsive story corrections. Large-screen composition stays intact. */
+.route-country i{display:grid;place-items:center;border:0;border-radius:0;box-shadow:none;background:var(--charcoal);font-style:normal;font-size:28px;line-height:1}
+.author-card{grid-template-columns:86px minmax(0,1fr) auto}
+.author-card>div{min-width:0}
+.author-card h3{overflow-wrap:anywhere}
+.author-card .pill-btn{max-width:100%;white-space:normal;text-align:center}
+
+/* A small edge crop removes the black strips within this saved photo. */
+.sunrise-gallery figure:nth-child(6) img{width:104%;max-width:none;margin-left:-2%;object-fit:cover}
+
+@media(max-width:1120px){
+  .challenge{margin-inline:0!important}
+  .challenge-body{grid-template-columns:minmax(0,1fr);gap:24px}
+  .challenge h3{margin-bottom:24px}
+  .challenge-visual{width:100%;max-width:none}
+  .route-blueprint{margin-inline:0!important;padding:44px 28px!important}
+  .route-blueprint-main{grid-template-columns:minmax(0,1fr)!important;gap:28px}
+  .route-blueprint-main>*{min-width:0}
+  .route-track{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 12px}
+  .route-track::before{display:none}
+  .route-app-stage{width:100%;min-height:0;padding-top:84px;margin-top:0}
+  .route-app-phone{width:min(260px,80%)}
+  .route-app-note{top:0;left:50%;transform:translateX(-50%);width:max-content;max-width:100%;text-align:center}
+  .highlight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .highlight-chip{min-width:0;text-align:left;overflow-wrap:anywhere}
+  .author-card{grid-template-columns:70px minmax(0,1fr);padding:28px;gap:18px}
+  .author-card .avatar{width:70px;height:70px}
+  .author-card .pill-btn{grid-column:1/-1;width:100%}
+}
+@media(max-width:560px){
+  .route-blueprint{padding:32px 20px!important}
+  .route-track{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .highlight-chip{padding:16px 12px}
+  .highlight-chip b{font-size:19px;line-height:1.3;display:block}
+  .highlight-chip small{letter-spacing:.06em}
+  .author-card{grid-template-columns:minmax(0,1fr);padding:24px;gap:16px;justify-items:start}
+  .author-card h3{font-size:26px!important}
+  .author-separator{display:none}
+  .author-handle{display:block;font-family:var(--font-body);font-size:18px;line-height:1.4;margin-top:6px}
+  .author-card p{font-size:14px}
+  .author-card .pill-btn{min-height:44px}
+  .sunrise-gallery{grid-template-rows:repeat(4,auto)}
+  .sunrise-gallery figure:nth-child(2),.sunrise-gallery figure:nth-child(3),.sunrise-gallery figure:nth-child(4),.sunrise-gallery figure:nth-child(5){aspect-ratio:1.12}
+  .sunrise-gallery figure:nth-child(1) img{position:absolute;inset:0}
+  .sunrise-gallery figure:nth-child(6){align-self:start}
+  .sunrise-gallery figure:nth-child(6) img{height:auto}
+}
+</style>
 </head>
 <body>
-  <div id="previewGate" style="position:fixed;inset:0;z-index:99999;background:#F7F4ED;display:grid;place-items:center;text-align:center;font-family:Arial">
-    <div>
-      <img src="https://everyvoyage.com/assets/brand/Logo.png" style="width:190px;margin:0 auto 30px">
-      <h2>Adventure Story Preview</h2>
-      <input id="previewPassword" type="password" placeholder="Password" style="padding:14px;border-radius:10px;border:1px solid #ccc">
-      <button onclick="unlockPreview()" style="padding:14px 20px;background:#f54a00;color:white;border:0;border-radius:10px;font-weight:bold">View story →</button>
-      <p id="wrongPassword"></p>
-    </div>
-  </div>
 <div aria-hidden="true" class="scroll-progress"><span id="scrollProgress"></span></div>
 <header class="site-bar">
 <div class="site-bar-inner">
@@ -1260,18 +1301,18 @@
 <h2>The route is inspiration, not a script.</h2>
 <p class="lede">Billy's exact trip belonged to his family. Use it as inspiration: open the real Voyage, follow the broad shape, then adapt the distance, weather window and stops around your own vehicle and pace.</p>
 <div aria-label="Broad country order from Billy's trip" class="route-track">
-<div class="route-country"><i></i><span>UK</span></div>
-<div class="route-country"><i></i><span>Netherlands</span></div>
-<div class="route-country"><i></i><span>Germany</span></div>
-<div class="route-country"><i></i><span>Denmark</span></div>
-<div class="route-country"><i></i><span>Norway</span></div>
-<div class="route-country"><i></i><span>Sweden</span></div>
-<div class="route-country"><i></i><span>Finland</span></div>
+<div class="route-country"><i aria-hidden="true">🇬🇧</i><span>UK</span></div>
+<div class="route-country"><i aria-hidden="true">🇳🇱</i><span>Netherlands</span></div>
+<div class="route-country"><i aria-hidden="true">🇩🇪</i><span>Germany</span></div>
+<div class="route-country"><i aria-hidden="true">🇩🇰</i><span>Denmark</span></div>
+<div class="route-country"><i aria-hidden="true">🇳🇴</i><span>Norway</span></div>
+<div class="route-country"><i aria-hidden="true">🇸🇪</i><span>Sweden</span></div>
+<div class="route-country"><i aria-hidden="true">🇫🇮</i><span>Finland</span></div>
 </div>
 </div>
 <div aria-label="Billy's real Norway Voyage in EveryVoyage" class="route-app-stage">
 <div class="route-app-note"><small>Billy's actual Voyage</small><strong>25 trips · 7 countries</strong></div>
-<img alt="Billy's Norway 2022 Voyage shown in EveryVoyage" class="route-app-phone" data-app-phone="true" decoding="async" src="https://everyvoyage.com/assets/img/AppPhoneHero.webp"/>
+<img alt="Billy's Norway 2022 Voyage shown in EveryVoyage" class="route-app-phone" data-app-phone="true" decoding="async" src="https://everyvoyage.com/assets/img/Norway2022Screenshot.webp"/>
 </div>
 </div>
 <div class="highlight-grid">
@@ -1358,7 +1399,7 @@
 <aside aria-label="About Billy" class="author-card reveal">
 <img alt="Billy from @man_adventure_van" class="avatar" src="https://f003.backblazeb2.com/file/AnyVoyagePhotos/profile/user_3FGieRTzXoUckuboCCA1U2maavo/6egtyyv7zz42v83uu4fzlbmou/avatar.jpg"/>
 <div>
-<h3>Billy · @man_adventure_van</h3>
+<h3>Billy <span class="author-separator">· </span><span class="author-handle">@man_adventure_van</span></h3>
 <p>A family road-trip story shared directly with EveryVoyage. Follow Billy for the journeys, the van and the real moments in between.</p>
 </div>
 <a class="pill-btn" href="https://www.instagram.com/man_adventure_van/" rel="noopener external">Follow on Instagram ↗</a>
@@ -1579,14 +1620,5 @@
   });
 })();
 </script>
-<script>
-  const PREVIEW_PASSWORD = "BillyNorway2022";
-  function unlockPreview(){
-    if(document.getElementById("previewPassword").value === PREVIEW_PASSWORD){
-      sessionStorage.setItem("billyPreview","yes");
-      document.getElementById("previewGate").remove();
-    } else document.getElementById("wrongPassword").textContent="Incorrect password";
-  }
-  if(sessionStorage.getItem("billyPreview")==="yes") document.getElementById("previewGate")?.remove();
-  </script></body>
+</body>
 </html>
