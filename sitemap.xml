@@ -1714,4 +1714,13 @@
     <loc>https://everyvoyage.com/cookie-policy</loc>
   </url>
 
+    <!-- Billy's Norway campervan road trip: English -->
+  <url>
+    <loc>https://everyvoyage.com/road-trip-inspiration/norway-family-campervan-road-trip/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB"
+      href="https://everyvoyage.com/road-trip-inspiration/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://everyvoyage.com/road-trip-inspiration/norway-family-campervan-road-trip" />
+  </url>
+
 </urlset>
