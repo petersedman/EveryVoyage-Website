@@ -157,7 +157,10 @@
     }
   ]
 }</script>
-<style>
+
+
+
+<meta content="da" name="language"/><style>
     :root{
       --cream:#f7f4ed;
       --paper:#fffdf9;
@@ -263,7 +266,7 @@
     .hero-copy h1 em{color:#ff7d43;font-style:italic}
     .hero-copy>p{max-width:650px;margin:27px 0 24px;color:rgba(255,255,255,.89);font-size:clamp(17px,1.45vw,21px)}
     .hero-proof{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:25px}
-    .hero-proof span{display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(9,25,26,.38);color:rgba(255,255,255,.92);font-size:12px;font-weight:750;backdrop-filter:blur(8px)}
+    .hero-proof span{display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border-radius:999px;color:rgba(255,255,255,.92);font-size:12px;font-weight:750;backdrop-filter:blur(8px)}
 
     /* Hero discovery feed */
     .discovery-stage{position:relative;min-height:690px;display:grid;place-items:center}
@@ -2733,17 +2736,14 @@ body.app-qr-open{overflow:hidden}
     margin-inline:auto;
   }
 }
-</style>
-<style>
-@media (min-width:1201px){
-  .mobile-menu{position:absolute;top:calc(100% + 18px);right:0;}
-}
+/* Keep every language option in the compact two-column box layout. */
 .mobile-language-grid{
   display:grid !important;
   grid-template-columns:repeat(2,minmax(0,1fr)) !important;
   gap:7px !important;
   padding-top:8px !important;
 }
+
 .mobile-language-grid a{
   min-height:40px;
   padding:9px 10px !important;
@@ -2759,19 +2759,65 @@ body.app-qr-open{overflow:hidden}
   line-height:1.2;
   text-decoration:none !important;
 }
+
 .mobile-language-grid a:hover,
 .mobile-language-grid a[aria-current="page"]{
   border-color:rgba(245,74,0,.22);
   background:var(--orange-soft,#fff0e8) !important;
   color:var(--orange-dark,#d94100) !important;
 }
-/* Small, locale-scoped safeguards for longer native headings. */
-@media(max-width:720px){
-  html[lang="it"] .hero-copy h1{font-size:clamp(36px,10.6vw,52px);}
-  html[lang="nl"] .hero-copy h1{font-size:clamp(37px,10.8vw,53px);}
+
+@media (min-width:1201px){
+  .mobile-menu{
+    position:absolute;
+    top:calc(100% + 18px);
+    right:0;
+  }
 }
 </style>
-<meta content="da" name="language"/></head>
+<style>
+/* Community story feature: one published adventure, with a fully clickable card. */
+.hero-story-link{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:11px 20px;margin:0 0 24px;border:1px solid rgba(255,255,255,.55);border-radius:12px;color:#fff;background:rgba(9,25,26,.5);font-size:16px;font-weight:800;text-decoration:none;transition:background .2s}
+.hero-story-link:hover{background:var(--orange-dark)}
+.hero-story-link:focus-visible,.featured-story-link:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+.community-stories{padding:90px 0 100px;background:var(--cream)}
+.community-stories-heading{max-width:790px;margin-bottom:36px}
+.community-stories-heading .heading{font-size:clamp(40px,4.5vw,64px);line-height:1.06}
+.community-stories-heading>p{max-width:660px;color:var(--muted);font-size:18px;line-height:1.6;margin:20px 0 0}
+.featured-story{border:1px solid var(--line);border-radius:28px;background:var(--paper);box-shadow:0 18px 50px rgba(23,61,60,.07)}
+.featured-story-link{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);color:var(--ink);text-decoration:none;border-radius:28px}
+.featured-story-image{position:relative;min-height:520px;overflow:hidden;border-radius:28px 0 0 28px;background:var(--forest)}
+.featured-story-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s var(--ease)}
+.featured-story-link:hover .featured-story-image img{transform:scale(1.025)}
+.featured-story-badge{position:absolute;top:22px;left:22px;max-width:calc(100% - 44px);padding:9px 14px;border-radius:999px;background:var(--paper);color:var(--forest);font-size:13px;font-weight:800}
+.featured-story-copy{padding:clamp(28px,3.5vw,48px);min-width:0;align-self:center}
+.featured-story-location{color:var(--orange-dark);font-size:14px;font-weight:800;margin:0 0 16px;line-height:1.5}
+.featured-story-copy h3{font-family:var(--display);font-size:clamp(32px,3.3vw,46px);font-weight:500;line-height:1.1;letter-spacing:-.035em;margin:0 0 20px;overflow-wrap:break-word}
+#billy-feature-description{color:var(--muted);font-size:16px;line-height:1.7;margin:0 0 23px}
+.featured-story-stats{list-style:none;padding:0;margin:0 0 24px;display:flex;flex-wrap:wrap;gap:8px}
+.featured-story-stats li{padding:7px 11px;border:1px solid var(--line);border-radius:9px;background:var(--cream);font-size:14px;font-weight:700}
+.featured-story-author{font-size:14px;font-weight:800;margin:0 0 24px;line-height:1.6}
+.featured-story-author>span{display:block;color:var(--muted);font-weight:500;overflow-wrap:anywhere}
+.featured-story-cta{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:48px;padding:12px 20px;border-radius:999px;color:#fff;background:var(--orange-dark);font-size:16px;font-weight:800;transition:background .2s}
+.featured-story-link:hover .featured-story-cta{background:var(--forest)}
+@media(max-width:860px){
+.community-stories{padding:64px 0 70px}
+.featured-story-link{grid-template-columns:minmax(0,1fr)}
+.featured-story-image{min-height:0;aspect-ratio:16/10;border-radius:28px 28px 0 0}
+.featured-story-copy{padding:30px}
+.featured-story-copy h3{font-size:clamp(30px,5vw,44px)}
+}
+@media(max-width:560px){
+.community-stories-heading .heading{font-size:38px}
+.community-stories-heading>p{font-size:16px}
+.featured-story-copy{padding:24px}
+.featured-story-image{aspect-ratio:4/3}
+.featured-story-badge{top:16px;left:16px;font-size:12px}
+.featured-story-cta{width:100%}
+}
+@media(prefers-reduced-motion:reduce){.featured-story-image img,.featured-story-cta,.hero-story-link{transition:none}.featured-story-link:hover .featured-story-image img{transform:none}}
+</style>
+</head>
 <body>
 <header class="site-header" id="siteHeader">
 <a aria-label="EveryVoyage-forside" class="brand-logo" href="/da/">
@@ -2789,7 +2835,7 @@ body.app-qr-open{overflow:hidden}
 <a class="menu-product-link" href="/da/stops"><strong>Find stop og steder</strong><span aria-hidden="true">→</span></a>
 <a class="menu-product-link" href="/da/road-trip-tracker"><strong>Registrer roadtrips</strong><span aria-hidden="true">→</span></a>
 <a class="menu-product-link" href="/da/road-trip-journal"><strong>Før en roadtripdagbog</strong><span aria-hidden="true">→</span></a>
-<a class="menu-product-link" href="/da/road-trip-inspiration"><strong>Udforsk roadtrips</strong><span aria-hidden="true">→</span></a>
+<a class="menu-product-link" href="/da/road-trip-inspiration"><strong>Find inspiration til roadtrips</strong><span aria-hidden="true">→</span></a>
 </nav>
 <div class="menu-utility-links">
 <a href="/da/#how-it-works">Sådan fungerer det</a>
@@ -2819,7 +2865,7 @@ body.app-qr-open{overflow:hidden}
 <button aria-label="Luk QR-koden" class="app-qr-close" data-close-app-qr="" type="button">×</button>
 <span class="app-qr-kicker">HENT EVERYVOYAGE</span>
 <h2 id="appQrTitle">Scan for at hente appen</h2>
-<a class="app-qr-url" href="https://everyvoyage.com/da/app" rel="noopener" target="_blank">everyvoyage.com/da/app</a>
+<a class="app-qr-url" href="/da/app" rel="noopener" target="_blank">everyvoyage.com/da/app</a>
 <img alt="QR-kode til download af EveryVoyage-appen" class="app-qr-image" src="/assets/img/EveryVoyageQR-da.png"/>
 <p id="appQrDescription">Åbn kameraet på din telefon, og ret det mod QR-koden.</p>
 </section>
@@ -2831,7 +2877,8 @@ body.app-qr-open{overflow:hidden}
 <div class="breadcrumbs"><a href="/da/">Forside</a><span>›</span><span>Inspiration til roadtrips</span></div>
 <span class="hero-eyebrow"><i></i> Roadtripinspiration fra rigtige rejsende</span>
 <h1><span>Opdag roadtrips</span><em class="hero-nowrap">gennem rigtige mennesker.</em></h1>
-<p>Følg rejser i autocamper og camper i feedet. Se ruter, stop og Øjeblikke, når de bliver delt, og find nye steder til din egen roadtrip.</p>
+<p>Læs om ægte eventyr i autocamper og camper, opdag de steder, der gjorde dem mindeværdige, og følg flere Rejser i EveryVoyage-appen.</p>
+<a class="hero-story-link" href="#community-stories">Læs historien <span aria-hidden="true">↓</span></a>
 <div class="hero-proof">
 <span>🗺️ Rigtige ruter og Rejser</span>
 <span>📍 Nye opdateringer fra stop</span>
@@ -2866,11 +2913,37 @@ body.app-qr-open{overflow:hidden}
 </div>
 </div>
 </section>
-<div class="section-bridge" data-next="#journeys">
-<button aria-label="Fortsæt til inspiration fra rigtige roadtrips" type="button">
-<svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+<div class="section-bridge" data-next="#community-stories">
+<button aria-label="Fortsæt til den udvalgte rejsehistorie" type="button">
+<svg fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
 </button>
 </div>
+<section class="community-stories" id="community-stories" aria-labelledby="community-stories-title">
+<div class="wrap">
+<div class="community-stories-heading">
+<span class="section-kicker">Fra EveryVoyage-fællesskabet</span>
+<h2 class="heading" id="community-stories-title">Ægte roadtrips.<em>Historier, der er værd at følge.</em></h2>
+<p>Mød de rejsende, opdag deres yndlingssteder, og find inspiration til dit eget eventyr.</p>
+</div>
+<article class="featured-story">
+<a class="featured-story-link" href="/da/norway-family-campervan-road-trip" aria-labelledby="billy-feature-title" aria-describedby="billy-feature-description">
+<div class="featured-story-image">
+<img src="https://f003.backblazeb2.com/file/AnyVoyagePhotos/trip/1ar3d3nwzse4mwmwxc9esfg38/4rr3kkgmntikbwghoyoir398s/full.jpg" alt="Et medlem af Billys familie ser solopgangen ved Preikestolen over den norske fjord" loading="lazy" decoding="async"/>
+<span class="featured-story-badge">Udvalgt eventyr</span>
+</div>
+<div class="featured-story-copy">
+<p class="featured-story-location">Norge <span aria-hidden="true">·</span> Familieeventyr i camper</p>
+<h3 id="billy-feature-title">6.500 km. 30 dage. En uforglemmelig roadtrip i Norge.</h3>
+<p id="billy-feature-description">En vandretur til solopgangen ved Preikestolen, snedækkede veje og en uventet dag på hundeslæde. Tag med Billy og familien på deres månedlange eventyr gennem Norge.</p>
+<ul class="featured-story-stats" aria-label="Rejseoplysninger"><li>30 dage</li><li>6.500 km</li><li>April 2022</li></ul>
+<p class="featured-story-author">Billy og familien <span>@man_adventure_van</span></p>
+<span class="featured-story-cta">Læs Billys historie <span aria-hidden="true">→</span></span>
+</div>
+</a>
+</article>
+</div>
+</section>
+
 <section class="journey-proof" id="journeys">
 <div class="wrap proof-grid">
 <div class="proof-copy reveal">
@@ -2895,7 +2968,7 @@ body.app-qr-open{overflow:hidden}
 </div>
 </section><div class="section-bridge" data-next="#whole-journey">
 <button aria-label="Fortsæt til den komplette roadtrip" type="button">
-<svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+<svg fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
 </button>
 </div><section class="journey-loop-section" id="whole-journey">
 <div class="wrap">
@@ -2905,11 +2978,11 @@ body.app-qr-open{overflow:hidden}
 <p>Start med en rigtig rejse, vælg de dele, der passer til dig, og registrer og gem derefter den roadtrip, du faktisk tager.</p>
 </div>
 <div class="journey-loop-cards">
-<a class="journey-loop-card reveal" href="#journeys">
+<a class="journey-loop-card reveal" href="/da/norway-family-campervan-road-trip">
 <span class="number">01 · FØLG</span>
 <h3>Se roadtrippen bag billederne.</h3>
-<p>Åbn en anden rejsendes Rejse, og se ruten, køredagene, stoppene og Øjeblikkene i den rækkefølge, de skete.</p>
-<span class="journey-loop-link">Udforsk en rigtig rejse →</span>
+<p>Læs om Billys eventyr i Norge, og opdag ruten, familieminderne og de steder, der gjorde rejsen særlig.</p>
+<span class="journey-loop-link">Læs Billys historie fra Norge →</span>
 <div class="journey-loop-visual">🗺️</div>
 </a>
 <a class="journey-loop-card reveal" href="/da/road-trip-tracker">
@@ -2930,7 +3003,7 @@ body.app-qr-open{overflow:hidden}
 </div>
 </section><div class="section-bridge" data-next="#feed">
 <button aria-label="Fortsæt til EveryVoyage-feedet" type="button">
-<svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+<svg fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
 </button>
 </div><section class="feed-experience" id="feed">
 <div class="wrap">
@@ -2957,7 +3030,7 @@ body.app-qr-open{overflow:hidden}
 </div>
 </section><div class="section-bridge" data-next="#places">
 <button aria-label="Fortsæt til at opdage steder" type="button">
-<svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+<svg fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
 </button>
 </div>
 <section class="places" id="places">
@@ -2990,7 +3063,7 @@ body.app-qr-open{overflow:hidden}
 </section>
 <div class="section-bridge" data-next="#privacy">
 <button aria-label="Fortsæt til deling og privatlivsindstillinger" type="button">
-<svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+<svg fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
 </button>
 </div>
 <section class="privacy" id="privacy">
@@ -3009,7 +3082,7 @@ body.app-qr-open{overflow:hidden}
 </div>
 <div aria-live="polite" class="privacy-mode">
 <span aria-hidden="true" class="privacy-mode-icon" id="privacyModeIcon">
-<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
 <rect height="10" rx="2" width="14" x="5" y="10"></rect>
 <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
 </svg>
@@ -3125,7 +3198,7 @@ body.app-qr-open{overflow:hidden}
 <div class="privacy-features">
 <article class="privacy-feature reveal">
 <div class="privacy-animation route-privacy-animation">
-<svg aria-hidden="true" viewbox="0 0 360 150">
+<svg aria-hidden="true" viewBox="0 0 360 150">
 <path class="route-edge-hidden route-start-hidden" d="M24 111 C43 103 61 96 80 94"></path>
 <path class="route-middle" d="M80 94 C111 99 117 105 145 91 S222 64 281 50"></path>
 <path class="route-edge-hidden route-end-hidden" d="M281 50 C305 44 323 37 338 29"></path>
@@ -3165,7 +3238,7 @@ body.app-qr-open{overflow:hidden}
 </section>
 <div class="section-bridge" data-next="#faq">
 <button aria-label="Fortsæt til spørgsmål om roadtripinspiration" type="button">
-<svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+<svg fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
 </button>
 </div>
 <section class="faq" id="faq">
@@ -3209,7 +3282,7 @@ body.app-qr-open{overflow:hidden}
 </section>
 <div class="section-bridge" data-next="#download">
 <button aria-label="Fortsæt til download af EveryVoyage" type="button">
-<svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+<svg fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
 </button>
 </div>
 <section class="final-cta" id="download">
@@ -3247,13 +3320,13 @@ body.app-qr-open{overflow:hidden}
 <div aria-label="Følg EveryVoyage" class="footer-socials">
 <a href="https://www.instagram.com/everyvoyageapp/" rel="noopener noreferrer" target="_blank">
 <span aria-hidden="true" class="footer-social-icon">
-<svg role="img" viewbox="0 0 24 24"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5Zm8.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"></path></svg>
+<svg role="img" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5Zm8.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"></path></svg>
 </span>
 Instagram
 </a>
 <a href="https://www.tiktok.com/@everyvoyage" rel="noopener noreferrer" target="_blank">
 <span aria-hidden="true" class="footer-social-icon">
-<svg role="img" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.72-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.45 3.98-2.14 6.15-1.73.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07Z"></path></svg>
+<svg role="img" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.72-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.45 3.98-2.14 6.15-1.73.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07Z"></path></svg>
 </span>
 TikTok
 </a>
@@ -3288,8 +3361,8 @@ TikTok
 <div class="footer-bottom">
 <span>© 2026 EveryVoyage. SIMPLR LABS LTD.</span>
 <nav aria-label="Juridisk" class="footer-legal">
-<a href="/da/privacy-policy/">Privatlivspolitik</a>
-<a href="/da/terms/">Vilkår og betingelser</a>
+<a href="/da/privacy-policy">Privatlivspolitik</a>
+<a href="/da/terms">Vilkår og betingelser</a>
 </nav>
 </div>
 </div>
@@ -3463,7 +3536,7 @@ TikTok
   }
 
   document.querySelectorAll('[data-smart-app-link]').forEach(link=>{
-    link.href='/app';
+    link.href='/da/app';
     link.addEventListener('click',event=>{
       if(isMobileAppDevice)return;
       event.preventDefault();
