@@ -1714,10 +1714,10 @@
     <loc>https://everyvoyage.com/cookie-policy</loc>
   </url>
 
-    <!-- Billy's Norway campervan road trip: English -->
+  <!-- Billy's Norway campervan road trip -->
   <url>
-    <loc>https://everyvoyage.com/road-trip-inspiration/norway-family-campervan-road-trip</loc>
-    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/road-trip-inspiration/norway-family-campervan-road-trip" />
+    <loc>https://everyvoyage.com/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
     <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
     <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
     <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
@@ -1727,7 +1727,132 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
     <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
     <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/road-trip-inspiration/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
   </url>
-
+  <url>
+    <loc>https://everyvoyage.com/en-us/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/da/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/de/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/es/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/fr/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/it/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/nl/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/no/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+  </url>
+  <url>
+    <loc>https://everyvoyage.com/sv/norway-family-campervan-road-trip</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://everyvoyage.com/en-us/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://everyvoyage.com/da/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://everyvoyage.com/de/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://everyvoyage.com/es/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://everyvoyage.com/fr/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://everyvoyage.com/it/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://everyvoyage.com/nl/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://everyvoyage.com/no/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://everyvoyage.com/sv/norway-family-campervan-road-trip" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everyvoyage.com/norway-family-campervan-road-trip" />
+  </url>
 </urlset>
