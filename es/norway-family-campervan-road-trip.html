@@ -1159,6 +1159,54 @@
 .ev-menu-product:hover{background:#fff0e8;border-color:rgba(245,74,0,.13)}
 .ev-menu-utility{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:12px;padding-top:13px;border-top:1px solid var(--mist)}
 .ev-menu-utility a{padding:10px;border-radius:11px;background:var(--cream);font-size:14px;font-weight:700;text-align:center;text-decoration:none}
+.ev-language-switcher {
+  margin-top: 11px;
+}
+
+.ev-language-switcher summary {
+  padding: 11px 6px;
+  color: var(--slate);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.4;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.ev-language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  padding-top: 7px;
+}
+
+.ev-language-grid a {
+  min-height: 40px;
+  padding: 9px 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--mist);
+  border-radius: 11px;
+  background: var(--cream);
+  color: var(--charcoal);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.ev-language-grid a:hover,
+.ev-language-grid a[aria-current="page"] {
+  border-color: rgba(245, 74, 0, .22);
+  background: #fff0e8;
+  color: #d94100;
+}
+
+.ev-language-grid a:focus-visible,
+.ev-language-switcher summary:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 2px;
+}
 .ev-menu-get-app{display:flex;margin-top:14px;min-height:48px}
 .ev-site-header a:focus-visible,.ev-menu-toggle:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 .hero .story-breadcrumbs{font-size:13px;line-height:1.6;margin:0 0 22px;color:var(--slate)}
@@ -1196,6 +1244,21 @@ article h2,article section[id]{scroll-margin-top:155px}
 <a class="ev-menu-product" href="/es/road-trip-journal"><strong>Crea tu diario de viaje</strong><span aria-hidden="true">→</span></a>
 <a class="ev-menu-product" href="/es/road-trip-inspiration"><strong>Descubre ideas para road trips</strong><span aria-hidden="true">→</span></a>
 <div class="ev-menu-utility"><a href="/es/#how-it-works">Cómo funciona</a><a href="/es/features">Todas las funciones</a></div>
+<details class="ev-language-switcher">
+  <summary>Idioma: Español</summary>
+  <div class="ev-language-grid">
+  <a href="/norway-family-campervan-road-trip" hreflang="en-GB" lang="en-GB" aria-current="page">English (UK)</a>
+  <a href="/en-us/norway-family-campervan-road-trip" hreflang="en-US" lang="en-US">English (US)</a>
+  <a href="/de/norway-family-campervan-road-trip" hreflang="de" lang="de">Deutsch</a>
+  <a href="/fr/norway-family-campervan-road-trip" hreflang="fr" lang="fr">Français</a>
+  <a href="/es/norway-family-campervan-road-trip" hreflang="es" lang="es">Español</a>
+  <a href="/it/norway-family-campervan-road-trip" hreflang="it" lang="it">Italiano</a>
+  <a href="/nl/norway-family-campervan-road-trip" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="/sv/norway-family-campervan-road-trip" hreflang="sv" lang="sv">Svenska</a>
+  <a href="/da/norway-family-campervan-road-trip" hreflang="da" lang="da">Dansk</a>
+  <a href="/no/norway-family-campervan-road-trip" hreflang="no" lang="no">Norsk</a>
+  </div>
+</details>
 <a class="ev-menu-get-app" href="/es/app">Descargar la app</a>
 </nav>
 </header>
@@ -1839,5 +1902,45 @@ article h2,article section[id]{scroll-margin-top:155px}
   menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
 })();
 </script>
+<script>
+  (() => {
+    const selector = document.querySelector('.ev-language-switcher');
+    if (!selector) return;
+  
+    const currentLanguage =
+      (document.documentElement.lang || 'en-GB').toLowerCase();
+  
+    const languageLabels = {
+      'en-gb': ['Language', 'English (UK)'],
+      'en-us': ['Language', 'English (US)'],
+      'de': ['Sprache', 'Deutsch'],
+      'fr': ['Langue', 'Français'],
+      'es': ['Idioma', 'Español'],
+      'it': ['Lingua', 'Italiano'],
+      'nl': ['Taal', 'Nederlands'],
+      'sv': ['Språk', 'Svenska'],
+      'da': ['Sprog', 'Dansk'],
+      'no': ['Språk', 'Norsk']
+    };
+  
+    const label =
+      languageLabels[currentLanguage] || languageLabels['en-gb'];
+  
+    const summary = selector.querySelector('[data-language-summary]');
+    if (summary) {
+      summary.textContent = `${label[0]}: ${label[1]}`;
+    }
+  
+    selector.querySelectorAll('a[lang]').forEach(link => {
+      const linkLanguage = link.getAttribute('lang').toLowerCase();
+  
+      if (linkLanguage === currentLanguage) {
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  })();
+  </script>
 </body>
 </html>
