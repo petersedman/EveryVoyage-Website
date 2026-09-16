@@ -103,6 +103,25 @@
       ]
     },
     {
+      "@type": "ItemList",
+      "@id": "https://everyvoyage.com/it/road-trip-inspiration#featured-stories",
+      "name": "Storie di viaggi on the road in evidenza",
+      "numberOfItems": 1,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "BlogPosting",
+            "@id": "https://everyvoyage.com/it/norway-family-campervan-road-trip#article",
+            "url": "https://everyvoyage.com/it/norway-family-campervan-road-trip",
+            "headline": "6.500 km. 30 giorni. Un indimenticabile viaggio on the road in Norvegia.",
+            "image": "https://f003.backblazeb2.com/file/AnyVoyagePhotos/trip/1ar3d3nwzse4mwmwxc9esfg38/4rr3kkgmntikbwghoyoir398s/full.jpg"
+          }
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -2771,7 +2790,42 @@ body.app-qr-open{overflow:hidden}
   html[lang="nl"] .hero-copy h1{font-size:clamp(37px,10.8vw,53px);}
 }
 </style>
-<meta content="it" name="language"/></head>
+<meta content="it" name="language"/>
+<style>
+/* Community story feature: one published adventure, with a fully clickable card. */
+.hero-story-link{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:11px 20px;margin:0 0 24px;border:1px solid rgba(255,255,255,.55);border-radius:999px;color:#fff;background:rgba(9,25,26,.5);font-size:16px;font-weight:800;text-decoration:none;transition:background .2s}
+.hero-story-link:hover{background:var(--orange-dark)}
+.hero-story-link:focus-visible,.featured-story-link:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+.community-stories{padding:90px 0 100px;background:var(--cream)}
+.community-stories-heading{max-width:790px;margin-bottom:36px}
+.community-stories-heading .heading{font-size:clamp(40px,4.5vw,64px);line-height:1.06}
+.community-stories-heading>p{max-width:660px;color:var(--muted);font-size:18px;line-height:1.6;margin:20px 0 0}
+.featured-story{border:1px solid var(--line);border-radius:28px;background:var(--paper);box-shadow:0 18px 50px rgba(23,61,60,.07)}
+.featured-story-link{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);color:var(--ink);text-decoration:none;border-radius:28px}
+.featured-story-image{position:relative;min-height:520px;overflow:hidden;border-radius:28px 0 0 28px;background:var(--forest)}
+.featured-story-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s var(--ease)}
+.featured-story-link:hover .featured-story-image img{transform:scale(1.025)}
+.featured-story-badge{position:absolute;top:22px;left:22px;max-width:calc(100% - 44px);padding:9px 14px;border-radius:999px;background:var(--paper);color:var(--forest);font-size:13px;font-weight:800}
+.featured-story-copy{padding:clamp(28px,3.5vw,48px);min-width:0;align-self:center}
+.featured-story-location{color:var(--orange-dark);font-size:14px;font-weight:800;margin:0 0 16px;line-height:1.5}
+.featured-story-copy h3{font-family:var(--display);font-size:clamp(32px,3.3vw,46px);font-weight:500;line-height:1.1;letter-spacing:-.035em;margin:0 0 20px;overflow-wrap:break-word}
+#billy-feature-description{color:var(--muted);font-size:16px;line-height:1.7;margin:0 0 23px}
+.featured-story-stats{list-style:none;padding:0;margin:0 0 24px;display:flex;flex-wrap:wrap;gap:8px}
+.featured-story-stats li{padding:7px 11px;border:1px solid var(--line);border-radius:9px;background:var(--cream);font-size:14px;font-weight:700}
+.featured-story-author{font-size:14px;font-weight:800;margin:0 0 24px;line-height:1.6}
+.featured-story-author>span{display:block;color:var(--muted);font-weight:500;overflow-wrap:anywhere}
+.featured-story-cta{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:48px;padding:12px 20px;border-radius:999px;color:#fff;background:var(--orange-dark);font-size:16px;font-weight:800;transition:background .2s}
+.featured-story-link:hover .featured-story-cta{background:var(--forest)}
+@media(max-width:860px){.community-stories{padding:64px 0 70px}.featured-story-link{grid-template-columns:minmax(0,1fr)}.featured-story-image{min-height:0;aspect-ratio:16/10;border-radius:28px 28px 0 0}.featured-story-copy{padding:30px}.featured-story-copy h3{font-size:clamp(30px,5vw,44px)}}
+@media(max-width:560px){.community-stories-heading .heading{font-size:38px}.community-stories-heading>p{font-size:16px}.featured-story-copy{padding:24px}.featured-story-image{aspect-ratio:4/3}.featured-story-badge{top:16px;left:16px;font-size:12px}.featured-story-cta{width:100%}}
+@media(prefers-reduced-motion:reduce){.featured-story-image img,.featured-story-cta,.hero-story-link{transition:none}.featured-story-link:hover .featured-story-image img{transform:none}}
+</style>
+<style id="compact-story-hero">
+.inspiration-hero .hero-proof .proof-icon{font-style:normal;flex-shrink:0}.inspiration-hero .hero-copy>p{margin-top:22px;margin-bottom:16px;max-width:650px}.inspiration-hero .hero-story-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;max-width:100%;padding:10px 16px;margin:0 0 12px;border-radius:12px;font-size:15px;line-height:1.35;text-align:left;white-space:normal}.inspiration-hero .hero-story-link span{flex-shrink:0}.inspiration-hero .hero-proof{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin:0 0 20px;padding:0}.inspiration-hero .hero-proof>span{display:inline-flex;align-items:center;gap:6px;min-height:0;margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;backdrop-filter:none;font-size:12px;line-height:1.5;font-weight:500;color:rgba(255,255,255,.85);white-space:nowrap}.inspiration-hero .hero-copy h1 .hero-nowrap{white-space:normal;text-wrap:balance}
+@media(max-width:720px){.inspiration-hero .hero-copy>p{margin-top:16px;margin-bottom:14px;font-size:16px;line-height:1.6}.inspiration-hero .hero-story-link{font-size:14px;margin-bottom:10px}.inspiration-hero .hero-proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-width:420px;margin:0 auto 18px;align-items:start}.inspiration-hero .hero-proof>span{justify-content:center;font-size:11px;line-height:1.4;white-space:normal;text-align:center}}
+@media(max-width:360px){.inspiration-hero .hero-proof{gap:6px}.inspiration-hero .hero-proof>span{font-size:10px}}
+</style>
+</head>
 <body>
 <header class="site-header" id="siteHeader">
 <a aria-label="Home di EveryVoyage" class="brand-logo" href="/it/">
@@ -2829,13 +2883,14 @@ body.app-qr-open{overflow:hidden}
 <div class="hero-inner">
 <div class="hero-copy">
 <div class="breadcrumbs"><a href="/it/">Pagina iniziale</a><span>›</span><span>Ispirazione per viaggi on the road</span></div>
-<span class="hero-eyebrow"><i></i> Ispirazione da viaggiatori reali</span>
-<h1><span>Scopri road trip reali</span><em class="hero-nowrap">attraverso chi li vive.</em></h1>
-<p>Segui nel feed i viaggi in camper e van. Guarda itinerari, soste e Momenti mentre vengono condivisi, poi trova nuovi luoghi per il tuo prossimo viaggio on the road.</p>
+<span class="hero-eyebrow"><i></i> Ispirazione per viaggi on the road da viaggiatori reali</span>
+<h1><span>Scopri viaggi on the road</span><em class="hero-nowrap">attraverso storie vere.</em></h1>
+<p>Leggi vere avventure in camper e van, scopri i luoghi che le hanno rese indimenticabili e segui altri Viaggi nell’app EveryVoyage.</p>
+<a class="hero-story-link" href="#community-stories">Scopri storie vere <span aria-hidden="true">↓</span></a>
 <div class="hero-proof">
-<span>🗺️ Itinerari e Viaggi reali</span>
-<span>📍 Aggiornamenti recenti sulle soste</span>
-<span>👥 Segui persone di cui ti fidi</span>
+<span><i class="proof-icon" aria-hidden="true">🗺️</i> Itinerari reali</span>
+<span><i class="proof-icon" aria-hidden="true">📍</i> Soste recenti</span>
+<span><i class="proof-icon" aria-hidden="true">👥</i> Segui i viaggiatori</span>
 </div>
 <div class="store-row">
 <div class="store-stack">
@@ -2866,11 +2921,36 @@ body.app-qr-open{overflow:hidden}
 </div>
 </div>
 </section>
-<div class="section-bridge" data-next="#journeys">
-<button aria-label="Continua verso l’ispirazione da viaggi reali" type="button">
+<div class="section-bridge" data-next="#community-stories">
+<button aria-label="Continua verso la storia in evidenza" type="button">
 <svg fill="none" stroke="currentColor" stroke-width="2.3" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
 </button>
 </div>
+<section class="community-stories" id="community-stories" aria-labelledby="community-stories-title">
+<div class="wrap">
+<div class="community-stories-heading">
+<span class="section-kicker">La community di EveryVoyage</span>
+<h2 class="heading" id="community-stories-title">Veri viaggi on the road.<em>Storie da seguire.</em></h2>
+<p>Conosci i viaggiatori, scopri i loro luoghi preferiti e trova ispirazione per la tua prossima avventura.</p>
+</div>
+<article class="featured-story">
+<a class="featured-story-link" href="/it/norway-family-campervan-road-trip" aria-labelledby="billy-feature-title" aria-describedby="billy-feature-description">
+<div class="featured-story-image">
+<img src="https://f003.backblazeb2.com/file/AnyVoyagePhotos/trip/1ar3d3nwzse4mwmwxc9esfg38/4rr3kkgmntikbwghoyoir398s/full.jpg" alt="Un membro della famiglia di Billy osserva l’alba da Preikestolen sopra il fiordo norvegese" loading="lazy" decoding="async"/>
+<span class="featured-story-badge">Avventura in evidenza</span>
+</div>
+<div class="featured-story-copy">
+<p class="featured-story-location">Norvegia <span aria-hidden="true">·</span> Avventura in van con la famiglia</p>
+<h3 id="billy-feature-title">6.500 km. 30 giorni. Un indimenticabile viaggio on the road in Norvegia.</h3>
+<p id="billy-feature-description">Un’escursione all’alba a Preikestolen, strade innevate e una giornata imprevista con i cani da slitta. Segui Billy e la sua famiglia nella loro avventura di un mese in Norvegia.</p>
+<ul class="featured-story-stats" aria-label="Dettagli del viaggio"><li>30 giorni</li><li>6.500 km</li><li>Aprile 2022</li></ul>
+<p class="featured-story-author">Billy e la sua famiglia <span>@man_adventure_van</span></p>
+<span class="featured-story-cta">Leggi la storia di Billy <span aria-hidden="true">→</span></span>
+</div>
+</a>
+</article>
+</div>
+</section>
 <section class="journey-proof" id="journeys">
 <div class="wrap proof-grid">
 <div class="proof-copy reveal">
