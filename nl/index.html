@@ -4423,6 +4423,143 @@
       background:var(--orange-soft,#fff0e8) !important;
       color:var(--orange-dark,#d94100) !important;
     }
+    /* ===== EveryVoyage ambassadors and community partners ===== */
+    .community-showcase{position:relative;overflow:hidden;padding:104px 0 96px;background:radial-gradient(circle at 12% 9%,rgba(245,74,0,.12),transparent 29%),radial-gradient(circle at 91% 42%,rgba(255,176,113,.18),transparent 27%),#fffdf9}
+    .community-showcase::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.42;background-image:linear-gradient(rgba(38,39,37,.032) 1px,transparent 1px),linear-gradient(90deg,rgba(38,39,37,.032) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
+    .community-inner{position:relative;z-index:1}
+    .community-heading{max-width:800px;margin:0 auto 48px;text-align:center}
+    .community-kicker{display:inline-flex;margin-bottom:13px;color:var(--orange);font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    .community-heading h2{margin:0;font-family:var(--display);font-size:clamp(48px,5.4vw,78px);font-weight:500;line-height:.98;letter-spacing:-.052em}
+    .community-heading h2 em{color:var(--orange);font-style:italic}
+    .community-heading p{max-width:710px;margin:20px auto 0;color:var(--muted);font-size:18px}
+    .social-icon{flex:0 0 auto;width:18px;height:18px;fill:currentColor}
+
+    .ambassador-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .ambassador-card{position:relative;min-height:620px;overflow:hidden;border:1px solid rgba(38,39,37,.09);border-radius:30px;background:#252725;box-shadow:0 22px 55px rgba(29,35,31,.12);isolation:isolate;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+    .ambassador-card:hover{transform:translateY(-7px);box-shadow:0 30px 68px rgba(29,35,31,.18)}
+    .ambassador-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+    .ambassador-card:hover .ambassador-photo{transform:scale(1.035)}
+    .ambassador-card:first-child .ambassador-photo{inset:-2% -5%;width:110%;height:104%;max-width:none;transform:scale(1.02)}
+    .ambassador-card:first-child:hover .ambassador-photo{transform:scale(1.055)}
+    .ambassador-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,14,13,.03) 0%,rgba(8,14,13,.08) 30%,rgba(8,14,13,.88) 70%,rgba(8,14,13,.98) 100%)}
+    .ambassador-status{position:absolute;z-index:3;top:18px;left:18px;display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border:1px solid rgba(255,255,255,.42);border-radius:999px;background:rgba(18,25,23,.5);color:#fff;font-size:11px;font-weight:900;letter-spacing:.055em;text-transform:uppercase;backdrop-filter:blur(12px)}
+    .ambassador-status::before{content:"";width:7px;height:7px;border-radius:50%;background:#ff6a28;box-shadow:0 0 0 4px rgba(245,74,0,.18)}
+    .ambassador-phone{position:absolute;z-index:3;top:50px;right:18px;width:138px;aspect-ratio:9/19.5;padding:6px;border:0;border-radius:25px;background:linear-gradient(145deg,#26292a,#050506 68%,#303333);box-shadow:0 22px 38px rgba(0,0,0,.35);transform:rotate(4deg);cursor:zoom-in;transition:transform .4s var(--ease),box-shadow .3s ease}
+    .ambassador-card:nth-child(2) .ambassador-phone{transform:rotate(-4deg)}
+    .ambassador-card:hover .ambassador-phone{transform:rotate(1deg) translateY(-5px)}
+    .ambassador-phone::before{content:"";position:absolute;z-index:2;top:9px;left:50%;width:35%;height:8px;border-radius:999px;background:#050505;transform:translateX(-50%)}
+    .ambassador-phone::after{content:"+";position:absolute;z-index:3;right:-8px;bottom:-8px;width:31px;height:31px;display:grid;place-items:center;border:2px solid rgba(255,255,255,.82);border-radius:50%;background:var(--orange);color:#fff;font-size:20px;font-weight:600;line-height:1;box-shadow:0 8px 18px rgba(0,0,0,.26)}
+    .ambassador-phone img{width:100%;height:100%;object-fit:cover;border-radius:18px;background:#e9eee8}
+    .ambassador-phone:focus-visible{outline:3px solid #fff;outline-offset:5px}
+    .ambassador-copy{position:absolute;z-index:4;left:23px;right:23px;bottom:23px;height:235px;display:flex;flex-direction:column;color:#fff}
+    .ambassador-handle{display:flex;align-items:center;gap:7px;width:max-content;max-width:100%;color:#fff;font-size:clamp(17px,1.6vw,21px);font-weight:900;line-height:1.1;letter-spacing:-.018em;text-decoration:none}
+    .ambassador-handle span{overflow:hidden;text-overflow:ellipsis}
+    .ambassador-handle .social-icon{width:19px;height:19px;color:#ff8a55}
+    .ambassador-handle:hover{color:#ffb08c}
+    .ambassador-proof{display:flex;align-items:center;gap:8px;margin:9px 0 12px;color:rgba(255,255,255,.75);font-size:11px;font-weight:800}
+    .ambassador-proof strong{padding:5px 8px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.11);color:#fff;backdrop-filter:blur(8px)}
+    .ambassador-copy p{margin:0;color:rgba(255,255,255,.78);font-size:13px;line-height:1.46}
+    .ambassador-route{display:block;margin-top:7px;color:#ffad88;font-size:12px;font-weight:900;letter-spacing:.025em;text-transform:uppercase}
+    .ambassador-actions{display:flex;align-items:center;gap:8px;flex-wrap:nowrap;margin-top:auto}
+    .ambassador-actions-double{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);width:100%}
+    .ambassador-action{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:9px 12px;border:1px solid rgba(255,255,255,.24);border-radius:999px;color:#fff;font-size:11px;font-weight:900;line-height:1.15;text-align:center;text-decoration:none;white-space:nowrap;backdrop-filter:blur(9px)}
+    .ambassador-action.primary{border-color:#fff;background:#fff;color:var(--ink)}
+    .ambassador-action:hover{border-color:#ff9b6e;color:#ffb18e}
+    .ambassador-action.primary:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+
+    .community-support{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}
+    .community-support-card{min-height:290px;overflow:hidden;border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.88);box-shadow:0 17px 45px rgba(29,35,31,.07);backdrop-filter:blur(14px)}
+    .support-label{display:inline-flex;margin-bottom:12px;color:var(--orange);font-size:11px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+    .community-support-card h3{margin:0;font-family:var(--display);font-size:32px;font-weight:500;line-height:1.05;letter-spacing:-.03em}
+    .community-support-card p{margin:11px 0 18px;color:var(--muted);font-size:14px;line-height:1.5}
+    .community-ambassador-card{display:grid;grid-template-columns:minmax(190px,.85fr) minmax(0,1.15fr);background:#fff}
+    .community-media{position:relative;min-height:290px;overflow:hidden;background:#222}
+    .community-media>img{width:100%;height:100%;object-fit:cover}
+    .youtube-count{position:absolute;left:15px;bottom:15px;display:inline-flex;align-items:center;gap:8px;padding:9px 11px;border-radius:999px;background:#fff;color:#111;font-size:12px;font-weight:900;box-shadow:0 12px 25px rgba(0,0,0,.2)}
+    .youtube-count .social-icon{color:#ff0000}
+    .community-support-copy{padding:27px;align-self:center}
+    .support-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+    .youtube-button,.website-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:10px 15px;border-radius:999px;font-size:12px;font-weight:900;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+    .youtube-button{background:#ff0000;color:#fff;box-shadow:0 9px 20px rgba(255,0,0,.22)}
+    .website-button{background:var(--orange);color:#fff;box-shadow:0 9px 20px rgba(245,74,0,.2)}
+    .youtube-button:hover,.website-button:hover{transform:translateY(-2px)}
+    .social-mini-links{display:flex;gap:7px;margin-top:15px}
+    .social-mini-links a{width:35px;height:35px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--muted);transition:color .2s ease,border-color .2s ease,transform .2s ease}
+    .social-mini-links a:hover{transform:translateY(-2px);border-color:rgba(245,74,0,.35);color:var(--orange)}
+    .social-mini-links .social-icon{width:16px;height:16px}
+
+    /* Expandable ambassador Voyage preview */
+    body.voyage-preview-open{overflow:hidden}
+    .voyage-lightbox[hidden]{display:none!important}
+    .voyage-lightbox{position:fixed;z-index:1000;inset:0;display:grid;place-items:center;padding:28px;opacity:0;visibility:hidden;transition:opacity .28s ease,visibility .28s ease}
+    .voyage-lightbox.is-open{opacity:1;visibility:visible}
+    .voyage-lightbox-backdrop{position:absolute;inset:0;background:rgba(10,15,15,.78);backdrop-filter:blur(16px)}
+    .voyage-lightbox-dialog{position:relative;z-index:1;width:min(1020px,100%);max-height:calc(100svh - 56px);display:grid;grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);overflow:hidden;border:1px solid rgba(255,255,255,.62);border-radius:34px;background:var(--cream);box-shadow:0 40px 110px rgba(0,0,0,.38);transform:translateY(24px) scale(.9);opacity:0;transition:transform .42s var(--ease),opacity .3s ease}
+    .voyage-lightbox.is-open .voyage-lightbox-dialog{transform:translateY(0) scale(1);opacity:1}
+    .voyage-lightbox-close{position:absolute;z-index:5;top:16px;right:16px;width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(38,39,37,.12);border-radius:50%;background:rgba(255,255,255,.9);color:var(--ink);font-size:27px;line-height:1;cursor:pointer;box-shadow:0 8px 22px rgba(0,0,0,.12)}
+    .voyage-preview-visual{position:relative;min-height:650px;display:grid;place-items:center;padding:34px;background:radial-gradient(circle at 50% 42%,rgba(255,130,70,.24),transparent 45%),linear-gradient(145deg,#151c1b,#29332f)}
+    .voyage-preview-phone{position:relative;width:min(292px,82%);aspect-ratio:9/19.5;padding:10px;border-radius:48px;background:linear-gradient(145deg,#2f3334,#050506 68%,#363a3a);box-shadow:0 32px 65px rgba(0,0,0,.42);animation:voyagePreviewFloat 5s ease-in-out infinite}
+    .voyage-preview-phone::before{content:"";position:absolute;z-index:2;top:17px;left:50%;width:34%;height:22px;border-radius:999px;background:#050505;transform:translateX(-50%)}
+    .voyage-preview-phone img{width:100%;height:100%;object-fit:cover;border-radius:39px;background:#e9eee8}
+    .voyage-preview-content{align-self:center;padding:64px 48px 48px}
+    .voyage-preview-kicker{display:block;margin-bottom:12px;color:var(--orange);font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    .voyage-preview-content h2{margin:0;font-family:var(--display);font-size:clamp(42px,5vw,68px);font-weight:500;line-height:.96;letter-spacing:-.05em}
+    .voyage-preview-route{margin:15px 0 5px;color:var(--muted);font-size:18px;font-weight:700}
+    .voyage-preview-dates{margin:0;color:var(--orange-dark);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+    .voyage-preview-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:34px;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 18px 42px rgba(38,39,37,.07)}
+    .voyage-preview-stat{min-height:124px;padding:22px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .voyage-preview-stat:nth-child(2n){border-right:0}
+    .voyage-preview-stat:nth-last-child(-n+2){border-bottom:0}
+    .voyage-preview-stat strong{display:block;font-family:var(--display);font-size:38px;font-weight:600;line-height:1;letter-spacing:-.035em}
+    .voyage-preview-stat span{display:block;margin-top:9px;color:var(--muted);font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+    .voyage-preview-follow{width:100%;min-height:50px;margin-top:18px;display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;background:var(--orange);color:#fff;font-size:14px;font-weight:900;text-decoration:none;box-shadow:0 12px 26px rgba(245,74,0,.24);transition:transform .22s var(--ease),background .22s ease,box-shadow .22s ease}
+    .voyage-preview-follow:hover{transform:translateY(-2px);background:var(--orange-dark);box-shadow:0 16px 32px rgba(245,74,0,.3)}
+    .voyage-preview-follow:focus-visible{outline:3px solid rgba(245,74,0,.28);outline-offset:4px}
+    @keyframes voyagePreviewFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-9px) rotate(1deg)}}
+
+    @media(max-width:1000px){
+      .ambassador-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .ambassador-card:last-child{grid-column:1/-1;min-height:620px}
+      .community-support{grid-template-columns:1fr}
+    }
+
+    @media(max-width:720px){
+      .community-showcase{padding:76px 0 72px}
+      .community-heading{margin-bottom:34px;text-align:left}
+      .community-heading p{margin-left:0;font-size:16px}
+      .ambassador-grid{display:grid;grid-template-columns:1fr;gap:16px;overflow:visible;margin:0;padding:0}
+      .ambassador-card,.ambassador-card:last-child{width:100%;min-height:640px;grid-column:auto}
+      .ambassador-phone{top:54px;width:136px}
+      .ambassador-copy{height:250px}
+      .ambassador-handle{font-size:20px}
+      .ambassador-copy p{min-height:0}
+      .community-support{margin-top:16px}
+      .community-support-card{border-radius:23px}
+      .community-ambassador-card{grid-template-columns:1fr}
+      .community-media{min-height:245px;max-height:300px}
+      .community-support-copy{padding:22px}
+      .community-support-card h3{font-size:29px}
+      .ambassador-actions-double{gap:7px}
+      .ambassador-actions-double .ambassador-action{padding-inline:9px;font-size:10.5px}
+      .voyage-lightbox{padding:10px}
+      .voyage-lightbox-dialog{max-height:calc(100svh - 20px);grid-template-columns:1fr;overflow-y:auto;border-radius:25px}
+      .voyage-preview-visual{min-height:440px;padding:28px 20px}
+      .voyage-preview-phone{width:min(196px,58vw);padding:7px;border-radius:34px}
+      .voyage-preview-phone::before{top:12px;height:15px}
+      .voyage-preview-phone img{border-radius:28px}
+      .voyage-preview-content{padding:34px 20px 25px}
+      .voyage-preview-content h2{font-size:39px}
+      .voyage-preview-route{font-size:16px}
+      .voyage-preview-stats{margin-top:25px;border-radius:19px}
+      .voyage-preview-stat{min-height:100px;padding:16px}
+      .voyage-preview-stat strong{font-size:30px}
+      .voyage-lightbox-close{position:fixed;top:20px;right:20px}
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .ambassador-card,.ambassador-photo,.ambassador-phone,.youtube-button,.website-button,.social-mini-links a,.voyage-lightbox,.voyage-lightbox-dialog,.voyage-preview-follow{transition:none!important}
+      .voyage-preview-phone{animation:none!important}
+    }
   </style>
 </head>
 <body>
@@ -4764,7 +4901,180 @@
     </section>
 
 
-    <div class="section-bridge" data-next="#video-section">
+    <div class="section-bridge" data-next="#community">
+      <button type="button" aria-label="Ga verder naar de EveryVoyage-community"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg></button>
+    </div>
+
+    <section class="community-showcase" id="community" aria-labelledby="communityTitle">
+      <div class="wrap community-inner">
+        <header class="community-heading">
+          <span class="community-kicker">EveryVoyage-ambassadeurs</span>
+          <h2 id="communityTitle">Echte mensen. Echte wegen. <em>Echte reizen.</em></h2>
+          <p>Maak kennis met reizigers die EveryVoyage onderweg gebruiken. Volg hun profielen, ontdek hun reizen en zie de app in actie tijdens echte avonturen.</p>
+        </header>
+
+        <div class="ambassador-grid" aria-label="EveryVoyage-ambassadeurs die de app gebruiken">
+          <article class="ambassador-card">
+            <img
+              class="ambassador-photo"
+              src="https://f003.backblazeb2.com/file/AnyVoyagePhotos/moment/5sheequmzsiyz5novfhwg7puq/5jr0nql66lpjx4gsxff4mq5yy/full.jpg"
+              onerror="this.onerror=null;this.src='/assets/img/HeroRoadTrip.webp'"
+              alt="Billy en zijn gezin onderweg door Noorwegen met de camper"
+              loading="lazy"
+            >
+            <span class="ambassador-shade" aria-hidden="true"></span>
+            <span class="ambassador-status">Gebruikt EveryVoyage</span>
+            <button class="ambassador-phone" type="button" aria-label="Open Billy's reis door Noorwegen en bekijk de statistieken" aria-haspopup="dialog" data-voyage-preview data-title="Billy's reis door Noorwegen" data-route="@man_adventure_van · Gezinsavontuur met de camper" data-image="/assets/img/NorwayScreenshot.webp" data-follow="https://everyvoyage.com/follow/user_3FGieRTzXoUckuboCCA1U2maavo" data-dates="" data-distance="6.437" data-days="30" data-trips="25" data-four-value="7" data-four-label="Bezochte landen">
+              <img src="/assets/img/NorwayScreenshot.webp" onerror="this.onerror=null;this.src='/assets/img/StoryReliveVoyage.webp'" alt="">
+            </button>
+            <div class="ambassador-copy">
+              <a class="ambassador-handle" href="https://www.instagram.com/man_adventure_van/" target="_blank" rel="noopener" aria-label="Man Adventure Van op Instagram">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+                <span>@man_adventure_van</span>
+              </a>
+              <div class="ambassador-proof"><strong>30.000 volgers</strong></div>
+              <p>Billy deelt het leven onderweg met zijn gezin en hun MAN TGE 4x4, van het ontdekken van nieuwe campings tot de dagelijkse realiteit van lange camperreizen.</p>
+              <span class="ambassador-route">Uitgelichte reis · Noorwegen</span>
+              <div class="ambassador-actions ambassador-actions-double">
+                <a class="ambassador-action primary" href="https://everyvoyage.com/follow/user_3FGieRTzXoUckuboCCA1U2maavo">Volgen op EveryVoyage →</a>
+                <a class="ambassador-action" href="/nl/norway-family-campervan-road-trip">Lees het reisverhaal over Noorwegen</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="ambassador-card">
+            <img
+              class="ambassador-photo"
+              src="https://f003.backblazeb2.com/file/AnyVoyagePhotos/trip/3nsy2ywd1zv67ono2tbihrk0l/1i1y3ki0lr70bzrrk5z4fp3k/medium.jpg"
+              onerror="this.onerror=null;this.src='/assets/img/Sunset.webp'"
+              alt="Beatrice fotografeert het leven onderweg tijdens haar reizen"
+              loading="lazy"
+            >
+            <span class="ambassador-shade" aria-hidden="true"></span>
+            <span class="ambassador-status">Gebruikt EveryVoyage</span>
+            <button class="ambassador-phone" type="button" aria-label="Open Beatrices reis door Denemarken en bekijk de statistieken" aria-haspopup="dialog" data-voyage-preview data-title="Beatrices reis door Denemarken" data-route="@flowersbeatrice · Roadtrip door Denemarken" data-image="/assets/img/DenmarkScreenshot.webp" data-follow="https://everyvoyage.com/follow/user_3I3N5sBnk4Cz1gYNcNvFqGR1Ddr" data-dates="22 juni – 10 juli" data-distance="4.351" data-days="19" data-trips="26" data-four-value="3" data-four-label="Bezochte landen">
+              <img src="/assets/img/DenmarkScreenshot.webp" onerror="this.onerror=null;this.src='/assets/img/StoryReliveVoyage.webp'" alt="">
+            </button>
+            <div class="ambassador-copy">
+              <a class="ambassador-handle" href="https://www.instagram.com/flowersbeatrice/" target="_blank" rel="noopener" aria-label="Flowers Beatrice op Instagram">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+                <span>@flowersbeatrice</span>
+              </a>
+              <div class="ambassador-proof"><strong>33.600 volgers</strong></div>
+              <p>Beatrice Calastrini is fotograaf en visueel verhalenverteller uit Florence. In haar werk komen reizen, landschappen en het leven met honden samen.</p>
+              <span class="ambassador-route">Uitgelichte reis · Denemarken</span>
+              <div class="ambassador-actions">
+                <a class="ambassador-action primary" href="https://everyvoyage.com/follow/user_3I3N5sBnk4Cz1gYNcNvFqGR1Ddr">Volgen op EveryVoyage →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="ambassador-card">
+            <img
+              class="ambassador-photo"
+              src="/assets/img/AmbassadorSprinter4x4.webp"
+              onerror="this.onerror=null;this.src='/assets/img/OfflineMode.webp'"
+              alt="Een Mercedes Sprinter 4x4 tijdens een overlandreis"
+              loading="lazy"
+            >
+            <span class="ambassador-shade" aria-hidden="true"></span>
+            <span class="ambassador-status">Gebruikt EveryVoyage</span>
+            <button class="ambassador-phone" type="button" aria-label="Open de reis van Dave en Jackie door de Hebriden en bekijk de statistieken" aria-haspopup="dialog" data-voyage-preview data-title="De reis van Dave en Jackie door de Hebriden" data-route="@sprinter_4x4_overland · Roadtrip door de Hebriden" data-image="/assets/img/HebridesScreenshot.webp" data-follow="https://everyvoyage.com/follow/user_3Do7mb3TgoEfXU1VzBWhFavXMHR" data-dates="5 mei – 2 juni" data-distance="2.870" data-days="29" data-trips="17" data-four-value="5 mei – 2 juni" data-four-label="Reisdata">
+              <img src="/assets/img/HebridesScreenshot.webp" onerror="this.onerror=null;this.src='/assets/img/StoryReliveVoyage.webp'" alt="">
+            </button>
+            <div class="ambassador-copy">
+              <a class="ambassador-handle" href="https://www.instagram.com/sprinter_4x4_overland/" target="_blank" rel="noopener" aria-label="Sprinter 4x4 Overland op Instagram">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+                <span>@sprinter_4x4_overland</span>
+              </a>
+              <div class="ambassador-proof"><strong>4.800 volgers</strong></div>
+              <p>Dave en Jackie bouwden hun 906 4x4 Sprinter, Stan, om tot overlandcamper en delen de uitdagingen, successen en reizen onderweg.</p>
+              <span class="ambassador-route">Uitgelichte reis · De Hebriden</span>
+              <div class="ambassador-actions">
+                <a class="ambassador-action primary" href="https://everyvoyage.com/follow/user_3Do7mb3TgoEfXU1VzBWhFavXMHR">Volgen op EveryVoyage →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="community-support">
+          <article class="community-support-card community-ambassador-card">
+            <div class="community-media">
+              <img src="https://images.squarespace-cdn.com/content/v1/67361fbbc719620dc3c5229b/1731600768878-Y2B0FTRQESVGG7FGSQCU/IMG_3854-scaled.jpg?format=750w" alt="Darran van The Urban Motorhome" loading="lazy">
+              <span class="youtube-count">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+                58.700 abonnees
+              </span>
+            </div>
+            <div class="community-support-copy">
+              <span class="support-label">Ambassadeur</span>
+              <h3>The Urban Motorhome</h3>
+              <p>Darran woont sinds 2017 fulltime in een camper en deelt de mooie en moeilijke kanten, plus praktische lessen uit het leven onderweg.</p>
+              <div class="support-actions">
+                <a class="youtube-button" href="https://www.youtube.com/channel/UCBnF7q4L-h4aP440PylsQYg" target="_blank" rel="noopener">
+                  <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+                  Bekijken op YouTube
+                </a>
+              </div>
+              <nav class="social-mini-links" aria-label="Sociale profielen van The Urban Motorhome">
+                <a href="https://www.facebook.com/UrbanMotorhome" target="_blank" rel="noopener" aria-label="The Urban Motorhome op Facebook"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4.2c-.5-.1-2.2-.2-4.1-.2C9 4 6.3 6.3 6.3 10.6V14H2v4.3h4.3V24h5.2v-5.7h4.2L16.4 14h-4.9v-3c0-1.2.3-3 2.5-3Z"/></svg></a>
+                <a href="https://www.instagram.com/the_urban_motorhome" target="_blank" rel="noopener" aria-label="The Urban Motorhome op Instagram"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>
+                <a href="https://www.tiktok.com/@urbanmotorhome" target="_blank" rel="noopener" aria-label="The Urban Motorhome op TikTok"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.8 2c.4 2.5 1.8 4 4.2 4.2v4.1a8.8 8.8 0 0 1-4.2-1v7.1A7.6 7.6 0 1 1 10.2 9v4.2a3.5 3.5 0 1 0 2.5 3.3V2h4.1Z"/></svg></a>
+              </nav>
+            </div>
+          </article>
+
+          <article class="community-support-card community-ambassador-card">
+            <div class="community-media">
+              <img src="https://motorhoming-adventures.co.uk/images/hero-full-bleed-960.avif" alt="Bob en Nicky van Motorhoming Adventures met hun camper" loading="lazy">
+              <span class="youtube-count">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+                Meer dan 7.500 abonnees
+              </span>
+            </div>
+            <div class="community-support-copy">
+              <span class="support-label">Partner</span>
+              <h3>Motorhoming Adventures</h3>
+              <p>Bob en Nicky delen praktische gidsen, gratis hulpmiddelen en reistips, gebaseerd op meer dan 68.000 kilometer reiservaring met hun camper Rezzy.</p>
+              <div class="support-actions">
+                <a class="website-button" href="https://motorhoming-adventures.co.uk/" target="_blank" rel="noopener">Bezoek hun website ↗</a>
+                <a class="youtube-button" href="https://www.youtube.com/@motorhomingadventures" target="_blank" rel="noopener">
+                  <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="voyage-lightbox" id="voyageLightbox" hidden aria-hidden="true">
+      <div class="voyage-lightbox-backdrop" data-close-voyage-preview aria-hidden="true"></div>
+      <section class="voyage-lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="voyagePreviewTitle">
+        <button class="voyage-lightbox-close" type="button" data-close-voyage-preview aria-label="Sluit de reisdetails">×</button>
+        <div class="voyage-preview-visual">
+          <div class="voyage-preview-phone" aria-hidden="true">
+            <img id="voyagePreviewImage" src="/assets/img/StoryReliveVoyage.webp" alt="">
+          </div>
+        </div>
+        <div class="voyage-preview-content">
+          <span class="voyage-preview-kicker">Vastgelegd met EveryVoyage</span>
+          <h2 id="voyagePreviewTitle">De reis in detail</h2>
+          <p class="voyage-preview-route" id="voyagePreviewRoute"></p>
+          <p class="voyage-preview-dates" id="voyagePreviewDates" hidden></p>
+          <div class="voyage-preview-stats" aria-label="Reisstatistieken">
+            <div class="voyage-preview-stat"><strong id="voyagePreviewDistance">0</strong><span>Afgelegde kilometers</span></div>
+            <div class="voyage-preview-stat"><strong id="voyagePreviewDays">0</strong><span>Dagen onderweg</span></div>
+            <div class="voyage-preview-stat"><strong id="voyagePreviewTrips">0</strong><span>Vastgelegde etappes</span></div>
+            <div class="voyage-preview-stat"><strong id="voyagePreviewFourth">0</strong><span id="voyagePreviewFourthLabel">Bezochte landen</span></div>
+          </div>
+          <a class="voyage-preview-follow" id="voyagePreviewFollow" href="/nl/app">Volgen op EveryVoyage →</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="section-bridge" id="communityBridge" data-next="#video-section">
       <button type="button" aria-label="Ga verder naar de app-preview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
 
@@ -5547,6 +5857,77 @@
       document.body.appendChild(modal);
     }
     document.querySelector('.video-panel').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openVideo();}});
+
+    /* Ambassador route previews */
+    const voyageLightbox=document.getElementById('voyageLightbox');
+    const voyagePreviewTriggers=[...document.querySelectorAll('[data-voyage-preview]')];
+    const voyagePreviewClose=voyageLightbox.querySelector('.voyage-lightbox-close');
+    const voyagePreviewImage=document.getElementById('voyagePreviewImage');
+    const voyagePreviewTitle=document.getElementById('voyagePreviewTitle');
+    const voyagePreviewRoute=document.getElementById('voyagePreviewRoute');
+    const voyagePreviewDates=document.getElementById('voyagePreviewDates');
+    const voyagePreviewDistance=document.getElementById('voyagePreviewDistance');
+    const voyagePreviewDays=document.getElementById('voyagePreviewDays');
+    const voyagePreviewTrips=document.getElementById('voyagePreviewTrips');
+    const voyagePreviewFourth=document.getElementById('voyagePreviewFourth');
+    const voyagePreviewFourthLabel=document.getElementById('voyagePreviewFourthLabel');
+    const voyagePreviewFollow=document.getElementById('voyagePreviewFollow');
+    let activeVoyagePreviewTrigger=null;
+    let voyagePreviewCloseTimer=null;
+
+    function openVoyagePreview(trigger){
+      const data=trigger.dataset;
+      activeVoyagePreviewTrigger=trigger;
+      clearTimeout(voyagePreviewCloseTimer);
+      voyagePreviewTitle.textContent=data.title;
+      voyagePreviewRoute.textContent=data.route;
+      voyagePreviewDistance.textContent=data.distance;
+      voyagePreviewDays.textContent=data.days;
+      voyagePreviewTrips.textContent=data.trips;
+      voyagePreviewFourth.textContent=data.fourValue;
+      voyagePreviewFourthLabel.textContent=data.fourLabel;
+      voyagePreviewFollow.href=data.follow;
+      voyagePreviewDates.textContent=data.dates||'';
+      voyagePreviewDates.hidden=!data.dates;
+      voyagePreviewImage.alt=`Route vastgelegd met EveryVoyage: ${data.title}`;
+      voyagePreviewImage.onerror=()=>{
+        voyagePreviewImage.onerror=null;
+        voyagePreviewImage.src='/assets/img/StoryReliveVoyage.webp';
+      };
+      voyagePreviewImage.src=data.image;
+      voyageLightbox.hidden=false;
+      voyageLightbox.setAttribute('aria-hidden','false');
+      document.body.classList.add('voyage-preview-open');
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        voyageLightbox.classList.add('is-open');
+        voyagePreviewClose.focus({preventScroll:true});
+      }));
+    }
+
+    function closeVoyagePreview(){
+      if(voyageLightbox.hidden)return;
+      voyageLightbox.classList.remove('is-open');
+      voyageLightbox.setAttribute('aria-hidden','true');
+      document.body.classList.remove('voyage-preview-open');
+      voyagePreviewCloseTimer=setTimeout(()=>{
+        voyageLightbox.hidden=true;
+        if(activeVoyagePreviewTrigger)activeVoyagePreviewTrigger.focus({preventScroll:true});
+      },reduceMotion?0:360);
+    }
+
+    voyagePreviewTriggers.forEach(trigger=>trigger.addEventListener('click',()=>openVoyagePreview(trigger)));
+    voyageLightbox.querySelectorAll('[data-close-voyage-preview]').forEach(control=>control.addEventListener('click',closeVoyagePreview));
+    document.addEventListener('keydown',event=>{
+      if(voyageLightbox.hidden)return;
+      if(event.key==='Escape')closeVoyagePreview();
+      if(event.key==='Tab'){
+        event.preventDefault();
+        const focusTargets=[voyagePreviewClose,voyagePreviewFollow];
+        const currentIndex=focusTargets.indexOf(document.activeElement);
+        const nextIndex=event.shiftKey?(currentIndex<=0?focusTargets.length-1:currentIndex-1):(currentIndex+1)%focusTargets.length;
+        focusTargets[nextIndex].focus();
+      }
+    });
 
     function updateFounderUI({total,remaining,available}){
       const block=document.getElementById('founderBlock');
