@@ -4483,6 +4483,27 @@
     .community-ambassador-card{display:grid;grid-template-columns:minmax(190px,.85fr) minmax(0,1.15fr);background:#fff}
     .community-media{position:relative;min-height:290px;overflow:hidden;background:#222}
     .community-media>img{width:100%;height:100%;object-fit:cover}
+    /* Centred community-partner card */
+.community-support-featured{
+  grid-column:1/-1;
+  width:calc((100% - 18px)/2);
+  justify-self:center;
+}
+
+/* Display partner logos without cropping them */
+.community-logo-media{
+  display:grid;
+  place-items:center;
+  padding:35px;
+  background:#fff;
+}
+
+.community-logo-media>img{
+  width:100%;
+  height:auto;
+  max-height:180px;
+  object-fit:contain;
+}
     .youtube-count{position:absolute;left:15px;bottom:15px;display:inline-flex;align-items:center;gap:8px;padding:9px 11px;border-radius:999px;background:#fff;color:#111;font-size:12px;font-weight:900;box-shadow:0 12px 25px rgba(0,0,0,.2)}
     .youtube-count .social-icon{color:#ff0000}
     .community-support-copy{padding:27px;align-self:center}
@@ -4529,6 +4550,7 @@
       .ambassador-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
       .ambassador-card:last-child{grid-column:1/-1;min-height:620px}
       .community-support{grid-template-columns:1fr}
+      .community-support-featured{width:100%}
     }
 
     @media(max-width:720px){
@@ -5049,6 +5071,34 @@
                 <a class="youtube-button" href="https://www.youtube.com/@motorhomingadventures" target="_blank" rel="noopener">
                   <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
                   YouTube
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="community-support-card community-ambassador-card community-support-featured">
+            <div class="community-media community-logo-media">
+              <img
+                src="assets/img/dethleffs-owners-logo.png"
+                alt="Dethleffs Owners Club UK logo"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="community-support-copy">
+              <span class="support-label">Community partner</span>
+
+              <h3>Dethleffs Owners Club UK</h3>
+
+              <p>The UK’s only owners’ club recognised and supported by Dethleffs, bringing owners together through technical advice, member benefits, rallies and a friendly community.</p>
+
+              <div class="support-actions">
+                <a
+                  class="website-button"
+                  href="https://www.dethleffsowners.co.uk/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Visit their website ↗
                 </a>
               </div>
             </div>
