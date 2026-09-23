@@ -1,10 +1,17 @@
 {
   "applinks": {
-    "apps": [],
     "details": [
       {
-        "appID": "5388GKK45K.com.everyvoyage.app",
-        "paths": ["/follow/*", "/trip/*", "/moment/*"]
+        "appIDs": ["5388GKK45K.com.everyvoyage.app"],
+        "components": [
+          { "/": "/trip", "?": { "id": "*" }, "comment": "Share link (EV-647, ADR 0002)" },
+          { "/": "/moment", "?": { "id": "*" }, "comment": "Share link (EV-647, ADR 0002)" },
+          { "/": "/voyage", "?": { "id": "*" }, "comment": "Share link (EV-647, ADR 0002)" },
+          { "/": "/follow/*", "comment": "Follow QR codes and notifications" },
+          { "/": "/trip/*", "comment": "Pre-ADR share links already sent" },
+          { "/": "/moment/*", "comment": "Pre-ADR share links already sent" },
+          { "/": "/voyage/*", "comment": "Pre-ADR share links already sent" }
+        ]
       }
     ]
   }
