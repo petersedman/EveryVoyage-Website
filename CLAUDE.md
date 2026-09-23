@@ -27,6 +27,8 @@ Root `/` is English (UK). Each language has its own subdirectory with duplicated
 
 Each language directory contains: `index.html`, `about.html`, `contact.html`, `faq.html`. Legal pages (`privacy-policy.html`, `terms.html`, `cookie-policy.html`) exist only at root.
 
+**Root-only, self-localising pages:** `404.html` and the share-link handoff pages `trip.html`, `moment.html`, `voyage.html` exist only at root and pick their copy from a locale table in their own script (the 404 from the URL's first segment, the handoff pages from the browser language). Do not duplicate them into language folders; add a locale to the table instead. The three handoff pages are siblings generated from one template (EV-649) — a change to one applies to all three.
+
 **CRITICAL: When editing content or structure on any page, changes must be replicated across ALL 10 language versions** (root + `en-us/`, `fr/`, `de/`, `es/`, `it/`, `nl/`, `da/`, `no/`, `sv/`). The root English (UK) version is the canonical source. Always verify all language directories have been updated before considering a task complete. Translate user-facing text appropriately for each language.
 
 ### Navigation
