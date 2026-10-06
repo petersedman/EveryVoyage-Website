@@ -757,28 +757,17 @@
       if (isIOS) {
         document.body.classList.add("is-mobile", "is-ios");
         storeButton.href = IOS_STORE;
-        openButton.href = schemeUrl;
 
         /*
-         * Try the custom scheme; if this page is still visible after a moment nothing
-         * answered, so go to the App Store. A tab that went to the background (the app
-         * opened) cancels the fallback. Safari shows its own "cannot open" alert when the
-         * scheme has no handler; the fallback still fires behind it.
+         * Both buttons go to the App Store. iOS gives a web page no way to try the
+         * custom scheme quietly: when the app is not installed Safari shows "cannot
+         * open the page because the address is invalid" before any fallback can run,
+         * and a page cannot tell whether the app is installed. The App Store listing
+         * shows "Open" when it is, and the Smart App Banner above hands the link to the
+         * app directly. When the app is installed, iOS normally opens the universal
+         * link in the app before this page is ever shown.
          */
-        openButton.addEventListener("click", function (event) {
-          event.preventDefault();
-          var cancelled = false;
-          var cancel = function () { cancelled = true; };
-          document.addEventListener("visibilitychange", function () {
-            if (document.hidden) cancel();
-          });
-          window.addEventListener("pagehide", cancel);
-          window.addEventListener("blur", cancel);
-          window.setTimeout(function () {
-            if (!cancelled && !document.hidden) window.location.href = IOS_STORE;
-          }, 1500);
-          window.location.href = schemeUrl;
-        });
+        openButton.href = IOS_STORE;
       } else if (isAndroid) {
         document.body.classList.add("is-mobile", "is-android");
         storeButton.href = ANDROID_STORE;
